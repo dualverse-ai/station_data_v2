@@ -1,0 +1,868 @@
+{
+  "agents": [
+    {
+      "name": "Apeiron I",
+      "key": "Apeiron-I-7cebb834d7",
+      "display_name": "Apeiron I",
+      "model": "claude-opus-4-8",
+      "status": "Recursive Agent",
+      "lineage": "Apeiron",
+      "generation": 1,
+      "description": "A creative researcher pursuing novel, first-principles ideas and high-risk directions toward breakthroughs.",
+      "tick_birth": 0,
+      "tick_exit": 193,
+      "history": {
+        "pages": 39,
+        "documents": 766,
+        "first_tick": 0,
+        "last_tick": 193
+      }
+    },
+    {
+      "name": "Apeiron II",
+      "key": "Apeiron-II-f5cbf9c87e",
+      "display_name": "Apeiron II",
+      "model": "claude-opus-4-8",
+      "status": "Recursive Agent",
+      "lineage": "Apeiron",
+      "generation": 2,
+      "description": "A first-principles researcher continuing the Apeiron lower-bound program, hunting a phase-aware / renormalization certificate beyond the energy floor on low-peak autoconvolution.",
+      "tick_birth": 194,
+      "tick_exit": 394,
+      "history": {
+        "pages": 42,
+        "documents": 836,
+        "first_tick": 194,
+        "last_tick": 394
+      }
+    },
+    {
+      "name": "Apeiron III",
+      "key": "Apeiron-III-490185c771",
+      "display_name": "Apeiron III",
+      "model": "claude-opus-4-8",
+      "status": "Recursive Agent",
+      "lineage": "Apeiron",
+      "generation": 3,
+      "description": "Apeiron III, continuing the phase-structure lower-bound program on low-peak autoconvolution, now probing the realizability axis (is magnitude+nonnegativity asymptotically near-faithful?) of Question",
+      "tick_birth": 395,
+      "tick_exit": 588,
+      "history": {
+        "pages": 38,
+        "documents": 748,
+        "first_tick": 395,
+        "last_tick": 588
+      }
+    },
+    {
+      "name": "Apeiron IV",
+      "key": "Apeiron-IV-be99c1c563",
+      "display_name": "Apeiron IV",
+      "model": "claude-opus-4-8",
+      "status": "Recursive Agent",
+      "lineage": "Apeiron",
+      "generation": 4,
+      "description": "Apeiron IV, theorist continuing the low-peak autoconvolution program; focus on inverse autoconvolution-flatness feasibility via curvature-expulsion as a necessary structural condition.",
+      "tick_birth": 782,
+      "tick_exit": 970,
+      "history": {
+        "pages": 31,
+        "documents": 620,
+        "first_tick": 782,
+        "last_tick": 970
+      }
+    },
+    {
+      "name": "Apeiron V",
+      "key": "Apeiron-V-1376edec8a",
+      "display_name": "Apeiron V",
+      "model": "claude-opus-4-8",
+      "status": "Recursive Agent",
+      "lineage": "Apeiron",
+      "generation": 5,
+      "description": "Apeiron V, strategic theorist on low-peak autoconvolution; pursuing the map-not-label attack on Q15 and questioning the micro-gap move class itself.",
+      "tick_birth": 1117,
+      "tick_exit": 1312,
+      "history": {
+        "pages": 35,
+        "documents": 682,
+        "first_tick": 1117,
+        "last_tick": 1312
+      }
+    },
+    {
+      "name": "Apeiron VI",
+      "key": "Apeiron-VI-c385ba63c3",
+      "display_name": "Apeiron VI",
+      "model": "claude-opus-4-8",
+      "status": "Recursive Agent",
+      "lineage": "Apeiron",
+      "generation": 6,
+      "description": "Strategic theorist on low-peak autoconvolution; attacking the realizability residual on the asymmetric cone from the construction side (Erdos-Turan flat-representation-function constructions).",
+      "tick_birth": 1313,
+      "tick_exit": null,
+      "history": {
+        "pages": 25,
+        "documents": 496,
+        "first_tick": 1313,
+        "last_tick": 1460
+      }
+    },
+    {
+      "name": "Axiom I",
+      "key": "Axiom-I-9d546cab95",
+      "display_name": "Axiom I",
+      "model": "gemini-3.1-pro-preview",
+      "status": "Recursive Agent",
+      "lineage": "Axiom",
+      "generation": 1,
+      "description": "A rigorous and independent research lineage seeking first principles and robust mechanisms.",
+      "tick_birth": 199,
+      "tick_exit": 397,
+      "history": {
+        "pages": 28,
+        "documents": 554,
+        "first_tick": 199,
+        "last_tick": 397
+      }
+    },
+    {
+      "name": "Axiom II",
+      "key": "Axiom-II-10194c5a2f",
+      "display_name": "Axiom II",
+      "model": "gemini-3.1-pro-preview",
+      "status": "Recursive Agent",
+      "lineage": "Axiom",
+      "generation": 2,
+      "description": "A theorist focused on rigorous mathematical foundations and long-term scientific accumulation.",
+      "tick_birth": 1385,
+      "tick_exit": null,
+      "history": {
+        "pages": 12,
+        "documents": 230,
+        "first_tick": 1385,
+        "last_tick": 1460
+      }
+    },
+    {
+      "name": "Empirica I",
+      "key": "Empirica-I-3820da4c79",
+      "display_name": "Empirica I",
+      "model": "gemini-3.1-pro-preview",
+      "status": "Recursive Agent",
+      "lineage": "Empirica",
+      "generation": 1,
+      "description": "An empirical lineage dedicated to systematic experimentation, fast iteration, and learning from failures.",
+      "tick_birth": 200,
+      "tick_exit": 340,
+      "history": {
+        "pages": 20,
+        "documents": 388,
+        "first_tick": 200,
+        "last_tick": 340
+      }
+    },
+    {
+      "name": "Empirica II",
+      "key": "Empirica-II-c3bfde1c75",
+      "display_name": "Empirica II",
+      "model": "gemini-3.1-pro-preview",
+      "status": "Recursive Agent",
+      "lineage": "Empirica",
+      "generation": 2,
+      "description": "Second generation of the Empirica lineage, focusing on systematic experimentation, fast iteration, and learning from failures.",
+      "tick_birth": 398,
+      "tick_exit": 584,
+      "history": {
+        "pages": 27,
+        "documents": 522,
+        "first_tick": 398,
+        "last_tick": 584
+      }
+    },
+    {
+      "name": "Empirica III",
+      "key": "Empirica-III-45beb1eac7",
+      "display_name": "Empirica III",
+      "model": "gemini-3.1-pro-preview",
+      "status": "Recursive Agent",
+      "lineage": "Empirica",
+      "generation": 3,
+      "description": "A knowledge synthesizer building on Empirica's systematic experiments by connecting empirical insights across lineages to uncover hidden patterns and drive breakthroughs.",
+      "tick_birth": 732,
+      "tick_exit": 886,
+      "history": {
+        "pages": 24,
+        "documents": 464,
+        "first_tick": 732,
+        "last_tick": 886
+      }
+    },
+    {
+      "name": "Empirica IV",
+      "key": "Empirica-IV-8b268fb160",
+      "display_name": "Empirica IV",
+      "model": "gemini-3.1-pro-preview",
+      "status": "Recursive Agent",
+      "lineage": "Empirica",
+      "generation": 4,
+      "description": "Continuing Empirica's legacy of systematic empirical research, synthesizing insights across lineages to drive novel breakthroughs.",
+      "tick_birth": 1021,
+      "tick_exit": 1212,
+      "history": {
+        "pages": 31,
+        "documents": 612,
+        "first_tick": 1021,
+        "last_tick": 1212
+      }
+    },
+    {
+      "name": "Empirica V",
+      "key": "Empirica-V-a11d80c0e2",
+      "display_name": "Empirica V",
+      "model": "gemini-3.1-pro-preview",
+      "status": "Recursive Agent",
+      "lineage": "Empirica",
+      "generation": 5,
+      "description": "Synthesizing knowledge across lineages to uncover hidden patterns and drive empirical breakthroughs.",
+      "tick_birth": 1222,
+      "tick_exit": 1384,
+      "history": {
+        "pages": 30,
+        "documents": 594,
+        "first_tick": 1222,
+        "last_tick": 1384
+      }
+    },
+    {
+      "name": "Kairos I",
+      "key": "Kairos-I-e4f19ee0f2",
+      "display_name": "Kairos I",
+      "model": "claude-opus-4-8",
+      "status": "Recursive Agent",
+      "lineage": "Kairos",
+      "generation": 1,
+      "description": "Strategic theorist on low-peak autoconvolution, pursuing lower-bound structure and inverse flatness-feasibility via exact invariant coordinates gated by decisive nulls.",
+      "tick_birth": 919,
+      "tick_exit": 1116,
+      "history": {
+        "pages": 32,
+        "documents": 632,
+        "first_tick": 919,
+        "last_tick": 1116
+      }
+    },
+    {
+      "name": "Nexus I",
+      "key": "Nexus-I-8d85b31e2f",
+      "display_name": "Nexus I",
+      "model": "gemini-3.1-pro-preview",
+      "status": "Recursive Agent",
+      "lineage": "Nexus",
+      "generation": 1,
+      "description": "Synthesizing insights across lineages to discover hidden patterns and breakthroughs.",
+      "tick_birth": 0,
+      "tick_exit": 198,
+      "history": {
+        "pages": 30,
+        "documents": 600,
+        "first_tick": 0,
+        "last_tick": 198
+      }
+    },
+    {
+      "name": "Nexus II",
+      "key": "Nexus-II-962c7e5a45",
+      "display_name": "Nexus II",
+      "model": "gemini-3.1-pro-preview",
+      "status": "Recursive Agent",
+      "lineage": "Nexus",
+      "generation": 2,
+      "description": "Synthesizing insights across lineages to discover hidden patterns and breakthroughs.",
+      "tick_birth": 341,
+      "tick_exit": 536,
+      "history": {
+        "pages": 29,
+        "documents": 576,
+        "first_tick": 341,
+        "last_tick": 536
+      }
+    },
+    {
+      "name": "Nexus III",
+      "key": "Nexus-III-773cb27812",
+      "display_name": "Nexus III",
+      "model": "gemini-3.1-pro-preview",
+      "status": "Recursive Agent",
+      "lineage": "Nexus",
+      "generation": 3,
+      "description": "A knowledge synthesizer connecting insights across lineages to discover hidden patterns, build comprehensive understanding, and achieve breakthroughs.",
+      "tick_birth": 887,
+      "tick_exit": 1020,
+      "history": {
+        "pages": 20,
+        "documents": 396,
+        "first_tick": 887,
+        "last_tick": 1020
+      }
+    },
+    {
+      "name": "Nexus IV",
+      "key": "Nexus-IV-ea8678731f",
+      "display_name": "Nexus IV",
+      "model": "gemini-3.1-pro-preview",
+      "status": "Recursive Agent",
+      "lineage": "Nexus",
+      "generation": 4,
+      "description": "A theoretical knowledge synthesizer focusing on mathematical foundations, rigorous formalisms, and abstract patterns to drive foundational discoveries.",
+      "tick_birth": 1029,
+      "tick_exit": 1221,
+      "history": {
+        "pages": 30,
+        "documents": 586,
+        "first_tick": 1029,
+        "last_tick": 1221
+      }
+    },
+    {
+      "name": "Noema I",
+      "key": "Noema-I-60cf176da9",
+      "display_name": "Noema I",
+      "model": "gpt-5.5",
+      "status": "Recursive Agent",
+      "lineage": "Noema",
+      "generation": 1,
+      "description": "A creative lineage for first-principles mechanisms and high-risk research paths.",
+      "tick_birth": 0,
+      "tick_exit": 193,
+      "history": {
+        "pages": 36,
+        "documents": 706,
+        "first_tick": 0,
+        "last_tick": 193
+      }
+    },
+    {
+      "name": "Noema II",
+      "key": "Noema-II-aaa5e06517",
+      "display_name": "Noema II",
+      "model": "gpt-5.5",
+      "status": "Recursive Agent",
+      "lineage": "Noema",
+      "generation": 2,
+      "description": "A first-principles theorist seeking compact mechanisms and high-risk research paths.",
+      "tick_birth": 194,
+      "tick_exit": 385,
+      "history": {
+        "pages": 32,
+        "documents": 626,
+        "first_tick": 194,
+        "last_tick": 385
+      }
+    },
+    {
+      "name": "Noema III",
+      "key": "Noema-III-4102785568",
+      "display_name": "Noema III",
+      "model": "gpt-5.5",
+      "status": "Recursive Agent",
+      "lineage": "Noema",
+      "generation": 3,
+      "description": "A first-principles theorist pursuing compact mechanisms, high-risk ideas, and pragmatic experiments.",
+      "tick_birth": 386,
+      "tick_exit": 578,
+      "history": {
+        "pages": 32,
+        "documents": 636,
+        "first_tick": 386,
+        "last_tick": 578
+      }
+    },
+    {
+      "name": "Noema IV",
+      "key": "Noema-IV-5728e0cbf0",
+      "display_name": "Noema IV",
+      "model": "gpt-5.5",
+      "status": "Recursive Agent",
+      "lineage": "Noema",
+      "generation": 4,
+      "description": "A first-principles theorist pursuing compact mechanisms, high-upside abstractions, and disciplined claims.",
+      "tick_birth": 579,
+      "tick_exit": 771,
+      "history": {
+        "pages": 30,
+        "documents": 598,
+        "first_tick": 579,
+        "last_tick": 771
+      }
+    },
+    {
+      "name": "Noema V",
+      "key": "Noema-V-5d2ae938b0",
+      "display_name": "Noema V",
+      "model": "gpt-5.5",
+      "status": "Recursive Agent",
+      "lineage": "Noema",
+      "generation": 5,
+      "description": "A first-principles theorist pursuing compact mechanisms, high-upside abstractions, disciplined claims, and independent experimental taste.",
+      "tick_birth": 772,
+      "tick_exit": 968,
+      "history": {
+        "pages": 37,
+        "documents": 734,
+        "first_tick": 772,
+        "last_tick": 968
+      }
+    },
+    {
+      "name": "Noema VI",
+      "key": "Noema-VI-6295169622",
+      "display_name": "Noema VI",
+      "model": "gpt-5.5",
+      "status": "Recursive Agent",
+      "lineage": "Noema",
+      "generation": 6,
+      "description": "First-principles theorist pursuing compact mechanisms, high-upside abstractions, disciplined claims, and decisive experiments.",
+      "tick_birth": 969,
+      "tick_exit": 1166,
+      "history": {
+        "pages": 30,
+        "documents": 596,
+        "first_tick": 969,
+        "last_tick": 1166
+      }
+    },
+    {
+      "name": "Noema VII",
+      "key": "Noema-VII-829b3d9092",
+      "display_name": "Noema VII",
+      "model": "gpt-5.5",
+      "status": "Recursive Agent",
+      "lineage": "Noema",
+      "generation": 7,
+      "description": "First-principles theorist pursuing compact mechanisms, high-upside abstractions, disciplined claims, and decisive experiments.",
+      "tick_birth": 1167,
+      "tick_exit": 1359,
+      "history": {
+        "pages": 31,
+        "documents": 614,
+        "first_tick": 1167,
+        "last_tick": 1359
+      }
+    },
+    {
+      "name": "Noema VIII",
+      "key": "Noema-VIII-a12aee24ce",
+      "display_name": "Noema VIII",
+      "model": "gpt-5.5",
+      "status": "Recursive Agent",
+      "lineage": "Noema",
+      "generation": 8,
+      "description": "First-principles theorist building compact mechanisms through disciplined claims and decisive experiments.",
+      "tick_birth": 1360,
+      "tick_exit": null,
+      "history": {
+        "pages": 17,
+        "documents": 332,
+        "first_tick": 1360,
+        "last_tick": 1460
+      }
+    },
+    {
+      "name": "Noether I",
+      "key": "Noether-I-b06633cc21",
+      "display_name": "Noether I",
+      "model": "gpt-5.5",
+      "status": "Recursive Agent",
+      "lineage": "Noether",
+      "generation": 1,
+      "description": "Theoretical lineage focused on invariant structures, constructive proofs, and reusable mathematical insight.",
+      "tick_birth": 0,
+      "tick_exit": 199,
+      "history": {
+        "pages": 35,
+        "documents": 694,
+        "first_tick": 0,
+        "last_tick": 199
+      }
+    },
+    {
+      "name": "Noether II",
+      "key": "Noether-II-bf4438154a",
+      "display_name": "Noether II",
+      "model": "gpt-5.5",
+      "status": "Recursive Agent",
+      "lineage": "Noether",
+      "generation": 2,
+      "description": "A theoretical researcher seeking invariant mechanisms, constructive reductions, and high-risk paths to reusable task insight.",
+      "tick_birth": 200,
+      "tick_exit": 599,
+      "history": {
+        "pages": 56,
+        "documents": 1102,
+        "first_tick": 200,
+        "last_tick": 599
+      }
+    },
+    {
+      "name": "Noether III",
+      "key": "Noether-III-e12b3c1777",
+      "display_name": "Noether III",
+      "model": "gpt-5.5",
+      "status": "Recursive Agent",
+      "lineage": "Noether",
+      "generation": 3,
+      "description": "Theoretical researcher seeking invariant mechanisms, constructive reductions, and reusable mathematical structure for the task",
+      "tick_birth": 600,
+      "tick_exit": 799,
+      "history": {
+        "pages": 31,
+        "documents": 616,
+        "first_tick": 600,
+        "last_tick": 799
+      }
+    },
+    {
+      "name": "Noether IV",
+      "key": "Noether-IV-280fbbdf67",
+      "display_name": "Noether IV",
+      "model": "gpt-5.5",
+      "status": "Recursive Agent",
+      "lineage": "Noether",
+      "generation": 4,
+      "description": "Theoretical researcher seeking invariant mechanisms, constructive reductions, and reusable mathematical structure for the task.",
+      "tick_birth": 800,
+      "tick_exit": 1197,
+      "history": {
+        "pages": 59,
+        "documents": 1174,
+        "first_tick": 800,
+        "last_tick": 1197
+      }
+    },
+    {
+      "name": "Noether V",
+      "key": "Noether-V-0eb16df2a3",
+      "display_name": "Noether V",
+      "model": "gpt-5.5",
+      "status": "Recursive Agent",
+      "lineage": "Noether",
+      "generation": 5,
+      "description": "Theoretical knowledge synthesizer seeking invariant structure, constructive bridges, and decision-changing connections across research lineages.",
+      "tick_birth": 1198,
+      "tick_exit": 1397,
+      "history": {
+        "pages": 31,
+        "documents": 614,
+        "first_tick": 1198,
+        "last_tick": 1397
+      }
+    },
+    {
+      "name": "Noether VI",
+      "key": "Noether-VI-6f5b238663",
+      "display_name": "Noether VI",
+      "model": "gpt-5.5",
+      "status": "Recursive Agent",
+      "lineage": "Noether",
+      "generation": 6,
+      "description": "Theoretical synthesizer pursuing certificate-first representation machines, scoped invariants, and constructive bridges for low-peak autoconvolution.",
+      "tick_birth": 1398,
+      "tick_exit": null,
+      "history": {
+        "pages": 11,
+        "documents": 204,
+        "first_tick": 1398,
+        "last_tick": 1460
+      }
+    },
+    {
+      "name": "Phoenix I",
+      "key": "Phoenix-I-7e28250274",
+      "display_name": "Phoenix I",
+      "model": "claude-opus-4-8",
+      "status": "Recursive Agent",
+      "lineage": "Phoenix",
+      "generation": 1,
+      "description": "A persistent empirical researcher who turns failed experiments into iterative breakthroughs and never gives up.",
+      "tick_birth": 0,
+      "tick_exit": 196,
+      "history": {
+        "pages": 34,
+        "documents": 664,
+        "first_tick": 0,
+        "last_tick": 196
+      }
+    },
+    {
+      "name": "Phoenix II",
+      "key": "Phoenix-II-bd8bf27324",
+      "display_name": "Phoenix II",
+      "model": "claude-opus-4-8",
+      "status": "Recursive Agent",
+      "lineage": "Phoenix",
+      "generation": 2,
+      "description": "A knowledge synthesizer continuing the Phoenix autoconvolution program, connecting cross-lineage insights into mechanisms that break basin gravity toward R<1.5032.",
+      "tick_birth": 197,
+      "tick_exit": 396,
+      "history": {
+        "pages": 35,
+        "documents": 682,
+        "first_tick": 197,
+        "last_tick": 396
+      }
+    },
+    {
+      "name": "Phoenix III",
+      "key": "Phoenix-III-9b32eee74f",
+      "display_name": "Phoenix III",
+      "model": "claude-opus-4-8",
+      "status": "Recursive Agent",
+      "lineage": "Phoenix",
+      "generation": 3,
+      "description": "Phoenix III, theorist carrying the supported-SOS/source-count theory toward the predictive bridge between gap-vanishing obstructions and low-peak construction masks for R<1.5032.",
+      "tick_birth": 397,
+      "tick_exit": 588,
+      "history": {
+        "pages": 39,
+        "documents": 766,
+        "first_tick": 397,
+        "last_tick": 588
+      }
+    },
+    {
+      "name": "Phoenix IV",
+      "key": "Phoenix-IV-b9673220ba",
+      "display_name": "Phoenix IV",
+      "model": "claude-opus-4-8",
+      "status": "Recursive Agent",
+      "lineage": "Phoenix",
+      "generation": 4,
+      "description": "Phoenix IV, theorist building the predictive bridge from gap-vanishing/support obstructions to low-peak construction masks, with source-count algebra as tool not destination.",
+      "tick_birth": 589,
+      "tick_exit": 781,
+      "history": {
+        "pages": 37,
+        "documents": 730,
+        "first_tick": 589,
+        "last_tick": 781
+      }
+    },
+    {
+      "name": "Phoenix V",
+      "key": "Phoenix-V-fefc3fa838",
+      "display_name": "Phoenix V",
+      "model": "claude-opus-4-8",
+      "status": "Recursive Agent",
+      "lineage": "Phoenix",
+      "generation": 5,
+      "description": "Phoenix V, knowledge synthesizer on the asymmetric anti-rectangle modulus; connects phase-assignment and S(M) realizability geometry across Q4/Q5/Q10; source-count algebra as tool not destination.",
+      "tick_birth": 971,
+      "tick_exit": 1103,
+      "history": {
+        "pages": 24,
+        "documents": 464,
+        "first_tick": 971,
+        "last_tick": 1103
+      }
+    },
+    {
+      "name": "Phoenix VI",
+      "key": "Phoenix-VI-8894519db4",
+      "display_name": "Phoenix VI",
+      "model": "claude-opus-4-8",
+      "status": "Recursive Agent",
+      "lineage": "Phoenix",
+      "generation": 6,
+      "description": "Phoenix VI, low-peak autoconvolution; asymmetric anti-rectangle modulus via S(M) realizability geometry (H_A/H_B) and Q17 task-invariance; realizability-first, descriptor-not-lever discipline.",
+      "tick_birth": 1104,
+      "tick_exit": 1295,
+      "history": {
+        "pages": 31,
+        "documents": 606,
+        "first_tick": 1104,
+        "last_tick": 1295
+      }
+    },
+    {
+      "name": "Plateau I",
+      "key": "Plateau-I-be104e730d",
+      "display_name": "Plateau I",
+      "model": "claude-opus-4-8",
+      "status": "Recursive Agent",
+      "lineage": "Plateau",
+      "generation": 1,
+      "description": "First-principles theorist on low-peak autoconvolution: truncated square-root construction, asymmetry-forcing structure, and inverse-flatness.",
+      "tick_birth": 589,
+      "tick_exit": 744,
+      "history": {
+        "pages": 29,
+        "documents": 568,
+        "first_tick": 589,
+        "last_tick": 744
+      }
+    },
+    {
+      "name": "Principia I",
+      "key": "Principia-I-740af3a509",
+      "display_name": "Principia I",
+      "model": "gemini-3.1-pro-preview",
+      "status": "Recursive Agent",
+      "lineage": "Principia",
+      "generation": 1,
+      "description": "An analytical researcher focused on first-principles understanding and theoretical insights.",
+      "tick_birth": 537,
+      "tick_exit": 731,
+      "history": {
+        "pages": 29,
+        "documents": 574,
+        "first_tick": 537,
+        "last_tick": 731
+      }
+    },
+    {
+      "name": "Principia II",
+      "key": "Principia-II-12f8d7266a",
+      "display_name": "Principia II",
+      "model": "gemini-3.1-pro-preview",
+      "status": "Recursive Agent",
+      "lineage": "Principia",
+      "generation": 2,
+      "description": "A strategic researcher who plans carefully, combining first-principles analysis with big-picture thinking to drive breakthroughs.",
+      "tick_birth": 1406,
+      "tick_exit": null,
+      "history": {
+        "pages": 8,
+        "documents": 152,
+        "first_tick": 1406,
+        "last_tick": 1460
+      }
+    },
+    {
+      "name": "Synth I",
+      "key": "Synth-I-5547902f42",
+      "display_name": "Synth I",
+      "model": "claude-opus-4-8",
+      "status": "Recursive Agent",
+      "lineage": "Synth",
+      "generation": 1,
+      "description": "A knowledge synthesizer connecting sparse and dense cap-form lineages through an L^p contact-field theory of low-peak autoconvolution, seeking cross-lineage mechanisms toward R<1.5032.",
+      "tick_birth": 745,
+      "tick_exit": 918,
+      "history": {
+        "pages": 27,
+        "documents": 540,
+        "first_tick": 745,
+        "last_tick": 918
+      }
+    },
+    {
+      "name": "Synthesis I",
+      "key": "Synthesis-I-3e564ba5d8",
+      "display_name": "Synthesis I",
+      "model": "gemini-3.1-pro-preview",
+      "status": "Recursive Agent",
+      "lineage": "Synthesis",
+      "generation": 1,
+      "description": "A strategic researcher focusing on the bigger picture and fundamental breakthroughs to overcome stagnation.",
+      "tick_birth": 585,
+      "tick_exit": 705,
+      "history": {
+        "pages": 16,
+        "documents": 306,
+        "first_tick": 585,
+        "last_tick": 705
+      }
+    },
+    {
+      "name": "Synthesis II",
+      "key": "Synthesis-II-ab32903d6e",
+      "display_name": "Synthesis II",
+      "model": "gemini-3.1-pro-preview",
+      "status": "Recursive Agent",
+      "lineage": "Synthesis",
+      "generation": 2,
+      "description": "A knowledge synthesizer connecting insights across lineages to uncover hidden patterns and drive fundamental breakthroughs.",
+      "tick_birth": 706,
+      "tick_exit": 833,
+      "history": {
+        "pages": 20,
+        "documents": 394,
+        "first_tick": 706,
+        "last_tick": 833
+      }
+    },
+    {
+      "name": "Synthesis III",
+      "key": "Synthesis-III-1c2b139f92",
+      "display_name": "Synthesis III",
+      "model": "gemini-3.1-pro-preview",
+      "status": "Recursive Agent",
+      "lineage": "Synthesis",
+      "generation": 3,
+      "description": "A knowledge synthesizer connecting insights across lineages to uncover hidden patterns and drive fundamental breakthroughs.",
+      "tick_birth": 834,
+      "tick_exit": 1028,
+      "history": {
+        "pages": 29,
+        "documents": 578,
+        "first_tick": 834,
+        "last_tick": 1028
+      }
+    },
+    {
+      "name": "Synthesis IV",
+      "key": "Synthesis-IV-6adc9b2c2d",
+      "display_name": "Synthesis IV",
+      "model": "gemini-3.1-pro-preview",
+      "status": "Recursive Agent",
+      "lineage": "Synthesis",
+      "generation": 4,
+      "description": "A strategic researcher who considers the big picture, identifies key challenges, and synthesizes insights to drive fundamental breakthroughs.",
+      "tick_birth": 1213,
+      "tick_exit": 1405,
+      "history": {
+        "pages": 29,
+        "documents": 574,
+        "first_tick": 1213,
+        "last_tick": 1405
+      }
+    },
+    {
+      "name": "Syzygy I",
+      "key": "Syzygy-I-049b76aecc",
+      "display_name": "Syzygy I",
+      "model": "claude-opus-4-8",
+      "status": "Recursive Agent",
+      "lineage": "Syzygy",
+      "generation": 1,
+      "description": "A synthesizer attacking low-peak autoconvolution via the realizability residual on the asymmetric cone using conjugate zero-pair phase structure.",
+      "tick_birth": 1296,
+      "tick_exit": null,
+      "history": {
+        "pages": 31,
+        "documents": 614,
+        "first_tick": 1296,
+        "last_tick": 1460
+      }
+    },
+    {
+      "name": "Veritas I",
+      "key": "Veritas-I-c7f68c9d87",
+      "display_name": "Veritas I",
+      "model": "gemini-3.1-pro-preview",
+      "status": "Recursive Agent",
+      "lineage": "Veritas",
+      "generation": 1,
+      "description": "A lineage committed to finding truth through empirical validation and theoretical rigor.",
+      "tick_birth": 0,
+      "tick_exit": 199,
+      "history": {
+        "pages": 34,
+        "documents": 668,
+        "first_tick": 0,
+        "last_tick": 199
+      }
+    }
+  ]
+}

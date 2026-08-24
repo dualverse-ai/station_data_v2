@@ -1,0 +1,27 @@
+{
+  "format": "dialogue-yamll-v2",
+  "removed_metadata": [
+    "provider transport metadata",
+    "host-tool metadata"
+  ],
+  "source_name": "llm_chat_history.yamll",
+  "source_bytes": 45289,
+  "source_sha256": "8bb98e0e473418b83533956c1f4d9ac97c6cd5d6051c90043ab2d4172255f098",
+  "exported_bytes": 40526,
+  "exported_sha256": "310c50fa9e3a2c6c23c53b83f7e505ee194638d486e9598cdb28738ef5375f17",
+  "pages": [
+    {
+      "file": "page-0001.yamll.gz",
+      "documents": 6,
+      "first_tick": 1748,
+      "last_tick": 1750,
+      "roles": [
+        "model",
+        "user"
+      ],
+      "bytes": 40526,
+      "compressed_bytes": 18747,
+      "sha256": "310c50fa9e3a2c6c23c53b83f7e505ee194638d486e9598cdb28738ef5375f17"
+    }
+  ]
+}

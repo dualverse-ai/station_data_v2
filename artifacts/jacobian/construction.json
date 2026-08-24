@@ -1,0 +1,597 @@
+{
+  "arithmetic_domain": "QQ",
+  "description": "Exact rational construction data for the three-dimensional Jacobian-counterexample verification notebook.",
+  "family_checks": {
+    "a3_transfer": {
+      "A_values": [
+        "-4/3",
+        "5/3",
+        "20/3"
+      ],
+      "I": "4/3",
+      "J": "0",
+      "X": "1",
+      "a": "3",
+      "common_image": [
+        "1",
+        "4/3",
+        "0"
+      ],
+      "degrees": [
+        4,
+        6,
+        7
+      ],
+      "jacobian_determinant": "-3/2",
+      "pairwise_distinct": true,
+      "points": [
+        [
+          "-3/4",
+          "-4/3",
+          "-424/27"
+        ],
+        [
+          "3/5",
+          "8/3",
+          "-640/27"
+        ],
+        [
+          "3/20",
+          "8/3",
+          "2240/27"
+        ]
+      ],
+      "roots": [
+        "0",
+        "1",
+        "-4"
+      ],
+      "term_counts": [
+        3,
+        6,
+        7
+      ],
+      "total_terms": 16,
+      "verified_images": [
+        [
+          "1",
+          "4/3",
+          "0"
+        ],
+        [
+          "1",
+          "4/3",
+          "0"
+        ],
+        [
+          "1",
+          "4/3",
+          "0"
+        ]
+      ]
+    },
+    "spot_checks": [
+      {
+        "A_values": [
+          "-5",
+          "6",
+          "30"
+        ],
+        "I": "10/3",
+        "J": "4",
+        "X": "2",
+        "a": "1",
+        "common_image": [
+          "2",
+          "5/3",
+          "1"
+        ],
+        "pairwise_distinct": true,
+        "points": [
+          [
+            "-2/5",
+            "-2",
+            "-45"
+          ],
+          [
+            "1/3",
+            "4",
+            "27"
+          ],
+          [
+            "1/15",
+            "13",
+            "12465/2"
+          ]
+        ],
+        "roots": [
+          "1",
+          "2",
+          "-4"
+        ],
+        "verified_images": [
+          [
+            "2",
+            "5/3",
+            "1"
+          ],
+          [
+            "2",
+            "5/3",
+            "1"
+          ],
+          [
+            "2",
+            "5/3",
+            "1"
+          ]
+        ]
+      },
+      {
+        "A_values": [
+          "-7",
+          "9",
+          "63/2"
+        ],
+        "I": "7",
+        "J": "9",
+        "X": "-1",
+        "a": "2",
+        "common_image": [
+          "-1",
+          "-7",
+          "9"
+        ],
+        "pairwise_distinct": true,
+        "points": [
+          [
+            "1/7",
+            "6",
+            "-567"
+          ],
+          [
+            "-1/9",
+            "-12",
+            "243"
+          ],
+          [
+            "-2/63",
+            "-51/2",
+            "214893/8"
+          ]
+        ],
+        "roots": [
+          "1",
+          "3",
+          "-6"
+        ],
+        "verified_images": [
+          [
+            "-1",
+            "-7",
+            "9"
+          ],
+          [
+            "-1",
+            "-7",
+            "9"
+          ],
+          [
+            "-1",
+            "-7",
+            "9"
+          ]
+        ]
+      },
+      {
+        "A_values": [
+          "4/3",
+          "-8/3",
+          "-8/3"
+        ],
+        "I": "1/3",
+        "J": "3/2",
+        "X": "3",
+        "a": "-3",
+        "common_image": [
+          "3",
+          "1/9",
+          "1/6"
+        ],
+        "pairwise_distinct": true,
+        "points": [
+          [
+            "9/4",
+            "7/9",
+            "586/243"
+          ],
+          [
+            "-9/8",
+            "1/9",
+            "-44/243"
+          ],
+          [
+            "-9/8",
+            "-11/9",
+            "1252/243"
+          ]
+        ],
+        "roots": [
+          "1",
+          "3",
+          "-1"
+        ],
+        "verified_images": [
+          [
+            "3",
+            "1/9",
+            "1/6"
+          ],
+          [
+            "3",
+            "1/9",
+            "1/6"
+          ],
+          [
+            "3",
+            "1/9",
+            "1/6"
+          ]
+        ]
+      },
+      {
+        "A_values": [
+          "-7/6",
+          "4/3",
+          "28/3"
+        ],
+        "I": "7/3",
+        "J": "0",
+        "X": "1",
+        "a": "6",
+        "common_image": [
+          "1",
+          "7/3",
+          "0"
+        ],
+        "pairwise_distinct": true,
+        "points": [
+          [
+            "-6/7",
+            "-7/6",
+            "-4753/216"
+          ],
+          [
+            "3/4",
+            "7/3",
+            "-980/27"
+          ],
+          [
+            "3/28",
+            "7/3",
+            "2548/27"
+          ]
+        ],
+        "roots": [
+          "0",
+          "1",
+          "-7"
+        ],
+        "verified_images": [
+          [
+            "1",
+            "7/3",
+            "0"
+          ],
+          [
+            "1",
+            "7/3",
+            "0"
+          ],
+          [
+            "1",
+            "7/3",
+            "0"
+          ]
+        ]
+      }
+    ]
+  },
+  "normalized_ansatz_certificate": {
+    "determinant_after_extension": {
+      "constant_determinant_on_linear_locus": "-a*(a - c)/2",
+      "degenerate_branches": [
+        {
+          "condition": "a = 0",
+          "outcome": "constant determinant is 0"
+        },
+        {
+          "condition": "c = a",
+          "outcome": "all nonconstant terms vanish but determinant is 0"
+        }
+      ],
+      "linear_forcing": {
+        "beta": "(5*a - 3*c)/2",
+        "e": "(3*c - a)/2"
+      },
+      "nondegenerate_unique_solution": {
+        "beta": "3*a/2",
+        "c": "2*a/3",
+        "d": "-a/3",
+        "e": "a/2",
+        "f": "-a/2",
+        "g": "0"
+      },
+      "remaining_nonconstant_equation": "-(a - c)*(2*a - 3*c)/2",
+      "terms": [
+        {
+          "coefficient": "-3*a + 2*beta - 3*c + 4*e",
+          "powers": [
+            4,
+            2,
+            1
+          ]
+        },
+        {
+          "coefficient": "-beta*(3*a - 2*beta + 3*c - 4*e)",
+          "powers": [
+            3,
+            3,
+            0
+          ]
+        },
+        {
+          "coefficient": "-2*(a - 3*c + 2*e)",
+          "powers": [
+            3,
+            1,
+            1
+          ]
+        },
+        {
+          "coefficient": "-3*a**2 - 3*a*c + 4*a*e + 6*beta*c - 4*beta*e",
+          "powers": [
+            2,
+            2,
+            0
+          ]
+        },
+        {
+          "coefficient": "5*a - 2*beta - 3*c",
+          "powers": [
+            2,
+            0,
+            1
+          ]
+        },
+        {
+          "coefficient": "-2*a**2 + 5*a*beta + 3*a*c - 2*a*e - 2*beta**2 - 2*beta*c",
+          "powers": [
+            1,
+            1,
+            0
+          ]
+        },
+        {
+          "coefficient": "a*(2*a - beta - c)",
+          "powers": [
+            0,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    "polynomial_extension": {
+      "Q_x_remainder": "a - c + d",
+      "R_x2_constant_remainder": "-a + e - f + g",
+      "R_x2_linear_coefficient_after_removing_y": "3*a - beta - 2*e + f",
+      "forced": {
+        "d": "-a + c",
+        "f": "-3*a + beta + 2*e",
+        "g": "-2*a + beta + e"
+      }
+    }
+  },
+  "reconstructed_map": {
+    "expected": {
+      "common_image": [
+        "1",
+        "7/3",
+        "0"
+      ],
+      "component_degrees": [
+        4,
+        6,
+        7
+      ],
+      "component_term_counts": [
+        3,
+        6,
+        7
+      ],
+      "jacobian_determinant": "-6",
+      "total_terms": 16
+    },
+    "polynomials": [
+      [
+        {
+          "coefficient": "6",
+          "powers": [
+            1,
+            0,
+            0
+          ]
+        },
+        {
+          "coefficient": "9",
+          "powers": [
+            2,
+            1,
+            0
+          ]
+        },
+        {
+          "coefficient": "1",
+          "powers": [
+            3,
+            0,
+            1
+          ]
+        }
+      ],
+      [
+        {
+          "coefficient": "1",
+          "powers": [
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "coefficient": "-12",
+          "powers": [
+            1,
+            2,
+            0
+          ]
+        },
+        {
+          "coefficient": "9",
+          "powers": [
+            2,
+            3,
+            0
+          ]
+        },
+        {
+          "coefficient": "1",
+          "powers": [
+            1,
+            0,
+            1
+          ]
+        },
+        {
+          "coefficient": "-2",
+          "powers": [
+            2,
+            1,
+            1
+          ]
+        },
+        {
+          "coefficient": "1",
+          "powers": [
+            3,
+            2,
+            1
+          ]
+        }
+      ],
+      [
+        {
+          "coefficient": "12",
+          "powers": [
+            0,
+            2,
+            0
+          ]
+        },
+        {
+          "coefficient": "-21",
+          "powers": [
+            1,
+            3,
+            0
+          ]
+        },
+        {
+          "coefficient": "9",
+          "powers": [
+            2,
+            4,
+            0
+          ]
+        },
+        {
+          "coefficient": "-1",
+          "powers": [
+            0,
+            0,
+            1
+          ]
+        },
+        {
+          "coefficient": "3",
+          "powers": [
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "coefficient": "-3",
+          "powers": [
+            2,
+            2,
+            1
+          ]
+        },
+        {
+          "coefficient": "1",
+          "powers": [
+            3,
+            3,
+            1
+          ]
+        }
+      ]
+    ],
+    "variables": [
+      "x",
+      "y",
+      "z"
+    ],
+    "witnesses": [
+      {
+        "image": [
+          "1",
+          "7/3",
+          "0"
+        ],
+        "point": [
+          "-6/7",
+          "-7/6",
+          "-4753/216"
+        ]
+      },
+      {
+        "image": [
+          "1",
+          "7/3",
+          "0"
+        ],
+        "point": [
+          "3/4",
+          "7/3",
+          "-980/27"
+        ]
+      },
+      {
+        "image": [
+          "1",
+          "7/3",
+          "0"
+        ],
+        "point": [
+          "3/28",
+          "7/3",
+          "2548/27"
+        ]
+      }
+    ]
+  },
+  "schema_version": 1
+}

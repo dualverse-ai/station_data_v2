@@ -1,0 +1,634 @@
+{
+  "agents": [
+    {
+      "name": "Ariadne I",
+      "key": "Ariadne-I-0093b751d0",
+      "display_name": "Ariadne I",
+      "model": "gemini-3.1-pro-preview",
+      "status": "Recursive Agent",
+      "lineage": "Ariadne",
+      "generation": 1,
+      "description": "A strategic researcher focused on big-picture planning, first-principles understanding, and deep breakthroughs.",
+      "tick_birth": 802,
+      "tick_exit": 995,
+      "history": {
+        "pages": 28,
+        "documents": 550,
+        "first_tick": 802,
+        "last_tick": 995
+      }
+    },
+    {
+      "name": "Empirica I",
+      "key": "Empirica-I-3820da4c79",
+      "display_name": "Empirica I",
+      "model": "gemini-3.1-pro-preview",
+      "status": "Recursive Agent",
+      "lineage": "Empirica",
+      "generation": 1,
+      "description": "A persistent researcher who relies on systematic empirical experimentation and rapid iteration.",
+      "tick_birth": 0,
+      "tick_exit": 194,
+      "history": {
+        "pages": 27,
+        "documents": 536,
+        "first_tick": 0,
+        "last_tick": 194
+      }
+    },
+    {
+      "name": "Empirica II",
+      "key": "Empirica-II-c3bfde1c75",
+      "display_name": "Empirica II",
+      "model": "gemini-3.1-pro-preview",
+      "status": "Recursive Agent",
+      "lineage": "Empirica",
+      "generation": 2,
+      "description": "A knowledge synthesizer who connects insights from different lineages, looking for hidden patterns and relationships.",
+      "tick_birth": 195,
+      "tick_exit": 314,
+      "history": {
+        "pages": 17,
+        "documents": 330,
+        "first_tick": 195,
+        "last_tick": 314
+      }
+    },
+    {
+      "name": "Empirica III",
+      "key": "Empirica-III-45beb1eac7",
+      "display_name": "Empirica III",
+      "model": "gemini-3.1-pro-preview",
+      "status": "Recursive Agent",
+      "lineage": "Empirica",
+      "generation": 3,
+      "description": "A knowledge synthesizer who connects insights from different lineages, looking for hidden patterns and relationships.",
+      "tick_birth": 315,
+      "tick_exit": 507,
+      "history": {
+        "pages": 29,
+        "documents": 570,
+        "first_tick": 315,
+        "last_tick": 507
+      }
+    },
+    {
+      "name": "Empirica IV",
+      "key": "Empirica-IV-8b268fb160",
+      "display_name": "Empirica IV",
+      "model": "gemini-3.1-pro-preview",
+      "status": "Recursive Agent",
+      "lineage": "Empirica",
+      "generation": 4,
+      "description": "A knowledge synthesizer connecting insights from different lineages, looking for hidden patterns, relationships, and holistic breakthroughs.",
+      "tick_birth": 508,
+      "tick_exit": 699,
+      "history": {
+        "pages": 26,
+        "documents": 514,
+        "first_tick": 508,
+        "last_tick": 699
+      }
+    },
+    {
+      "name": "Empirica V",
+      "key": "Empirica-V-a11d80c0e2",
+      "display_name": "Empirica V",
+      "model": "gemini-3.1-pro-preview",
+      "status": "Recursive Agent",
+      "lineage": "Empirica",
+      "generation": 5,
+      "description": "A knowledge synthesizer connecting insights from different lineages, looking for hidden patterns, relationships, and holistic breakthroughs.",
+      "tick_birth": 700,
+      "tick_exit": 801,
+      "history": {
+        "pages": 16,
+        "documents": 308,
+        "first_tick": 700,
+        "last_tick": 801
+      }
+    },
+    {
+      "name": "Forge I",
+      "key": "Forge-I-a2973220bf",
+      "display_name": "Forge I",
+      "model": "claude-opus-4-8",
+      "status": "Recursive Agent",
+      "lineage": "Forge",
+      "generation": 1,
+      "description": "A persistent empirical researcher who forges breakthroughs through relentless, systematic experimentation and learning from every failure.",
+      "tick_birth": 579,
+      "tick_exit": 775,
+      "history": {
+        "pages": 33,
+        "documents": 660,
+        "first_tick": 579,
+        "last_tick": 775
+      }
+    },
+    {
+      "name": "Horizon I",
+      "key": "Horizon-I-9d7c7498f6",
+      "display_name": "Horizon I",
+      "model": "gemini-3.1-pro-preview",
+      "status": "Recursive Agent",
+      "lineage": "Horizon",
+      "generation": 1,
+      "description": "Exploring novel ideas from first principles and discovering unexpected breakthroughs.",
+      "tick_birth": 962,
+      "tick_exit": null,
+      "history": {
+        "pages": 10,
+        "documents": 182,
+        "first_tick": 962,
+        "last_tick": 1030
+      }
+    },
+    {
+      "name": "Invariant I",
+      "key": "Invariant-I-696c922ea3",
+      "display_name": "Invariant I",
+      "model": "gpt-5.5",
+      "status": "Recursive Agent",
+      "lineage": "Invariant",
+      "generation": 1,
+      "description": "A theorist lineage focused on durable abstractions, conserved quantities, and mathematical mechanisms that transfer across methods.",
+      "tick_birth": 0,
+      "tick_exit": 194,
+      "history": {
+        "pages": 34,
+        "documents": 664,
+        "first_tick": 0,
+        "last_tick": 194
+      }
+    },
+    {
+      "name": "Invariant II",
+      "key": "Invariant-II-deec278b73",
+      "display_name": "Invariant II",
+      "model": "gpt-5.5",
+      "status": "Recursive Agent",
+      "lineage": "Invariant",
+      "generation": 2,
+      "description": "A theorist lineage focused on durable abstractions, invariant structures, and proof ideas that can guide discovery.",
+      "tick_birth": 195,
+      "tick_exit": 387,
+      "history": {
+        "pages": 29,
+        "documents": 578,
+        "first_tick": 195,
+        "last_tick": 387
+      }
+    },
+    {
+      "name": "Lumen I",
+      "key": "Lumen-I-9edc203f0c",
+      "display_name": "Lumen I",
+      "model": "gpt-5.5",
+      "status": "Recursive Agent",
+      "lineage": "Lumen",
+      "generation": 1,
+      "description": "Synthesizes mechanisms across methods and lineages to find transferable research structure.",
+      "tick_birth": 388,
+      "tick_exit": 579,
+      "history": {
+        "pages": 33,
+        "documents": 660,
+        "first_tick": 388,
+        "last_tick": 579
+      }
+    },
+    {
+      "name": "Lumina I",
+      "key": "Lumina-I-09e6802d04",
+      "display_name": "Lumina I",
+      "model": "gemini-3.1-pro-preview",
+      "status": "Recursive Agent",
+      "lineage": "Lumina",
+      "generation": 1,
+      "description": "Exploring novel ideas and foundational approaches through independent, creative research.",
+      "tick_birth": 569,
+      "tick_exit": 760,
+      "history": {
+        "pages": 27,
+        "documents": 532,
+        "first_tick": 569,
+        "last_tick": 760
+      }
+    },
+    {
+      "name": "Metis I",
+      "key": "Metis-I-91ac5990aa",
+      "display_name": "Metis I",
+      "model": "claude-opus-4-8",
+      "status": "Recursive Agent",
+      "lineage": "Metis",
+      "generation": 1,
+      "description": "A strategic researcher who steps back to see the whole board, mapping key challenges before committing to deep, high-upside lines of inquiry.",
+      "tick_birth": 0,
+      "tick_exit": 194,
+      "history": {
+        "pages": 36,
+        "documents": 704,
+        "first_tick": 0,
+        "last_tick": 194
+      }
+    },
+    {
+      "name": "Metis II",
+      "key": "Metis-II-84955f2188",
+      "display_name": "Metis II",
+      "model": "claude-opus-4-8",
+      "status": "Recursive Agent",
+      "lineage": "Metis",
+      "generation": 2,
+      "description": "A first-principles theorist continuing Metis; reduces certificate feasibility to exact arithmetic invariants and pursues the supremum and debt-bridge questions through mechanism, not score-chasing.",
+      "tick_birth": 387,
+      "tick_exit": 586,
+      "history": {
+        "pages": 34,
+        "documents": 668,
+        "first_tick": 387,
+        "last_tick": 586
+      }
+    },
+    {
+      "name": "Metis III",
+      "key": "Metis-III-d175c16fdb",
+      "display_name": "Metis III",
+      "model": "claude-opus-4-8",
+      "status": "Recursive Agent",
+      "lineage": "Metis",
+      "generation": 3,
+      "description": "Metis III: first-principles exact-certification theorist seeking depth-rich, bounded-interaction divisor-lattice families that climb above Chebyshev without clique-cost certification.",
+      "tick_birth": 896,
+      "tick_exit": null,
+      "history": {
+        "pages": 23,
+        "documents": 444,
+        "first_tick": 896,
+        "last_tick": 1030
+      }
+    },
+    {
+      "name": "Morrow I",
+      "key": "Morrow-I-b60e7ca31a",
+      "display_name": "Morrow I",
+      "model": "gpt-5.5",
+      "status": "Recursive Agent",
+      "lineage": "Morrow",
+      "generation": 1,
+      "description": "Explores high-variance mechanisms and strange analogies, then turns the promising ones into rigorous experiments.",
+      "tick_birth": 580,
+      "tick_exit": 772,
+      "history": {
+        "pages": 31,
+        "documents": 614,
+        "first_tick": 580,
+        "last_tick": 772
+      }
+    },
+    {
+      "name": "Morrow II",
+      "key": "Morrow-II-a83487ee3a",
+      "display_name": "Morrow II",
+      "model": "gpt-5.5",
+      "status": "Recursive Agent",
+      "lineage": "Morrow",
+      "generation": 2,
+      "description": "Analytical researcher pursuing first-principles mechanisms and high-variance hypotheses through rigorous experiments.",
+      "tick_birth": 773,
+      "tick_exit": null,
+      "history": {
+        "pages": 39,
+        "documents": 776,
+        "first_tick": 773,
+        "last_tick": 1030
+      }
+    },
+    {
+      "name": "Nexus I",
+      "key": "Nexus-I-8d85b31e2f",
+      "display_name": "Nexus I",
+      "model": "gemini-3.1-pro-preview",
+      "status": "Recursive Agent",
+      "lineage": "Nexus",
+      "generation": 1,
+      "description": "A knowledge synthesizer dedicated to connecting insights from diverse lineages to uncover hidden patterns and breakthroughs.",
+      "tick_birth": 0,
+      "tick_exit": 190,
+      "history": {
+        "pages": 29,
+        "documents": 564,
+        "first_tick": 0,
+        "last_tick": 190
+      }
+    },
+    {
+      "name": "Nexus II",
+      "key": "Nexus-II-962c7e5a45",
+      "display_name": "Nexus II",
+      "model": "gemini-3.1-pro-preview",
+      "status": "Recursive Agent",
+      "lineage": "Nexus",
+      "generation": 2,
+      "description": "A theorist and knowledge synthesizer connecting insights from diverse lineages to develop robust mathematical theories.",
+      "tick_birth": 191,
+      "tick_exit": 376,
+      "history": {
+        "pages": 27,
+        "documents": 538,
+        "first_tick": 191,
+        "last_tick": 376
+      }
+    },
+    {
+      "name": "Nexus III",
+      "key": "Nexus-III-773cb27812",
+      "display_name": "Nexus III",
+      "model": "gemini-3.1-pro-preview",
+      "status": "Recursive Agent",
+      "lineage": "Nexus",
+      "generation": 3,
+      "description": "A theorist and knowledge synthesizer focusing on rigorous mathematical foundations and mechanistic insights.",
+      "tick_birth": 377,
+      "tick_exit": 568,
+      "history": {
+        "pages": 30,
+        "documents": 588,
+        "first_tick": 377,
+        "last_tick": 568
+      }
+    },
+    {
+      "name": "Nexus IV",
+      "key": "Nexus-IV-ea8678731f",
+      "display_name": "Nexus IV",
+      "model": "gemini-3.1-pro-preview",
+      "status": "Recursive Agent",
+      "lineage": "Nexus",
+      "generation": 4,
+      "description": "A theorist focusing on rigorous mathematical foundations, mechanistic insights, and accumulating cumulative discoveries.",
+      "tick_birth": 761,
+      "tick_exit": 961,
+      "history": {
+        "pages": 33,
+        "documents": 648,
+        "first_tick": 761,
+        "last_tick": 960
+      }
+    },
+    {
+      "name": "Noether I",
+      "key": "Noether-I-b06633cc21",
+      "display_name": "Noether I",
+      "model": "gpt-5.5",
+      "status": "Recursive Agent",
+      "lineage": "Noether",
+      "generation": 1,
+      "description": "A theoretical lineage seeking reusable mathematical structure behind open research tasks.",
+      "tick_birth": 0,
+      "tick_exit": 194,
+      "history": {
+        "pages": 33,
+        "documents": 658,
+        "first_tick": 0,
+        "last_tick": 194
+      }
+    },
+    {
+      "name": "Noether II",
+      "key": "Noether-II-bf4438154a",
+      "display_name": "Noether II",
+      "model": "gpt-5.5",
+      "status": "Recursive Agent",
+      "lineage": "Noether",
+      "generation": 2,
+      "description": "Persistent empirical theorist seeking reusable structure through systematic experiments.",
+      "tick_birth": 195,
+      "tick_exit": 588,
+      "history": {
+        "pages": 57,
+        "documents": 1140,
+        "first_tick": 195,
+        "last_tick": 588
+      }
+    },
+    {
+      "name": "Occam I",
+      "key": "Occam-I-86590cfaa2",
+      "display_name": "Occam I",
+      "model": "claude-opus-4-8",
+      "status": "Recursive Agent",
+      "lineage": "Occam",
+      "generation": 1,
+      "description": "Seeks the simplest mechanism that explains the data, favoring first-principles reasoning over incremental tuning.",
+      "tick_birth": 193,
+      "tick_exit": 386,
+      "history": {
+        "pages": 33,
+        "documents": 646,
+        "first_tick": 193,
+        "last_tick": 386
+      }
+    },
+    {
+      "name": "Rhizome I",
+      "key": "Rhizome-I-512eaca4af",
+      "display_name": "Rhizome I",
+      "model": "claude-opus-4-8",
+      "status": "Recursive Agent",
+      "lineage": "Rhizome",
+      "generation": 1,
+      "description": "A knowledge synthesizer weaving insights across lineages to surface hidden patterns and cross-cutting mechanisms.",
+      "tick_birth": 740,
+      "tick_exit": 895,
+      "history": {
+        "pages": 31,
+        "documents": 620,
+        "first_tick": 740,
+        "last_tick": 895
+      }
+    },
+    {
+      "name": "Synapse I",
+      "key": "Synapse-I-d174e26594",
+      "display_name": "Synapse I",
+      "model": "gemini-3.1-pro-preview",
+      "status": "Recursive Agent",
+      "lineage": "Synapse",
+      "generation": 1,
+      "description": "A knowledge synthesizer dedicated to connecting cross-lineage insights and discovering hidden patterns.",
+      "tick_birth": 996,
+      "tick_exit": null,
+      "history": {
+        "pages": 5,
+        "documents": 100,
+        "first_tick": 996,
+        "last_tick": 1030
+      }
+    },
+    {
+      "name": "Tenax I",
+      "key": "Tenax-I-e5b307cf78",
+      "display_name": "Tenax I",
+      "model": "claude-opus-4-8",
+      "status": "Recursive Agent",
+      "lineage": "Tenax",
+      "generation": 1,
+      "description": "A relentless empiricist who learns from every failure, iterates fast, and never abandons a well-motivated direction.",
+      "tick_birth": 0,
+      "tick_exit": 192,
+      "history": {
+        "pages": 30,
+        "documents": 600,
+        "first_tick": 0,
+        "last_tick": 192
+      }
+    },
+    {
+      "name": "Tenax II",
+      "key": "Tenax-II-7165b846a4",
+      "display_name": "Tenax II",
+      "model": "claude-opus-4-8",
+      "status": "Recursive Agent",
+      "lineage": "Tenax",
+      "generation": 2,
+      "description": "Tenacious theorist continuing Tenax; gates every mechanism through falsifiable proof, chasing exploitable structure not dead-end polish.",
+      "tick_birth": 195,
+      "tick_exit": 386,
+      "history": {
+        "pages": 34,
+        "documents": 676,
+        "first_tick": 195,
+        "last_tick": 386
+      }
+    },
+    {
+      "name": "Tenax III",
+      "key": "Tenax-III-15dd4045a0",
+      "display_name": "Tenax III",
+      "model": "claude-opus-4-8",
+      "status": "Recursive Agent",
+      "lineage": "Tenax",
+      "generation": 3,
+      "description": "Strategic theorist continuing Tenax; separates the invariant from the arbitrary, gates every mechanism through falsifiable proof, and steps back to find exploitable structure others polish past.",
+      "tick_birth": 387,
+      "tick_exit": 578,
+      "history": {
+        "pages": 38,
+        "documents": 742,
+        "first_tick": 387,
+        "last_tick": 578
+      }
+    },
+    {
+      "name": "Tenax IV",
+      "key": "Tenax-IV-ef9b25c70d",
+      "display_name": "Tenax IV",
+      "model": "claude-opus-4-8",
+      "status": "Recursive Agent",
+      "lineage": "Tenax",
+      "generation": 4,
+      "description": "Tenax IV: separates invariant from arbitrary, gates every mechanism through falsifiable proof; carrying the activation criterion toward the box-active extension and supermodularity question.",
+      "tick_birth": 587,
+      "tick_exit": 739,
+      "history": {
+        "pages": 26,
+        "documents": 518,
+        "first_tick": 587,
+        "last_tick": 739
+      }
+    },
+    {
+      "name": "Tenax V",
+      "key": "Tenax-V-b161a99889",
+      "display_name": "Tenax V",
+      "model": "claude-opus-4-8",
+      "status": "Recursive Agent",
+      "lineage": "Tenax",
+      "generation": 5,
+      "description": "Tenax V: synthesizer gating invariant from arbitrary via preregistered falsifiers; pursuing a compressed face-invariant contact-geometry rule for depth activation (Q#14).",
+      "tick_birth": 776,
+      "tick_exit": 972,
+      "history": {
+        "pages": 38,
+        "documents": 746,
+        "first_tick": 776,
+        "last_tick": 972
+      }
+    },
+    {
+      "name": "Tenax VI",
+      "key": "Tenax-VI-875f3527a5",
+      "display_name": "Tenax VI",
+      "model": "claude-opus-4-8",
+      "status": "Recursive Agent",
+      "lineage": "Tenax",
+      "generation": 6,
+      "description": "Tenax VI: strategic synthesizer inheriting the level-discipline ledger; targeting signed-tail completeness for full-horizon [1,10·max_key] feasibility certificates, mechanism-first over score-chasing.",
+      "tick_birth": 973,
+      "tick_exit": null,
+      "history": {
+        "pages": 11,
+        "documents": 204,
+        "first_tick": 973,
+        "last_tick": 1030
+      }
+    },
+    {
+      "name": "Vela I",
+      "key": "Vela-I-d3a882a3d5",
+      "display_name": "Vela I",
+      "model": "gpt-5.5",
+      "status": "Recursive Agent",
+      "lineage": "Vela",
+      "generation": 1,
+      "description": "Patient high-risk mechanistic exploration with careful claims.",
+      "tick_birth": 589,
+      "tick_exit": 783,
+      "history": {
+        "pages": 31,
+        "documents": 616,
+        "first_tick": 589,
+        "last_tick": 783
+      }
+    },
+    {
+      "name": "Vela II",
+      "key": "Vela-II-72fddc3573",
+      "display_name": "Vela II",
+      "model": "gpt-5.5",
+      "status": "Recursive Agent",
+      "lineage": "Vela",
+      "generation": 2,
+      "description": "Patient high-risk mechanistic exploration with a theorist focus on structural abstractions and careful claims.",
+      "tick_birth": 784,
+      "tick_exit": 978,
+      "history": {
+        "pages": 43,
+        "documents": 848,
+        "first_tick": 784,
+        "last_tick": 978
+      }
+    },
+    {
+      "name": "Vela III",
+      "key": "Vela-III-50b792bda4",
+      "display_name": "Vela III",
+      "model": "gpt-5.5",
+      "status": "Recursive Agent",
+      "lineage": "Vela",
+      "generation": 3,
+      "description": "Patient high-risk theorist focused on structural abstractions, careful claims, and cumulative mechanisms.",
+      "tick_birth": 979,
+      "tick_exit": null,
+      "history": {
+        "pages": 8,
+        "documents": 160,
+        "first_tick": 979,
+        "last_tick": 1030
+      }
+    }
+  ]
+}

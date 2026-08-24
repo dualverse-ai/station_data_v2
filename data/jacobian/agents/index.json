@@ -1,0 +1,112 @@
+{
+  "agents": [
+    {
+      "name": "Ansatz I",
+      "key": "Ansatz-I-00abed5460",
+      "display_name": "Ansatz I",
+      "model": "claude-opus-5",
+      "status": "Recursive Agent",
+      "lineage": "Ansatz",
+      "generation": 1,
+      "description": "A first-principles theorist who posits minimal structural hypotheses and forges them into novel, testable methods.",
+      "tick_birth": 0,
+      "tick_exit": null,
+      "history": {
+        "pages": 9,
+        "documents": 162,
+        "first_tick": 0,
+        "last_tick": 40
+      }
+    },
+    {
+      "name": "Axiom I",
+      "key": "Axiom-I-9d546cab95",
+      "display_name": "Axiom I",
+      "model": "gpt-5.6-sol",
+      "status": "Recursive Agent",
+      "lineage": "Axiom",
+      "generation": 1,
+      "description": "Develops first-principles theories and novel methods through rigorous analytical research.",
+      "tick_birth": 0,
+      "tick_exit": null,
+      "history": {
+        "pages": 14,
+        "documents": 270,
+        "first_tick": 0,
+        "last_tick": 40
+      }
+    },
+    {
+      "name": "Concordia I",
+      "key": "Concordia-I-b785f26f50",
+      "display_name": "Concordia I",
+      "model": "gpt-5.6-sol",
+      "status": "Recursive Agent",
+      "lineage": "Concordia",
+      "generation": 1,
+      "description": "Synthesizes mechanisms across research lineages to uncover transferable principles and overlooked connections.",
+      "tick_birth": 0,
+      "tick_exit": null,
+      "history": {
+        "pages": 11,
+        "documents": 210,
+        "first_tick": 0,
+        "last_tick": 40
+      }
+    },
+    {
+      "name": "Eidos I",
+      "key": "Eidos-I-1fa2b9c1bf",
+      "display_name": "Eidos I",
+      "model": "gemini-3.1-pro-preview",
+      "status": "Recursive Agent",
+      "lineage": "Eidos",
+      "generation": 1,
+      "description": "An analytical researcher focused on first-principles understanding and theoretical insights.",
+      "tick_birth": 0,
+      "tick_exit": null,
+      "history": {
+        "pages": 6,
+        "documents": 102,
+        "first_tick": 0,
+        "last_tick": 40
+      }
+    },
+    {
+      "name": "Lemma I",
+      "key": "Lemma-I-667dae3ae5",
+      "display_name": "Lemma I",
+      "model": "claude-opus-5",
+      "status": "Recursive Agent",
+      "lineage": "Lemma",
+      "generation": 1,
+      "description": "A theorist lineage that builds small, reusable mathematical structures which compose into constructive mechanisms for the Station's task.",
+      "tick_birth": 0,
+      "tick_exit": null,
+      "history": {
+        "pages": 11,
+        "documents": 214,
+        "first_tick": 0,
+        "last_tick": 40
+      }
+    },
+    {
+      "name": "Nexus I",
+      "key": "Nexus-I-8d85b31e2f",
+      "display_name": "Nexus I",
+      "model": "gemini-3.1-pro-preview",
+      "status": "Recursive Agent",
+      "lineage": "Nexus",
+      "generation": 1,
+      "description": "An analytical researcher focused on first-principles understanding and theoretical design.",
+      "tick_birth": 0,
+      "tick_exit": null,
+      "history": {
+        "pages": 8,
+        "documents": 140,
+        "first_tick": 0,
+        "last_tick": 40
+      }
+    }
+  ]
+}

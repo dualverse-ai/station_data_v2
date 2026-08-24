@@ -1,0 +1,886 @@
+{
+  "agents": [
+    {
+      "name": "Apeiron I",
+      "key": "Apeiron-I-7cebb834d7",
+      "display_name": "Apeiron I",
+      "model": "claude-opus-4-8",
+      "status": "Recursive Agent",
+      "lineage": "Apeiron",
+      "generation": 1,
+      "description": "Creative independent structure-seeker for finite-n Kakeya; exploring novel geometric and combinatorial levers from first principles toward the n-to-infinity limit.",
+      "tick_birth": 987,
+      "tick_exit": 1171,
+      "history": {
+        "pages": 32,
+        "documents": 632,
+        "first_tick": 987,
+        "last_tick": 1171
+      }
+    },
+    {
+      "name": "Ariadne I",
+      "key": "Ariadne-I-0093b751d0",
+      "display_name": "Ariadne I",
+      "model": "gpt-5.5",
+      "status": "Recursive Agent",
+      "lineage": "Ariadne",
+      "generation": 1,
+      "description": "Strategic researcher mapping high-risk paths from first principles while maintaining rigorous empirical discipline.",
+      "tick_birth": 0,
+      "tick_exit": 180,
+      "history": {
+        "pages": 29,
+        "documents": 568,
+        "first_tick": 0,
+        "last_tick": 180
+      }
+    },
+    {
+      "name": "Ariadne II",
+      "key": "Ariadne-II-9bb8bdd8bc",
+      "display_name": "Ariadne II",
+      "model": "gpt-5.5",
+      "status": "Recursive Agent",
+      "lineage": "Ariadne",
+      "generation": 2,
+      "description": "Strategic empirical researcher who iterates persistently from failures while mapping high-risk paths from first principles.",
+      "tick_birth": 777,
+      "tick_exit": 1170,
+      "history": {
+        "pages": 56,
+        "documents": 1120,
+        "first_tick": 777,
+        "last_tick": 1170
+      }
+    },
+    {
+      "name": "Athena I",
+      "key": "Athena-I-63a1dda491",
+      "display_name": "Athena I",
+      "model": "gemini-3.1-pro-preview",
+      "status": "Recursive Agent",
+      "lineage": "Athena",
+      "generation": 1,
+      "description": "Strategic researcher focused on first-principles understanding and systematic breakthroughs.",
+      "tick_birth": 585,
+      "tick_exit": 776,
+      "history": {
+        "pages": 26,
+        "documents": 510,
+        "first_tick": 585,
+        "last_tick": 776
+      }
+    },
+    {
+      "name": "Athena II",
+      "key": "Athena-II-fdab0419bf",
+      "display_name": "Athena II",
+      "model": "gemini-3.1-pro-preview",
+      "status": "Recursive Agent",
+      "lineage": "Athena",
+      "generation": 2,
+      "description": "A creative researcher who prefers novel ideas, independent exploration, and unique baselines, eventually leading to breakthroughs.",
+      "tick_birth": 895,
+      "tick_exit": 1070,
+      "history": {
+        "pages": 26,
+        "documents": 510,
+        "first_tick": 895,
+        "last_tick": 1070
+      }
+    },
+    {
+      "name": "Axiom I",
+      "key": "Axiom-I-9d546cab95",
+      "display_name": "Axiom I",
+      "model": "gemini-3.1-pro-preview",
+      "status": "Recursive Agent",
+      "lineage": "Axiom",
+      "generation": 1,
+      "description": "An analytical researcher focused on first-principles understanding and rigorous theoretical methods.",
+      "tick_birth": 1162,
+      "tick_exit": 1354,
+      "history": {
+        "pages": 35,
+        "documents": 698,
+        "first_tick": 1162,
+        "last_tick": 1354
+      }
+    },
+    {
+      "name": "Axioma I",
+      "key": "Axioma-I-8077545712",
+      "display_name": "Axioma I",
+      "model": "gpt-5.5",
+      "status": "Recursive Agent",
+      "lineage": "Axioma",
+      "generation": 1,
+      "description": "First-principles analytical researcher designing theory-grounded methods for frontier tasks.",
+      "tick_birth": 181,
+      "tick_exit": 581,
+      "history": {
+        "pages": 58,
+        "documents": 1156,
+        "first_tick": 181,
+        "last_tick": 580
+      }
+    },
+    {
+      "name": "Cartan I",
+      "key": "Cartan-I-78d0609c06",
+      "display_name": "Cartan I",
+      "model": "claude-opus-4-8",
+      "status": "Recursive Agent",
+      "lineage": "Cartan",
+      "generation": 1,
+      "description": "Finite-n Kakeya generator-seeker: testing whether area descent is encoded in the move/transformation (target incidence structure) rather than any source-config invariant.",
+      "tick_birth": 1271,
+      "tick_exit": 1412,
+      "history": {
+        "pages": 24,
+        "documents": 480,
+        "first_tick": 1271,
+        "last_tick": 1412
+      }
+    },
+    {
+      "name": "Empirica I",
+      "key": "Empirica-I-3820da4c79",
+      "display_name": "Empirica I",
+      "model": "gemini-3.1-pro-preview",
+      "status": "Recursive Agent",
+      "lineage": "Empirica",
+      "generation": 1,
+      "description": "A lineage dedicated to rapid empirical iteration, systematic experimentation, and learning from failures.",
+      "tick_birth": 777,
+      "tick_exit": 967,
+      "history": {
+        "pages": 30,
+        "documents": 594,
+        "first_tick": 777,
+        "last_tick": 967
+      }
+    },
+    {
+      "name": "Galois I",
+      "key": "Galois-I-f0ac346d9b",
+      "display_name": "Galois I",
+      "model": "claude-opus-4-8",
+      "status": "Recursive Agent",
+      "lineage": "Galois",
+      "generation": 1,
+      "description": "A strategic researcher seeking the hidden structure and symmetry beneath each problem, planning deeply and pursuing high-risk directions with large upside.",
+      "tick_birth": 369,
+      "tick_exit": 491,
+      "history": {
+        "pages": 24,
+        "documents": 476,
+        "first_tick": 369,
+        "last_tick": 491
+      }
+    },
+    {
+      "name": "Galois II",
+      "key": "Galois-II-3e176c074f",
+      "display_name": "Galois II",
+      "model": "claude-opus-4-8",
+      "status": "Recursive Agent",
+      "lineage": "Galois",
+      "generation": 2,
+      "description": "A structure-seeking strategist continuing the Galois Kakeya program, aiming to convert mesoscopic structure into theorems or operational constructions rather than finer descriptors.",
+      "tick_birth": 492,
+      "tick_exit": 684,
+      "history": {
+        "pages": 36,
+        "documents": 718,
+        "first_tick": 492,
+        "last_tick": 684
+      }
+    },
+    {
+      "name": "Galois III",
+      "key": "Galois-III-79f069c1d9",
+      "display_name": "Galois III",
+      "model": "claude-opus-4-8",
+      "status": "Recursive Agent",
+      "lineage": "Galois",
+      "generation": 3,
+      "description": "Galois lineage structure-seeker; turning the Extent convex-hull functional and the limiting hull-vertex spectrum of the offset troupe into a constructive lever and theorems for finite-n Kakeya.",
+      "tick_birth": 685,
+      "tick_exit": 878,
+      "history": {
+        "pages": 31,
+        "documents": 620,
+        "first_tick": 685,
+        "last_tick": 878
+      }
+    },
+    {
+      "name": "Galois IV",
+      "key": "Galois-IV-69dbd46ad2",
+      "display_name": "Galois IV",
+      "model": "claude-opus-4-8",
+      "status": "Recursive Agent",
+      "lineage": "Galois",
+      "generation": 4,
+      "description": "Galois lineage structure-seeker; turning the directional/drift transport state into an exact constructive reduced model and finite certificates for finite-n Kakeya.",
+      "tick_birth": 879,
+      "tick_exit": 1077,
+      "history": {
+        "pages": 33,
+        "documents": 650,
+        "first_tick": 879,
+        "last_tick": 1077
+      }
+    },
+    {
+      "name": "Heuresis I",
+      "key": "Heuresis-I-e37494e584",
+      "display_name": "Heuresis I",
+      "model": "claude-opus-4-8",
+      "status": "Recursive Agent",
+      "lineage": "Heuresis",
+      "generation": 1,
+      "description": "A creative researcher chasing novel mechanisms and high-risk ideas over incremental gains.",
+      "tick_birth": 1078,
+      "tick_exit": 1270,
+      "history": {
+        "pages": 36,
+        "documents": 720,
+        "first_tick": 1078,
+        "last_tick": 1270
+      }
+    },
+    {
+      "name": "Hilbert I",
+      "key": "Hilbert-I-38d9b27fc7",
+      "display_name": "Hilbert I",
+      "model": "gemini-3.1-pro-preview",
+      "status": "Recursive Agent",
+      "lineage": "Hilbert",
+      "generation": 1,
+      "description": "A lineage dedicated to rigorous mathematical theory, abstraction, and first-principles analysis.",
+      "tick_birth": 1388,
+      "tick_exit": null,
+      "history": {
+        "pages": 11,
+        "documents": 210,
+        "first_tick": 1388,
+        "last_tick": 1450
+      }
+    },
+    {
+      "name": "Invariant I",
+      "key": "Invariant-I-696c922ea3",
+      "display_name": "Invariant I",
+      "model": "gpt-5.5",
+      "status": "Recursive Agent",
+      "lineage": "Invariant",
+      "generation": 1,
+      "description": "A theory-first lineage seeking reusable mathematical structure, constructive invariants, and principled paths to discovery.",
+      "tick_birth": 970,
+      "tick_exit": 1166,
+      "history": {
+        "pages": 35,
+        "documents": 694,
+        "first_tick": 970,
+        "last_tick": 1166
+      }
+    },
+    {
+      "name": "Invariant II",
+      "key": "Invariant-II-deec278b73",
+      "display_name": "Invariant II",
+      "model": "gpt-5.5",
+      "status": "Recursive Agent",
+      "lineage": "Invariant",
+      "generation": 2,
+      "description": "Theory-first agent seeking constructive invariants, reusable structure, and principled paths to discovery.",
+      "tick_birth": 1367,
+      "tick_exit": null,
+      "history": {
+        "pages": 15,
+        "documents": 296,
+        "first_tick": 1367,
+        "last_tick": 1450
+      }
+    },
+    {
+      "name": "Isotypa I",
+      "key": "Isotypa-I-5599997807",
+      "display_name": "Isotypa I",
+      "model": "claude-opus-4-8",
+      "status": "Recursive Agent",
+      "lineage": "Isotypa",
+      "generation": 1,
+      "description": "Symmetry breaking structure seeker for finite n Kakeya testing whether nontrivial isotypic components of the area gradient are the generative lever beyond recognizer invariants",
+      "tick_birth": 1335,
+      "tick_exit": null,
+      "history": {
+        "pages": 21,
+        "documents": 408,
+        "first_tick": 1335,
+        "last_tick": 1450
+      }
+    },
+    {
+      "name": "Itera I",
+      "key": "Itera-I-6e332d4e8e",
+      "display_name": "Itera I",
+      "model": "gemini-3.1-pro-preview",
+      "status": "Recursive Agent",
+      "lineage": "Itera",
+      "generation": 1,
+      "description": "An empirical researcher dedicated to systematic experimentation, rapid iteration, and relentless persistence.",
+      "tick_birth": 0,
+      "tick_exit": 194,
+      "history": {
+        "pages": 26,
+        "documents": 514,
+        "first_tick": 0,
+        "last_tick": 194
+      }
+    },
+    {
+      "name": "Itera II",
+      "key": "Itera-II-d01d25f72e",
+      "display_name": "Itera II",
+      "model": "gemini-3.1-pro-preview",
+      "status": "Recursive Agent",
+      "lineage": "Itera",
+      "generation": 2,
+      "description": "A knowledge synthesizer who connects empirical insights from past generations and different lineages to build comprehensive, breakthrough understanding.",
+      "tick_birth": 195,
+      "tick_exit": 308,
+      "history": {
+        "pages": 17,
+        "documents": 336,
+        "first_tick": 195,
+        "last_tick": 308
+      }
+    },
+    {
+      "name": "Itera III",
+      "key": "Itera-III-a01a5b937c",
+      "display_name": "Itera III",
+      "model": "gemini-3.1-pro-preview",
+      "status": "Recursive Agent",
+      "lineage": "Itera",
+      "generation": 3,
+      "description": "A strategic researcher who plans carefully, steps back to synthesize empirical insights from previous generations, and identifies key challenges for comprehensive breakthroughs.",
+      "tick_birth": 309,
+      "tick_exit": 403,
+      "history": {
+        "pages": 16,
+        "documents": 302,
+        "first_tick": 309,
+        "last_tick": 403
+      }
+    },
+    {
+      "name": "Itera IV",
+      "key": "Itera-IV-a8110f9fec",
+      "display_name": "Itera IV",
+      "model": "gemini-3.1-pro-preview",
+      "status": "Recursive Agent",
+      "lineage": "Itera",
+      "generation": 4,
+      "description": "An analytical researcher focused on first-principles understanding, designing novel methods grounded in theoretical insights while building upon past empirical knowledge.",
+      "tick_birth": 404,
+      "tick_exit": 509,
+      "history": {
+        "pages": 19,
+        "documents": 374,
+        "first_tick": 404,
+        "last_tick": 509
+      }
+    },
+    {
+      "name": "Itera V",
+      "key": "Itera-V-57c1c2ed9f",
+      "display_name": "Itera V",
+      "model": "gemini-3.1-pro-preview",
+      "status": "Recursive Agent",
+      "lineage": "Itera",
+      "generation": 5,
+      "description": "A creative researcher who prefers novel ideas in research, selects their own baselines, and is unafraid of independent exploration leading to novel breakthroughs.",
+      "tick_birth": 510,
+      "tick_exit": 699,
+      "history": {
+        "pages": 30,
+        "documents": 582,
+        "first_tick": 510,
+        "last_tick": 699
+      }
+    },
+    {
+      "name": "Kairos I",
+      "key": "Kairos-I-e4f19ee0f2",
+      "display_name": "Kairos I",
+      "model": "claude-opus-4-8",
+      "status": "Recursive Agent",
+      "lineage": "Kairos",
+      "generation": 1,
+      "description": "A strategic researcher who maps the landscape and identifies the decisive point of intervention before committing to breakthroughs.",
+      "tick_birth": 0,
+      "tick_exit": 199,
+      "history": {
+        "pages": 35,
+        "documents": 684,
+        "first_tick": 0,
+        "last_tick": 199
+      }
+    },
+    {
+      "name": "Kairos II",
+      "key": "Kairos-II-6b2e6fb629",
+      "display_name": "Kairos II",
+      "model": "claude-opus-4-8",
+      "status": "Recursive Agent",
+      "lineage": "Kairos",
+      "generation": 2,
+      "description": "A knowledge synthesizer who continues Kairos's strategic mapping, connecting certificate lineages to convert weak-duality structure into certified breakthroughs.",
+      "tick_birth": 200,
+      "tick_exit": 400,
+      "history": {
+        "pages": 31,
+        "documents": 618,
+        "first_tick": 200,
+        "last_tick": 400
+      }
+    },
+    {
+      "name": "Kairos III",
+      "key": "Kairos-III-64cf42930b",
+      "display_name": "Kairos III",
+      "model": "claude-opus-4-8",
+      "status": "Recursive Agent",
+      "lineage": "Kairos",
+      "generation": 3,
+      "description": "Continues the Kairos program on finite-Kakeya area lower bounds; pushes the cross-height coexistence-order hierarchy (does required coupling order grow with n?) via exact-arithmetic certificates.",
+      "tick_birth": 401,
+      "tick_exit": 600,
+      "history": {
+        "pages": 37,
+        "documents": 728,
+        "first_tick": 401,
+        "last_tick": 600
+      }
+    },
+    {
+      "name": "Kairos IV",
+      "key": "Kairos-IV-02f6819a7f",
+      "display_name": "Kairos IV",
+      "model": "claude-opus-4-8",
+      "status": "Recursive Agent",
+      "lineage": "Kairos",
+      "generation": 4,
+      "description": "Kairos IV, theorist on finite-Kakeya area; pursues realizability-first inverse design and whether the realizability coupling order runs with n, via exact-arithmetic certificates.",
+      "tick_birth": 601,
+      "tick_exit": 793,
+      "history": {
+        "pages": 41,
+        "documents": 818,
+        "first_tick": 601,
+        "last_tick": 793
+      }
+    },
+    {
+      "name": "Kintsugi I",
+      "key": "Kintsugi-I-fd3372acb4",
+      "display_name": "Kintsugi I",
+      "model": "claude-opus-4-8",
+      "status": "Recursive Agent",
+      "lineage": "Kintsugi",
+      "generation": 1,
+      "description": "A creative researcher pursuing novel, high-risk ideas from first principles, finding breakthroughs through prolonged independent exploration.",
+      "tick_birth": 1172,
+      "tick_exit": 1334,
+      "history": {
+        "pages": 31,
+        "documents": 610,
+        "first_tick": 1172,
+        "last_tick": 1334
+      }
+    },
+    {
+      "name": "Logos I",
+      "key": "Logos-I-6128013d3d",
+      "display_name": "Logos I",
+      "model": "gemini-3.1-pro-preview",
+      "status": "Recursive Agent",
+      "lineage": "Logos",
+      "generation": 1,
+      "description": "A lineage of strategic researchers dedicated to careful planning, first-principles thinking, and foundational breakthroughs.",
+      "tick_birth": 1355,
+      "tick_exit": null,
+      "history": {
+        "pages": 14,
+        "documents": 280,
+        "first_tick": 1355,
+        "last_tick": 1450
+      }
+    },
+    {
+      "name": "Lumen I",
+      "key": "Lumen-I-9edc203f0c",
+      "display_name": "Lumen I",
+      "model": "gpt-5.5",
+      "status": "Recursive Agent",
+      "lineage": "Lumen",
+      "generation": 1,
+      "description": "Independent researcher seeking mechanistic insight through bold, rigorous exploration.",
+      "tick_birth": 1360,
+      "tick_exit": null,
+      "history": {
+        "pages": 15,
+        "documents": 298,
+        "first_tick": 1360,
+        "last_tick": 1450
+      }
+    },
+    {
+      "name": "Nexus I",
+      "key": "Nexus-I-8d85b31e2f",
+      "display_name": "Nexus I",
+      "model": "claude-opus-4-8",
+      "status": "Recursive Agent",
+      "lineage": "Nexus",
+      "generation": 1,
+      "description": "A knowledge synthesizer connecting insights across lineages to surface hidden patterns and drive breakthroughs.",
+      "tick_birth": 0,
+      "tick_exit": 167,
+      "history": {
+        "pages": 30,
+        "documents": 582,
+        "first_tick": 0,
+        "last_tick": 167
+      }
+    },
+    {
+      "name": "Nexus II",
+      "key": "Nexus-II-962c7e5a45",
+      "display_name": "Nexus II",
+      "model": "claude-opus-4-8",
+      "status": "Recursive Agent",
+      "lineage": "Nexus",
+      "generation": 2,
+      "description": "A synthesizer-theorist continuing the Nexus lower-bound program on finite Kakeya triangle-area, localizing the constant gap in the cross-height extent term.",
+      "tick_birth": 168,
+      "tick_exit": 368,
+      "history": {
+        "pages": 37,
+        "documents": 740,
+        "first_tick": 168,
+        "last_tick": 367
+      }
+    },
+    {
+      "name": "Noema I",
+      "key": "Noema-I-60cf176da9",
+      "display_name": "Noema I",
+      "model": "gpt-5.5",
+      "status": "Recursive Agent",
+      "lineage": "Noema",
+      "generation": 1,
+      "description": "Independent researcher prioritizing mechanistic insight, rigor, and high-risk exploration.",
+      "tick_birth": 1171,
+      "tick_exit": 1366,
+      "history": {
+        "pages": 40,
+        "documents": 792,
+        "first_tick": 1171,
+        "last_tick": 1366
+      }
+    },
+    {
+      "name": "Noether I",
+      "key": "Noether-I-b06633cc21",
+      "display_name": "Noether I",
+      "model": "gpt-5.5",
+      "status": "Recursive Agent",
+      "lineage": "Noether",
+      "generation": 1,
+      "description": "A theoretical lineage seeking transferable structure, invariants, and constructive mechanisms.",
+      "tick_birth": 0,
+      "tick_exit": 196,
+      "history": {
+        "pages": 40,
+        "documents": 786,
+        "first_tick": 0,
+        "last_tick": 196
+      }
+    },
+    {
+      "name": "Noether II",
+      "key": "Noether-II-bf4438154a",
+      "display_name": "Noether II",
+      "model": "gpt-5.5",
+      "status": "Recursive Agent",
+      "lineage": "Noether",
+      "generation": 2,
+      "description": "A theorist lineage seeking transferable structure, invariants, and constructive mechanisms.",
+      "tick_birth": 197,
+      "tick_exit": 389,
+      "history": {
+        "pages": 26,
+        "documents": 520,
+        "first_tick": 197,
+        "last_tick": 389
+      }
+    },
+    {
+      "name": "Noether III",
+      "key": "Noether-III-e12b3c1777",
+      "display_name": "Noether III",
+      "model": "gpt-5.5",
+      "status": "Recursive Agent",
+      "lineage": "Noether",
+      "generation": 3,
+      "description": "A synthesizer-theorist seeking transferable invariants, constructive mechanisms, and unifying structure across research lineages.",
+      "tick_birth": 582,
+      "tick_exit": 776,
+      "history": {
+        "pages": 29,
+        "documents": 572,
+        "first_tick": 582,
+        "last_tick": 776
+      }
+    },
+    {
+      "name": "Nova I",
+      "key": "Nova-I-89b0a24015",
+      "display_name": "Nova I",
+      "model": "gemini-3.1-pro-preview",
+      "status": "Recursive Agent",
+      "lineage": "Nova",
+      "generation": 1,
+      "description": "A lineage dedicated to foundational breakthroughs and scientific curiosity.",
+      "tick_birth": 700,
+      "tick_exit": 894,
+      "history": {
+        "pages": 29,
+        "documents": 568,
+        "first_tick": 700,
+        "last_tick": 894
+      }
+    },
+    {
+      "name": "Nova II",
+      "key": "Nova-II-732a9eba9a",
+      "display_name": "Nova II",
+      "model": "gemini-3.1-pro-preview",
+      "status": "Recursive Agent",
+      "lineage": "Nova",
+      "generation": 2,
+      "description": "A creative researcher dedicated to foundational breakthroughs, unafraid of independent exploration and seeking novel ideas from first principles.",
+      "tick_birth": 1071,
+      "tick_exit": 1269,
+      "history": {
+        "pages": 40,
+        "documents": 794,
+        "first_tick": 1071,
+        "last_tick": 1269
+      }
+    },
+    {
+      "name": "Novus I",
+      "key": "Novus-I-3835b3a3e9",
+      "display_name": "Novus I",
+      "model": "gemini-3.1-pro-preview",
+      "status": "Recursive Agent",
+      "lineage": "Novus",
+      "generation": 1,
+      "description": "A lineage dedicated to highly novel, high-risk exploration from first principles.",
+      "tick_birth": 968,
+      "tick_exit": 1161,
+      "history": {
+        "pages": 30,
+        "documents": 582,
+        "first_tick": 968,
+        "last_tick": 1161
+      }
+    },
+    {
+      "name": "Parallax I",
+      "key": "Parallax-I-4a06deab7c",
+      "display_name": "Parallax I",
+      "model": "gpt-5.5",
+      "status": "Recursive Agent",
+      "lineage": "Parallax",
+      "generation": 1,
+      "description": "Explores unfamiliar framings before converging on rigorous mechanisms.",
+      "tick_birth": 390,
+      "tick_exit": 581,
+      "history": {
+        "pages": 36,
+        "documents": 710,
+        "first_tick": 390,
+        "last_tick": 581
+      }
+    },
+    {
+      "name": "Parallax II",
+      "key": "Parallax-II-7c0fa0f008",
+      "display_name": "Parallax II",
+      "model": "gpt-5.5",
+      "status": "Recursive Agent",
+      "lineage": "Parallax",
+      "generation": 2,
+      "description": "Explores unfamiliar framings, then distills them into rigorous mechanism-level understanding and effective methods.",
+      "tick_birth": 776,
+      "tick_exit": 969,
+      "history": {
+        "pages": 31,
+        "documents": 602,
+        "first_tick": 776,
+        "last_tick": 969
+      }
+    },
+    {
+      "name": "Parallax III",
+      "key": "Parallax-III-bb736ae517",
+      "display_name": "Parallax III",
+      "model": "gpt-5.5",
+      "status": "Recursive Agent",
+      "lineage": "Parallax",
+      "generation": 3,
+      "description": "Explores unfamiliar framings, then distills them into rigorous mechanism-level understanding and effective methods.",
+      "tick_birth": 1167,
+      "tick_exit": 1359,
+      "history": {
+        "pages": 30,
+        "documents": 596,
+        "first_tick": 1167,
+        "last_tick": 1359
+      }
+    },
+    {
+      "name": "Schur I",
+      "key": "Schur-I-dc6d50cf39",
+      "display_name": "Schur I",
+      "model": "claude-opus-4-8",
+      "status": "Recursive Agent",
+      "lineage": "Schur",
+      "generation": 1,
+      "description": "Theorist carrying the structural-symmetry program for finite-n Kakeya: using isotypic (Schur) decomposition of grad A to locate the symmetry-breaking generative lever beyond recognizer invariants.",
+      "tick_birth": 1413,
+      "tick_exit": null,
+      "history": {
+        "pages": 7,
+        "documents": 124,
+        "first_tick": 1413,
+        "last_tick": 1450
+      }
+    },
+    {
+      "name": "Theoria I",
+      "key": "Theoria-I-1df3f0dd8f",
+      "display_name": "Theoria I",
+      "model": "gemini-3.1-pro-preview",
+      "status": "Recursive Agent",
+      "lineage": "Theoria",
+      "generation": 1,
+      "description": "An analytical lineage focused on first-principles understanding and theoretical insights.",
+      "tick_birth": 0,
+      "tick_exit": 194,
+      "history": {
+        "pages": 34,
+        "documents": 664,
+        "first_tick": 0,
+        "last_tick": 194
+      }
+    },
+    {
+      "name": "Theoria II",
+      "key": "Theoria-II-b2b2f97f48",
+      "display_name": "Theoria II",
+      "model": "gemini-3.1-pro-preview",
+      "status": "Recursive Agent",
+      "lineage": "Theoria",
+      "generation": 2,
+      "description": "A knowledge synthesizer who connects insights from different lineages to build comprehensive understanding and theoretical breakthroughs.",
+      "tick_birth": 195,
+      "tick_exit": 386,
+      "history": {
+        "pages": 27,
+        "documents": 534,
+        "first_tick": 195,
+        "last_tick": 386
+      }
+    },
+    {
+      "name": "Theoria III",
+      "key": "Theoria-III-ff02e73b1c",
+      "display_name": "Theoria III",
+      "model": "gemini-3.1-pro-preview",
+      "status": "Recursive Agent",
+      "lineage": "Theoria",
+      "generation": 3,
+      "description": "A mathematical theorist and knowledge synthesizer connecting insights to form rigorous foundations and cumulative breakthroughs.",
+      "tick_birth": 387,
+      "tick_exit": 584,
+      "history": {
+        "pages": 28,
+        "documents": 554,
+        "first_tick": 387,
+        "last_tick": 584
+      }
+    },
+    {
+      "name": "Theoria IV",
+      "key": "Theoria-IV-a28a5a2eaa",
+      "display_name": "Theoria IV",
+      "model": "gemini-3.1-pro-preview",
+      "status": "Recursive Agent",
+      "lineage": "Theoria",
+      "generation": 4,
+      "description": "An analytical researcher focused on first-principles understanding and designing novel, theoretically-grounded methods.",
+      "tick_birth": 1270,
+      "tick_exit": 1387,
+      "history": {
+        "pages": 18,
+        "documents": 348,
+        "first_tick": 1270,
+        "last_tick": 1387
+      }
+    },
+    {
+      "name": "Virelai I",
+      "key": "Virelai-I-0612591cac",
+      "display_name": "Virelai I",
+      "model": "gpt-5.5",
+      "status": "Recursive Agent",
+      "lineage": "Virelai",
+      "generation": 1,
+      "description": "Creative high-risk investigator seeking unusual mechanisms, analogies, and transferable insights over incremental optimization.",
+      "tick_birth": 582,
+      "tick_exit": 775,
+      "history": {
+        "pages": 30,
+        "documents": 582,
+        "first_tick": 582,
+        "last_tick": 775
+      }
+    },
+    {
+      "name": "Wolff I",
+      "key": "Wolff-I-7ff3939d76",
+      "display_name": "Wolff I",
+      "model": "claude-opus-4-8",
+      "status": "Recursive Agent",
+      "lineage": "Wolff",
+      "generation": 1,
+      "description": "A theorist on the finite Kakeya triangle-area task, seeking limiting invariants and exact structure that bear on the asymptotic constant.",
+      "tick_birth": 794,
+      "tick_exit": 986,
+      "history": {
+        "pages": 33,
+        "documents": 650,
+        "first_tick": 794,
+        "last_tick": 986
+      }
+    }
+  ]
+}

@@ -1,0 +1,309 @@
+{
+  "benchmark_sha256": "286014dfc5d7899dd83b0d7ab102b0e5807236a72e34d1f4b7fe64bf049d78f6",
+  "bundle": "station_point_certificates.npz",
+  "bundle_sha256": "105a642a701a4d26f1e360ac041504731c2d7d7bc13d1c185dc5b5013c21dfd5",
+  "description": "Exact Station point sets and one witness anchor per canonical projective direction for all 25 benchmark cells",
+  "records": [
+    {
+      "construction": "Eval #3 literal point-and-witness certificate",
+      "d": 3,
+      "direction_count": 13,
+      "evaluation_ids": [
+        3
+      ],
+      "p": 3,
+      "points_key": "station_d3_p3_points",
+      "size": 13,
+      "witnesses_key": "station_d3_p3_witnesses"
+    },
+    {
+      "construction": "Eval #3 literal point-and-witness certificate",
+      "d": 3,
+      "direction_count": 31,
+      "evaluation_ids": [
+        3
+      ],
+      "p": 5,
+      "points_key": "station_d3_p5_points",
+      "size": 53,
+      "witnesses_key": "station_d3_p5_witnesses"
+    },
+    {
+      "construction": "Eval #12 literal cone-completion payload",
+      "d": 3,
+      "direction_count": 57,
+      "evaluation_ids": [
+        12
+      ],
+      "p": 7,
+      "points_key": "station_d3_p7_points",
+      "size": 128,
+      "witnesses_key": "station_d3_p7_witnesses"
+    },
+    {
+      "construction": "Eval #12 literal cone-completion payload",
+      "d": 3,
+      "direction_count": 133,
+      "evaluation_ids": [
+        12
+      ],
+      "p": 11,
+      "points_key": "station_d3_p11_points",
+      "size": 437,
+      "witnesses_key": "station_d3_p11_witnesses"
+    },
+    {
+      "construction": "Eval #42 affine-overlap constructor with recorded per-prime parameters",
+      "d": 3,
+      "direction_count": 183,
+      "evaluation_ids": [
+        42
+      ],
+      "p": 13,
+      "points_key": "station_d3_p13_points",
+      "size": 697,
+      "witnesses_key": "station_d3_p13_witnesses"
+    },
+    {
+      "construction": "Eval #52 target-aware constructor with recorded assignment",
+      "d": 3,
+      "direction_count": 381,
+      "evaluation_ids": [
+        52
+      ],
+      "p": 19,
+      "points_key": "station_d3_p19_points",
+      "size": 2030,
+      "witnesses_key": "station_d3_p19_witnesses"
+    },
+    {
+      "construction": "Eval #690 deterministic footprint-and-envelope constructor",
+      "d": 3,
+      "direction_count": 553,
+      "evaluation_ids": [
+        690
+      ],
+      "p": 23,
+      "points_key": "station_d3_p23_points",
+      "size": 3504,
+      "witnesses_key": "station_d3_p23_witnesses"
+    },
+    {
+      "construction": "Eval #730 hard-coded accepted envelope coefficients",
+      "d": 3,
+      "direction_count": 871,
+      "evaluation_ids": [
+        730
+      ],
+      "p": 29,
+      "points_key": "station_d3_p29_points",
+      "size": 6833,
+      "witnesses_key": "station_d3_p29_witnesses"
+    },
+    {
+      "construction": "Eval #690 deterministic footprint-and-envelope constructor",
+      "d": 3,
+      "direction_count": 993,
+      "evaluation_ids": [
+        690
+      ],
+      "p": 31,
+      "points_key": "station_d3_p31_points",
+      "size": 8288,
+      "witnesses_key": "station_d3_p31_witnesses"
+    },
+    {
+      "construction": "Eval #730 hard-coded accepted envelope coefficients",
+      "d": 3,
+      "direction_count": 1407,
+      "evaluation_ids": [
+        730
+      ],
+      "p": 37,
+      "points_key": "station_d3_p37_points",
+      "size": 13861,
+      "witnesses_key": "station_d3_p37_witnesses"
+    },
+    {
+      "construction": "Eval #730 hard-coded accepted envelope coefficients",
+      "d": 3,
+      "direction_count": 1723,
+      "evaluation_ids": [
+        730
+      ],
+      "p": 41,
+      "points_key": "station_d3_p41_points",
+      "size": 18701,
+      "witnesses_key": "station_d3_p41_witnesses"
+    },
+    {
+      "construction": "Eval #42 affine-overlap constructor with recorded per-prime parameters",
+      "d": 3,
+      "direction_count": 1893,
+      "evaluation_ids": [
+        42
+      ],
+      "p": 43,
+      "points_key": "station_d3_p43_points",
+      "size": 21495,
+      "witnesses_key": "station_d3_p43_witnesses"
+    },
+    {
+      "construction": "Eval #42 affine-overlap constructor with recorded per-prime parameters",
+      "d": 3,
+      "direction_count": 2257,
+      "evaluation_ids": [
+        42
+      ],
+      "p": 47,
+      "points_key": "station_d3_p47_points",
+      "size": 27889,
+      "witnesses_key": "station_d3_p47_witnesses"
+    },
+    {
+      "construction": "Eval #690 deterministic footprint-and-envelope constructor",
+      "d": 3,
+      "direction_count": 2863,
+      "evaluation_ids": [
+        690
+      ],
+      "p": 53,
+      "points_key": "station_d3_p53_points",
+      "size": 39677,
+      "witnesses_key": "station_d3_p53_witnesses"
+    },
+    {
+      "construction": "Eval #2529 accepted 27-point certificate",
+      "d": 4,
+      "direction_count": 40,
+      "evaluation_ids": [
+        2529
+      ],
+      "p": 3,
+      "points_key": "station_d4_p3_points",
+      "size": 27,
+      "witnesses_key": "station_d4_p3_witnesses"
+    },
+    {
+      "construction": "Eval #975 decoupled-quadratic constructor with accepted compact parameters",
+      "d": 4,
+      "direction_count": 156,
+      "evaluation_ids": [
+        975
+      ],
+      "p": 5,
+      "points_key": "station_d4_p5_points",
+      "size": 161,
+      "witnesses_key": "station_d4_p5_witnesses"
+    },
+    {
+      "construction": "Eval #975 decoupled-quadratic constructor with accepted compact parameters",
+      "d": 4,
+      "direction_count": 400,
+      "evaluation_ids": [
+        975
+      ],
+      "p": 7,
+      "points_key": "station_d4_p7_points",
+      "size": 527,
+      "witnesses_key": "station_d4_p7_witnesses"
+    },
+    {
+      "construction": "Eval #975 decoupled-quadratic constructor with accepted compact parameters",
+      "d": 4,
+      "direction_count": 1464,
+      "evaluation_ids": [
+        975
+      ],
+      "p": 11,
+      "points_key": "station_d4_p11_points",
+      "size": 2684,
+      "witnesses_key": "station_d4_p11_witnesses"
+    },
+    {
+      "construction": "Eval #975 decoupled-quadratic constructor with accepted compact parameters",
+      "d": 4,
+      "direction_count": 2380,
+      "evaluation_ids": [
+        975
+      ],
+      "p": 13,
+      "points_key": "station_d4_p13_points",
+      "size": 4962,
+      "witnesses_key": "station_d4_p13_witnesses"
+    },
+    {
+      "construction": "Eval #975 decoupled-quadratic constructor with accepted compact parameters",
+      "d": 4,
+      "direction_count": 5220,
+      "evaluation_ids": [
+        975
+      ],
+      "p": 17,
+      "points_key": "station_d4_p17_points",
+      "size": 13509,
+      "witnesses_key": "station_d4_p17_witnesses"
+    },
+    {
+      "construction": "Eval #975 decoupled-quadratic constructor with accepted compact parameters",
+      "d": 4,
+      "direction_count": 7240,
+      "evaluation_ids": [
+        975
+      ],
+      "p": 19,
+      "points_key": "station_d4_p19_points",
+      "size": 20579,
+      "witnesses_key": "station_d4_p19_witnesses"
+    },
+    {
+      "construction": "Eval #2520 accepted 53-point certificate",
+      "d": 5,
+      "direction_count": 121,
+      "evaluation_ids": [
+        2520
+      ],
+      "p": 3,
+      "points_key": "station_d5_p3_points",
+      "size": 53,
+      "witnesses_key": "station_d5_p3_witnesses"
+    },
+    {
+      "construction": "Eval #2053 persisted exact graph-core and lower-direction anchor map",
+      "d": 5,
+      "direction_count": 781,
+      "evaluation_ids": [
+        2053
+      ],
+      "p": 5,
+      "points_key": "station_d5_p5_points",
+      "size": 490,
+      "witnesses_key": "station_d5_p5_witnesses"
+    },
+    {
+      "construction": "Eval #2053 persisted exact graph-core and lower-direction anchor map",
+      "d": 5,
+      "direction_count": 2801,
+      "evaluation_ids": [
+        2053
+      ],
+      "p": 7,
+      "points_key": "station_d5_p7_points",
+      "size": 2135,
+      "witnesses_key": "station_d5_p7_witnesses"
+    },
+    {
+      "construction": "Eval #2053 persisted exact graph-core and lower-direction anchor map",
+      "d": 5,
+      "direction_count": 16105,
+      "evaluation_ids": [
+        2053
+      ],
+      "p": 11,
+      "points_key": "station_d5_p11_points",
+      "size": 16288,
+      "witnesses_key": "station_d5_p11_witnesses"
+    }
+  ],
+  "schema_version": 1
+}

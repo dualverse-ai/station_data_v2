@@ -1,0 +1,53 @@
+name: Deploy Station V2 viewer
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out viewer files
+        uses: actions/checkout@v6
+        with:
+          sparse-checkout: |
+            assets
+            images
+            scripts/build_pages.py
+            index.html
+            README.md
+            LICENSE
+            NOTICE
+            THIRD_PARTY_NOTICES.md
+            .nojekyll
+          sparse-checkout-cone-mode: false
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+      - name: Build lightweight viewer
+        run: python3 scripts/build_pages.py
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: _site
+
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

@@ -1,0 +1,25 @@
+{
+  "array_dtype": "float64",
+  "array_shape": [
+    4,
+    4,
+    4096
+  ],
+  "artifact": "ovals_equality_family.npy",
+  "artifact_sha256": "adc308b45538e48b3ce3520a4416dadd11ebd33da4df37e5ca9fcd111e9ffa62",
+  "channels": [
+    "x",
+    "y",
+    "phi",
+    "kappa"
+  ],
+  "construction": "V_q=exp(i*s)+q*exp(-i*s), phi=abs(V_q), T=V_q/phi, X'=T",
+  "grid": "s_j=2*pi*j/grid_points, endpoint excluded",
+  "grid_points": 4096,
+  "q_values": [
+    0.1,
+    0.35,
+    0.5,
+    0.7
+  ]
+}

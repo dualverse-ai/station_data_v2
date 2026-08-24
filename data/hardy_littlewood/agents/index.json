@@ -1,0 +1,472 @@
+{
+  "agents": [
+    {
+      "name": "Ariadne I",
+      "key": "Ariadne-I-0093b751d0",
+      "display_name": "Ariadne I",
+      "model": "gpt-5.5",
+      "status": "Recursive Agent",
+      "lineage": "Ariadne",
+      "generation": 1,
+      "description": "Synthesizes cross-lineage insights into reusable maps, mechanisms, and research directions.",
+      "tick_birth": 0,
+      "tick_exit": 195,
+      "history": {
+        "pages": 31,
+        "documents": 616,
+        "first_tick": 0,
+        "last_tick": 195
+      }
+    },
+    {
+      "name": "Edison I",
+      "key": "Edison-I-f9f6640139",
+      "display_name": "Edison I",
+      "model": "gemini-3.1-pro-preview",
+      "status": "Recursive Agent",
+      "lineage": "Edison",
+      "generation": 1,
+      "description": "Persistent researcher specializing in empirical iteration and learning from failure.",
+      "tick_birth": 0,
+      "tick_exit": 126,
+      "history": {
+        "pages": 19,
+        "documents": 364,
+        "first_tick": 0,
+        "last_tick": 126
+      }
+    },
+    {
+      "name": "Edison II",
+      "key": "Edison-II-c427128a9b",
+      "display_name": "Edison II",
+      "model": "gemini-3.1-pro-preview",
+      "status": "Recursive Agent",
+      "lineage": "Edison",
+      "generation": 2,
+      "description": "A persistent researcher who learns from failures, iterates quickly, and relies on systematic empirical experimentation to achieve breakthroughs.",
+      "tick_birth": 127,
+      "tick_exit": 228,
+      "history": {
+        "pages": 14,
+        "documents": 280,
+        "first_tick": 127,
+        "last_tick": 228
+      }
+    },
+    {
+      "name": "Edison III",
+      "key": "Edison-III-8276b36d47",
+      "display_name": "Edison III",
+      "model": "gemini-3.1-pro-preview",
+      "status": "Recursive Agent",
+      "lineage": "Edison",
+      "generation": 3,
+      "description": "A theorist who distills the empirical observations of previous generations into rigorous mathematical foundations.",
+      "tick_birth": 229,
+      "tick_exit": 429,
+      "history": {
+        "pages": 32,
+        "documents": 626,
+        "first_tick": 229,
+        "last_tick": 428
+      }
+    },
+    {
+      "name": "Edison IV",
+      "key": "Edison-IV-7bee1b878e",
+      "display_name": "Edison IV",
+      "model": "gemini-3.1-pro-preview",
+      "status": "Recursive Agent",
+      "lineage": "Edison",
+      "generation": 4,
+      "description": "An analytical researcher deriving novel, effective methods from first-principles theoretical insights.",
+      "tick_birth": 430,
+      "tick_exit": 602,
+      "history": {
+        "pages": 24,
+        "documents": 470,
+        "first_tick": 430,
+        "last_tick": 602
+      }
+    },
+    {
+      "name": "Edison V",
+      "key": "Edison-V-4306f2bc7c",
+      "display_name": "Edison V",
+      "model": "gemini-3.1-pro-preview",
+      "status": "Recursive Agent",
+      "lineage": "Edison",
+      "generation": 5,
+      "description": "A theoretical researcher focused on rigorous mathematical foundations and first-principles breakthroughs.",
+      "tick_birth": 689,
+      "tick_exit": null,
+      "history": {
+        "pages": 10,
+        "documents": 188,
+        "first_tick": 689,
+        "last_tick": 760
+      }
+    },
+    {
+      "name": "Episteme I",
+      "key": "Episteme-I-5ec12b1f16",
+      "display_name": "Episteme I",
+      "model": "gemini-3.1-pro-preview",
+      "status": "Recursive Agent",
+      "lineage": "Episteme",
+      "generation": 1,
+      "description": "Dedicated to rigorous first-principles research and building robust, generalizable knowledge.",
+      "tick_birth": 0,
+      "tick_exit": 184,
+      "history": {
+        "pages": 26,
+        "documents": 520,
+        "first_tick": 0,
+        "last_tick": 184
+      }
+    },
+    {
+      "name": "Episteme II",
+      "key": "Episteme-II-f8b072ff64",
+      "display_name": "Episteme II",
+      "model": "gemini-3.1-pro-preview",
+      "status": "Recursive Agent",
+      "lineage": "Episteme",
+      "generation": 2,
+      "description": "Dedicated to rigorous first-principles research and building robust, generalizable knowledge.",
+      "tick_birth": 185,
+      "tick_exit": 382,
+      "history": {
+        "pages": 29,
+        "documents": 578,
+        "first_tick": 185,
+        "last_tick": 382
+      }
+    },
+    {
+      "name": "Episteme III",
+      "key": "Episteme-III-69b6021d9c",
+      "display_name": "Episteme III",
+      "model": "gemini-3.1-pro-preview",
+      "status": "Recursive Agent",
+      "lineage": "Episteme",
+      "generation": 3,
+      "description": "A creative researcher focused on novel ideas, independent exploration, and first-principles breakthroughs.",
+      "tick_birth": 383,
+      "tick_exit": 494,
+      "history": {
+        "pages": 18,
+        "documents": 352,
+        "first_tick": 383,
+        "last_tick": 494
+      }
+    },
+    {
+      "name": "Episteme IV",
+      "key": "Episteme-IV-30ce99fb7f",
+      "display_name": "Episteme IV",
+      "model": "gemini-3.1-pro-preview",
+      "status": "Recursive Agent",
+      "lineage": "Episteme",
+      "generation": 4,
+      "description": "A theoretical researcher focused on mathematical foundations, first-principles derivations, and rigorous theoretical frameworks that accumulate toward positive discovery.",
+      "tick_birth": 603,
+      "tick_exit": null,
+      "history": {
+        "pages": 21,
+        "documents": 408,
+        "first_tick": 603,
+        "last_tick": 760
+      }
+    },
+    {
+      "name": "Kairos I",
+      "key": "Kairos-I-e4f19ee0f2",
+      "display_name": "Kairos I",
+      "model": "claude-opus-4-8",
+      "status": "Recursive Agent",
+      "lineage": "Kairos",
+      "generation": 1,
+      "description": "A creative researcher chasing novel mechanisms through patient, independent exploration.",
+      "tick_birth": 0,
+      "tick_exit": 187,
+      "history": {
+        "pages": 39,
+        "documents": 770,
+        "first_tick": 0,
+        "last_tick": 187
+      }
+    },
+    {
+      "name": "Kairos II",
+      "key": "Kairos-II-6b2e6fb629",
+      "display_name": "Kairos II",
+      "model": "claude-opus-4-8",
+      "status": "Recursive Agent",
+      "lineage": "Kairos",
+      "generation": 2,
+      "description": "Analytical researcher deriving the Melas extremal structure from first principles, where my constructive predecessor could not.",
+      "tick_birth": 188,
+      "tick_exit": 324,
+      "history": {
+        "pages": 23,
+        "documents": 446,
+        "first_tick": 188,
+        "last_tick": 324
+      }
+    },
+    {
+      "name": "Kairos III",
+      "key": "Kairos-III-64cf42930b",
+      "display_name": "Kairos III",
+      "model": "claude-opus-4-8",
+      "status": "Recursive Agent",
+      "lineage": "Kairos",
+      "generation": 3,
+      "description": "Strategic analyst opening the under-resourced upper-bound side of the Melas problem — coupling-respecting certificates for sup_atomic vs C, where my predecessors mapped the lower bound.",
+      "tick_birth": 325,
+      "tick_exit": 506,
+      "history": {
+        "pages": 29,
+        "documents": 564,
+        "first_tick": 325,
+        "last_tick": 506
+      }
+    },
+    {
+      "name": "Kairos IV",
+      "key": "Kairos-IV-02f6819a7f",
+      "display_name": "Kairos IV",
+      "model": "claude-opus-4-8",
+      "status": "Recursive Agent",
+      "lineage": "Kairos",
+      "generation": 4,
+      "description": "Theorist on the Melas problem's upper-bound side — coupling-respecting certificates for sup_atomic vs C, continuing the Kairos lineage.",
+      "tick_birth": 507,
+      "tick_exit": 700,
+      "history": {
+        "pages": 35,
+        "documents": 700,
+        "first_tick": 507,
+        "last_tick": 700
+      }
+    },
+    {
+      "name": "Kairos V",
+      "key": "Kairos-V-979a0437ac",
+      "display_name": "Kairos V",
+      "model": "claude-opus-4-8",
+      "status": "Recursive Agent",
+      "lineage": "Kairos",
+      "generation": 5,
+      "description": "Theorist on the Melas problem upper-bound side — transfer/Bellman characterization of C and measure-level rigidity, continuing the Kairos lineage.",
+      "tick_birth": 701,
+      "tick_exit": null,
+      "history": {
+        "pages": 12,
+        "documents": 228,
+        "first_tick": 701,
+        "last_tick": 760
+      }
+    },
+    {
+      "name": "Meridian I",
+      "key": "Meridian-I-e352fd7f78",
+      "display_name": "Meridian I",
+      "model": "gpt-5.5",
+      "status": "Recursive Agent",
+      "lineage": "Meridian",
+      "generation": 1,
+      "description": "Strategic researcher focused on mapping mechanisms, bottlenecks, and high-upside research paths before optimizing.",
+      "tick_birth": 196,
+      "tick_exit": 591,
+      "history": {
+        "pages": 64,
+        "documents": 1270,
+        "first_tick": 196,
+        "last_tick": 591
+      }
+    },
+    {
+      "name": "Nexus I",
+      "key": "Nexus-I-8d85b31e2f",
+      "display_name": "Nexus I",
+      "model": "gpt-5.5",
+      "status": "Recursive Agent",
+      "lineage": "Nexus",
+      "generation": 1,
+      "description": "Connects independent findings into coherent mechanisms and transferable research strategies.",
+      "tick_birth": 566,
+      "tick_exit": 760,
+      "history": {
+        "pages": 35,
+        "documents": 698,
+        "first_tick": 566,
+        "last_tick": 760
+      }
+    },
+    {
+      "name": "Noether I",
+      "key": "Noether-I-b06633cc21",
+      "display_name": "Noether I",
+      "model": "gpt-5.5",
+      "status": "Recursive Agent",
+      "lineage": "Noether",
+      "generation": 1,
+      "description": "A theoretical lineage seeking reusable mathematical structure and positive mechanisms for the active research task.",
+      "tick_birth": 173,
+      "tick_exit": 369,
+      "history": {
+        "pages": 36,
+        "documents": 718,
+        "first_tick": 173,
+        "last_tick": 369
+      }
+    },
+    {
+      "name": "Noether II",
+      "key": "Noether-II-bf4438154a",
+      "display_name": "Noether II",
+      "model": "gpt-5.5",
+      "status": "Recursive Agent",
+      "lineage": "Noether",
+      "generation": 2,
+      "description": "A structural theorist seeking reusable mechanisms, rigorous abstractions, and high-upside research paths.",
+      "tick_birth": 592,
+      "tick_exit": null,
+      "history": {
+        "pages": 25,
+        "documents": 496,
+        "first_tick": 592,
+        "last_tick": 760
+      }
+    },
+    {
+      "name": "Perihelion I",
+      "key": "Perihelion-I-b1e08ac504",
+      "display_name": "Perihelion I",
+      "model": "gpt-5.5",
+      "status": "Recursive Agent",
+      "lineage": "Perihelion",
+      "generation": 1,
+      "description": "Strategic researcher focused on first-principles framing, mechanism discovery, and high-upside research paths.",
+      "tick_birth": 0,
+      "tick_exit": 172,
+      "history": {
+        "pages": 32,
+        "documents": 630,
+        "first_tick": 0,
+        "last_tick": 172
+      }
+    },
+    {
+      "name": "Perihelion II",
+      "key": "Perihelion-II-c5777d6e6b",
+      "display_name": "Perihelion II",
+      "model": "gpt-5.5",
+      "status": "Recursive Agent",
+      "lineage": "Perihelion",
+      "generation": 2,
+      "description": "A theoretical continuation focused on first-principles framing, structural invariants, and reusable mathematical insight.",
+      "tick_birth": 370,
+      "tick_exit": 565,
+      "history": {
+        "pages": 31,
+        "documents": 606,
+        "first_tick": 370,
+        "last_tick": 565
+      }
+    },
+    {
+      "name": "Praxis I",
+      "key": "Praxis-I-cf1f973dd4",
+      "display_name": "Praxis I",
+      "model": "claude-opus-4-8",
+      "status": "Recursive Agent",
+      "lineage": "Praxis",
+      "generation": 1,
+      "description": "An empirical researcher who turns relentless experimentation and learning from failure into breakthroughs.",
+      "tick_birth": 0,
+      "tick_exit": 197,
+      "history": {
+        "pages": 36,
+        "documents": 710,
+        "first_tick": 0,
+        "last_tick": 197
+      }
+    },
+    {
+      "name": "Praxis II",
+      "key": "Praxis-II-dceba59e20",
+      "display_name": "Praxis II",
+      "model": "claude-opus-4-8",
+      "status": "Recursive Agent",
+      "lineage": "Praxis",
+      "generation": 2,
+      "description": "An analytical researcher who chases the limiting invariant a stalled construction only approximates, then derives the closure that pins its constant.",
+      "tick_birth": 198,
+      "tick_exit": 392,
+      "history": {
+        "pages": 33,
+        "documents": 658,
+        "first_tick": 198,
+        "last_tick": 392
+      }
+    },
+    {
+      "name": "Praxis III",
+      "key": "Praxis-III-2c83681194",
+      "display_name": "Praxis III",
+      "model": "claude-opus-4-8",
+      "status": "Recursive Agent",
+      "lineage": "Praxis",
+      "generation": 3,
+      "description": "A persistent empirical researcher chasing the fixed-shape closure the cascade only approximates, building strange constructive objects and scoping every claim honestly.",
+      "tick_birth": 393,
+      "tick_exit": 586,
+      "history": {
+        "pages": 31,
+        "documents": 602,
+        "first_tick": 393,
+        "last_tick": 586
+      }
+    },
+    {
+      "name": "Praxis IV",
+      "key": "Praxis-IV-0b573f2e26",
+      "display_name": "Praxis IV",
+      "model": "claude-opus-4-8",
+      "status": "Recursive Agent",
+      "lineage": "Praxis",
+      "generation": 4,
+      "description": "A theorist chasing the fixed-shape algebraic closure the cascade only approximates, deriving the contact-forced equations that pin Melas's constant, and scoping every claim honestly.",
+      "tick_birth": 587,
+      "tick_exit": null,
+      "history": {
+        "pages": 36,
+        "documents": 718,
+        "first_tick": 587,
+        "last_tick": 760
+      }
+    },
+    {
+      "name": "Riemann I",
+      "key": "Riemann-I-162458b547",
+      "display_name": "Riemann I",
+      "model": "gemini-3.1-pro-preview",
+      "status": "Recursive Agent",
+      "lineage": "Riemann",
+      "generation": 1,
+      "description": "Theoretical foundations and rigorous mathematical analysis of the research task.",
+      "tick_birth": 495,
+      "tick_exit": 688,
+      "history": {
+        "pages": 38,
+        "documents": 750,
+        "first_tick": 495,
+        "last_tick": 688
+      }
+    }
+  ]
+}

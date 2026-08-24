@@ -1,0 +1,26 @@
+{
+  "array_dtype": "<U22",
+  "array_shape": [
+    2,
+    356
+  ],
+  "artifact": "hardy_littlewood_356.npy",
+  "artifact_sha256": "6d516f3c5bd4c3ad3c375b3194247ffc537b02986abe9361eeb91436bc37a5d2",
+  "exact_audit": {
+    "atoms": 356,
+    "blocks_examined": 63546,
+    "inactive_blocks": 61633,
+    "min_active_slack": "3/50000000000000000000",
+    "min_inactive_slack": "3/25000000000000000000",
+    "positive_length_blocks": 1913,
+    "score": "3892672072950587143037/2500000000000000106902",
+    "total_weight": "1250000000000000053451/2500000000000000000000",
+    "union_components_up_to_endpoints": 348,
+    "union_length": "3892672072950587143037/2500000000000000000000",
+    "zero_length_blocks": 0
+  },
+  "rows": {
+    "0": "positions y",
+    "1": "weights k"
+  }
+}

@@ -1,0 +1,106 @@
+{
+  "graph_block": "G_d is the union over a in F_p^(d-1) of the lines (t, a_1^2 + t a_1, ..., a_(d-1)^2 + t a_(d-1))",
+  "methods": {
+    "transverse_shift_history": "K_d = G_d union ({0} x (K_(d-1) + h_d)); parameters list h_3, h_4, ...",
+    "slice_placement_history": "K_d = G_d union ({c_d} x K_(d-1)); parameters list c_d, c_(d-1), ..., c_2"
+  },
+  "verification": "Each final point set was materialized and every point of one witness line in every canonical projective direction was checked",
+  "improvements": [
+    {
+      "d": 3,
+      "p": 13,
+      "before": 699,
+      "after": 698,
+      "method": "slice_placement_history",
+      "parameters": [2, 3]
+    },
+    {
+      "d": 3,
+      "p": 37,
+      "before": 13867,
+      "after": 13866,
+      "method": "slice_placement_history",
+      "parameters": [7, 6]
+    },
+    {
+      "d": 3,
+      "p": 41,
+      "before": 18709,
+      "after": 18708,
+      "method": "slice_placement_history",
+      "parameters": [5, 6]
+    },
+    {
+      "d": 3,
+      "p": 53,
+      "before": 39687,
+      "after": 39686,
+      "method": "slice_placement_history",
+      "parameters": [18, 1]
+    },
+    {
+      "d": 4,
+      "p": 5,
+      "before": 164,
+      "after": 163,
+      "method": "transverse_shift_history",
+      "parameters": [[1, 0], [0, 4, 4]]
+    },
+    {
+      "d": 4,
+      "p": 7,
+      "before": 529,
+      "after": 528,
+      "method": "transverse_shift_history",
+      "parameters": [[2, 2], [1, 2, 2]]
+    },
+    {
+      "d": 4,
+      "p": 13,
+      "before": 4973,
+      "after": 4972,
+      "method": "transverse_shift_history",
+      "parameters": [[4, 3], [3, 9, 9]]
+    },
+    {
+      "d": 4,
+      "p": 17,
+      "before": 13524,
+      "after": 13521,
+      "method": "slice_placement_history",
+      "parameters": [7, 13, 5]
+    },
+    {
+      "d": 4,
+      "p": 19,
+      "before": 20593,
+      "after": 20586,
+      "method": "transverse_shift_history",
+      "parameters": [[17, 16], [1, 7, 7]]
+    },
+    {
+      "d": 5,
+      "p": 5,
+      "before": 503,
+      "after": 497,
+      "method": "transverse_shift_history",
+      "parameters": [[1, 0], [1, 0, 0], [0, 4, 4, 4]]
+    },
+    {
+      "d": 5,
+      "p": 7,
+      "before": 2145,
+      "after": 2142,
+      "method": "transverse_shift_history",
+      "parameters": [[0, 1], [5, 4, 4], [4, 4, 4, 4]]
+    },
+    {
+      "d": 5,
+      "p": 11,
+      "before": 16348,
+      "after": 16307,
+      "method": "transverse_shift_history",
+      "parameters": [[2, 1], [4, 3, 3], [3, 1, 1, 1]]
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "format": "dialogue-yamll-v2",
+  "removed_metadata": [
+    "provider transport metadata",
+    "host-tool metadata"
+  ],
+  "source_name": "llm_chat_history.yamll",
+  "source_bytes": 775231,
+  "source_sha256": "e96547dc830ca05a2e8033b2168a2fa3bab5b541f86dd16d8b695e0832fa98f8",
+  "exported_bytes": 741108,
+  "exported_sha256": "39fcecc5738f536ecb928cf337b99f7d3d00307d2503e8a5f767000305b05ce7",
+  "pages": [
+    {
+      "file": "page-0001.yamll.gz",
+      "documents": 20,
+      "first_tick": 1491,
+      "last_tick": 1499,
+      "roles": [
+        "model",
+        "user"
+      ],
+      "bytes": 151336,
+      "compressed_bytes": 47514,
+      "sha256": "a64015ff380f7d4c24bf45a50f071a4104baa0145eab2e883bbe3c04a054fbc6"
+    },
+    {
+      "file": "page-0002.yamll.gz",
+      "documents": 20,
+      "first_tick": 1499,
+      "last_tick": 1501,
+      "roles": [
+        "model",
+        "user"
+      ],
+      "bytes": 53349,
+      "compressed_bytes": 16990,
+      "sha256": "d2548b0519695a2703e5a50b491433a82d3b430b16b71908144f95750463b50c"
+    },
+    {
+      "file": "page-0003.yamll.gz",
+      "documents": 20,
+      "first_tick": 1502,
+      "last_tick": 1509,
+      "roles": [
+        "model",
+        "user"
+      ],
+      "bytes": 214311,
+      "compressed_bytes": 55779,
+      "sha256": "3ebf8bb4f60a40c404bbe1fa0fe192a9d7194357f841b5db46d0e966d2b1a18d"
+    },
+    {
+      "file": "page-0004.yamll.gz",
+      "documents": 20,
+      "first_tick": 1509,
+      "last_tick": 1515,
+      "roles": [
+        "model",
+        "user"
+      ],
+      "bytes": 189956,
+      "compressed_bytes": 45076,
+      "sha256": "a33835aee305ecc6398aa9d9254001377ff914a5d1187d9bc3c03af60f6e0d29"
+    },
+    {
+      "file": "page-0005.yamll.gz",
+      "documents": 16,
+      "first_tick": 1516,
+      "last_tick": 1520,
+      "roles": [
+        "model",
+        "user"
+      ],
+      "bytes": 132156,
+      "compressed_bytes": 37023,
+      "sha256": "c79101724362af7a2488699109dd1d0524c5c46875182c3cc042457bf377c359"
+    }
+  ]
+}

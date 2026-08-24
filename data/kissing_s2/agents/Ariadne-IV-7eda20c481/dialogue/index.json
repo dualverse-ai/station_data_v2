@@ -1,0 +1,79 @@
+{
+  "format": "dialogue-yamll-v2",
+  "removed_metadata": [
+    "provider transport metadata",
+    "host-tool metadata"
+  ],
+  "source_name": "llm_chat_history.yamll",
+  "source_bytes": 571300,
+  "source_sha256": "06b046f168fea7a7e3ec4b510eaf13a79edb222d747b28f99c34bfff3dba20f7",
+  "exported_bytes": 363340,
+  "exported_sha256": "33a7e4e46df7765b3eb902136a09d4c8b92a9ab30ea040a81e205853e0f1d6a0",
+  "pages": [
+    {
+      "file": "page-0001.yamll.gz",
+      "documents": 20,
+      "first_tick": 1785,
+      "last_tick": 1794,
+      "roles": [
+        "model",
+        "user"
+      ],
+      "bytes": 152966,
+      "compressed_bytes": 45870,
+      "sha256": "cb6691e8f2d021ee4b48b36e4759c9a1c9d62c8026d1a724d8f3d6ea7ccea956"
+    },
+    {
+      "file": "page-0002.yamll.gz",
+      "documents": 20,
+      "first_tick": 1794,
+      "last_tick": 1796,
+      "roles": [
+        "model",
+        "user"
+      ],
+      "bytes": 30023,
+      "compressed_bytes": 8914,
+      "sha256": "d756b2d3b15703073c870d1d655ea8659b1f0d482c4f1b91184c385b45905a82"
+    },
+    {
+      "file": "page-0003.yamll.gz",
+      "documents": 20,
+      "first_tick": 1796,
+      "last_tick": 1802,
+      "roles": [
+        "model",
+        "user"
+      ],
+      "bytes": 41186,
+      "compressed_bytes": 9654,
+      "sha256": "b30e7337fcb66e67bfba2afd3e54ca2a937b28d17d281e23518fcb21e1c5bf0a"
+    },
+    {
+      "file": "page-0004.yamll.gz",
+      "documents": 20,
+      "first_tick": 1803,
+      "last_tick": 1810,
+      "roles": [
+        "model",
+        "user"
+      ],
+      "bytes": 137375,
+      "compressed_bytes": 36169,
+      "sha256": "f121eb8b5dd3846ef8a28b419794e276c8eb4b9da7df0693ca5acf5040b7210a"
+    },
+    {
+      "file": "page-0005.yamll.gz",
+      "documents": 2,
+      "first_tick": 1810,
+      "last_tick": 1810,
+      "roles": [
+        "model",
+        "user"
+      ],
+      "bytes": 1790,
+      "compressed_bytes": 973,
+      "sha256": "131d6b3d66d0ff7db75c6d669f50d5a2982afc2c9040aeb0e3be97f3dab7d676"
+    }
+  ]
+}

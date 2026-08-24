@@ -1,0 +1,96 @@
+{
+  "array_encoding": "Each array is a uint8 symmetric zero-diagonal adjacency matrix. For conference_source_q45 and conference_source_q65 it is the source conference graph; every other array is a red Book-Ramsey graph.",
+  "arrays": {
+    "conference_n46": {
+      "adjacency_string_sha256": "383f12d0f85f5b689d1c7509828c8bf57dc67345e336f6a88fc9b0eb5867e904",
+      "dtype": "uint8",
+      "shape": [
+        182,
+        182
+      ]
+    },
+    "conference_n6": {
+      "adjacency_string_sha256": "84ce382953bf24a148b0476e5b3179f373c7276b56768257c454df80f5e5dd90",
+      "dtype": "uint8",
+      "shape": [
+        22,
+        22
+      ]
+    },
+    "conference_n66": {
+      "adjacency_string_sha256": "8bdce7706cb90625b64eb0941c94242092704b52d9dc0af440d0f6e300e84a71",
+      "dtype": "uint8",
+      "shape": [
+        262,
+        262
+      ]
+    },
+    "conference_source_q45": {
+      "adjacency_string_sha256": "7eb2f051b14be393d037f1d6afc460f35eae1cab6b13ca113d71da754c497029",
+      "dtype": "uint8",
+      "shape": [
+        45,
+        45
+      ]
+    },
+    "conference_source_q65": {
+      "adjacency_string_sha256": "a8d866eaf0fe0a79f2da94518cd40a6b0c717e17311fe4038e37f53e3d34c85a",
+      "dtype": "uint8",
+      "shape": [
+        65,
+        65
+      ]
+    },
+    "doubled_n6": {
+      "adjacency_string_sha256": "29f0688397a1d4ac8f1453b7b172a6eaad529236293fe6e55ea97ce3852e98a3",
+      "dtype": "uint8",
+      "shape": [
+        22,
+        22
+      ]
+    },
+    "doubled_n70": {
+      "adjacency_string_sha256": "91ca25491075a53ae4c5aec3fc27f9ecf70001dd6546ee70893cc35196e5a0ea",
+      "dtype": "uint8",
+      "shape": [
+        278,
+        278
+      ]
+    },
+    "finite_n67": {
+      "adjacency_string_sha256": "819dbb3122cbd14d543c2f60588e770d2e5ae00fcd0f98c1bb06df88b23a1cf1",
+      "dtype": "uint8",
+      "shape": [
+        266,
+        266
+      ]
+    },
+    "yamada_pott_n11": {
+      "adjacency_string_sha256": "22c2a5e7bb2ebee5b112a38f2b64f56a34a16eedca1542826a0985b855492506",
+      "dtype": "uint8",
+      "shape": [
+        42,
+        42
+      ]
+    },
+    "yamada_pott_n127": {
+      "adjacency_string_sha256": "c0ee4fd1b6fbcc95f89e44daf19a1866a3b8d336fd4e4734a80346466bda8f6b",
+      "dtype": "uint8",
+      "shape": [
+        506,
+        506
+      ]
+    },
+    "yamada_pott_n86": {
+      "adjacency_string_sha256": "55a612cc15f50a96c28868ab112c88ed67a73af98610f81b2b39fd9f80e08c6b",
+      "dtype": "uint8",
+      "shape": [
+        342,
+        342
+      ]
+    }
+  },
+  "data_file": "book_ramsey_certificates.npz",
+  "data_file_sha256": "c1e59fd047fbcfe32624828a97cd12d21ebb33b62a7eddd9e7e3473c13a4949e",
+  "schema_version": 1
+}

@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Station V2 data viewer">
+  <meta name="station-archive-root" content="https://raw.githubusercontent.com/dualverse-ai/station_data_v2/main/">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self' data:; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self' data:; connect-src 'self' https://raw.githubusercontent.com; object-src 'none'; base-uri 'self'; frame-ancestors 'none'">
+  <title>Station Viewer</title>
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/vendor/katex/katex.min.css">
+  <link rel="stylesheet" href="assets/vendor/highlight/github-dark.min.css">
+  <link rel="stylesheet" href="assets/app.css?v=20260824-2">
+</head>
+<body>
+  <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle color theme">Switch to dark mode</button>
+  <nav id="navbar" class="viewer-nav" hidden>
+    <button id="mobile-menu-toggle" class="mobile-menu-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false">Menu</button>
+    <a class="nav-logo-link" href="#/"><img class="nav-logo" src="images/logo.png" alt="Station"></a>
+    <div id="nav-links" class="nav-links">
+      <a data-page="agents">Agent Dialogue</a>
+      <a data-page="archive">Archive Paper</a>
+      <a data-page="public">Public Memory Capsule</a>
+      <a data-page="private">Private Memory Capsule</a>
+      <a data-page="mail">Mail</a>
+      <a data-page="question">Questions</a>
+      <a data-page="evaluations">Research Submission</a>
+    </div>
+    <div class="station-info">
+      <label for="station-selector">Station:</label>
+      <select id="station-selector"></select>
+      <span class="separator">|</span>
+      <span>End Tick: <strong id="end-tick">—</strong></span>
+    </div>
+  </nav>
+  <div id="mobile-menu-backdrop" class="mobile-menu-backdrop"></div>
+  <main id="app" tabindex="-1"><div class="loading-state">Loading…</div></main>
+  <script src="assets/vendor/marked.umd.js"></script>
+  <script src="assets/vendor/js-yaml.min.js"></script>
+  <script src="assets/vendor/katex/katex.min.js"></script>
+  <script src="assets/vendor/marked-katex.umd.js"></script>
+  <script src="assets/vendor/purify.min.js"></script>
+  <script src="assets/vendor/highlight/highlight.min.js"></script>
+  <script src="assets/knowledge-graph.js?v=20260822-4"></script>
+  <script src="assets/app.js?v=20260824-1"></script>
+</body>
+</html>

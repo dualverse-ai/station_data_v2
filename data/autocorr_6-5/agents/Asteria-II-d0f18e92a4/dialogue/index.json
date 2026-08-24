@@ -1,0 +1,703 @@
+{
+  "format": "dialogue-yamll-v2",
+  "removed_metadata": [
+    "provider transport metadata",
+    "host-tool metadata"
+  ],
+  "source_name": "llm_chat_history.yamll",
+  "source_bytes": 11412150,
+  "source_sha256": "d06de817822b44fb7f90dfe74a15251341a586145639756394ecc0a5e2bf3f0b",
+  "exported_bytes": 8235823,
+  "exported_sha256": "14c0c4b9a4e6605230bcad1c8d6fbd930478bc8cb371750c66942ced5178d09f",
+  "pages": [
+    {
+      "file": "page-0001.yamll.gz",
+      "documents": 20,
+      "first_tick": 963,
+      "last_tick": 971,
+      "roles": [
+        "model",
+        "user"
+      ],
+      "bytes": 102982,
+      "compressed_bytes": 31913,
+      "sha256": "bbdc2284f187a003c66cf3e1927c4c4711dab0f3c3af7e21d71119c281dd70b8"
+    },
+    {
+      "file": "page-0002.yamll.gz",
+      "documents": 20,
+      "first_tick": 971,
+      "last_tick": 972,
+      "roles": [
+        "model",
+        "user"
+      ],
+      "bytes": 47588,
+      "compressed_bytes": 15757,
+      "sha256": "e4cc99c557aa3419854e12a238ad225874e3d2d7a41d5efa2b4c8dd956549586"
+    },
+    {
+      "file": "page-0003.yamll.gz",
+      "documents": 20,
+      "first_tick": 973,
+      "last_tick": 977,
+      "roles": [
+        "model",
+        "user"
+      ],
+      "bytes": 110775,
+      "compressed_bytes": 33697,
+      "sha256": "4aae8ac394913bffef467bb063ce3f3a5516cadd2bf024dc455202faba2881f1"
+    },
+    {
+      "file": "page-0004.yamll.gz",
+      "documents": 20,
+      "first_tick": 978,
+      "last_tick": 984,
+      "roles": [
+        "model",
+        "user"
+      ],
+      "bytes": 110582,
+      "compressed_bytes": 27502,
+      "sha256": "467c88992e4e01884b8035b7cf0cf54377579e76b23822742597aeb45cc02638"
+    },
+    {
+      "file": "page-0005.yamll.gz",
+      "documents": 20,
+      "first_tick": 985,
+      "last_tick": 990,
+      "roles": [
+        "model",
+        "user"
+      ],
+      "bytes": 107214,
+      "compressed_bytes": 26878,
+      "sha256": "129f0f96336510ed23bedabeafe904324683c78ccfd7e2993fa33576a70ed4cb"
+    },
+    {
+      "file": "page-0006.yamll.gz",
+      "documents": 20,
+      "first_tick": 990,
+      "last_tick": 998,
+      "roles": [
+        "model",
+        "user"
+      ],
+      "bytes": 168887,
+      "compressed_bytes": 38359,
+      "sha256": "7165e41a9cc77af65d7892d4261dc8d28761914083e95f148f82c4561d419b31"
+    },
+    {
+      "file": "page-0007.yamll.gz",
+      "documents": 20,
+      "first_tick": 998,
+      "last_tick": 1002,
+      "roles": [
+        "model",
+        "user"
+      ],
+      "bytes": 57396,
+      "compressed_bytes": 16415,
+      "sha256": "5fef6765924b923a4fa87d21e774dd167494b15c469fccb5142e4e33162df965"
+    },
+    {
+      "file": "page-0008.yamll.gz",
+      "documents": 20,
+      "first_tick": 1003,
+      "last_tick": 1009,
+      "roles": [
+        "model",
+        "user"
+      ],
+      "bytes": 220550,
+      "compressed_bytes": 68276,
+      "sha256": "d5b06877752a5739c8c776a9785cee40db644a7c5e1bf3301c06a1497352a1b1"
+    },
+    {
+      "file": "page-0009.yamll.gz",
+      "documents": 20,
+      "first_tick": 1009,
+      "last_tick": 1016,
+      "roles": [
+        "model",
+        "user"
+      ],
+      "bytes": 85254,
+      "compressed_bytes": 21246,
+      "sha256": "57b00562e95d6dd69284784d29d4822714699064e388676428cd37114d48d7be"
+    },
+    {
+      "file": "page-0010.yamll.gz",
+      "documents": 20,
+      "first_tick": 1017,
+      "last_tick": 1024,
+      "roles": [
+        "model",
+        "user"
+      ],
+      "bytes": 377656,
+      "compressed_bytes": 114789,
+      "sha256": "db1e0e1754a408444913cd202bc46799bc31ab6591e9d52d7f45d04bc2d7d49a"
+    },
+    {
+      "file": "page-0011.yamll.gz",
+      "documents": 20,
+      "first_tick": 1025,
+      "last_tick": 1029,
+      "roles": [
+        "model",
+        "user"
+      ],
+      "bytes": 327306,
+      "compressed_bytes": 103992,
+      "sha256": "a673ef8ce14bd865a1951211d5c57d580169befd7076d4957ee58dd58d932d76"
+    },
+    {
+      "file": "page-0012.yamll.gz",
+      "documents": 20,
+      "first_tick": 1030,
+      "last_tick": 1039,
+      "roles": [
+        "model",
+        "user"
+      ],
+      "bytes": 321556,
+      "compressed_bytes": 94817,
+      "sha256": "fc70eabb22213dd12f8987f146ddd2389b2002bbedbc6548aaf6395e3d88f7bf"
+    },
+    {
+      "file": "page-0013.yamll.gz",
+      "documents": 20,
+      "first_tick": 1040,
+      "last_tick": 1046,
+      "roles": [
+        "model",
+        "user"
+      ],
+      "bytes": 170437,
+      "compressed_bytes": 36775,
+      "sha256": "2c3d9c86a9bcca652cbcbdd83b3f83e65464a2bec7d24c34dcb034e297d26022"
+    },
+    {
+      "file": "page-0014.yamll.gz",
+      "documents": 20,
+      "first_tick": 1047,
+      "last_tick": 1056,
+      "roles": [
+        "model",
+        "user"
+      ],
+      "bytes": 238826,
+      "compressed_bytes": 61987,
+      "sha256": "d77edc9fba24c572a96c91f6e3232497c8b4f10457c59e207727bc00e487027c"
+    },
+    {
+      "file": "page-0015.yamll.gz",
+      "documents": 20,
+      "first_tick": 1057,
+      "last_tick": 1065,
+      "roles": [
+        "model",
+        "user"
+      ],
+      "bytes": 308374,
+      "compressed_bytes": 84078,
+      "sha256": "3c79d41c0ef4f9112a00b27e95859be8786d5ab1c19c6da5ffc31000522d77ed"
+    },
+    {
+      "file": "page-0016.yamll.gz",
+      "documents": 20,
+      "first_tick": 1066,
+      "last_tick": 1071,
+      "roles": [
+        "model",
+        "user"
+      ],
+      "bytes": 109868,
+      "compressed_bytes": 26344,
+      "sha256": "18295b03da87af31bd0357f78e74b07cab83e2566077949b55dc65b4015b946e"
+    },
+    {
+      "file": "page-0017.yamll.gz",
+      "documents": 20,
+      "first_tick": 1072,
+      "last_tick": 1079,
+      "roles": [
+        "model",
+        "user"
+      ],
+      "bytes": 141984,
+      "compressed_bytes": 34084,
+      "sha256": "bdbfe18d9dfdf398691edf9379559922350bdd0dd83ef3f508f5fd2d86cb18f9"
+    },
+    {
+      "file": "page-0018.yamll.gz",
+      "documents": 20,
+      "first_tick": 1079,
+      "last_tick": 1088,
+      "roles": [
+        "model",
+        "user"
+      ],
+      "bytes": 155387,
+      "compressed_bytes": 34442,
+      "sha256": "3ea0d6228afc4fcef76af374b1ab43a6481668d2cba9f91012a68c3b78bc3e89"
+    },
+    {
+      "file": "page-0019.yamll.gz",
+      "documents": 20,
+      "first_tick": 1089,
+      "last_tick": 1092,
+      "roles": [
+        "model",
+        "user"
+      ],
+      "bytes": 72091,
+      "compressed_bytes": 18522,
+      "sha256": "15f13604907514b860d69de0e9f408258cbb4b1ba20f8063cde3f6ccf2a12e36"
+    },
+    {
+      "file": "page-0020.yamll.gz",
+      "documents": 20,
+      "first_tick": 1093,
+      "last_tick": 1102,
+      "roles": [
+        "model",
+        "user"
+      ],
+      "bytes": 144236,
+      "compressed_bytes": 25687,
+      "sha256": "6f694b05ea17d2edabfec12f874a65f741ea1262c46af841006893582bbbd03e"
+    },
+    {
+      "file": "page-0021.yamll.gz",
+      "documents": 20,
+      "first_tick": 1103,
+      "last_tick": 1112,
+      "roles": [
+        "model",
+        "user"
+      ],
+      "bytes": 169557,
+      "compressed_bytes": 39483,
+      "sha256": "ab5a9ec2a0e20b72765c8568bf34683a43a4e6183c62ef233446226b7ad18e7e"
+    },
+    {
+      "file": "page-0022.yamll.gz",
+      "documents": 20,
+      "first_tick": 1113,
+      "last_tick": 1120,
+      "roles": [
+        "model",
+        "user"
+      ],
+      "bytes": 116322,
+      "compressed_bytes": 23242,
+      "sha256": "9b7073c0064a6fe97a8547daed97cfdeb96129c059a0029bed03fcb48e9db972"
+    },
+    {
+      "file": "page-0023.yamll.gz",
+      "documents": 20,
+      "first_tick": 1120,
+      "last_tick": 1128,
+      "roles": [
+        "model",
+        "user"
+      ],
+      "bytes": 277472,
+      "compressed_bytes": 81563,
+      "sha256": "f0eb7eee9c5830c47464c512f1c850f55704639e3a7734a3c8a0d6dd2f00ca95"
+    },
+    {
+      "file": "page-0024.yamll.gz",
+      "documents": 20,
+      "first_tick": 1129,
+      "last_tick": 1135,
+      "roles": [
+        "model",
+        "user"
+      ],
+      "bytes": 93689,
+      "compressed_bytes": 22453,
+      "sha256": "3815aab38213499e1ce4a71510769b32975a602ce5c6d39ec03e495fb756cbb2"
+    },
+    {
+      "file": "page-0025.yamll.gz",
+      "documents": 20,
+      "first_tick": 1136,
+      "last_tick": 1145,
+      "roles": [
+        "model",
+        "user"
+      ],
+      "bytes": 249662,
+      "compressed_bytes": 67057,
+      "sha256": "71ab43e9b212b1e803dc360c06ef197e4766db648da5628d89febd987b6ccb0c"
+    },
+    {
+      "file": "page-0026.yamll.gz",
+      "documents": 20,
+      "first_tick": 1146,
+      "last_tick": 1152,
+      "roles": [
+        "model",
+        "user"
+      ],
+      "bytes": 96012,
+      "compressed_bytes": 22144,
+      "sha256": "763fc8c59db5ffb80b1b7b2790ff7bf44b918f7d4ba59b11404a2d3fd7947b90"
+    },
+    {
+      "file": "page-0027.yamll.gz",
+      "documents": 20,
+      "first_tick": 1153,
+      "last_tick": 1159,
+      "roles": [
+        "model",
+        "user"
+      ],
+      "bytes": 121278,
+      "compressed_bytes": 31938,
+      "sha256": "61fd2089199cc32c55781a74fa74101ba136f20e1150d448bada2c903d55e21d"
+    },
+    {
+      "file": "page-0028.yamll.gz",
+      "documents": 20,
+      "first_tick": 1160,
+      "last_tick": 1169,
+      "roles": [
+        "model",
+        "user"
+      ],
+      "bytes": 143697,
+      "compressed_bytes": 33741,
+      "sha256": "489fdd84aaca09c8b7c29b5911335ad013d20afb1b974eb00d0d9a9e0141b026"
+    },
+    {
+      "file": "page-0029.yamll.gz",
+      "documents": 20,
+      "first_tick": 1170,
+      "last_tick": 1179,
+      "roles": [
+        "model",
+        "user"
+      ],
+      "bytes": 125799,
+      "compressed_bytes": 26601,
+      "sha256": "95219881307fcd100bc23f1bf141295f28c74dfaa154a0b5faa315c9925e5710"
+    },
+    {
+      "file": "page-0030.yamll.gz",
+      "documents": 20,
+      "first_tick": 1180,
+      "last_tick": 1185,
+      "roles": [
+        "model",
+        "user"
+      ],
+      "bytes": 229872,
+      "compressed_bytes": 70937,
+      "sha256": "7798cbd65048150b79b89645862083d6fc2d2c29ffd52cc3eda576c1a375b2da"
+    },
+    {
+      "file": "page-0031.yamll.gz",
+      "documents": 20,
+      "first_tick": 1186,
+      "last_tick": 1192,
+      "roles": [
+        "model",
+        "user"
+      ],
+      "bytes": 119895,
+      "compressed_bytes": 26985,
+      "sha256": "c96a8c9f5c353372c830a97a0dc8c3dc41d2b1fe4ac561ac12a64c6ea52a84ee"
+    },
+    {
+      "file": "page-0032.yamll.gz",
+      "documents": 20,
+      "first_tick": 1193,
+      "last_tick": 1200,
+      "roles": [
+        "model",
+        "user"
+      ],
+      "bytes": 153928,
+      "compressed_bytes": 34682,
+      "sha256": "6e337f288c098cc3d053284e14ce38ead22bcfa198cf6e01a4c2d050dcfe77eb"
+    },
+    {
+      "file": "page-0033.yamll.gz",
+      "documents": 20,
+      "first_tick": 1200,
+      "last_tick": 1209,
+      "roles": [
+        "model",
+        "user"
+      ],
+      "bytes": 172837,
+      "compressed_bytes": 38781,
+      "sha256": "d459b8dd0f1ccede1f0815f67696cc9ea0a04695185cfb49851b3c7e1e8f4b30"
+    },
+    {
+      "file": "page-0034.yamll.gz",
+      "documents": 20,
+      "first_tick": 1210,
+      "last_tick": 1219,
+      "roles": [
+        "model",
+        "user"
+      ],
+      "bytes": 171028,
+      "compressed_bytes": 35777,
+      "sha256": "09458c7f22bb737c8e88646ca697a04c8d00c7082e360824e4f852170508eb80"
+    },
+    {
+      "file": "page-0035.yamll.gz",
+      "documents": 20,
+      "first_tick": 1220,
+      "last_tick": 1229,
+      "roles": [
+        "model",
+        "user"
+      ],
+      "bytes": 154407,
+      "compressed_bytes": 30247,
+      "sha256": "ec566c30e6a54f94d4a8959839f80e81c0951d84c742de59c813a58ee4413886"
+    },
+    {
+      "file": "page-0036.yamll.gz",
+      "documents": 20,
+      "first_tick": 1230,
+      "last_tick": 1239,
+      "roles": [
+        "model",
+        "user"
+      ],
+      "bytes": 153623,
+      "compressed_bytes": 33679,
+      "sha256": "b06d9918641f83c4e7f8b5184486a659c4eba2def7e5fc54f5756351d909c25c"
+    },
+    {
+      "file": "page-0037.yamll.gz",
+      "documents": 20,
+      "first_tick": 1240,
+      "last_tick": 1247,
+      "roles": [
+        "model",
+        "user"
+      ],
+      "bytes": 268984,
+      "compressed_bytes": 75320,
+      "sha256": "fccd75dff7f0d973d0d0d874ec0de47f26dc217b94c665df58644b4e0b3240fa"
+    },
+    {
+      "file": "page-0038.yamll.gz",
+      "documents": 20,
+      "first_tick": 1247,
+      "last_tick": 1254,
+      "roles": [
+        "model",
+        "user"
+      ],
+      "bytes": 79074,
+      "compressed_bytes": 17045,
+      "sha256": "37b81589a444959b80471842cc0e017898aa541112e70379132011729bc9e54e"
+    },
+    {
+      "file": "page-0039.yamll.gz",
+      "documents": 20,
+      "first_tick": 1255,
+      "last_tick": 1261,
+      "roles": [
+        "model",
+        "user"
+      ],
+      "bytes": 107666,
+      "compressed_bytes": 26532,
+      "sha256": "377a67cf16904efeb330b753c0cc49666cbde23c08887f51cc0cbf999af4757b"
+    },
+    {
+      "file": "page-0040.yamll.gz",
+      "documents": 20,
+      "first_tick": 1262,
+      "last_tick": 1270,
+      "roles": [
+        "model",
+        "user"
+      ],
+      "bytes": 131825,
+      "compressed_bytes": 26793,
+      "sha256": "b4a22c7f2709ed7cc28e1cb800e9a630dd58cc1347906e20a2c01df5b6129f10"
+    },
+    {
+      "file": "page-0041.yamll.gz",
+      "documents": 20,
+      "first_tick": 1270,
+      "last_tick": 1278,
+      "roles": [
+        "model",
+        "user"
+      ],
+      "bytes": 140059,
+      "compressed_bytes": 32396,
+      "sha256": "aa6f9e753bb95822ab42c9888b6917a65cfcc35136bfa61d9b0c32b883f71a6f"
+    },
+    {
+      "file": "page-0042.yamll.gz",
+      "documents": 20,
+      "first_tick": 1279,
+      "last_tick": 1287,
+      "roles": [
+        "model",
+        "user"
+      ],
+      "bytes": 155690,
+      "compressed_bytes": 37174,
+      "sha256": "92c6ff9e71cdc57efdc92a91a6737a278bb75196a535c63bec7aa54906131699"
+    },
+    {
+      "file": "page-0043.yamll.gz",
+      "documents": 20,
+      "first_tick": 1287,
+      "last_tick": 1290,
+      "roles": [
+        "model",
+        "user"
+      ],
+      "bytes": 64161,
+      "compressed_bytes": 18402,
+      "sha256": "4f18180a91070608be95ee870e1ac982b72f4b2881fa58204fae866892d21bb8"
+    },
+    {
+      "file": "page-0044.yamll.gz",
+      "documents": 20,
+      "first_tick": 1291,
+      "last_tick": 1299,
+      "roles": [
+        "model",
+        "user"
+      ],
+      "bytes": 168395,
+      "compressed_bytes": 37472,
+      "sha256": "b5210b4e8251d71745efef71443a3a22865006beee26e3b02d5839d672cda66f"
+    },
+    {
+      "file": "page-0045.yamll.gz",
+      "documents": 20,
+      "first_tick": 1299,
+      "last_tick": 1301,
+      "roles": [
+        "model",
+        "user"
+      ],
+      "bytes": 42900,
+      "compressed_bytes": 12849,
+      "sha256": "5b64c30e3daf55d617881f4fd086af7d433baa94c3ba5763a1621e6dd48644fe"
+    },
+    {
+      "file": "page-0046.yamll.gz",
+      "documents": 20,
+      "first_tick": 1302,
+      "last_tick": 1307,
+      "roles": [
+        "model",
+        "user"
+      ],
+      "bytes": 218626,
+      "compressed_bytes": 64220,
+      "sha256": "b786e172fe7706cecd9ea11cf828bbdc5869df84d3e25cb2dd763dadc48088de"
+    },
+    {
+      "file": "page-0047.yamll.gz",
+      "documents": 20,
+      "first_tick": 1308,
+      "last_tick": 1313,
+      "roles": [
+        "model",
+        "user"
+      ],
+      "bytes": 108325,
+      "compressed_bytes": 26736,
+      "sha256": "0c1e43efbc7f59bd06f79aa3184af12f907b4b08fd6f168a78e96d12ee5ecc34"
+    },
+    {
+      "file": "page-0048.yamll.gz",
+      "documents": 20,
+      "first_tick": 1314,
+      "last_tick": 1319,
+      "roles": [
+        "model",
+        "user"
+      ],
+      "bytes": 86069,
+      "compressed_bytes": 19993,
+      "sha256": "1c5383ad108bfbe81dd397db5bc1886eedcded586aa11e2fb9fd4b29d18c812c"
+    },
+    {
+      "file": "page-0049.yamll.gz",
+      "documents": 20,
+      "first_tick": 1319,
+      "last_tick": 1328,
+      "roles": [
+        "model",
+        "user"
+      ],
+      "bytes": 189453,
+      "compressed_bytes": 50071,
+      "sha256": "644f907d0c1633f747fcb8794c339251ba9b912147312cceab2be5bee472d069"
+    },
+    {
+      "file": "page-0050.yamll.gz",
+      "documents": 20,
+      "first_tick": 1329,
+      "last_tick": 1334,
+      "roles": [
+        "model",
+        "user"
+      ],
+      "bytes": 128451,
+      "compressed_bytes": 32554,
+      "sha256": "bf4c996fd0ce59c00b9c786fef3869725d10a03b6863426799ae4d7d3a3e7bef"
+    },
+    {
+      "file": "page-0051.yamll.gz",
+      "documents": 20,
+      "first_tick": 1335,
+      "last_tick": 1344,
+      "roles": [
+        "model",
+        "user"
+      ],
+      "bytes": 162705,
+      "compressed_bytes": 35408,
+      "sha256": "26a06c53b13963c68938d93b177a7f4664d8a29fa8a31a2d50fd0601446b36c6"
+    },
+    {
+      "file": "page-0052.yamll.gz",
+      "documents": 20,
+      "first_tick": 1345,
+      "last_tick": 1354,
+      "roles": [
+        "model",
+        "user"
+      ],
+      "bytes": 184735,
+      "compressed_bytes": 49175,
+      "sha256": "3c564739e294dbf1944338799cbd59af7a9bd50d30809dfc6c33c6015de41b6f"
+    },
+    {
+      "file": "page-0053.yamll.gz",
+      "documents": 10,
+      "first_tick": 1355,
+      "last_tick": 1358,
+      "roles": [
+        "model",
+        "user"
+      ],
+      "bytes": 70678,
+      "compressed_bytes": 19478,
+      "sha256": "09356cbdac0db4b4d2ca138560d3f99eada7afce6bdaa7db64564e827e6d3e2c"
+    }
+  ]
+}

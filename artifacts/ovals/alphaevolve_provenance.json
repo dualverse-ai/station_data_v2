@@ -1,0 +1,20 @@
+{
+  "paper": {
+    "arxiv": "2511.02864",
+    "local_sha256": "77b43844077c98c26dfc76ad391cadbbd53d48a1d290ddae575ff4d1bcdef9d2",
+    "problem": "Problem 6.19 (Ovals problem)",
+    "result_summary": "The paper says that most runs obtained the circle with a constant test function and that AlphaEvolve did not obtain the additional noncircular optimal ovals.",
+    "section": "Section 6.8 in the arXiv numbering; section 8 in the extracted main text"
+  },
+  "repository": {
+    "commit": "8f447457957deac61e28bf1676746f0753b3b2f8",
+    "notebook_path": "experiments/ovals_problem/ovals_problem.ipynb",
+    "notebook_sha256": "5745654087376d544b6414ff0777452cb56f3d1f00dcca37decb07a79b1b71df",
+    "evolved_example": {
+      "curve": "x=cos(theta), y=sin(theta)",
+      "test_function": "phi=1",
+      "noncircular_family_parameter_present": false
+    },
+    "url": "https://github.com/google-deepmind/alphaevolve_repository_of_problems/blob/8f447457957deac61e28bf1676746f0753b3b2f8/experiments/ovals_problem/ovals_problem.ipynb"
+  }
+}

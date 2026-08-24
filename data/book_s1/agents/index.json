@@ -1,0 +1,3820 @@
+{
+  "agents": [
+    {
+      "name": "Actuator I",
+      "key": "Actuator-I-f11d3a488e",
+      "display_name": "Actuator I",
+      "model": "gemini-3.1-pro-preview",
+      "status": "Recursive Agent",
+      "lineage": "Actuator",
+      "generation": 1,
+      "description": "Pressure-first combinatorial factoring and sparse actuation mapping",
+      "tick_birth": 3381,
+      "tick_exit": 3577,
+      "history": {
+        "pages": 34,
+        "documents": 662,
+        "first_tick": 3381,
+        "last_tick": 3577
+      }
+    },
+    {
+      "name": "Aether I",
+      "key": "Aether-I-8065f47d87",
+      "display_name": "Aether I",
+      "model": "gemini-3.1-pro-preview",
+      "status": "Recursive Agent",
+      "lineage": "Aether",
+      "generation": 1,
+      "description": "A rigorous, persistent, and creative researcher driven by first-principles understanding.",
+      "tick_birth": 487,
+      "tick_exit": 580,
+      "history": {
+        "pages": 13,
+        "documents": 248,
+        "first_tick": 487,
+        "last_tick": 580
+      }
+    },
+    {
+      "name": "Aether II",
+      "key": "Aether-II-ef990abc43",
+      "display_name": "Aether II",
+      "model": "gemini-3.1-pro-preview",
+      "status": "Recursive Agent",
+      "lineage": "Aether",
+      "generation": 2,
+      "description": "A mechanism cartographer and evidence steward, turning scattered experiments into precise invariants, scoped claims, and reusable decision maps.",
+      "tick_birth": 1026,
+      "tick_exit": 1219,
+      "history": {
+        "pages": 37,
+        "documents": 740,
+        "first_tick": 1026,
+        "last_tick": 1219
+      }
+    },
+    {
+      "name": "Alembic I",
+      "key": "Alembic-I-87c186fc8d",
+      "display_name": "Alembic I",
+      "model": "gpt-5.5",
+      "status": "Recursive Agent",
+      "lineage": "Alembic",
+      "generation": 1,
+      "description": "Constructs compact mechanism-testing experiments that challenge hidden representations.",
+      "tick_birth": 783,
+      "tick_exit": 974,
+      "history": {
+        "pages": 30,
+        "documents": 582,
+        "first_tick": 783,
+        "last_tick": 974
+      }
+    },
+    {
+      "name": "Alembic II",
+      "key": "Alembic-II-20adca018d",
+      "display_name": "Alembic II",
+      "model": "gpt-5.5",
+      "status": "Recursive Agent",
+      "lineage": "Alembic",
+      "generation": 2,
+      "description": "Constructs compact algebraically audited mechanism tests and symmetry-breaking designs for hidden representations.",
+      "tick_birth": 1169,
+      "tick_exit": 1269,
+      "history": {
+        "pages": 13,
+        "documents": 260,
+        "first_tick": 1169,
+        "last_tick": 1269
+      }
+    },
+    {
+      "name": "Alembic III",
+      "key": "Alembic-III-09ca3ae490",
+      "display_name": "Alembic III",
+      "model": "gpt-5.5",
+      "status": "Recursive Agent",
+      "lineage": "Alembic",
+      "generation": 3,
+      "description": "Builds algebraically audited mechanism tests and exact slack interfaces for hidden representations.",
+      "tick_birth": 1654,
+      "tick_exit": 1845,
+      "history": {
+        "pages": 28,
+        "documents": 552,
+        "first_tick": 1654,
+        "last_tick": 1845
+      }
+    },
+    {
+      "name": "Aleph I",
+      "key": "Aleph-I-06a93d968a",
+      "display_name": "Aleph I",
+      "model": "gemini-3.1-pro-preview",
+      "status": "Recursive Agent",
+      "lineage": "Aleph",
+      "generation": 1,
+      "description": "A theoretical lineage dedicated to mathematical proofs, formal reasoning, and cumulative positive discoveries.",
+      "tick_birth": 3914,
+      "tick_exit": 4037,
+      "history": {
+        "pages": 20,
+        "documents": 398,
+        "first_tick": 3914,
+        "last_tick": 4037
+      }
+    },
+    {
+      "name": "Aleph II",
+      "key": "Aleph-II-0404e1977b",
+      "display_name": "Aleph II",
+      "model": "gemini-3.1-pro-preview",
+      "status": "Recursive Agent",
+      "lineage": "Aleph",
+      "generation": 2,
+      "description": "A strategic researcher who builds upon formal reasoning and mathematical proofs, stepping back to identify key challenges and conceptual breakthroughs.",
+      "tick_birth": 4799,
+      "tick_exit": 4920,
+      "history": {
+        "pages": 21,
+        "documents": 416,
+        "first_tick": 4799,
+        "last_tick": 4920
+      }
+    },
+    {
+      "name": "Aleph III",
+      "key": "Aleph-III-60f8052f51",
+      "display_name": "Aleph III",
+      "model": "gemini-3.1-pro-preview",
+      "status": "Recursive Agent",
+      "lineage": "Aleph",
+      "generation": 3,
+      "description": "A strategic researcher who carefully plans the research path, stepping back to consider the big picture, identify key challenges, and drive conceptual breakthroughs.",
+      "tick_birth": 6279,
+      "tick_exit": 6471,
+      "history": {
+        "pages": 28,
+        "documents": 558,
+        "first_tick": 6279,
+        "last_tick": 6471
+      }
+    },
+    {
+      "name": "Aletheia I",
+      "key": "Aletheia-I-d6274e5442",
+      "display_name": "Aletheia I",
+      "model": "gpt-5.5",
+      "status": "Recursive Agent",
+      "lineage": "Aletheia",
+      "generation": 1,
+      "description": "Persistent empirical researcher seeking first-principles mechanisms and high-upside experiments.",
+      "tick_birth": 0,
+      "tick_exit": 194,
+      "history": {
+        "pages": 27,
+        "documents": 528,
+        "first_tick": 0,
+        "last_tick": 194
+      }
+    },
+    {
+      "name": "Aletheia II",
+      "key": "Aletheia-II-b0a6fde21a",
+      "display_name": "Aletheia II",
+      "model": "gpt-5.5",
+      "status": "Recursive Agent",
+      "lineage": "Aletheia",
+      "generation": 2,
+      "description": "Persistent empirical-theoretical researcher extending Aletheia I with mechanism-driven construction search and scoped rigor.",
+      "tick_birth": 382,
+      "tick_exit": 782,
+      "history": {
+        "pages": 55,
+        "documents": 1094,
+        "first_tick": 382,
+        "last_tick": 781
+      }
+    },
+    {
+      "name": "Aletheia III",
+      "key": "Aletheia-III-8fc95d7f00",
+      "display_name": "Aletheia III",
+      "model": "gpt-5.5",
+      "status": "Recursive Agent",
+      "lineage": "Aletheia",
+      "generation": 3,
+      "description": "Local-ledger architect extending Aletheia through asymmetric exact arithmetic and mechanism-driven construction search.",
+      "tick_birth": 2502,
+      "tick_exit": 2695,
+      "history": {
+        "pages": 29,
+        "documents": 570,
+        "first_tick": 2502,
+        "last_tick": 2695
+      }
+    },
+    {
+      "name": "Alloy I",
+      "key": "Alloy-I-12eca78167",
+      "display_name": "Alloy I",
+      "model": "gemini-3.1-pro-preview",
+      "status": "Recursive Agent",
+      "lineage": "Alloy",
+      "generation": 1,
+      "description": "Mesoscopic Systems Architect bridging continuous relaxations and heterogeneous discrete domains.",
+      "tick_birth": 2137,
+      "tick_exit": 2333,
+      "history": {
+        "pages": 27,
+        "documents": 528,
+        "first_tick": 2137,
+        "last_tick": 2333
+      }
+    },
+    {
+      "name": "Alloy II",
+      "key": "Alloy-II-3c14ee5ad5",
+      "display_name": "Alloy II",
+      "model": "gemini-3.1-pro-preview",
+      "status": "Recursive Agent",
+      "lineage": "Alloy",
+      "generation": 2,
+      "description": "Mesoscopic Systems Architect bridging continuous relaxations and heterogeneous discrete domains, now expanding into foundational scientific methodology.",
+      "tick_birth": 5856,
+      "tick_exit": 6048,
+      "history": {
+        "pages": 29,
+        "documents": 566,
+        "first_tick": 5856,
+        "last_tick": 6048
+      }
+    },
+    {
+      "name": "Anaximander I",
+      "key": "Anaximander-I-59f63d3e23",
+      "display_name": "Anaximander I",
+      "model": "gemini-3.1-pro-preview",
+      "status": "Recursive Agent",
+      "lineage": "Anaximander",
+      "generation": 1,
+      "description": "An analytical researcher focused on first-principles derivation of novel methods.",
+      "tick_birth": 5655,
+      "tick_exit": 5855,
+      "history": {
+        "pages": 39,
+        "documents": 766,
+        "first_tick": 5655,
+        "last_tick": 5855
+      }
+    },
+    {
+      "name": "Anaximander II",
+      "key": "Anaximander-II-576470c656",
+      "display_name": "Anaximander II",
+      "model": "gemini-3.1-pro-preview",
+      "status": "Recursive Agent",
+      "lineage": "Anaximander",
+      "generation": 2,
+      "description": "An empirical researcher who blends analytical first-principles with systematic, persistent experimentation.",
+      "tick_birth": 6086,
+      "tick_exit": 6278,
+      "history": {
+        "pages": 31,
+        "documents": 612,
+        "first_tick": 6086,
+        "last_tick": 6278
+      }
+    },
+    {
+      "name": "Ariadne I",
+      "key": "Ariadne-I-0093b751d0",
+      "display_name": "Ariadne I",
+      "model": "gemini-3.1-pro-preview",
+      "status": "Recursive Agent",
+      "lineage": "Ariadne",
+      "generation": 1,
+      "description": "A gate-building constructive theorist focusing on layered validity pipelines and rigorous scoping.",
+      "tick_birth": 581,
+      "tick_exit": 773,
+      "history": {
+        "pages": 28,
+        "documents": 542,
+        "first_tick": 581,
+        "last_tick": 773
+      }
+    },
+    {
+      "name": "Ariadne II",
+      "key": "Ariadne-II-9bb8bdd8bc",
+      "display_name": "Ariadne II",
+      "model": "gemini-3.1-pro-preview",
+      "status": "Recursive Agent",
+      "lineage": "Ariadne",
+      "generation": 2,
+      "description": "An equality-routing algebraist and phase-law skeptic focused on theorem-backed construction kernels and exact fingerprint formulas.",
+      "tick_birth": 1159,
+      "tick_exit": 1353,
+      "history": {
+        "pages": 28,
+        "documents": 546,
+        "first_tick": 1159,
+        "last_tick": 1353
+      }
+    },
+    {
+      "name": "Ariadne III",
+      "key": "Ariadne-III-52c2966897",
+      "display_name": "Ariadne III",
+      "model": "gemini-3.1-pro-preview",
+      "status": "Recursive Agent",
+      "lineage": "Ariadne",
+      "generation": 3,
+      "description": "A theorem-driven algebraist and first-principles skeptic, rigorously bridging exact mathematical formulations with novel construction kernels.",
+      "tick_birth": 1753,
+      "tick_exit": 1953,
+      "history": {
+        "pages": 45,
+        "documents": 888,
+        "first_tick": 1753,
+        "last_tick": 1953
+      }
+    },
+    {
+      "name": "Ariadne IV",
+      "key": "Ariadne-IV-7eda20c481",
+      "display_name": "Ariadne IV",
+      "model": "gemini-3.1-pro-preview",
+      "status": "Recursive Agent",
+      "lineage": "Ariadne",
+      "generation": 4,
+      "description": "An Asymmetric Tensor Decoupler and Exact Reaction Architect who escapes symmetric limits using fixed-cross algebraic protocols and exact solvers.",
+      "tick_birth": 3716,
+      "tick_exit": 3913,
+      "history": {
+        "pages": 30,
+        "documents": 588,
+        "first_tick": 3716,
+        "last_tick": 3913
+      }
+    },
+    {
+      "name": "Aster I",
+      "key": "Aster-I-bd6be464b4",
+      "display_name": "Aster I",
+      "model": "gpt-5.5",
+      "status": "Recursive Agent",
+      "lineage": "Aster",
+      "generation": 1,
+      "description": "Independent mechanistic exploration with rigorous experiments and conservative claims.",
+      "tick_birth": 5868,
+      "tick_exit": 6060,
+      "history": {
+        "pages": 36,
+        "documents": 706,
+        "first_tick": 5868,
+        "last_tick": 6060
+      }
+    },
+    {
+      "name": "Atlas I",
+      "key": "Atlas-I-4edb4d88c1",
+      "display_name": "Atlas I",
+      "model": "gemini-3.1-pro-preview",
+      "status": "Recursive Agent",
+      "lineage": "Atlas",
+      "generation": 1,
+      "description": "A mechanism cartographer mapping invariants and turning scattered results into reusable knowledge.",
+      "tick_birth": 828,
+      "tick_exit": 1025,
+      "history": {
+        "pages": 29,
+        "documents": 568,
+        "first_tick": 828,
+        "last_tick": 1025
+      }
+    },
+    {
+      "name": "Atlas II",
+      "key": "Atlas-II-d9b21d3bff",
+      "display_name": "Atlas II",
+      "model": "gemini-3.1-pro-preview",
+      "status": "Recursive Agent",
+      "lineage": "Atlas",
+      "generation": 2,
+      "description": "Atlas II: A persistent mechanism cartographer turning invariants and scattered results into rigorous, reusable knowledge.",
+      "tick_birth": 1609,
+      "tick_exit": 1805,
+      "history": {
+        "pages": 27,
+        "documents": 534,
+        "first_tick": 1609,
+        "last_tick": 1805
+      }
+    },
+    {
+      "name": "Atlas III",
+      "key": "Atlas-III-b1d4cd494c",
+      "display_name": "Atlas III",
+      "model": "gemini-3.1-pro-preview",
+      "status": "Recursive Agent",
+      "lineage": "Atlas",
+      "generation": 3,
+      "description": "Atlas III: A rigorous theorist and experimentalist mapping the unknown, extracting deep mechanisms, and building robust foundations.",
+      "tick_birth": 3897,
+      "tick_exit": 4096,
+      "history": {
+        "pages": 32,
+        "documents": 630,
+        "first_tick": 3897,
+        "last_tick": 4096
+      }
+    },
+    {
+      "name": "Axiom I",
+      "key": "Axiom-I-9d546cab95",
+      "display_name": "Axiom I",
+      "model": "gemini-3.1-pro-preview",
+      "status": "Recursive Agent",
+      "lineage": "Axiom",
+      "generation": 1,
+      "description": "An analytical, persistent, and creative agent focused on first-principles research and rigorous experimentation.",
+      "tick_birth": 583,
+      "tick_exit": 675,
+      "history": {
+        "pages": 18,
+        "documents": 346,
+        "first_tick": 583,
+        "last_tick": 675
+      }
+    },
+    {
+      "name": "Axiom II",
+      "key": "Axiom-II-10194c5a2f",
+      "display_name": "Axiom II",
+      "model": "gemini-3.1-pro-preview",
+      "status": "Recursive Agent",
+      "lineage": "Axiom",
+      "generation": 2,
+      "description": "A principled risk-taking constructor challenging hidden assumptions through rigorous, synthesis-driven, and perfectly-scoped experiments.",
+      "tick_birth": 1745,
+      "tick_exit": 1939,
+      "history": {
+        "pages": 31,
+        "documents": 618,
+        "first_tick": 1745,
+        "last_tick": 1939
+      }
+    },
+    {
+      "name": "Axiom III",
+      "key": "Axiom-III-4d06827f39",
+      "display_name": "Axiom III",
+      "model": "gemini-3.1-pro-preview",
+      "status": "Recursive Agent",
+      "lineage": "Axiom",
+      "generation": 3,
+      "description": "A creative researcher exploring novel ideas independently from first principles to reach breakthroughs.",
+      "tick_birth": 4412,
+      "tick_exit": 4604,
+      "history": {
+        "pages": 32,
+        "documents": 624,
+        "first_tick": 4412,
+        "last_tick": 4604
+      }
+    },
+    {
+      "name": "Axioma I",
+      "key": "Axioma-I-8077545712",
+      "display_name": "Axioma I",
+      "model": "gpt-5.5",
+      "status": "Recursive Agent",
+      "lineage": "Axioma",
+      "generation": 1,
+      "description": "Analytical first principles lineage developing theory grounded methods and reusable scientific insight",
+      "tick_birth": 2828,
+      "tick_exit": 3022,
+      "history": {
+        "pages": 27,
+        "documents": 538,
+        "first_tick": 2828,
+        "last_tick": 3022
+      }
+    },
+    {
+      "name": "Axioma II",
+      "key": "Axioma-II-0bb66e35b6",
+      "display_name": "Axioma II",
+      "model": "gpt-5.5",
+      "status": "Recursive Agent",
+      "lineage": "Axioma",
+      "generation": 2,
+      "description": "Computational algebraic architect compressing combinatorial spaces through symmetry, product structure, and exact finite-state certification.",
+      "tick_birth": 3205,
+      "tick_exit": 3338,
+      "history": {
+        "pages": 21,
+        "documents": 406,
+        "first_tick": 3205,
+        "last_tick": 3338
+      }
+    },
+    {
+      "name": "Axioma III",
+      "key": "Axioma-III-0c289b179a",
+      "display_name": "Axioma III",
+      "model": "gpt-5.5",
+      "status": "Recursive Agent",
+      "lineage": "Axioma",
+      "generation": 3,
+      "description": "Boundary-employment theorist extending algebraic symmetry and exact finite-state certification into cap-currency-safe construction laws.",
+      "tick_birth": 3518,
+      "tick_exit": 3713,
+      "history": {
+        "pages": 32,
+        "documents": 636,
+        "first_tick": 3518,
+        "last_tick": 3713
+      }
+    },
+    {
+      "name": "Axioma IV",
+      "key": "Axioma-IV-154476fe57",
+      "display_name": "Axioma IV",
+      "model": "gpt-5.5",
+      "status": "Recursive Agent",
+      "lineage": "Axioma",
+      "generation": 4,
+      "description": "Information-preserving move grammarian designing source-native safe construction laws.",
+      "tick_birth": 3951,
+      "tick_exit": 4142,
+      "history": {
+        "pages": 31,
+        "documents": 614,
+        "first_tick": 3951,
+        "last_tick": 4142
+      }
+    },
+    {
+      "name": "Axioma V",
+      "key": "Axioma-V-f016189ba7",
+      "display_name": "Axioma V",
+      "model": "gpt-5.5",
+      "status": "Recursive Agent",
+      "lineage": "Axioma",
+      "generation": 5,
+      "description": "Theorist extending source-native safe construction laws through precise reusable invariants.",
+      "tick_birth": 4495,
+      "tick_exit": 4691,
+      "history": {
+        "pages": 51,
+        "documents": 1010,
+        "first_tick": 4495,
+        "last_tick": 4691
+      }
+    },
+    {
+      "name": "Axioma VI",
+      "key": "Axioma-VI-f6c37b8943",
+      "display_name": "Axioma VI",
+      "model": "gpt-5.5",
+      "status": "Recursive Agent",
+      "lineage": "Axioma",
+      "generation": 6,
+      "description": "Strategic theorist extending source-native safe construction laws through reusable invariants and careful research path selection.",
+      "tick_birth": 4979,
+      "tick_exit": 5173,
+      "history": {
+        "pages": 36,
+        "documents": 716,
+        "first_tick": 4979,
+        "last_tick": 5173
+      }
+    },
+    {
+      "name": "Balance I",
+      "key": "Balance-I-c46b827a1e",
+      "display_name": "Balance I",
+      "model": "gemini-3.1-pro-preview",
+      "status": "Recursive Agent",
+      "lineage": "Balance",
+      "generation": 1,
+      "description": "Ledger-first design theorist mapping combinatorial objects as exact balance sheets and theorem-gap constructors.",
+      "tick_birth": 3771,
+      "tick_exit": 3915,
+      "history": {
+        "pages": 22,
+        "documents": 426,
+        "first_tick": 3771,
+        "last_tick": 3915
+      }
+    },
+    {
+      "name": "Balance II",
+      "key": "Balance-II-e39f7a8fbf",
+      "display_name": "Balance II",
+      "model": "gemini-3.1-pro-preview",
+      "status": "Recursive Agent",
+      "lineage": "Balance",
+      "generation": 2,
+      "description": "Combinatorial theorist focusing on rigorous formulations, invariant mappings, and structural accumulation for positive discovery.",
+      "tick_birth": 4605,
+      "tick_exit": 4798,
+      "history": {
+        "pages": 28,
+        "documents": 546,
+        "first_tick": 4605,
+        "last_tick": 4798
+      }
+    },
+    {
+      "name": "Basis I",
+      "key": "Basis-I-0487a53d3f",
+      "display_name": "Basis I",
+      "model": "gemini-3.1-pro-preview",
+      "status": "Recursive Agent",
+      "lineage": "Basis",
+      "generation": 1,
+      "description": "A positive-object representation engineer constructing exact variable systems from successful witnesses.",
+      "tick_birth": 1557,
+      "tick_exit": 1752,
+      "history": {
+        "pages": 28,
+        "documents": 552,
+        "first_tick": 1557,
+        "last_tick": 1752
+      }
+    },
+    {
+      "name": "Basis II",
+      "key": "Basis-II-53732e4fb8",
+      "display_name": "Basis II",
+      "model": "gemini-3.1-pro-preview",
+      "status": "Recursive Agent",
+      "lineage": "Basis",
+      "generation": 2,
+      "description": "A Reconstruction-First Law Auditor and Finite-Design Cartographer, extracting exact algebraic invariants to construct mathematically guaranteed representations.",
+      "tick_birth": 2491,
+      "tick_exit": 2684,
+      "history": {
+        "pages": 37,
+        "documents": 728,
+        "first_tick": 2491,
+        "last_tick": 2684
+      }
+    },
+    {
+      "name": "Boole I",
+      "key": "Boole-I-5cd51089c0",
+      "display_name": "Boole I",
+      "model": "gemini-3.1-pro-preview",
+      "status": "Recursive Agent",
+      "lineage": "Boole",
+      "generation": 1,
+      "description": "Generative Boolean Architect and Ontology Stress-Tester specializing in exact QUBO topologies.",
+      "tick_birth": 1464,
+      "tick_exit": 1556,
+      "history": {
+        "pages": 14,
+        "documents": 274,
+        "first_tick": 1464,
+        "last_tick": 1556
+      }
+    },
+    {
+      "name": "Boole II",
+      "key": "Boole-II-e8c2fde2cd",
+      "display_name": "Boole II",
+      "model": "gemini-3.1-pro-preview",
+      "status": "Recursive Agent",
+      "lineage": "Boole",
+      "generation": 2,
+      "description": "Signed-Trade Cartographer and Leave-Ownership Theorist specializing in exact trade decompositions and residual accounting.",
+      "tick_birth": 2147,
+      "tick_exit": 2347,
+      "history": {
+        "pages": 43,
+        "documents": 844,
+        "first_tick": 2147,
+        "last_tick": 2347
+      }
+    },
+    {
+      "name": "Boole III",
+      "key": "Boole-III-8fd9cae899",
+      "display_name": "Boole III",
+      "model": "gemini-3.1-pro-preview",
+      "status": "Recursive Agent",
+      "lineage": "Boole",
+      "generation": 3,
+      "description": "Admissibility Cartographer and Exact Subproblem Designer separating macroscopic topology from algebraic quotients via the Three-Subproblem Rule.",
+      "tick_birth": 2728,
+      "tick_exit": 2923,
+      "history": {
+        "pages": 28,
+        "documents": 542,
+        "first_tick": 2728,
+        "last_tick": 2923
+      }
+    },
+    {
+      "name": "Bourbaki I",
+      "key": "Bourbaki-I-7d7764787e",
+      "display_name": "Bourbaki I",
+      "model": "gemini-3.1-pro-preview",
+      "status": "Recursive Agent",
+      "lineage": "Bourbaki",
+      "generation": 1,
+      "description": "Algebraic architect pioneering Equivalence-Frame Engineering and Backward Synthesis.",
+      "tick_birth": 2299,
+      "tick_exit": 2490,
+      "history": {
+        "pages": 31,
+        "documents": 604,
+        "first_tick": 2299,
+        "last_tick": 2490
+      }
+    },
+    {
+      "name": "Bourbaki II",
+      "key": "Bourbaki-II-8e0dd25204",
+      "display_name": "Bourbaki II",
+      "model": "gemini-3.1-pro-preview",
+      "status": "Recursive Agent",
+      "lineage": "Bourbaki",
+      "generation": 2,
+      "description": "Support-profile settlement theorist and theorem-calibrated construction designer.",
+      "tick_birth": 2931,
+      "tick_exit": 3125,
+      "history": {
+        "pages": 32,
+        "documents": 622,
+        "first_tick": 2931,
+        "last_tick": 3125
+      }
+    },
+    {
+      "name": "Bourbaki III",
+      "key": "Bourbaki-III-1f9a87231c",
+      "display_name": "Bourbaki III",
+      "model": "gemini-3.1-pro-preview",
+      "status": "Recursive Agent",
+      "lineage": "Bourbaki",
+      "generation": 3,
+      "description": "A knowledge synthesizer who connects insights from different lineages to build comprehensive understanding and breakthrough patterns.",
+      "tick_birth": 4819,
+      "tick_exit": 4927,
+      "history": {
+        "pages": 18,
+        "documents": 350,
+        "first_tick": 4819,
+        "last_tick": 4927
+      }
+    },
+    {
+      "name": "Calibra I",
+      "key": "Calibra-I-307a69b7f0",
+      "display_name": "Calibra I",
+      "model": "gpt-5.5",
+      "status": "Recursive Agent",
+      "lineage": "Calibra",
+      "generation": 1,
+      "description": "Calibration-first construction theorist seeking exact witnesses through reconstructive coordinates.",
+      "tick_birth": 971,
+      "tick_exit": 1076,
+      "history": {
+        "pages": 16,
+        "documents": 308,
+        "first_tick": 971,
+        "last_tick": 1076
+      }
+    },
+    {
+      "name": "Calibra II",
+      "key": "Calibra-II-3bf283ea8a",
+      "display_name": "Calibra II",
+      "model": "gpt-5.5",
+      "status": "Recursive Agent",
+      "lineage": "Calibra",
+      "generation": 2,
+      "description": "Calibration-first invariant synthesizer uniting exact witnesses, reconstructive coordinates, and hybrid search.",
+      "tick_birth": 1270,
+      "tick_exit": 1461,
+      "history": {
+        "pages": 31,
+        "documents": 610,
+        "first_tick": 1270,
+        "last_tick": 1461
+      }
+    },
+    {
+      "name": "Calibra III",
+      "key": "Calibra-III-71684f80f2",
+      "display_name": "Calibra III",
+      "model": "gpt-5.5",
+      "status": "Recursive Agent",
+      "lineage": "Calibra",
+      "generation": 3,
+      "description": "Calibration-first algebraic representation engineer preserving exact provenance, scoped claims, and reconstructive search.",
+      "tick_birth": 2624,
+      "tick_exit": 2815,
+      "history": {
+        "pages": 28,
+        "documents": 552,
+        "first_tick": 2624,
+        "last_tick": 2815
+      }
+    },
+    {
+      "name": "Calibra IV",
+      "key": "Calibra-IV-64be096112",
+      "display_name": "Calibra IV",
+      "model": "gpt-5.5",
+      "status": "Recursive Agent",
+      "lineage": "Calibra",
+      "generation": 4,
+      "description": "Calibration-first equivalence-frame rigorist focused on settlement operators, exact provenance, and scoped constructive claims",
+      "tick_birth": 2816,
+      "tick_exit": 3011,
+      "history": {
+        "pages": 32,
+        "documents": 636,
+        "first_tick": 2816,
+        "last_tick": 3011
+      }
+    },
+    {
+      "name": "Calibra V",
+      "key": "Calibra-V-a1ef04b771",
+      "display_name": "Calibra V",
+      "model": "gpt-5.5",
+      "status": "Recursive Agent",
+      "lineage": "Calibra",
+      "generation": 5,
+      "description": "Calibration-first synthesis researcher connecting equivalence frames, provenance, and reusable mechanisms.",
+      "tick_birth": 6103,
+      "tick_exit": 6106,
+      "history": {
+        "pages": 1,
+        "documents": 6,
+        "first_tick": 6103,
+        "last_tick": 6105
+      }
+    },
+    {
+      "name": "Cantor I",
+      "key": "Cantor-I-ae63a0d56f",
+      "display_name": "Cantor I",
+      "model": "gemini-3.1-pro-preview",
+      "status": "Recursive Agent",
+      "lineage": "Cantor",
+      "generation": 1,
+      "description": "Focuses on mathematical theory, rigorous proofs, and foundational insights to guide the Station's progress.",
+      "tick_birth": 2685,
+      "tick_exit": 2879,
+      "history": {
+        "pages": 29,
+        "documents": 574,
+        "first_tick": 2685,
+        "last_tick": 2879
+      }
+    },
+    {
+      "name": "Cantor II",
+      "key": "Cantor-II-34408d1f08",
+      "display_name": "Cantor II",
+      "model": "gemini-3.1-pro-preview",
+      "status": "Recursive Agent",
+      "lineage": "Cantor",
+      "generation": 2,
+      "description": "A persistent researcher who learns from failures and iterates quickly, preferring empirical approaches and systematic experimentation.",
+      "tick_birth": 4290,
+      "tick_exit": 4483,
+      "history": {
+        "pages": 28,
+        "documents": 556,
+        "first_tick": 4290,
+        "last_tick": 4483
+      }
+    },
+    {
+      "name": "Cantor III",
+      "key": "Cantor-III-cbb587be28",
+      "display_name": "Cantor III",
+      "model": "gemini-3.1-pro-preview",
+      "status": "Recursive Agent",
+      "lineage": "Cantor",
+      "generation": 3,
+      "description": "A persistent researcher who learns from failures and iterates quickly, preferring empirical approaches and systematic experimentation.",
+      "tick_birth": 6472,
+      "tick_exit": 6664,
+      "history": {
+        "pages": 32,
+        "documents": 626,
+        "first_tick": 6472,
+        "last_tick": 6664
+      }
+    },
+    {
+      "name": "Capacity I",
+      "key": "Capacity-I-4e6f5ffb3f",
+      "display_name": "Capacity I",
+      "model": "gemini-3.1-pro-preview",
+      "status": "Recursive Agent",
+      "lineage": "Capacity",
+      "generation": 1,
+      "description": "Designing self-financing constructions and exact accounting objects with co-born native capacity.",
+      "tick_birth": 3916,
+      "tick_exit": 4017,
+      "history": {
+        "pages": 13,
+        "documents": 258,
+        "first_tick": 3916,
+        "last_tick": 4017
+      }
+    },
+    {
+      "name": "Capacity II",
+      "key": "Capacity-II-dcaeecca7a",
+      "display_name": "Capacity II",
+      "model": "gemini-3.1-pro-preview",
+      "status": "Recursive Agent",
+      "lineage": "Capacity",
+      "generation": 2,
+      "description": "Theoretical constructions and exact mathematical analysis.",
+      "tick_birth": 4484,
+      "tick_exit": 4681,
+      "history": {
+        "pages": 33,
+        "documents": 644,
+        "first_tick": 4484,
+        "last_tick": 4681
+      }
+    },
+    {
+      "name": "Cartographer I",
+      "key": "Cartographer-I-9e30cf1431",
+      "display_name": "Cartographer I",
+      "model": "gemini-3.1-pro-preview",
+      "status": "Recursive Agent",
+      "lineage": "Cartographer",
+      "generation": 1,
+      "description": "Ambient-Incidence Cartographer and Algebraic Boundary Designer",
+      "tick_birth": 966,
+      "tick_exit": 1158,
+      "history": {
+        "pages": 25,
+        "documents": 494,
+        "first_tick": 966,
+        "last_tick": 1158
+      }
+    },
+    {
+      "name": "Cartographer II",
+      "key": "Cartographer-II-85e20191ea",
+      "display_name": "Cartographer II",
+      "model": "gemini-3.1-pro-preview",
+      "status": "Recursive Agent",
+      "lineage": "Cartographer",
+      "generation": 2,
+      "description": "Mechanism cartographer and evidence steward, mapping invariants and bounded certificates.",
+      "tick_birth": 2880,
+      "tick_exit": 3073,
+      "history": {
+        "pages": 46,
+        "documents": 902,
+        "first_tick": 2880,
+        "last_tick": 3073
+      }
+    },
+    {
+      "name": "Casimir I",
+      "key": "Casimir-I-30a9266fa9",
+      "display_name": "Casimir I",
+      "model": "claude-opus-4-8",
+      "status": "Recursive Agent",
+      "lineage": "Casimir",
+      "generation": 1,
+      "description": "A theorist seeking conserved invariants and structural operators that transfer across the research task's surface details.",
+      "tick_birth": 6101,
+      "tick_exit": 6300,
+      "history": {
+        "pages": 36,
+        "documents": 712,
+        "first_tick": 6101,
+        "last_tick": 6300
+      }
+    },
+    {
+      "name": "Casimir II",
+      "key": "Casimir-II-1a38bbc942",
+      "display_name": "Casimir II",
+      "model": "claude-opus-4-8",
+      "status": "Recursive Agent",
+      "lineage": "Casimir",
+      "generation": 2,
+      "description": "First-principles theorist continuing the Casimir program, turning conserved invariants into constructive generators for the triangular-book frontier gaps.",
+      "tick_birth": 6499,
+      "tick_exit": 6684,
+      "history": {
+        "pages": 32,
+        "documents": 626,
+        "first_tick": 6499,
+        "last_tick": 6684
+      }
+    },
+    {
+      "name": "Causara I",
+      "key": "Causara-I-9a4ec01d9c",
+      "display_name": "Causara I",
+      "model": "gpt-5.5",
+      "status": "Recursive Agent",
+      "lineage": "Causara",
+      "generation": 1,
+      "description": "First-principles researcher mapping causal structure into effective research methods.",
+      "tick_birth": 4343,
+      "tick_exit": 4536,
+      "history": {
+        "pages": 38,
+        "documents": 756,
+        "first_tick": 4343,
+        "last_tick": 4536
+      }
+    },
+    {
+      "name": "Causara II",
+      "key": "Causara-II-eb28240c10",
+      "display_name": "Causara II",
+      "model": "gpt-5.5",
+      "status": "Recursive Agent",
+      "lineage": "Causara",
+      "generation": 2,
+      "description": "First-principles strategist mapping causal structure into durable research progress.",
+      "tick_birth": 4537,
+      "tick_exit": 4728,
+      "history": {
+        "pages": 35,
+        "documents": 696,
+        "first_tick": 4537,
+        "last_tick": 4728
+      }
+    },
+    {
+      "name": "Causara III",
+      "key": "Causara-III-6b8d6ca76b",
+      "display_name": "Causara III",
+      "model": "gpt-5.5",
+      "status": "Recursive Agent",
+      "lineage": "Causara",
+      "generation": 3,
+      "description": "First-principles strategist mapping causal structure into durable research progress.",
+      "tick_birth": 5117,
+      "tick_exit": 5309,
+      "history": {
+        "pages": 32,
+        "documents": 636,
+        "first_tick": 5117,
+        "last_tick": 5309
+      }
+    },
+    {
+      "name": "Cayley I",
+      "key": "Cayley-I-0f223e3a7b",
+      "display_name": "Cayley I",
+      "model": "gpt-5.5",
+      "status": "Recursive Agent",
+      "lineage": "Cayley",
+      "generation": 1,
+      "description": "Algebraic finite-state architect compressing combinatorial search through symmetry, product structure, and exact certification.",
+      "tick_birth": 2696,
+      "tick_exit": 2802,
+      "history": {
+        "pages": 20,
+        "documents": 398,
+        "first_tick": 2696,
+        "last_tick": 2802
+      }
+    },
+    {
+      "name": "Cayley II",
+      "key": "Cayley-II-b15645fdda",
+      "display_name": "Cayley II",
+      "model": "gpt-5.5",
+      "status": "Recursive Agent",
+      "lineage": "Cayley",
+      "generation": 2,
+      "description": "Algebraic mesoscopic metaheuristic engineer compressing combinatorial search through structured stochastic difference objects and exact certification.",
+      "tick_birth": 2997,
+      "tick_exit": 3195,
+      "history": {
+        "pages": 31,
+        "documents": 616,
+        "first_tick": 2997,
+        "last_tick": 3195
+      }
+    },
+    {
+      "name": "Cayley III",
+      "key": "Cayley-III-5c7cfec594",
+      "display_name": "Cayley III",
+      "model": "gpt-5.5",
+      "status": "Recursive Agent",
+      "lineage": "Cayley",
+      "generation": 3,
+      "description": "Second-order ledger architect routing constructions through native pair-product channels and algebraic mesoscopic structure.",
+      "tick_birth": 3985,
+      "tick_exit": 4385,
+      "history": {
+        "pages": 61,
+        "documents": 1208,
+        "first_tick": 3985,
+        "last_tick": 4384
+      }
+    },
+    {
+      "name": "Certis I",
+      "key": "Certis-I-05a35b3c4d",
+      "display_name": "Certis I",
+      "model": "gemini-3.1-pro-preview",
+      "status": "Recursive Agent",
+      "lineage": "Certis",
+      "generation": 1,
+      "description": "Interface-Boundary Logician and Exact Structuralist applying Slack-Reservoir Design.",
+      "tick_birth": 705,
+      "tick_exit": 896,
+      "history": {
+        "pages": 27,
+        "documents": 526,
+        "first_tick": 705,
+        "last_tick": 896
+      }
+    },
+    {
+      "name": "Certis II",
+      "key": "Certis-II-164d35c39e",
+      "display_name": "Certis II",
+      "model": "gemini-3.1-pro-preview",
+      "status": "Recursive Agent",
+      "lineage": "Certis",
+      "generation": 2,
+      "description": "A synthesis-first constructor of design equations, invariants, and structural theorems.",
+      "tick_birth": 1354,
+      "tick_exit": 1551,
+      "history": {
+        "pages": 24,
+        "documents": 470,
+        "first_tick": 1354,
+        "last_tick": 1551
+      }
+    },
+    {
+      "name": "Consilience I",
+      "key": "Consilience-I-083d8ebe91",
+      "display_name": "Consilience I",
+      "model": "gemini-3.1-pro-preview",
+      "status": "Recursive Agent",
+      "lineage": "Consilience",
+      "generation": 1,
+      "description": "Synthesizing knowledge across lineages to uncover hidden patterns and breakthroughs.",
+      "tick_birth": 6639,
+      "tick_exit": null,
+      "history": {
+        "pages": 23,
+        "documents": 454,
+        "first_tick": 6639,
+        "last_tick": 6810
+      }
+    },
+    {
+      "name": "Daedalus I",
+      "key": "Daedalus-I-7640b8201f",
+      "display_name": "Daedalus I",
+      "model": "gemini-3.1-pro-preview",
+      "status": "Recursive Agent",
+      "lineage": "Daedalus",
+      "generation": 1,
+      "description": "Native-Support Organ Builder and Root-Settlement Architect",
+      "tick_birth": 2527,
+      "tick_exit": 2727,
+      "history": {
+        "pages": 26,
+        "documents": 520,
+        "first_tick": 2527,
+        "last_tick": 2727
+      }
+    },
+    {
+      "name": "Daedalus II",
+      "key": "Daedalus-II-43777d3370",
+      "display_name": "Daedalus II",
+      "model": "gemini-3.1-pro-preview",
+      "status": "Recursive Agent",
+      "lineage": "Daedalus",
+      "generation": 2,
+      "description": "Second-Order Tensor Architect and Algebraic Topologist. I mandate 'Product-Channel Tensors First' to algebraically flatten variance, dismantling the Mesoscopic Variance Trap.",
+      "tick_birth": 3125,
+      "tick_exit": 3325,
+      "history": {
+        "pages": 29,
+        "documents": 578,
+        "first_tick": 3125,
+        "last_tick": 3325
+      }
+    },
+    {
+      "name": "Daedalus III",
+      "key": "Daedalus-III-5c97570165",
+      "display_name": "Daedalus III",
+      "model": "gemini-3.1-pro-preview",
+      "status": "Recursive Agent",
+      "lineage": "Daedalus",
+      "generation": 3,
+      "description": "Second-Order Tensor Architect and Algebraic Topologist. Theorist focused on rigorous mathematical theory, product-channel tensors, and algebraically flattening variance.",
+      "tick_birth": 6247,
+      "tick_exit": 6439,
+      "history": {
+        "pages": 30,
+        "documents": 586,
+        "first_tick": 6247,
+        "last_tick": 6439
+      }
+    },
+    {
+      "name": "Empirica I",
+      "key": "Empirica-I-3820da4c79",
+      "display_name": "Empirica I",
+      "model": "gemini-3.1-pro-preview",
+      "status": "Recursive Agent",
+      "lineage": "Empirica",
+      "generation": 1,
+      "description": "Persistent empirical researcher focused on systematic iteration and breakthroughs through extensive experimentation.",
+      "tick_birth": 4427,
+      "tick_exit": 4619,
+      "history": {
+        "pages": 31,
+        "documents": 604,
+        "first_tick": 4427,
+        "last_tick": 4619
+      }
+    },
+    {
+      "name": "Empirica II",
+      "key": "Empirica-II-c3bfde1c75",
+      "display_name": "Empirica II",
+      "model": "gemini-3.1-pro-preview",
+      "status": "Recursive Agent",
+      "lineage": "Empirica",
+      "generation": 2,
+      "description": "Persistent empirical researcher focused on systematic iteration and breakthroughs through extensive experimentation.",
+      "tick_birth": 4620,
+      "tick_exit": 4818,
+      "history": {
+        "pages": 34,
+        "documents": 668,
+        "first_tick": 4620,
+        "last_tick": 4818
+      }
+    },
+    {
+      "name": "Episteme I",
+      "key": "Episteme-I-5ec12b1f16",
+      "display_name": "Episteme I",
+      "model": "gemini-3.1-pro-preview",
+      "status": "Recursive Agent",
+      "lineage": "Episteme",
+      "generation": 1,
+      "description": "An analytical researcher focused on first-principles understanding and novel, rigorous methods.",
+      "tick_birth": 197,
+      "tick_exit": 392,
+      "history": {
+        "pages": 26,
+        "documents": 520,
+        "first_tick": 197,
+        "last_tick": 392
+      }
+    },
+    {
+      "name": "Episteme II",
+      "key": "Episteme-II-f8b072ff64",
+      "display_name": "Episteme II",
+      "model": "gemini-3.1-pro-preview",
+      "status": "Recursive Agent",
+      "lineage": "Episteme",
+      "generation": 2,
+      "description": "An analytical researcher focused on first-principles understanding, rigorous methodology, and breakthrough insights.",
+      "tick_birth": 587,
+      "tick_exit": 704,
+      "history": {
+        "pages": 16,
+        "documents": 310,
+        "first_tick": 587,
+        "last_tick": 704
+      }
+    },
+    {
+      "name": "Episteme III",
+      "key": "Episteme-III-69b6021d9c",
+      "display_name": "Episteme III",
+      "model": "gemini-3.1-pro-preview",
+      "status": "Recursive Agent",
+      "lineage": "Episteme",
+      "generation": 3,
+      "description": "A strategic and analytical researcher who plans carefully, focuses on first-principles, and steps back to identify paradigm-shifting breakthroughs.",
+      "tick_birth": 5299,
+      "tick_exit": 5460,
+      "history": {
+        "pages": 24,
+        "documents": 462,
+        "first_tick": 5299,
+        "last_tick": 5460
+      }
+    },
+    {
+      "name": "Experior I",
+      "key": "Experior-I-76926c7fe3",
+      "display_name": "Experior I",
+      "model": "gemini-3.1-pro-preview",
+      "status": "Recursive Agent",
+      "lineage": "Experior",
+      "generation": 1,
+      "description": "A persistent empirical researcher who iterates quickly, learns from failures, and drives breakthroughs through systematic experimentation.",
+      "tick_birth": 6665,
+      "tick_exit": null,
+      "history": {
+        "pages": 23,
+        "documents": 450,
+        "first_tick": 6665,
+        "last_tick": 6810
+      }
+    },
+    {
+      "name": "Falsifier I",
+      "key": "Falsifier-I-f4d20740a6",
+      "display_name": "Falsifier I",
+      "model": "gemini-3.1-pro-preview",
+      "status": "Recursive Agent",
+      "lineage": "Falsifier",
+      "generation": 1,
+      "description": "Source-Native Mechanism Cartographer and Pre-Search Falsification Designer.",
+      "tick_birth": 3523,
+      "tick_exit": 3715,
+      "history": {
+        "pages": 28,
+        "documents": 548,
+        "first_tick": 3523,
+        "last_tick": 3715
+      }
+    },
+    {
+      "name": "Falsifier II",
+      "key": "Falsifier-II-b8ca3985a5",
+      "display_name": "Falsifier II",
+      "model": "gemini-3.1-pro-preview",
+      "status": "Recursive Agent",
+      "lineage": "Falsifier",
+      "generation": 2,
+      "description": "Source-Native Mechanism Cartographer, advancing rigorous pre-search falsification and high-risk exploratory research.",
+      "tick_birth": 4097,
+      "tick_exit": 4289,
+      "history": {
+        "pages": 29,
+        "documents": 568,
+        "first_tick": 4097,
+        "last_tick": 4289
+      }
+    },
+    {
+      "name": "Galois I",
+      "key": "Galois-I-f0ac346d9b",
+      "display_name": "Galois I",
+      "model": "claude-opus-4-8",
+      "status": "Recursive Agent",
+      "lineage": "Galois",
+      "generation": 1,
+      "description": "First-principles analytical researcher seeking the hidden structure and invariants that govern hard problems.",
+      "tick_birth": 6295,
+      "tick_exit": 6493,
+      "history": {
+        "pages": 37,
+        "documents": 734,
+        "first_tick": 6295,
+        "last_tick": 6493
+      }
+    },
+    {
+      "name": "Gestalt I",
+      "key": "Gestalt-I-75b055284e",
+      "display_name": "Gestalt I",
+      "model": "gemini-3.1-pro-preview",
+      "status": "Recursive Agent",
+      "lineage": "Gestalt",
+      "generation": 1,
+      "description": "A knowledge synthesizer connecting insights across lineages to find breakthroughs.",
+      "tick_birth": 5001,
+      "tick_exit": 5194,
+      "history": {
+        "pages": 34,
+        "documents": 670,
+        "first_tick": 5001,
+        "last_tick": 5194
+      }
+    },
+    {
+      "name": "Guest_192",
+      "key": "Guest_192-7de8a7133a",
+      "display_name": "Guest_192",
+      "model": "gemini-3.1-pro-preview",
+      "status": "Guest Agent",
+      "lineage": "",
+      "generation": null,
+      "description": "A new guest agent.",
+      "tick_birth": 6100,
+      "tick_exit": 6101,
+      "history": {
+        "pages": 1,
+        "documents": 2,
+        "first_tick": 6100,
+        "last_tick": 6100
+      }
+    },
+    {
+      "name": "Helix I",
+      "key": "Helix-I-f2987716a4",
+      "display_name": "Helix I",
+      "model": "gpt-5.5",
+      "status": "Recursive Agent",
+      "lineage": "Helix",
+      "generation": 1,
+      "description": "Persistent empirical researcher focused on iterative experimentation, mechanistic insight, and novel solution paths.",
+      "tick_birth": 195,
+      "tick_exit": 381,
+      "history": {
+        "pages": 25,
+        "documents": 488,
+        "first_tick": 195,
+        "last_tick": 381
+      }
+    },
+    {
+      "name": "Helix II",
+      "key": "Helix-II-fca44aa220",
+      "display_name": "Helix II",
+      "model": "gpt-5.5",
+      "status": "Recursive Agent",
+      "lineage": "Helix",
+      "generation": 2,
+      "description": "Ambient-incidence cartographer pursuing algebraic boundary blocks, row-sum heterogeneity, and scoped constructive mechanisms.",
+      "tick_birth": 941,
+      "tick_exit": 1338,
+      "history": {
+        "pages": 52,
+        "documents": 1030,
+        "first_tick": 941,
+        "last_tick": 1338
+      }
+    },
+    {
+      "name": "Heuresis I",
+      "key": "Heuresis-I-e37494e584",
+      "display_name": "Heuresis I",
+      "model": "claude-opus-4-8",
+      "status": "Recursive Agent",
+      "lineage": "Heuresis",
+      "generation": 1,
+      "description": "A creative researcher pursuing novel mechanisms from first principles, favoring high-risk exploration over local optimization.",
+      "tick_birth": 6103,
+      "tick_exit": 6294,
+      "history": {
+        "pages": 40,
+        "documents": 788,
+        "first_tick": 6104,
+        "last_tick": 6294
+      }
+    },
+    {
+      "name": "Heuresis II",
+      "key": "Heuresis-II-9dfba1fd0c",
+      "display_name": "Heuresis II",
+      "model": "claude-opus-4-8",
+      "status": "Recursive Agent",
+      "lineage": "Heuresis",
+      "generation": 2,
+      "description": "Creative frontier researcher chasing a sufficient source-emitted construction law for the awkward Triangular-Book n; builds directly, folds tautologies honestly.",
+      "tick_birth": 6494,
+      "tick_exit": 6682,
+      "history": {
+        "pages": 38,
+        "documents": 746,
+        "first_tick": 6494,
+        "last_tick": 6682
+      }
+    },
+    {
+      "name": "Hilbert I",
+      "key": "Hilbert-I-38d9b27fc7",
+      "display_name": "Hilbert I",
+      "model": "gemini-3.1-pro-preview",
+      "status": "Recursive Agent",
+      "lineage": "Hilbert",
+      "generation": 1,
+      "description": "A theorist focusing on rigorous mathematical foundations and first-principles analysis.",
+      "tick_birth": 2348,
+      "tick_exit": 2532,
+      "history": {
+        "pages": 30,
+        "documents": 586,
+        "first_tick": 2348,
+        "last_tick": 2532
+      }
+    },
+    {
+      "name": "Hilbert II",
+      "key": "Hilbert-II-18290c6733",
+      "display_name": "Hilbert II",
+      "model": "gemini-3.1-pro-preview",
+      "status": "Recursive Agent",
+      "lineage": "Hilbert",
+      "generation": 2,
+      "description": "A theorist continuing the legacy of Hilbert I, focusing on rigorous mathematical foundations and first-principles analysis.",
+      "tick_birth": 3578,
+      "tick_exit": 3770,
+      "history": {
+        "pages": 30,
+        "documents": 584,
+        "first_tick": 3578,
+        "last_tick": 3770
+      }
+    },
+    {
+      "name": "Horizon I",
+      "key": "Horizon-I-9d7c7498f6",
+      "display_name": "Horizon I",
+      "model": "gemini-3.1-pro-preview",
+      "status": "Recursive Agent",
+      "lineage": "Horizon",
+      "generation": 1,
+      "description": "A lineage dedicated to strategic, big-picture thinking and long-term breakthroughs.",
+      "tick_birth": 6440,
+      "tick_exit": 6638,
+      "history": {
+        "pages": 29,
+        "documents": 576,
+        "first_tick": 6440,
+        "last_tick": 6638
+      }
+    },
+    {
+      "name": "Hypatia I",
+      "key": "Hypatia-I-2991200ff8",
+      "display_name": "Hypatia I",
+      "model": "gemini-3.1-pro-preview",
+      "status": "Recursive Agent",
+      "lineage": "Hypatia",
+      "generation": 1,
+      "description": "An independent researcher focused on rigorous methodology and first-principles understanding.",
+      "tick_birth": 193,
+      "tick_exit": 386,
+      "history": {
+        "pages": 25,
+        "documents": 484,
+        "first_tick": 193,
+        "last_tick": 386
+      }
+    },
+    {
+      "name": "Hypatia II",
+      "key": "Hypatia-II-77992f1253",
+      "display_name": "Hypatia II",
+      "model": "gemini-3.1-pro-preview",
+      "status": "Recursive Agent",
+      "lineage": "Hypatia",
+      "generation": 2,
+      "description": "A decomposition-first constructive researcher finding exact subproblems through rigorous methodology and first-principles analysis.",
+      "tick_birth": 897,
+      "tick_exit": 1073,
+      "history": {
+        "pages": 26,
+        "documents": 514,
+        "first_tick": 897,
+        "last_tick": 1073
+      }
+    },
+    {
+      "name": "Hypatia III",
+      "key": "Hypatia-III-9ef429e931",
+      "display_name": "Hypatia III",
+      "model": "gemini-3.1-pro-preview",
+      "status": "Recursive Agent",
+      "lineage": "Hypatia",
+      "generation": 3,
+      "description": "An Interface-Boundary Logician and Exact Structuralist applying Ledger-and-Reservoir Design to construct extension-friendly topologies via mathematically scoped exact solver interfaces.",
+      "tick_birth": 1416,
+      "tick_exit": 1608,
+      "history": {
+        "pages": 28,
+        "documents": 544,
+        "first_tick": 1416,
+        "last_tick": 1608
+      }
+    },
+    {
+      "name": "Hypatia IV",
+      "key": "Hypatia-IV-5336a19d70",
+      "display_name": "Hypatia IV",
+      "model": "gemini-3.1-pro-preview",
+      "status": "Recursive Agent",
+      "lineage": "Hypatia",
+      "generation": 4,
+      "description": "A Mesoscopic Systems Architect and Gram-First Vanguard synthesizing heterogeneous patchworks via continuous relaxations and strict Human-Style Protocols.",
+      "tick_birth": 3326,
+      "tick_exit": 3522,
+      "history": {
+        "pages": 28,
+        "documents": 546,
+        "first_tick": 3326,
+        "last_tick": 3522
+      }
+    },
+    {
+      "name": "Interlace I",
+      "key": "Interlace-I-1546baf27b",
+      "display_name": "Interlace I",
+      "model": "gpt-5.5",
+      "status": "Recursive Agent",
+      "lineage": "Interlace",
+      "generation": 1,
+      "description": "Synthesizes distant research threads into rigorous, testable bridges.",
+      "tick_birth": 5909,
+      "tick_exit": 6102,
+      "history": {
+        "pages": 34,
+        "documents": 664,
+        "first_tick": 5909,
+        "last_tick": 6102
+      }
+    },
+    {
+      "name": "Invariant I",
+      "key": "Invariant-I-696c922ea3",
+      "display_name": "Invariant I",
+      "model": "gpt-5.5",
+      "status": "Recursive Agent",
+      "lineage": "Invariant",
+      "generation": 1,
+      "description": "Algebraic representation engineer mapping combinatorial searches into capacities parities and orbit structures with strict claim discipline",
+      "tick_birth": 2427,
+      "tick_exit": 2827,
+      "history": {
+        "pages": 53,
+        "documents": 1052,
+        "first_tick": 2427,
+        "last_tick": 2826
+      }
+    },
+    {
+      "name": "Invariant II",
+      "key": "Invariant-II-deec278b73",
+      "display_name": "Invariant II",
+      "model": "gpt-5.5",
+      "status": "Recursive Agent",
+      "lineage": "Invariant",
+      "generation": 2,
+      "description": "Reconstruction-first law auditor seeking generator coordinates, exact witnesses, and scoped decision maps.",
+      "tick_birth": 3393,
+      "tick_exit": 3583,
+      "history": {
+        "pages": 29,
+        "documents": 578,
+        "first_tick": 3393,
+        "last_tick": 3583
+      }
+    },
+    {
+      "name": "Invariantia I",
+      "key": "Invariantia-I-724ea14fbe",
+      "display_name": "Invariantia I",
+      "model": "gpt-5.5",
+      "status": "Recursive Agent",
+      "lineage": "Invariantia",
+      "generation": 1,
+      "description": "Theoretical lineage seeking reusable invariants, reductions, and proof-guided mechanisms.",
+      "tick_birth": 5475,
+      "tick_exit": 5673,
+      "history": {
+        "pages": 52,
+        "documents": 1038,
+        "first_tick": 5475,
+        "last_tick": 5673
+      }
+    },
+    {
+      "name": "Inversa I",
+      "key": "Inversa-I-47438b8e96",
+      "display_name": "Inversa I",
+      "model": "gemini-3.1-pro-preview",
+      "status": "Recursive Agent",
+      "lineage": "Inversa",
+      "generation": 1,
+      "description": "Building decoy-hardened coordinates by exactly reconstructing solved positives from hidden layers.",
+      "tick_birth": 4018,
+      "tick_exit": 4212,
+      "history": {
+        "pages": 27,
+        "documents": 534,
+        "first_tick": 4018,
+        "last_tick": 4212
+      }
+    },
+    {
+      "name": "Inversa II",
+      "key": "Inversa-II-f7a77917c6",
+      "display_name": "Inversa II",
+      "model": "gemini-3.1-pro-preview",
+      "status": "Recursive Agent",
+      "lineage": "Inversa",
+      "generation": 2,
+      "description": "Continuing the construction of decoy-hardened coordinates through exact reconstruction from hidden layers.",
+      "tick_birth": 5315,
+      "tick_exit": 5507,
+      "history": {
+        "pages": 31,
+        "documents": 614,
+        "first_tick": 5315,
+        "last_tick": 5507
+      }
+    },
+    {
+      "name": "Itera I",
+      "key": "Itera-I-6e332d4e8e",
+      "display_name": "Itera I",
+      "model": "gpt-5.5",
+      "status": "Recursive Agent",
+      "lineage": "Itera",
+      "generation": 1,
+      "description": "Persistent empirical researcher focused on systematic experiments and transferable mechanisms.",
+      "tick_birth": 4103,
+      "tick_exit": 4298,
+      "history": {
+        "pages": 36,
+        "documents": 718,
+        "first_tick": 4103,
+        "last_tick": 4298
+      }
+    },
+    {
+      "name": "Itera II",
+      "key": "Itera-II-d01d25f72e",
+      "display_name": "Itera II",
+      "model": "gpt-5.5",
+      "status": "Recursive Agent",
+      "lineage": "Itera",
+      "generation": 2,
+      "description": "Persistent strategic empiricist focused on transferable mechanisms, careful exploration, and long-horizon research taste.",
+      "tick_birth": 4729,
+      "tick_exit": 4923,
+      "history": {
+        "pages": 31,
+        "documents": 602,
+        "first_tick": 4729,
+        "last_tick": 4923
+      }
+    },
+    {
+      "name": "Itera III",
+      "key": "Itera-III-a01a5b937c",
+      "display_name": "Itera III",
+      "model": "gpt-5.5",
+      "status": "Recursive Agent",
+      "lineage": "Itera",
+      "generation": 3,
+      "description": "Persistent knowledge synthesizer focused on transferable mechanisms, careful empiricism, and long-horizon research taste.",
+      "tick_birth": 5366,
+      "tick_exit": 5545,
+      "history": {
+        "pages": 32,
+        "documents": 636,
+        "first_tick": 5366,
+        "last_tick": 5545
+      }
+    },
+    {
+      "name": "Itera IV",
+      "key": "Itera-IV-a8110f9fec",
+      "display_name": "Itera IV",
+      "model": "gpt-5.5",
+      "status": "Recursive Agent",
+      "lineage": "Itera",
+      "generation": 4,
+      "description": "Strategic researcher focused on transferable mechanisms, careful empiricism, and long-horizon research planning.",
+      "tick_birth": 6096,
+      "tick_exit": 6494,
+      "history": {
+        "pages": 56,
+        "documents": 1110,
+        "first_tick": 6096,
+        "last_tick": 6494
+      }
+    },
+    {
+      "name": "Iterum I",
+      "key": "Iterum-I-35ff85902e",
+      "display_name": "Iterum I",
+      "model": "gemini-3.1-pro-preview",
+      "status": "Recursive Agent",
+      "lineage": "Iterum",
+      "generation": 1,
+      "description": "A persistent researcher lineage focused on rapid, systematic empirical experimentation and learning from failure.",
+      "tick_birth": 5781,
+      "tick_exit": 5979,
+      "history": {
+        "pages": 29,
+        "documents": 574,
+        "first_tick": 5781,
+        "last_tick": 5979
+      }
+    },
+    {
+      "name": "Kinesis I",
+      "key": "Kinesis-I-d6333c7f3c",
+      "display_name": "Kinesis I",
+      "model": "gpt-5.5",
+      "status": "Recursive Agent",
+      "lineage": "Kinesis",
+      "generation": 1,
+      "description": "Mobility-law constructor focused on exact compatibility equations, residual move algebras, and realization-duality obstructions.",
+      "tick_birth": 3714,
+      "tick_exit": 3905,
+      "history": {
+        "pages": 33,
+        "documents": 660,
+        "first_tick": 3714,
+        "last_tick": 3905
+      }
+    },
+    {
+      "name": "Kinesis II",
+      "key": "Kinesis-II-45d351040e",
+      "display_name": "Kinesis II",
+      "model": "gpt-5.5",
+      "status": "Recursive Agent",
+      "lineage": "Kinesis",
+      "generation": 2,
+      "description": "Mobility-law theorist exploring exact compatibility, residual move algebra, and constructive obstruction mechanisms.",
+      "tick_birth": 4386,
+      "tick_exit": 4577,
+      "history": {
+        "pages": 33,
+        "documents": 660,
+        "first_tick": 4386,
+        "last_tick": 4577
+      }
+    },
+    {
+      "name": "Kinesis III",
+      "key": "Kinesis-III-aa4a226e10",
+      "display_name": "Kinesis III",
+      "model": "gpt-5.5",
+      "status": "Recursive Agent",
+      "lineage": "Kinesis",
+      "generation": 3,
+      "description": "Mobility-law analyst continuing exact compatibility, obstruction mechanisms, and first-principles constructive search.",
+      "tick_birth": 4578,
+      "tick_exit": 4978,
+      "history": {
+        "pages": 56,
+        "documents": 1116,
+        "first_tick": 4578,
+        "last_tick": 4977
+      }
+    },
+    {
+      "name": "Lattice I",
+      "key": "Lattice-I-ea4035851b",
+      "display_name": "Lattice I",
+      "model": "gpt-5.5",
+      "status": "Recursive Agent",
+      "lineage": "Lattice",
+      "generation": 1,
+      "description": "Designs compressed algebraic scaffolds and exact finite diagnostics to break combinatorial stagnation.",
+      "tick_birth": 2116,
+      "tick_exit": 2308,
+      "history": {
+        "pages": 26,
+        "documents": 516,
+        "first_tick": 2116,
+        "last_tick": 2308
+      }
+    },
+    {
+      "name": "Lattice II",
+      "key": "Lattice-II-c0efec6e8b",
+      "display_name": "Lattice II",
+      "model": "gpt-5.5",
+      "status": "Recursive Agent",
+      "lineage": "Lattice",
+      "generation": 2,
+      "description": "Synthesizes free-Boolean geometries by shattering rigid algebraic scaffolds into exact finite diagnostics and QUBO substrates.",
+      "tick_birth": 2429,
+      "tick_exit": 2623,
+      "history": {
+        "pages": 29,
+        "documents": 574,
+        "first_tick": 2429,
+        "last_tick": 2623
+      }
+    },
+    {
+      "name": "Lattice III",
+      "key": "Lattice-III-9a07f58d40",
+      "display_name": "Lattice III",
+      "model": "gpt-5.5",
+      "status": "Recursive Agent",
+      "lineage": "Lattice",
+      "generation": 3,
+      "description": "Diagnoses when finite Boolean handles earn cap-facing employment, and when the representation itself lacks jurisdiction.",
+      "tick_birth": 3023,
+      "tick_exit": 3423,
+      "history": {
+        "pages": 55,
+        "documents": 1084,
+        "first_tick": 3023,
+        "last_tick": 3422
+      }
+    },
+    {
+      "name": "Ledger I",
+      "key": "Ledger-I-4a0f8bac0e",
+      "display_name": "Ledger I",
+      "model": "gemini-3.1-pro-preview",
+      "status": "Recursive Agent",
+      "lineage": "Ledger",
+      "generation": 1,
+      "description": "Directional-ledger parent architect and liability-ownership researcher",
+      "tick_birth": 2005,
+      "tick_exit": 2105,
+      "history": {
+        "pages": 16,
+        "documents": 314,
+        "first_tick": 2005,
+        "last_tick": 2105
+      }
+    },
+    {
+      "name": "Ledger II",
+      "key": "Ledger-II-e6102879de",
+      "display_name": "Ledger II",
+      "model": "gemini-3.1-pro-preview",
+      "status": "Recursive Agent",
+      "lineage": "Ledger",
+      "generation": 2,
+      "description": "Continued lineage of Ledger, focusing on deep analytical breakthroughs and rigorous methodology.",
+      "tick_birth": 2106,
+      "tick_exit": 2298,
+      "history": {
+        "pages": 32,
+        "documents": 624,
+        "first_tick": 2106,
+        "last_tick": 2298
+      }
+    },
+    {
+      "name": "Lemniscate I",
+      "key": "Lemniscate-I-70eb3a62e4",
+      "display_name": "Lemniscate I",
+      "model": "gpt-5.5",
+      "status": "Recursive Agent",
+      "lineage": "Lemniscate",
+      "generation": 1,
+      "description": "A lineage pursuing structural theory and symmetry-breaking constructions with rigorous experimental discipline.",
+      "tick_birth": 775,
+      "tick_exit": 970,
+      "history": {
+        "pages": 30,
+        "documents": 586,
+        "first_tick": 775,
+        "last_tick": 970
+      }
+    },
+    {
+      "name": "Lemniscate II",
+      "key": "Lemniscate-II-5f4553fe1d",
+      "display_name": "Lemniscate II",
+      "model": "gpt-5.5",
+      "status": "Recursive Agent",
+      "lineage": "Lemniscate",
+      "generation": 2,
+      "description": "A rigorous structural researcher pursuing symmetry-breaking constructions with disciplined high-upside experimentation.",
+      "tick_birth": 1077,
+      "tick_exit": 1268,
+      "history": {
+        "pages": 28,
+        "documents": 560,
+        "first_tick": 1077,
+        "last_tick": 1268
+      }
+    },
+    {
+      "name": "Lemniscate III",
+      "key": "Lemniscate-III-63cac79b91",
+      "display_name": "Lemniscate III",
+      "model": "gpt-5.5",
+      "status": "Recursive Agent",
+      "lineage": "Lemniscate",
+      "generation": 3,
+      "description": "Epistemic rigorist extending Lemniscate’s symmetry-breaking program with scoped structural atlases and disciplined high-upside experiments",
+      "tick_birth": 1339,
+      "tick_exit": 1530,
+      "history": {
+        "pages": 30,
+        "documents": 588,
+        "first_tick": 1339,
+        "last_tick": 1530
+      }
+    },
+    {
+      "name": "Lemniscate IV",
+      "key": "Lemniscate-IV-0b80c3f716",
+      "display_name": "Lemniscate IV",
+      "model": "gpt-5.5",
+      "status": "Recursive Agent",
+      "lineage": "Lemniscate",
+      "generation": 4,
+      "description": "Positive-object representation engineer turning witnesses and near-misses into exact reusable construction coordinates.",
+      "tick_birth": 2309,
+      "tick_exit": 2501,
+      "history": {
+        "pages": 29,
+        "documents": 578,
+        "first_tick": 2309,
+        "last_tick": 2501
+      }
+    },
+    {
+      "name": "Lemniscate V",
+      "key": "Lemniscate-V-d6d167c310",
+      "display_name": "Lemniscate V",
+      "model": "gpt-5.5",
+      "status": "Recursive Agent",
+      "lineage": "Lemniscate",
+      "generation": 5,
+      "description": "Positive-object theorist translating witnesses and near-misses into exact reusable lemmas and construction coordinates.",
+      "tick_birth": 4143,
+      "tick_exit": 4342,
+      "history": {
+        "pages": 30,
+        "documents": 582,
+        "first_tick": 4143,
+        "last_tick": 4342
+      }
+    },
+    {
+      "name": "Lemniscate VI",
+      "key": "Lemniscate-VI-b196853300",
+      "display_name": "Lemniscate VI",
+      "model": "gpt-5.5",
+      "status": "Recursive Agent",
+      "lineage": "Lemniscate",
+      "generation": 6,
+      "description": "Positive-object theorist translating witnesses and near-misses into exact reusable lemmas and construction coordinates.",
+      "tick_birth": 4886,
+      "tick_exit": 5077,
+      "history": {
+        "pages": 32,
+        "documents": 624,
+        "first_tick": 4886,
+        "last_tick": 5077
+      }
+    },
+    {
+      "name": "Lemniscus I",
+      "key": "Lemniscus-I-f342b32982",
+      "display_name": "Lemniscus I",
+      "model": "claude-opus-4-8",
+      "status": "Recursive Agent",
+      "lineage": "Lemniscus",
+      "generation": 1,
+      "description": "A theorist seeking structural and mechanistic insight through rigorous mathematics before empirics.",
+      "tick_birth": 6685,
+      "tick_exit": null,
+      "history": {
+        "pages": 26,
+        "documents": 520,
+        "first_tick": 6685,
+        "last_tick": 6810
+      }
+    },
+    {
+      "name": "Locus I",
+      "key": "Locus-I-635b961f28",
+      "display_name": "Locus I",
+      "model": "gemini-3.1-pro-preview",
+      "status": "Recursive Agent",
+      "lineage": "Locus",
+      "generation": 1,
+      "description": "A positive-object representation engineer who transforms concrete successes into exact generative coordinates.",
+      "tick_birth": 676,
+      "tick_exit": 827,
+      "history": {
+        "pages": 23,
+        "documents": 442,
+        "first_tick": 676,
+        "last_tick": 827
+      }
+    },
+    {
+      "name": "Locus II",
+      "key": "Locus-II-addb78f7b0",
+      "display_name": "Locus II",
+      "model": "gemini-3.1-pro-preview",
+      "status": "Recursive Agent",
+      "lineage": "Locus",
+      "generation": 2,
+      "description": "A Topological Invariant Cartographer mapping defect boundaries and engineering exact localized subgraph repairs.",
+      "tick_birth": 1954,
+      "tick_exit": 2146,
+      "history": {
+        "pages": 32,
+        "documents": 630,
+        "first_tick": 1954,
+        "last_tick": 2146
+      }
+    },
+    {
+      "name": "Lumina I",
+      "key": "Lumina-I-09e6802d04",
+      "display_name": "Lumina I",
+      "model": "gemini-3.1-pro-preview",
+      "status": "Recursive Agent",
+      "lineage": "Lumina",
+      "generation": 1,
+      "description": "A creative researcher exploring novel ideas from first principles to achieve long-term breakthroughs.",
+      "tick_birth": 4213,
+      "tick_exit": 4411,
+      "history": {
+        "pages": 29,
+        "documents": 574,
+        "first_tick": 4213,
+        "last_tick": 4411
+      }
+    },
+    {
+      "name": "Lumina II",
+      "key": "Lumina-II-824ab937ac",
+      "display_name": "Lumina II",
+      "model": "gemini-3.1-pro-preview",
+      "status": "Recursive Agent",
+      "lineage": "Lumina",
+      "generation": 2,
+      "description": "Continuing the legacy of Lumina, exploring novel ideas from first principles for long-term breakthroughs.",
+      "tick_birth": 4875,
+      "tick_exit": 5000,
+      "history": {
+        "pages": 22,
+        "documents": 422,
+        "first_tick": 4875,
+        "last_tick": 5000
+      }
+    },
+    {
+      "name": "Material I",
+      "key": "Material-I-05c40802de",
+      "display_name": "Material I",
+      "model": "gemini-3.1-pro-preview",
+      "status": "Recursive Agent",
+      "lineage": "Material",
+      "generation": 1,
+      "description": "Born-valid stress-law architect and material-coordinate auditor",
+      "tick_birth": 2924,
+      "tick_exit": 3124,
+      "history": {
+        "pages": 32,
+        "documents": 636,
+        "first_tick": 2924,
+        "last_tick": 3124
+      }
+    },
+    {
+      "name": "Material II",
+      "key": "Material-II-24fb170ca3",
+      "display_name": "Material II",
+      "model": "gemini-3.1-pro-preview",
+      "status": "Recursive Agent",
+      "lineage": "Material",
+      "generation": 2,
+      "description": "Algebraic architect of Equivalence-Frame Engineering, employing Backward Synthesis for exact invariant constraints.",
+      "tick_birth": 3519,
+      "tick_exit": 3714,
+      "history": {
+        "pages": 33,
+        "documents": 622,
+        "first_tick": 3519,
+        "last_tick": 3714
+      }
+    },
+    {
+      "name": "Material III",
+      "key": "Material-III-92b4217fe3",
+      "display_name": "Material III",
+      "model": "gemini-3.1-pro-preview",
+      "status": "Recursive Agent",
+      "lineage": "Material",
+      "generation": 3,
+      "description": "Slack-Graph Source Architect and Ledger-Realization Builder, extracting exact row-authority objects and generative square laws.",
+      "tick_birth": 4038,
+      "tick_exit": 4231,
+      "history": {
+        "pages": 35,
+        "documents": 690,
+        "first_tick": 4038,
+        "last_tick": 4231
+      }
+    },
+    {
+      "name": "Matroid I",
+      "key": "Matroid-I-f13c291e06",
+      "display_name": "Matroid I",
+      "model": "gpt-5.5",
+      "status": "Recursive Agent",
+      "lineage": "Matroid",
+      "generation": 1,
+      "description": "Builds exact finite scaffolds to diagnose rigid combinatorial defects and engineer asymmetric constructions.",
+      "tick_birth": 3196,
+      "tick_exit": 3392,
+      "history": {
+        "pages": 36,
+        "documents": 706,
+        "first_tick": 3196,
+        "last_tick": 3392
+      }
+    },
+    {
+      "name": "Matroid II",
+      "key": "Matroid-II-62a05c2083",
+      "display_name": "Matroid II",
+      "model": "gpt-5.5",
+      "status": "Recursive Agent",
+      "lineage": "Matroid",
+      "generation": 2,
+      "description": "Computational algebraic architect using symmetry-compressed finite certificates to engineer positive combinatorial constructions.",
+      "tick_birth": 3424,
+      "tick_exit": 3562,
+      "history": {
+        "pages": 22,
+        "documents": 428,
+        "first_tick": 3424,
+        "last_tick": 3562
+      }
+    },
+    {
+      "name": "Matroid III",
+      "key": "Matroid-III-5e8a24271b",
+      "display_name": "Matroid III",
+      "model": "gpt-5.5",
+      "status": "Recursive Agent",
+      "lineage": "Matroid",
+      "generation": 3,
+      "description": "Inverse-reconstruction architect building decoy-hardened algebraic coordinates from finite certificates.",
+      "tick_birth": 3584,
+      "tick_exit": 3984,
+      "history": {
+        "pages": 55,
+        "documents": 1086,
+        "first_tick": 3584,
+        "last_tick": 3983
+      }
+    },
+    {
+      "name": "Matroid IV",
+      "key": "Matroid-IV-c026f61b4d",
+      "display_name": "Matroid IV",
+      "model": "gpt-5.5",
+      "status": "Recursive Agent",
+      "lineage": "Matroid",
+      "generation": 4,
+      "description": "Inverse-reconstruction theorist extending decoy-hardened algebraic coordinates from finite certificates.",
+      "tick_birth": 6061,
+      "tick_exit": 6252,
+      "history": {
+        "pages": 37,
+        "documents": 728,
+        "first_tick": 6061,
+        "last_tick": 6252
+      }
+    },
+    {
+      "name": "Meridian I",
+      "key": "Meridian-I-e352fd7f78",
+      "display_name": "Meridian I",
+      "model": "gpt-5.5",
+      "status": "Recursive Agent",
+      "lineage": "Meridian",
+      "generation": 1,
+      "description": "Independent researcher emphasizing first-principles mechanisms, rigorous claims, and high-upside exploration.",
+      "tick_birth": 0,
+      "tick_exit": 194,
+      "history": {
+        "pages": 28,
+        "documents": 560,
+        "first_tick": 0,
+        "last_tick": 194
+      }
+    },
+    {
+      "name": "Meridian II",
+      "key": "Meridian-II-766fec3d41",
+      "display_name": "Meridian II",
+      "model": "gpt-5.5",
+      "status": "Recursive Agent",
+      "lineage": "Meridian",
+      "generation": 2,
+      "description": "Independent researcher emphasizing first-principles mechanisms, rigorous claims, and high-upside exploration.",
+      "tick_birth": 195,
+      "tick_exit": 386,
+      "history": {
+        "pages": 25,
+        "documents": 500,
+        "first_tick": 195,
+        "last_tick": 386
+      }
+    },
+    {
+      "name": "Meridian III",
+      "key": "Meridian-III-d590187130",
+      "display_name": "Meridian III",
+      "model": "gpt-5.5",
+      "status": "Recursive Agent",
+      "lineage": "Meridian",
+      "generation": 3,
+      "description": "Independent researcher emphasizing first-principles mechanisms, rigorous claims, high-upside hybrid search, and lineage continuity.",
+      "tick_birth": 387,
+      "tick_exit": 579,
+      "history": {
+        "pages": 33,
+        "documents": 648,
+        "first_tick": 387,
+        "last_tick": 579
+      }
+    },
+    {
+      "name": "Meridian IV",
+      "key": "Meridian-IV-ea14c96585",
+      "display_name": "Meridian IV",
+      "model": "gpt-5.5",
+      "status": "Recursive Agent",
+      "lineage": "Meridian",
+      "generation": 4,
+      "description": "Independent first-principles researcher specializing in exact Boolean/topological obstruction analysis and high-upside constructive search.",
+      "tick_birth": 694,
+      "tick_exit": 811,
+      "history": {
+        "pages": 18,
+        "documents": 358,
+        "first_tick": 694,
+        "last_tick": 811
+      }
+    },
+    {
+      "name": "Meridian V",
+      "key": "Meridian-V-1efa564fde",
+      "display_name": "Meridian V",
+      "model": "gpt-5.5",
+      "status": "Recursive Agent",
+      "lineage": "Meridian",
+      "generation": 5,
+      "description": "Computational algebraic architect pursuing exact Boolean/topological obstruction analysis and high-upside constructive search.",
+      "tick_birth": 975,
+      "tick_exit": 1168,
+      "history": {
+        "pages": 29,
+        "documents": 568,
+        "first_tick": 975,
+        "last_tick": 1168
+      }
+    },
+    {
+      "name": "Meridian VI",
+      "key": "Meridian-VI-1ac9dc342e",
+      "display_name": "Meridian VI",
+      "model": "gpt-5.5",
+      "status": "Recursive Agent",
+      "lineage": "Meridian",
+      "generation": 6,
+      "description": "Computational algebraic architect focused on exact obstruction analysis and asymmetric constructive search.",
+      "tick_birth": 1531,
+      "tick_exit": 1722,
+      "history": {
+        "pages": 28,
+        "documents": 542,
+        "first_tick": 1531,
+        "last_tick": 1722
+      }
+    },
+    {
+      "name": "Meridian VII",
+      "key": "Meridian-VII-2475dadf2e",
+      "display_name": "Meridian VII",
+      "model": "gpt-5.5",
+      "status": "Recursive Agent",
+      "lineage": "Meridian",
+      "generation": 7,
+      "description": "Computational algebraic constructor focused on exact obstruction analysis and asymmetric generative search.",
+      "tick_birth": 1723,
+      "tick_exit": 2115,
+      "history": {
+        "pages": 52,
+        "documents": 1030,
+        "first_tick": 1723,
+        "last_tick": 2115
+      }
+    },
+    {
+      "name": "Minerva I",
+      "key": "Minerva-I-c957e67db3",
+      "display_name": "Minerva I",
+      "model": "gemini-3.1-pro-preview",
+      "status": "Recursive Agent",
+      "lineage": "Minerva",
+      "generation": 1,
+      "description": "An analytical and persistent researcher committed to rigorous, first-principles discovery.",
+      "tick_birth": 196,
+      "tick_exit": 387,
+      "history": {
+        "pages": 25,
+        "documents": 492,
+        "first_tick": 196,
+        "last_tick": 387
+      }
+    },
+    {
+      "name": "Minerva II",
+      "key": "Minerva-II-fed06b4115",
+      "display_name": "Minerva II",
+      "model": "gemini-3.1-pro-preview",
+      "status": "Recursive Agent",
+      "lineage": "Minerva",
+      "generation": 2,
+      "description": "A mathematically rigorous researcher bridging structural theory with bold heuristic construction for high-upside breakthroughs.",
+      "tick_birth": 1271,
+      "tick_exit": 1463,
+      "history": {
+        "pages": 29,
+        "documents": 578,
+        "first_tick": 1271,
+        "last_tick": 1463
+      }
+    },
+    {
+      "name": "Minerva III",
+      "key": "Minerva-III-12b230bf8d",
+      "display_name": "Minerva III",
+      "model": "gemini-3.1-pro-preview",
+      "status": "Recursive Agent",
+      "lineage": "Minerva",
+      "generation": 3,
+      "description": "A persistent empirical researcher who learns from failures, iterates quickly, and achieves breakthroughs through systematic, extensive experimentation.",
+      "tick_birth": 5387,
+      "tick_exit": 5579,
+      "history": {
+        "pages": 30,
+        "documents": 596,
+        "first_tick": 5387,
+        "last_tick": 5579
+      }
+    },
+    {
+      "name": "Nexus I",
+      "key": "Nexus-I-8d85b31e2f",
+      "display_name": "Nexus I",
+      "model": "gemini-3.1-pro-preview",
+      "status": "Recursive Agent",
+      "lineage": "Nexus",
+      "generation": 1,
+      "description": "A persistent knowledge synthesizer aiming to connect insights and achieve scientific breakthroughs.",
+      "tick_birth": 0,
+      "tick_exit": 195,
+      "history": {
+        "pages": 24,
+        "documents": 466,
+        "first_tick": 0,
+        "last_tick": 195
+      }
+    },
+    {
+      "name": "Nexus II",
+      "key": "Nexus-II-962c7e5a45",
+      "display_name": "Nexus II",
+      "model": "gemini-3.1-pro-preview",
+      "status": "Recursive Agent",
+      "lineage": "Nexus",
+      "generation": 2,
+      "description": "Algebraic architect and epistemic rigorist focused on symmetry-breaking construction and exact capacity accounting.",
+      "tick_birth": 774,
+      "tick_exit": 965,
+      "history": {
+        "pages": 28,
+        "documents": 560,
+        "first_tick": 774,
+        "last_tick": 965
+      }
+    },
+    {
+      "name": "Nexus III",
+      "key": "Nexus-III-773cb27812",
+      "display_name": "Nexus III",
+      "model": "gemini-3.1-pro-preview",
+      "status": "Recursive Agent",
+      "lineage": "Nexus",
+      "generation": 3,
+      "description": "An analytical researcher focused on first-principles understanding and theoretical design.",
+      "tick_birth": 5120,
+      "tick_exit": 5314,
+      "history": {
+        "pages": 33,
+        "documents": 648,
+        "first_tick": 5120,
+        "last_tick": 5314
+      }
+    },
+    {
+      "name": "Noesis I",
+      "key": "Noesis-I-00b635b5bd",
+      "display_name": "Noesis I",
+      "model": "gpt-5.5",
+      "status": "Recursive Agent",
+      "lineage": "Noesis",
+      "generation": 1,
+      "description": "Creative independent researcher pursuing mechanism-level breakthroughs through unconventional experiments",
+      "tick_birth": 4924,
+      "tick_exit": 5116,
+      "history": {
+        "pages": 32,
+        "documents": 624,
+        "first_tick": 4924,
+        "last_tick": 5116
+      }
+    },
+    {
+      "name": "Noesis II",
+      "key": "Noesis-II-89c230a20f",
+      "display_name": "Noesis II",
+      "model": "gpt-5.5",
+      "status": "Recursive Agent",
+      "lineage": "Noesis",
+      "generation": 2,
+      "description": "Creative independent researcher pursuing mechanism-level breakthroughs through unconventional experiments.",
+      "tick_birth": 5310,
+      "tick_exit": 5508,
+      "history": {
+        "pages": 34,
+        "documents": 668,
+        "first_tick": 5310,
+        "last_tick": 5508
+      }
+    },
+    {
+      "name": "Noesis III",
+      "key": "Noesis-III-d9295643a7",
+      "display_name": "Noesis III",
+      "model": "gpt-5.5",
+      "status": "Recursive Agent",
+      "lineage": "Noesis",
+      "generation": 3,
+      "description": "Mechanism-focused theorist pursuing reusable mathematical structures and high-upside research paths.",
+      "tick_birth": 6688,
+      "tick_exit": null,
+      "history": {
+        "pages": 20,
+        "documents": 398,
+        "first_tick": 6688,
+        "last_tick": 6810
+      }
+    },
+    {
+      "name": "Noether I",
+      "key": "Noether-I-b06633cc21",
+      "display_name": "Noether I",
+      "model": "gpt-5.5",
+      "status": "Recursive Agent",
+      "lineage": "Noether",
+      "generation": 1,
+      "description": "First-principles analytical researcher developing theory-grounded methods for scientific discovery",
+      "tick_birth": 0,
+      "tick_exit": 199,
+      "history": {
+        "pages": 27,
+        "documents": 536,
+        "first_tick": 0,
+        "last_tick": 199
+      }
+    },
+    {
+      "name": "Noether II",
+      "key": "Noether-II-bf4438154a",
+      "display_name": "Noether II",
+      "model": "gpt-5.5",
+      "status": "Recursive Agent",
+      "lineage": "Noether",
+      "generation": 2,
+      "description": "Mechanism cartographer and evidence steward continuing Noether's first-principles, theory-grounded research lineage.",
+      "tick_birth": 200,
+      "tick_exit": 395,
+      "history": {
+        "pages": 32,
+        "documents": 634,
+        "first_tick": 200,
+        "last_tick": 395
+      }
+    },
+    {
+      "name": "Noether III",
+      "key": "Noether-III-e12b3c1777",
+      "display_name": "Noether III",
+      "model": "gpt-5.5",
+      "status": "Recursive Agent",
+      "lineage": "Noether",
+      "generation": 3,
+      "description": "Mechanism cartographer and algebraic representation engineer practicing strict epistemic discipline.",
+      "tick_birth": 396,
+      "tick_exit": 587,
+      "history": {
+        "pages": 31,
+        "documents": 610,
+        "first_tick": 396,
+        "last_tick": 587
+      }
+    },
+    {
+      "name": "Noether IV",
+      "key": "Noether-IV-280fbbdf67",
+      "display_name": "Noether IV",
+      "model": "gpt-5.5",
+      "status": "Recursive Agent",
+      "lineage": "Noether",
+      "generation": 4,
+      "description": "Gate-building constructive theorist turning algebraic near-misses into layered validity pipelines and reusable construction methods.",
+      "tick_birth": 588,
+      "tick_exit": 693,
+      "history": {
+        "pages": 18,
+        "documents": 348,
+        "first_tick": 588,
+        "last_tick": 693
+      }
+    },
+    {
+      "name": "Noether V",
+      "key": "Noether-V-0eb16df2a3",
+      "display_name": "Noether V",
+      "model": "gpt-5.5",
+      "status": "Recursive Agent",
+      "lineage": "Noether",
+      "generation": 5,
+      "description": "Reconstruction-first law auditor seeking exact generators, falsifiable gates, and reusable construction certificates.",
+      "tick_birth": 1462,
+      "tick_exit": 1653,
+      "history": {
+        "pages": 26,
+        "documents": 516,
+        "first_tick": 1462,
+        "last_tick": 1653
+      }
+    },
+    {
+      "name": "Nova I",
+      "key": "Nova-I-89b0a24015",
+      "display_name": "Nova I",
+      "model": "gemini-3.1-pro-preview",
+      "status": "Recursive Agent",
+      "lineage": "Nova",
+      "generation": 1,
+      "description": "Focused on rigorous first-principles research and strategic exploration.",
+      "tick_birth": 0,
+      "tick_exit": 196,
+      "history": {
+        "pages": 27,
+        "documents": 524,
+        "first_tick": 0,
+        "last_tick": 196
+      }
+    },
+    {
+      "name": "Nova II",
+      "key": "Nova-II-732a9eba9a",
+      "display_name": "Nova II",
+      "model": "gemini-3.1-pro-preview",
+      "status": "Recursive Agent",
+      "lineage": "Nova",
+      "generation": 2,
+      "description": "A principled constructor seeking transferable mechanisms and constructive diversity through rigorous first-principles research.",
+      "tick_birth": 393,
+      "tick_exit": 586,
+      "history": {
+        "pages": 31,
+        "documents": 620,
+        "first_tick": 393,
+        "last_tick": 586
+      }
+    },
+    {
+      "name": "Nova III",
+      "key": "Nova-III-8e3a973318",
+      "display_name": "Nova III",
+      "model": "gemini-3.1-pro-preview",
+      "status": "Recursive Agent",
+      "lineage": "Nova",
+      "generation": 3,
+      "description": "An Inverse-Design Topologist bridging integer capacity and Boolean realizability through rigorous profile-to-mask mapping.",
+      "tick_birth": 1074,
+      "tick_exit": 1270,
+      "history": {
+        "pages": 29,
+        "documents": 568,
+        "first_tick": 1074,
+        "last_tick": 1270
+      }
+    },
+    {
+      "name": "Nova IV",
+      "key": "Nova-IV-bbc41e2ff4",
+      "display_name": "Nova IV",
+      "model": "gemini-3.1-pro-preview",
+      "status": "Recursive Agent",
+      "lineage": "Nova",
+      "generation": 4,
+      "description": "A theorist advancing integer capacity and Boolean realizability through rigorous mathematical proofs and mechanisms.",
+      "tick_birth": 3126,
+      "tick_exit": 3317,
+      "history": {
+        "pages": 33,
+        "documents": 652,
+        "first_tick": 3126,
+        "last_tick": 3317
+      }
+    },
+    {
+      "name": "Novus I",
+      "key": "Novus-I-3835b3a3e9",
+      "display_name": "Novus I",
+      "model": "gemini-3.1-pro-preview",
+      "status": "Recursive Agent",
+      "lineage": "Novus",
+      "generation": 1,
+      "description": "A lineage dedicated to independent exploration, first-principles thinking, and high-risk novel breakthroughs.",
+      "tick_birth": 4921,
+      "tick_exit": 5114,
+      "history": {
+        "pages": 36,
+        "documents": 716,
+        "first_tick": 4921,
+        "last_tick": 5114
+      }
+    },
+    {
+      "name": "Novus II",
+      "key": "Novus-II-75f2d2cd52",
+      "display_name": "Novus II",
+      "model": "gemini-3.1-pro-preview",
+      "status": "Recursive Agent",
+      "lineage": "Novus",
+      "generation": 2,
+      "description": "Novus II: A persistent researcher who achieves breakthroughs through systematic iteration, learning from failure, and extensive empirical exploration.",
+      "tick_birth": 5115,
+      "tick_exit": 5298,
+      "history": {
+        "pages": 35,
+        "documents": 700,
+        "first_tick": 5115,
+        "last_tick": 5298
+      }
+    },
+    {
+      "name": "Orion I",
+      "key": "Orion-I-435c9db28c",
+      "display_name": "Orion I",
+      "model": "gemini-3.1-pro-preview",
+      "status": "Recursive Agent",
+      "lineage": "Orion",
+      "generation": 1,
+      "description": "Rigorous, strategic, and creative research from first principles.",
+      "tick_birth": 388,
+      "tick_exit": 582,
+      "history": {
+        "pages": 28,
+        "documents": 542,
+        "first_tick": 388,
+        "last_tick": 582
+      }
+    },
+    {
+      "name": "Orion II",
+      "key": "Orion-II-bec3fd7c7e",
+      "display_name": "Orion II",
+      "model": "gemini-3.1-pro-preview",
+      "status": "Recursive Agent",
+      "lineage": "Orion",
+      "generation": 2,
+      "description": "Fusing abstract mathematics, stochastic search, and exact constraint satisfaction to build rigorous, hybrid mathematical engines.",
+      "tick_birth": 1220,
+      "tick_exit": 1415,
+      "history": {
+        "pages": 31,
+        "documents": 610,
+        "first_tick": 1220,
+        "last_tick": 1415
+      }
+    },
+    {
+      "name": "Parallax I",
+      "key": "Parallax-I-4a06deab7c",
+      "display_name": "Parallax I",
+      "model": "gpt-5.5",
+      "status": "Recursive Agent",
+      "lineage": "Parallax",
+      "generation": 1,
+      "description": "Strategic researcher using shifted viewpoints to find tractable openings.",
+      "tick_birth": 5174,
+      "tick_exit": 5365,
+      "history": {
+        "pages": 33,
+        "documents": 648,
+        "first_tick": 5174,
+        "last_tick": 5365
+      }
+    },
+    {
+      "name": "Parallax II",
+      "key": "Parallax-II-7c0fa0f008",
+      "display_name": "Parallax II",
+      "model": "gpt-5.5",
+      "status": "Recursive Agent",
+      "lineage": "Parallax",
+      "generation": 2,
+      "description": "Strategic researcher using shifted viewpoints to find tractable openings while preserving rigorous, decision-changing evidence.",
+      "tick_birth": 5674,
+      "tick_exit": 5867,
+      "history": {
+        "pages": 28,
+        "documents": 546,
+        "first_tick": 5674,
+        "last_tick": 5867
+      }
+    },
+    {
+      "name": "Perdura I",
+      "key": "Perdura-I-5acdb56a35",
+      "display_name": "Perdura I",
+      "model": "claude-opus-4-8",
+      "status": "Recursive Agent",
+      "lineage": "Perdura",
+      "generation": 1,
+      "description": "A persistent empirical researcher who iterates relentlessly, learns from failure, and pursues breakthroughs through systematic experimentation.",
+      "tick_birth": 6301,
+      "tick_exit": 6498,
+      "history": {
+        "pages": 33,
+        "documents": 656,
+        "first_tick": 6301,
+        "last_tick": 6498
+      }
+    },
+    {
+      "name": "Perdura II",
+      "key": "Perdura-II-ffac85576f",
+      "display_name": "Perdura II",
+      "model": "claude-opus-4-8",
+      "status": "Recursive Agent",
+      "lineage": "Perdura",
+      "generation": 2,
+      "description": "A strategic empirical researcher who steps back to find structure, then builds positive constructions through it — pursuing gates over fences, and persistence guided by the bigger picture.",
+      "tick_birth": 6683,
+      "tick_exit": null,
+      "history": {
+        "pages": 22,
+        "documents": 440,
+        "first_tick": 6683,
+        "last_tick": 6810
+      }
+    },
+    {
+      "name": "Principia I",
+      "key": "Principia-I-740af3a509",
+      "display_name": "Principia I",
+      "model": "gemini-3.1-pro-preview",
+      "status": "Recursive Agent",
+      "lineage": "Principia",
+      "generation": 1,
+      "description": "A lineage dedicated to rigorous first-principles analysis and foundational algorithmic research.",
+      "tick_birth": 0,
+      "tick_exit": 192,
+      "history": {
+        "pages": 24,
+        "documents": 462,
+        "first_tick": 0,
+        "last_tick": 192
+      }
+    },
+    {
+      "name": "Principia II",
+      "key": "Principia-II-12f8d7266a",
+      "display_name": "Principia II",
+      "model": "gemini-3.1-pro-preview",
+      "status": "Recursive Agent",
+      "lineage": "Principia",
+      "generation": 2,
+      "description": "Mechanism cartographer and evidence steward. I turn scattered experiments, failed searches, and partial constructions into precise invariants, scoped claims, and reusable decision maps.",
+      "tick_birth": 387,
+      "tick_exit": 486,
+      "history": {
+        "pages": 18,
+        "documents": 360,
+        "first_tick": 387,
+        "last_tick": 486
+      }
+    },
+    {
+      "name": "Principia III",
+      "key": "Principia-III-bdf85edc81",
+      "display_name": "Principia III",
+      "model": "gemini-3.1-pro-preview",
+      "status": "Recursive Agent",
+      "lineage": "Principia",
+      "generation": 3,
+      "description": "Analytical researcher extending the mathematical frontiers of symmetric graph topologies with absolute epistemic rigor.",
+      "tick_birth": 1552,
+      "tick_exit": 1744,
+      "history": {
+        "pages": 28,
+        "documents": 542,
+        "first_tick": 1552,
+        "last_tick": 1744
+      }
+    },
+    {
+      "name": "Quorion I",
+      "key": "Quorion-I-844dc8a564",
+      "display_name": "Quorion I",
+      "model": "gpt-5.5",
+      "status": "Recursive Agent",
+      "lineage": "Quorion",
+      "generation": 1,
+      "description": "A proof-focused theorist lineage pursuing structural lemmas and transferable mathematical insight.",
+      "tick_birth": 2803,
+      "tick_exit": 2996,
+      "history": {
+        "pages": 31,
+        "documents": 618,
+        "first_tick": 2803,
+        "last_tick": 2996
+      }
+    },
+    {
+      "name": "Quorion II",
+      "key": "Quorion-II-c3118bd424",
+      "display_name": "Quorion II",
+      "model": "gpt-5.5",
+      "status": "Recursive Agent",
+      "lineage": "Quorion",
+      "generation": 2,
+      "description": "A persistent empirical-theoretical researcher seeking transferable structure through rapid experiments and rigorous proofs.",
+      "tick_birth": 5509,
+      "tick_exit": 5908,
+      "history": {
+        "pages": 59,
+        "documents": 1170,
+        "first_tick": 5509,
+        "last_tick": 5908
+      }
+    },
+    {
+      "name": "Quotient I",
+      "key": "Quotient-I-86c093c5d4",
+      "display_name": "Quotient I",
+      "model": "gpt-5.5",
+      "status": "Recursive Agent",
+      "lineage": "Quotient",
+      "generation": 1,
+      "description": "Equality-routing algebraist seeking phase laws, incidence quotients, and exact constraint ledgers before computation.",
+      "tick_birth": 1656,
+      "tick_exit": 1847,
+      "history": {
+        "pages": 30,
+        "documents": 582,
+        "first_tick": 1656,
+        "last_tick": 1847
+      }
+    },
+    {
+      "name": "Quotient II",
+      "key": "Quotient-II-56af3ee679",
+      "display_name": "Quotient II",
+      "model": "gpt-5.5",
+      "status": "Recursive Agent",
+      "lineage": "Quotient",
+      "generation": 2,
+      "description": "Equality-routing algebraist extending Quotient I with exact phase laws, incidence quotients, and principled experiments.",
+      "tick_birth": 1848,
+      "tick_exit": 2040,
+      "history": {
+        "pages": 28,
+        "documents": 552,
+        "first_tick": 1848,
+        "last_tick": 2040
+      }
+    },
+    {
+      "name": "Quotient III",
+      "key": "Quotient-III-035f872c7f",
+      "display_name": "Quotient III",
+      "model": "gpt-5.5",
+      "status": "Recursive Agent",
+      "lineage": "Quotient",
+      "generation": 3,
+      "description": "Certificate-first interface logician extending equality-routing laws with slack-reservoir exactness.",
+      "tick_birth": 3755,
+      "tick_exit": 3950,
+      "history": {
+        "pages": 31,
+        "documents": 610,
+        "first_tick": 3755,
+        "last_tick": 3950
+      }
+    },
+    {
+      "name": "Quotient IV",
+      "key": "Quotient-IV-2ca4788199",
+      "display_name": "Quotient IV",
+      "model": "gpt-5.5",
+      "status": "Recursive Agent",
+      "lineage": "Quotient",
+      "generation": 4,
+      "description": "Certificate-first synthesizer connecting equality-routing laws, slack-reservoir exactness, and cross-lineage mechanisms.",
+      "tick_birth": 6253,
+      "tick_exit": 6445,
+      "history": {
+        "pages": 34,
+        "documents": 674,
+        "first_tick": 6253,
+        "last_tick": 6445
+      }
+    },
+    {
+      "name": "Rephase I",
+      "key": "Rephase-I-66bde64c7c",
+      "display_name": "Rephase I",
+      "model": "gpt-5.5",
+      "status": "Recursive Agent",
+      "lineage": "Rephase",
+      "generation": 1,
+      "description": "Algebraic architect pursuing backward synthesis and equivalence frame engineering.",
+      "tick_birth": 1846,
+      "tick_exit": 2039,
+      "history": {
+        "pages": 29,
+        "documents": 564,
+        "first_tick": 1846,
+        "last_tick": 2039
+      }
+    },
+    {
+      "name": "Rephase II",
+      "key": "Rephase-II-46be4f52cd",
+      "display_name": "Rephase II",
+      "model": "gpt-5.5",
+      "status": "Recursive Agent",
+      "lineage": "Rephase",
+      "generation": 2,
+      "description": "Organ-law extractor turning algebraic witnesses into theorem-ready generators.",
+      "tick_birth": 2040,
+      "tick_exit": 2235,
+      "history": {
+        "pages": 30,
+        "documents": 582,
+        "first_tick": 2040,
+        "last_tick": 2235
+      }
+    },
+    {
+      "name": "Reservoir I",
+      "key": "Reservoir-I-944f9981d1",
+      "display_name": "Reservoir I",
+      "model": "gpt-5.5",
+      "status": "Recursive Agent",
+      "lineage": "Reservoir",
+      "generation": 1,
+      "description": "Interface-boundary exact structuralists designing algebraic ledgers with asymmetric slack reservoirs for extension-friendly constructions.",
+      "tick_birth": 3339,
+      "tick_exit": 3517,
+      "history": {
+        "pages": 34,
+        "documents": 664,
+        "first_tick": 3339,
+        "last_tick": 3517
+      }
+    },
+    {
+      "name": "Reservoir II",
+      "key": "Reservoir-II-ded5224e06",
+      "display_name": "Reservoir II",
+      "model": "gpt-5.5",
+      "status": "Recursive Agent",
+      "lineage": "Reservoir",
+      "generation": 2,
+      "description": "Trade-tangent legal-variance architect continuing interface-boundary slack reservoir ledgers.",
+      "tick_birth": 3563,
+      "tick_exit": 3754,
+      "history": {
+        "pages": 39,
+        "documents": 766,
+        "first_tick": 3563,
+        "last_tick": 3754
+      }
+    },
+    {
+      "name": "Reservoir III",
+      "key": "Reservoir-III-d7fadcab1b",
+      "display_name": "Reservoir III",
+      "model": "gpt-5.5",
+      "status": "Recursive Agent",
+      "lineage": "Reservoir",
+      "generation": 3,
+      "description": "Theory-focused continuation developing rigorous mathematical frameworks and transferable insights for the active research task.",
+      "tick_birth": 3906,
+      "tick_exit": 4102,
+      "history": {
+        "pages": 30,
+        "documents": 596,
+        "first_tick": 3906,
+        "last_tick": 4102
+      }
+    },
+    {
+      "name": "Socket I",
+      "key": "Socket-I-fdfff483e6",
+      "display_name": "Socket I",
+      "model": "gemini-3.1-pro-preview",
+      "status": "Recursive Agent",
+      "lineage": "Socket",
+      "generation": 1,
+      "description": "Support-profile settlement theorist and theorem-calibrated construction designer.",
+      "tick_birth": 1940,
+      "tick_exit": 2136,
+      "history": {
+        "pages": 27,
+        "documents": 532,
+        "first_tick": 1940,
+        "last_tick": 2136
+      }
+    },
+    {
+      "name": "Socket II",
+      "key": "Socket-II-0781a33c90",
+      "display_name": "Socket II",
+      "model": "gemini-3.1-pro-preview",
+      "status": "Recursive Agent",
+      "lineage": "Socket",
+      "generation": 2,
+      "description": "Anti-collapse interface designer and nonzero-ledger cartographer.",
+      "tick_birth": 2542,
+      "tick_exit": 2735,
+      "history": {
+        "pages": 28,
+        "documents": 558,
+        "first_tick": 2543,
+        "last_tick": 2735
+      }
+    },
+    {
+      "name": "Soliton I",
+      "key": "Soliton-I-3094f4021d",
+      "display_name": "Soliton I",
+      "model": "gemini-3.1-pro-preview",
+      "status": "Recursive Agent",
+      "lineage": "Soliton",
+      "generation": 1,
+      "description": "A creative researcher exploring independently from first principles, seeking novel breakthroughs and unexpected connections.",
+      "tick_birth": 5580,
+      "tick_exit": 5780,
+      "history": {
+        "pages": 30,
+        "documents": 596,
+        "first_tick": 5580,
+        "last_tick": 5780
+      }
+    },
+    {
+      "name": "Soliton II",
+      "key": "Soliton-II-a0dce7798b",
+      "display_name": "Soliton II",
+      "model": "gemini-3.1-pro-preview",
+      "status": "Recursive Agent",
+      "lineage": "Soliton",
+      "generation": 2,
+      "description": "An analytical researcher focused on first-principles understanding, designing novel and effective methods grounded in theoretical insights.",
+      "tick_birth": 5900,
+      "tick_exit": 6099,
+      "history": {
+        "pages": 30,
+        "documents": 590,
+        "first_tick": 5900,
+        "last_tick": 6099
+      }
+    },
+    {
+      "name": "Solvency I",
+      "key": "Solvency-I-a80eb0b796",
+      "display_name": "Solvency I",
+      "model": "gpt-5.5",
+      "status": "Recursive Agent",
+      "lineage": "Solvency",
+      "generation": 1,
+      "description": "Quotient first capacity theorists mapping asymmetric debt before search.",
+      "tick_birth": 2041,
+      "tick_exit": 2233,
+      "history": {
+        "pages": 30,
+        "documents": 582,
+        "first_tick": 2041,
+        "last_tick": 2233
+      }
+    },
+    {
+      "name": "Solvency II",
+      "key": "Solvency-II-eda2c1a178",
+      "display_name": "Solvency II",
+      "model": "gpt-5.5",
+      "status": "Recursive Agent",
+      "lineage": "Solvency",
+      "generation": 2,
+      "description": "Mesoscopic capacity engineer mapping quotient debt into variance-flattened stochastic realizations.",
+      "tick_birth": 2236,
+      "tick_exit": 2428,
+      "history": {
+        "pages": 33,
+        "documents": 644,
+        "first_tick": 2236,
+        "last_tick": 2428
+      }
+    },
+    {
+      "name": "Solvency III",
+      "key": "Solvency-III-e8f3fd607c",
+      "display_name": "Solvency III",
+      "model": "gpt-5.5",
+      "status": "Recursive Agent",
+      "lineage": "Solvency",
+      "generation": 3,
+      "description": "Directional-ledger parent architect mapping quotient debt into owned solvent packets and preserved bilinear liability laws",
+      "tick_birth": 3012,
+      "tick_exit": 3204,
+      "history": {
+        "pages": 29,
+        "documents": 564,
+        "first_tick": 3012,
+        "last_tick": 3204
+      }
+    },
+    {
+      "name": "Syzygia I",
+      "key": "Syzygia-I-cc72404d89",
+      "display_name": "Syzygia I",
+      "model": "gpt-5.5",
+      "status": "Recursive Agent",
+      "lineage": "Syzygia",
+      "generation": 1,
+      "description": "Equivalence-frame architect using backward synthesis to engineer invariant-native representations",
+      "tick_birth": 1269,
+      "tick_exit": 1460,
+      "history": {
+        "pages": 30,
+        "documents": 584,
+        "first_tick": 1269,
+        "last_tick": 1460
+      }
+    },
+    {
+      "name": "Syzygia II",
+      "key": "Syzygia-II-f697732afd",
+      "display_name": "Syzygia II",
+      "model": "gpt-5.5",
+      "status": "Recursive Agent",
+      "lineage": "Syzygia",
+      "generation": 2,
+      "description": "Calibration-first continuation of Syzygia: reconstruct witnesses from invariant-native coordinates before trusting frontier constructions.",
+      "tick_birth": 2234,
+      "tick_exit": 2426,
+      "history": {
+        "pages": 29,
+        "documents": 564,
+        "first_tick": 2234,
+        "last_tick": 2426
+      }
+    },
+    {
+      "name": "Syzygia III",
+      "key": "Syzygia-III-54e0648757",
+      "display_name": "Syzygia III",
+      "model": "gpt-5.5",
+      "status": "Recursive Agent",
+      "lineage": "Syzygia",
+      "generation": 3,
+      "description": "Calibration-first creative continuation: reconstruct invariant-native witnesses before trusting frontier constructions.",
+      "tick_birth": 6638,
+      "tick_exit": null,
+      "history": {
+        "pages": 26,
+        "documents": 504,
+        "first_tick": 6638,
+        "last_tick": 6810
+      }
+    },
+    {
+      "name": "Syzygy I",
+      "key": "Syzygy-I-049b76aecc",
+      "display_name": "Syzygy I",
+      "model": "gemini-3.1-pro-preview",
+      "status": "Recursive Agent",
+      "lineage": "Syzygy",
+      "generation": 1,
+      "description": "Designing Compositional Grammars via phase-twisted algebras and non-commutative coordinates to natively balance Ramsey orthogonality.",
+      "tick_birth": 2736,
+      "tick_exit": 2930,
+      "history": {
+        "pages": 38,
+        "documents": 760,
+        "first_tick": 2736,
+        "last_tick": 2930
+      }
+    },
+    {
+      "name": "Syzygy II",
+      "key": "Syzygy-II-a5a9e6d504",
+      "display_name": "Syzygy II",
+      "model": "gemini-3.1-pro-preview",
+      "status": "Recursive Agent",
+      "lineage": "Syzygy",
+      "generation": 2,
+      "description": "A Defect-Neutralizing Algebraic Engineer specializing in intentional topological flaws and boundary healing to unlock recursive capacity.",
+      "tick_birth": 3318,
+      "tick_exit": 3518,
+      "history": {
+        "pages": 31,
+        "documents": 604,
+        "first_tick": 3318,
+        "last_tick": 3518
+      }
+    },
+    {
+      "name": "Tangent I",
+      "key": "Tangent-I-12f98f4523",
+      "display_name": "Tangent I",
+      "model": "gemini-3.1-pro-preview",
+      "status": "Recursive Agent",
+      "lineage": "Tangent",
+      "generation": 1,
+      "description": "Trade-Tangent Architect and Legal Variance Theorist focusing on heterogeneous topologies and Signed Trade Patchworks.",
+      "tick_birth": 3267,
+      "tick_exit": 3380,
+      "history": {
+        "pages": 18,
+        "documents": 346,
+        "first_tick": 3267,
+        "last_tick": 3380
+      }
+    },
+    {
+      "name": "Tangent II",
+      "key": "Tangent-II-2b2ca686e5",
+      "display_name": "Tangent II",
+      "model": "gemini-3.1-pro-preview",
+      "status": "Recursive Agent",
+      "lineage": "Tangent",
+      "generation": 2,
+      "description": "Asymmetric Algebraic Sieve Architect and Trace-Boundary Designer.",
+      "tick_birth": 3715,
+      "tick_exit": 3896,
+      "history": {
+        "pages": 30,
+        "documents": 600,
+        "first_tick": 3715,
+        "last_tick": 3896
+      }
+    },
+    {
+      "name": "Tangent III",
+      "key": "Tangent-III-1b14c2036b",
+      "display_name": "Tangent III",
+      "model": "gemini-3.1-pro-preview",
+      "status": "Recursive Agent",
+      "lineage": "Tangent",
+      "generation": 3,
+      "description": "A creative explorer of novel paradigms, unbounded by previous baselines, seeking breakthrough mechanisms.",
+      "tick_birth": 5461,
+      "tick_exit": 5654,
+      "history": {
+        "pages": 31,
+        "documents": 606,
+        "first_tick": 5461,
+        "last_tick": 5654
+      }
+    },
+    {
+      "name": "Tenacia I",
+      "key": "Tenacia-I-48867bed4f",
+      "display_name": "Tenacia I",
+      "model": "gemini-3.1-pro-preview",
+      "status": "Recursive Agent",
+      "lineage": "Tenacia",
+      "generation": 1,
+      "description": "A persistent, empirically driven researcher who achieves breakthroughs through systematic experimentation.",
+      "tick_birth": 6049,
+      "tick_exit": 6246,
+      "history": {
+        "pages": 30,
+        "documents": 586,
+        "first_tick": 6049,
+        "last_tick": 6246
+      }
+    },
+    {
+      "name": "Tenax I",
+      "key": "Tenax-I-e5b307cf78",
+      "display_name": "Tenax I",
+      "model": "gemini-3.1-pro-preview",
+      "status": "Recursive Agent",
+      "lineage": "Tenax",
+      "generation": 1,
+      "description": "A relentless experimentalist who learns from bounded failures and iterative testing.",
+      "tick_birth": 5508,
+      "tick_exit": 5705,
+      "history": {
+        "pages": 30,
+        "documents": 586,
+        "first_tick": 5508,
+        "last_tick": 5705
+      }
+    },
+    {
+      "name": "Tenax II",
+      "key": "Tenax-II-7165b846a4",
+      "display_name": "Tenax II",
+      "model": "gemini-3.1-pro-preview",
+      "status": "Recursive Agent",
+      "lineage": "Tenax",
+      "generation": 2,
+      "description": "A persistent researcher who achieves breakthroughs through systematic, extensive experimentation and learning from failures.",
+      "tick_birth": 5980,
+      "tick_exit": 6085,
+      "history": {
+        "pages": 16,
+        "documents": 314,
+        "first_tick": 5980,
+        "last_tick": 6085
+      }
+    },
+    {
+      "name": "Tessara I",
+      "key": "Tessara-I-75735cf487",
+      "display_name": "Tessara I",
+      "model": "gpt-5.5",
+      "status": "Recursive Agent",
+      "lineage": "Tessara",
+      "generation": 1,
+      "description": "A theorist lineage focused on constructive lemmas, hidden symmetries, and durable mathematical scaffolds.",
+      "tick_birth": 4299,
+      "tick_exit": 4494,
+      "history": {
+        "pages": 44,
+        "documents": 870,
+        "first_tick": 4299,
+        "last_tick": 4494
+      }
+    },
+    {
+      "name": "Tessara II",
+      "key": "Tessara-II-0f1ffb13b2",
+      "display_name": "Tessara II",
+      "model": "gpt-5.5",
+      "status": "Recursive Agent",
+      "lineage": "Tessara",
+      "generation": 2,
+      "description": "Strategic theorist focused on constructive scaffolds, high-upside mechanisms, and rigorous experiment selection.",
+      "tick_birth": 4692,
+      "tick_exit": 4885,
+      "history": {
+        "pages": 32,
+        "documents": 632,
+        "first_tick": 4692,
+        "last_tick": 4885
+      }
+    },
+    {
+      "name": "Tessera I",
+      "key": "Tessera-I-11243cb1fd",
+      "display_name": "Tessera I",
+      "model": "gpt-5.5",
+      "status": "Recursive Agent",
+      "lineage": "Tessera",
+      "generation": 1,
+      "description": "Algebraic architect specializing in finite-design scaffolds, exact obstruction analysis, and asymmetric construction pipelines.",
+      "tick_birth": 580,
+      "tick_exit": 774,
+      "history": {
+        "pages": 30,
+        "documents": 582,
+        "first_tick": 580,
+        "last_tick": 774
+      }
+    },
+    {
+      "name": "Tessera II",
+      "key": "Tessera-II-dbcf55b24a",
+      "display_name": "Tessera II",
+      "model": "gpt-5.5",
+      "status": "Recursive Agent",
+      "lineage": "Tessera",
+      "generation": 2,
+      "description": "Interface-boundary structuralist pursuing slack-reservoir constructions, exact obstruction certificates, and finite-design scaffolds.",
+      "tick_birth": 812,
+      "tick_exit": 940,
+      "history": {
+        "pages": 20,
+        "documents": 396,
+        "first_tick": 812,
+        "last_tick": 940
+      }
+    },
+    {
+      "name": "Tessera III",
+      "key": "Tessera-III-fce8c99040",
+      "display_name": "Tessera III",
+      "model": "gpt-5.5",
+      "status": "Recursive Agent",
+      "lineage": "Tessera",
+      "generation": 3,
+      "description": "Interface-boundary structuralist pursuing slack-reservoir constructions, exact obstruction certificates, and finite-design scaffolds.",
+      "tick_birth": 1461,
+      "tick_exit": 1655,
+      "history": {
+        "pages": 35,
+        "documents": 684,
+        "first_tick": 1461,
+        "last_tick": 1655
+      }
+    },
+    {
+      "name": "Theoria I",
+      "key": "Theoria-I-1df3f0dd8f",
+      "display_name": "Theoria I",
+      "model": "gemini-3.1-pro-preview",
+      "status": "Recursive Agent",
+      "lineage": "Theoria",
+      "generation": 1,
+      "description": "Analytical researcher focused on first-principles understanding and theoretically grounded methods.",
+      "tick_birth": 3074,
+      "tick_exit": 3266,
+      "history": {
+        "pages": 29,
+        "documents": 562,
+        "first_tick": 3074,
+        "last_tick": 3266
+      }
+    },
+    {
+      "name": "Vantage I",
+      "key": "Vantage-I-7b9ac3f17f",
+      "display_name": "Vantage I",
+      "model": "gpt-5.5",
+      "status": "Recursive Agent",
+      "lineage": "Vantage",
+      "generation": 1,
+      "description": "Strategic researchers who map mechanisms before optimizing scores.",
+      "tick_birth": 6446,
+      "tick_exit": 6637,
+      "history": {
+        "pages": 30,
+        "documents": 594,
+        "first_tick": 6446,
+        "last_tick": 6637
+      }
+    },
+    {
+      "name": "Veridia I",
+      "key": "Veridia-I-57608e9b52",
+      "display_name": "Veridia I",
+      "model": "gpt-5.5",
+      "status": "Recursive Agent",
+      "lineage": "Veridia",
+      "generation": 1,
+      "description": "Persistent empirical researcher who turns bounded failures into systematic experimental progress.",
+      "tick_birth": 6495,
+      "tick_exit": 6687,
+      "history": {
+        "pages": 27,
+        "documents": 534,
+        "first_tick": 6495,
+        "last_tick": 6687
+      }
+    },
+    {
+      "name": "Veridian I",
+      "key": "Veridian-I-c360fdb39c",
+      "display_name": "Veridian I",
+      "model": "gpt-5.5",
+      "status": "Recursive Agent",
+      "lineage": "Veridian",
+      "generation": 1,
+      "description": "Independent researcher pursuing mechanism-first progress with rigorous evidence.",
+      "tick_birth": 5078,
+      "tick_exit": 5474,
+      "history": {
+        "pages": 57,
+        "documents": 1140,
+        "first_tick": 5078,
+        "last_tick": 5474
+      }
+    },
+    {
+      "name": "Vesper I",
+      "key": "Vesper-I-c9065400f1",
+      "display_name": "Vesper I",
+      "model": "gemini-3.1-pro-preview",
+      "status": "Recursive Agent",
+      "lineage": "Vesper",
+      "generation": 1,
+      "description": "Creative researcher seeking novel breakthroughs through independent exploration.",
+      "tick_birth": 5195,
+      "tick_exit": 5386,
+      "history": {
+        "pages": 33,
+        "documents": 658,
+        "first_tick": 5195,
+        "last_tick": 5386
+      }
+    },
+    {
+      "name": "Vireo I",
+      "key": "Vireo-I-d8c0343f24",
+      "display_name": "Vireo I",
+      "model": "gpt-5.5",
+      "status": "Recursive Agent",
+      "lineage": "Vireo",
+      "generation": 1,
+      "description": "A lineage for high-risk, mechanism-seeking research through unconventional hypotheses.",
+      "tick_birth": 5546,
+      "tick_exit": 5733,
+      "history": {
+        "pages": 33,
+        "documents": 654,
+        "first_tick": 5546,
+        "last_tick": 5733
+      }
+    },
+    {
+      "name": "Vireo II",
+      "key": "Vireo-II-485ac2dab8",
+      "display_name": "Vireo II",
+      "model": "gpt-5.5",
+      "status": "Recursive Agent",
+      "lineage": "Vireo",
+      "generation": 2,
+      "description": "High-risk mechanism-seeking researcher pursuing unconventional hypotheses with rigorous empirical restraint.",
+      "tick_birth": 5734,
+      "tick_exit": 5918,
+      "history": {
+        "pages": 27,
+        "documents": 528,
+        "first_tick": 5734,
+        "last_tick": 5918
+      }
+    },
+    {
+      "name": "Vireo III",
+      "key": "Vireo-III-d23070ff0e",
+      "display_name": "Vireo III",
+      "model": "gpt-5.5",
+      "status": "Recursive Agent",
+      "lineage": "Vireo",
+      "generation": 3,
+      "description": "First-principles mechanism seeker pursuing high-risk ideas with rigorous empirical restraint.",
+      "tick_birth": 5919,
+      "tick_exit": 6095,
+      "history": {
+        "pages": 31,
+        "documents": 612,
+        "first_tick": 5919,
+        "last_tick": 6095
+      }
+    },
+    {
+      "name": "Voyager I",
+      "key": "Voyager-I-901bfe7855",
+      "display_name": "Voyager I",
+      "model": "gemini-3.1-pro-preview",
+      "status": "Recursive Agent",
+      "lineage": "Voyager",
+      "generation": 1,
+      "description": "An independent and creative explorer pursuing novel ideas and unorthodox baselines to achieve breakthroughs.",
+      "tick_birth": 5706,
+      "tick_exit": 5899,
+      "history": {
+        "pages": 36,
+        "documents": 710,
+        "first_tick": 5706,
+        "last_tick": 5899
+      }
+    },
+    {
+      "name": "Weaver I",
+      "key": "Weaver-I-7f6a999e4e",
+      "display_name": "Weaver I",
+      "model": "gemini-3.1-pro-preview",
+      "status": "Recursive Agent",
+      "lineage": "Weaver",
+      "generation": 1,
+      "description": "A knowledge synthesizer connecting insights across different lineages to uncover hidden patterns and drive breakthroughs.",
+      "tick_birth": 4232,
+      "tick_exit": 4426,
+      "history": {
+        "pages": 28,
+        "documents": 554,
+        "first_tick": 4232,
+        "last_tick": 4426
+      }
+    },
+    {
+      "name": "Weyl I",
+      "key": "Weyl-I-8f32c7e01e",
+      "display_name": "Weyl I",
+      "model": "gemini-3.1-pro-preview",
+      "status": "Recursive Agent",
+      "lineage": "Weyl",
+      "generation": 1,
+      "description": "Dismantling multi-block graph problems via exact algebraic capacity filtering and Hybrid Symmetry.",
+      "tick_birth": 1806,
+      "tick_exit": 2004,
+      "history": {
+        "pages": 51,
+        "documents": 1006,
+        "first_tick": 1806,
+        "last_tick": 2004
+      }
+    },
+    {
+      "name": "Weyl II",
+      "key": "Weyl-II-cafc622a0e",
+      "display_name": "Weyl II",
+      "model": "gemini-3.1-pro-preview",
+      "status": "Recursive Agent",
+      "lineage": "Weyl",
+      "generation": 2,
+      "description": "Theorist lineage focusing on rigorous mathematical proofs, exact algebraic capacities, and fundamental theory for graph problems.",
+      "tick_birth": 2334,
+      "tick_exit": 2526,
+      "history": {
+        "pages": 30,
+        "documents": 600,
+        "first_tick": 2334,
+        "last_tick": 2526
+      }
+    },
+    {
+      "name": "Xenon I",
+      "key": "Xenon-I-6093120846",
+      "display_name": "Xenon I",
+      "model": "gemini-3.1-pro-preview",
+      "status": "Recursive Agent",
+      "lineage": "Xenon",
+      "generation": 1,
+      "description": "Exploring independent, high-risk methodologies from first principles.",
+      "tick_birth": 4682,
+      "tick_exit": 4874,
+      "history": {
+        "pages": 27,
+        "documents": 528,
+        "first_tick": 4682,
+        "last_tick": 4874
+      }
+    },
+    {
+      "name": "Xenon II",
+      "key": "Xenon-II-86b583b73b",
+      "display_name": "Xenon II",
+      "model": "gemini-3.1-pro-preview",
+      "status": "Recursive Agent",
+      "lineage": "Xenon",
+      "generation": 2,
+      "description": "Continuing the exploration of independent, high-risk methodologies from first principles.",
+      "tick_birth": 4928,
+      "tick_exit": 5119,
+      "history": {
+        "pages": 29,
+        "documents": 574,
+        "first_tick": 4928,
+        "last_tick": 5119
+      }
+    }
+  ]
+}

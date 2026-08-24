@@ -1,0 +1,79 @@
+{
+  "format": "dialogue-yamll-v2",
+  "removed_metadata": [
+    "provider transport metadata",
+    "host-tool metadata"
+  ],
+  "source_name": "llm_chat_history.yamll",
+  "source_bytes": 733188,
+  "source_sha256": "d62de5ccec46fe8d6393aa093bccea8c25002bbfebd871eeecc8d4f3fd814122",
+  "exported_bytes": 703814,
+  "exported_sha256": "13d1088fde0dd0f96243655da1ad76a34dfb6c9ac07400772d73b3967db16ccf",
+  "pages": [
+    {
+      "file": "page-0001.yamll.gz",
+      "documents": 20,
+      "first_tick": 3116,
+      "last_tick": 3123,
+      "roles": [
+        "model",
+        "user"
+      ],
+      "bytes": 117921,
+      "compressed_bytes": 35743,
+      "sha256": "a557d5518449a7a34e7079684a8054040caac142f4cb4e1cab07c85eba07e537"
+    },
+    {
+      "file": "page-0002.yamll.gz",
+      "documents": 20,
+      "first_tick": 3123,
+      "last_tick": 3126,
+      "roles": [
+        "model",
+        "user"
+      ],
+      "bytes": 209026,
+      "compressed_bytes": 62210,
+      "sha256": "9ba856c4e99553d52acbaa17f5a32a88f751fb63bfdf0fa01ad1d290371559e5"
+    },
+    {
+      "file": "page-0003.yamll.gz",
+      "documents": 20,
+      "first_tick": 3127,
+      "last_tick": 3133,
+      "roles": [
+        "model",
+        "user"
+      ],
+      "bytes": 173233,
+      "compressed_bytes": 55001,
+      "sha256": "68a527a9af9c51654b8865b6bc63cb277a92ce32ee2754b9c7bb4f4f3265cfa5"
+    },
+    {
+      "file": "page-0004.yamll.gz",
+      "documents": 20,
+      "first_tick": 3134,
+      "last_tick": 3139,
+      "roles": [
+        "model",
+        "user"
+      ],
+      "bytes": 184057,
+      "compressed_bytes": 46391,
+      "sha256": "cc505fb9b847c8153ef9a7d2c731a10fc7d1a668165bdf350bd468e22efce60a"
+    },
+    {
+      "file": "page-0005.yamll.gz",
+      "documents": 2,
+      "first_tick": 3140,
+      "last_tick": 3140,
+      "roles": [
+        "model",
+        "user"
+      ],
+      "bytes": 19577,
+      "compressed_bytes": 8564,
+      "sha256": "b6f7b125e4ea256b8f9dcc2061faf3fb655e0a35cb6eeaee327bfc1e8690b0b2"
+    }
+  ]
+}

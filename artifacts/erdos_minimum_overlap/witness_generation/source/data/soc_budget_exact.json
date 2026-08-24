@@ -1,0 +1,456 @@
+{
+  "elapsed_seconds": 382.74318742752075,
+  "exact_raw_positive_part_budget": {
+    "ambiguous_sign_segments": 0,
+    "budget_hi": 1.00000164585949,
+    "budget_lo": 1.0000016456228162,
+    "budget_mid": 1.0000016457411531,
+    "budget_width": 2.3667375124342635e-10,
+    "positive_interval_count": 150,
+    "positive_interval_preview": [
+      {
+        "g_mid": 6.716241263086047e-07,
+        "hi": -1.6599999999976158,
+        "integral_hi": 1.8676627764285616e-10,
+        "integral_lo": 1.8491424746691775e-10,
+        "lo": -1.6604149790000915,
+        "mid": -1.6602074894988537
+      },
+      {
+        "g_mid": 5.720666973194849e-06,
+        "hi": -1.6499999999904633,
+        "integral_hi": 1.2522663111557062e-08,
+        "integral_lo": 1.2520797059070999e-08,
+        "lo": -1.653333333333969,
+        "mid": -1.6516666666622162
+      },
+      {
+        "g_mid": 5.910443469940008e-06,
+        "hi": -1.6416666666684152,
+        "integral_hi": 1.844381395627802e-08,
+        "integral_lo": 1.844193726232101e-08,
+        "lo": -1.646666666659832,
+        "mid": -1.6441666666641237
+      },
+      {
+        "g_mid": 7.307923506867242e-06,
+        "hi": -1.6316666666636468,
+        "integral_hi": 2.9206612941614542e-08,
+        "integral_lo": 2.9204723753182494e-08,
+        "lo": -1.638333333331108,
+        "mid": -1.6349999999973774
+      },
+      {
+        "g_mid": 2.729869515831203e-06,
+        "hi": -1.625000000002861,
+        "integral_hi": 7.629083900686403e-09,
+        "integral_lo": 7.627184961990383e-09,
+        "lo": -1.629418655380726,
+        "mid": -1.6272093276917934
+      },
+      {
+        "g_mid": 9.41663760070333e-07,
+        "hi": -1.6183333333320618,
+        "integral_hi": 1.0443662321513385e-09,
+        "integral_lo": 1.0424571082775207e-09,
+        "lo": -1.6200000000100137,
+        "mid": -1.6191666666710378
+      },
+      {
+        "g_mid": 9.416637600704095e-07,
+        "hi": 1.6200000000100132,
+        "integral_hi": 1.0443667326596906e-09,
+        "integral_lo": 1.0424566077691685e-09,
+        "lo": 1.6183333333320618,
+        "mid": 1.6191666666710374
+      },
+      {
+        "g_mid": 2.729869515831203e-06,
+        "hi": 1.6294186553807255,
+        "integral_hi": 7.629084198909265e-09,
+        "integral_lo": 7.62718466376752e-09,
+        "lo": 1.625000000002861,
+        "mid": 1.6272093276917934
+      },
+      {
+        "g_mid": 7.307923506867129e-06,
+        "hi": 1.638333333331108,
+        "integral_hi": 2.920661244630889e-08,
+        "integral_lo": 2.9204724248488147e-08,
+        "lo": 1.6316666666636463,
+        "mid": 1.6349999999973772
+      },
+      {
+        "g_mid": 5.910443469939927e-06,
+        "hi": 1.6466666666598317,
+        "integral_hi": 1.8443813857739102e-08,
+        "integral_lo": 1.8441937360859925e-08,
+        "lo": 1.6416666666684148,
+        "mid": 1.6441666666641233
+      },
+      {
+        "g_mid": 5.720666973194849e-06,
+        "hi": 1.6533333333339688,
+        "integral_hi": 1.2522662818551854e-08,
+        "integral_lo": 1.252079735207621e-08,
+        "lo": 1.6499999999904633,
+        "mid": 1.6516666666622162
+      },
+      {
+        "g_mid": 6.716241263085396e-07,
+        "hi": 1.6604149790000913,
+        "integral_hi": 1.8676637475565558e-10,
+        "integral_lo": 1.8491415035411834e-10,
+        "lo": 1.6599999999976156,
+        "mid": 1.6602074894988534
+      }
+    ],
+    "positive_measure": 2.6220287982406605
+  },
+  "exact_shift_to_budget_one": {
+    "certified_shift_lower": null,
+    "certified_shift_upper": 6.367101429067239e-07,
+    "float_shift_estimate": 6.366101429067239e-07,
+    "shifted_budget_checks": [
+      {
+        "ambiguous_sign_segments": 0,
+        "budget_hi": 0.9999999998546493,
+        "budget_lo": 0.9999999996366499,
+        "budget_mid": 0.9999999997456496,
+        "budget_width": 2.1799942045794502e-10,
+        "positive_interval_count": 140,
+        "positive_interval_preview": [
+          {
+            "g_mid": 3.566603773193327e-08,
+            "hi": -1.6601663807401656,
+            "integral_hi": 3.1932965881143522e-12,
+            "integral_lo": 1.3418550543529187e-12,
+            "lo": -1.6602617468562126,
+            "mid": -1.6602140637981893
+          },
+          {
+            "g_mid": 5.13171357725555e-06,
+            "hi": -1.6501554857959748,
+            "integral_hi": 1.0473834308183323e-08,
+            "integral_lo": 1.0471968312094071e-08,
+            "lo": -1.6532579303216934,
+            "mid": -1.6517067080588341
+          },
+          {
+            "g_mid": 5.276332587580846e-06,
+            "hi": -1.6418710561089516,
+            "integral_hi": 1.5382021273254114e-08,
+            "integral_lo": 1.5380145282576937e-08,
+            "lo": -1.6464906204447747,
+            "mid": -1.644180838276863
+          },
+          {
+            "g_mid": 6.704363839148312e-06,
+            "hi": -1.6319989272403717,
+            "integral_hi": 2.5135526341583786e-08,
+            "integral_lo": 2.5133637810370223e-08,
+            "lo": -1.638134559632778,
+            "mid": -1.6350667434365749
+          },
+          {
+            "g_mid": 2.1096720536987705e-06,
+            "hi": -1.6252792992634773,
+            "integral_hi": 5.041741854157292e-09,
+            "integral_lo": 5.039842856720167e-09,
+            "lo": -1.6289936635975837,
+            "mid": -1.6271364814305305
+          },
+          {
+            "g_mid": 3.1085732413978886e-07,
+            "hi": -1.6186498141918184,
+            "integral_hi": 1.955752109238297e-10,
+            "integral_lo": 1.9366583533260841e-10,
+            "lo": -1.6195897730526925,
+            "mid": -1.6191197936222554
+          },
+          {
+            "g_mid": 3.1085732413981295e-07,
+            "hi": 1.619589773052692,
+            "integral_hi": 1.955756113257489e-10,
+            "integral_lo": 1.936654349306892e-10,
+            "lo": 1.618649814191818,
+            "mid": 1.619119793622255
+          },
+          {
+            "g_mid": 2.1096720536987705e-06,
+            "hi": 1.6289936635975837,
+            "integral_hi": 5.041741854157292e-09,
+            "integral_lo": 5.039842856720167e-09,
+            "lo": 1.6252792992634773,
+            "mid": 1.6271364814305305
+          },
+          {
+            "g_mid": 6.704363839148226e-06,
+            "hi": 1.638134559632778,
+            "integral_hi": 2.5135526341583786e-08,
+            "integral_lo": 2.5133637810370223e-08,
+            "lo": 1.6319989272403714,
+            "mid": 1.6350667434365747
+          },
+          {
+            "g_mid": 5.276332587580846e-06,
+            "hi": 1.6464906204447745,
+            "integral_hi": 1.5382021666749732e-08,
+            "integral_lo": 1.5380144889081316e-08,
+            "lo": 1.6418710561089516,
+            "mid": 1.644180838276863
+          },
+          {
+            "g_mid": 5.13171357725544e-06,
+            "hi": 1.6532579303216932,
+            "integral_hi": 1.0473833916948107e-08,
+            "integral_lo": 1.0471968703329286e-08,
+            "lo": 1.6501554857959746,
+            "mid": 1.651706708058834
+          },
+          {
+            "g_mid": 3.566603773192983e-08,
+            "hi": 1.6602617468562126,
+            "integral_hi": 3.1933936884950483e-12,
+            "integral_lo": 1.3417579539722228e-12,
+            "lo": 1.6601663807401654,
+            "mid": 1.660214063798189
+          }
+        ],
+        "positive_measure": 2.5475643803424823,
+        "root_count": 280,
+        "root_width_max": 4.769518113789672e-13,
+        "shift": 6.367101429067239e-07
+      }
+    ]
+  },
+  "gate_summary_for_exact_budget_certificate": {
+    "gram_psd": true,
+    "interval_positive_part": true,
+    "m_envelope": true,
+    "m_envelope_mode": "full_domain_coarse_grid",
+    "real_generator": true
+  },
+  "grid_budget_comparison": {
+    "exact_raw_budget_hi_minus_plain_midpoint": 8.271539009285789e-11,
+    "original_partitions": 200000,
+    "plain_midpoint_budget": 1.0000016457767746,
+    "stored_conservative_midpoint_lipschitz_upper_budget": 1.0004522654050794,
+    "stored_conservative_upper_minus_exact_raw_hi": 0.0004506195455893369
+  },
+  "loaded_values": {
+    "stored_base_hardened_global": 0.38030401970520017,
+    "stored_improved_conservative_downshift": 0.0001387928335620332,
+    "stored_improved_conservative_raw_upper_budget": 1.0004522654050794,
+    "stored_improved_hardened_global": 0.38032854254945764,
+    "stored_improved_hardened_m0": 0.38036438512128806,
+    "stored_improved_nominal_m0_before_positive_downshift": 0.3805031779548501
+  },
+  "located_paths": {
+    "base_certificate": "source/soc_certificate.json",
+    "base_verifier": "source/verify_cert.py",
+    "reference_report": "source/README.md",
+    "improved_certificate": "source/soc_certificate_improved.json",
+    "improved_verifier": "source/verify_cert_improved.py"
+  },
+  "notes": [
+    "Root brackets are found from a dense sign-change mesh and refined by high-precision bisection to <5e-13.",
+    "Integral enclosures use mpmath interval antiderivative evaluation at the root intervals.",
+    "The unsafe same-sign mesh-cell count is reported as a conservative derivative-bound audit; no tangential root was observed numerically.",
+    "The existing standalone verifier is also run unchanged to reproduce the stored conservative hardened certificate."
+  ],
+  "real_generator_gate": {
+    "alpha_positive_where_beta_nonzero": true,
+    "min_alpha_where_beta_nonzero": null,
+    "nonzero_beta_count": 0
+  },
+  "recoverability": {
+    "certified_needed_exact_downshift_upper": 6.367101429067239e-07,
+    "envelope": {
+      "active_witnesses": [
+        {
+          "m_source": 0.0125,
+          "row_id": "hardened_m_0.0125",
+          "value_at_argmin": 0.3804352720004737
+        },
+        {
+          "m_source": 0.0,
+          "row_id": "perturbed_band_indicator_L10_basis2",
+          "value_at_argmin": 0.38043528480044314
+        }
+      ],
+      "coarse_argmin_m": 0.0197925,
+      "coarse_certified_min": 0.38042361229782623,
+      "outside_min": null,
+      "refined_argmin_m": null,
+      "refined_bracket_error": "refined bracket does not exclude the outside coarse grid",
+      "refined_certified_min_local_pad_only": null,
+      "refined_certified_min_with_retained_global_pad": null
+    },
+    "fraction_of_stored_downshift_recoverable_lower": 0.995412514273497,
+    "new_certified_global_L_coarse_gate": 0.38042361229782623,
+    "new_certified_global_L_gain_over_stored_hardened": 9.50697483685925e-05,
+    "new_certified_global_L_with_exact_budget_gate": 0.38042361229782623,
+    "recoverable_delta_L_lower": 0.00013815612341912646,
+    "recoverable_delta_L_nominal": 0.00013815622341912647,
+    "stored_conservative_downshift": 0.0001387928335620332,
+    "verdict": "RECOVERABLE"
+  },
+  "root_intervals_preview": [
+    [
+      -1.6604149790005684,
+      -1.6604149790000915
+    ],
+    [
+      -1.6599999999976158,
+      -1.659999999997139
+    ],
+    [
+      -1.653333333334446,
+      -1.653333333333969
+    ],
+    [
+      -1.6499999999904633,
+      -1.6499999999899864
+    ],
+    [
+      -1.646666666660309,
+      -1.646666666659832
+    ],
+    [
+      -1.6416666666684152,
+      -1.6416666666679383
+    ],
+    [
+      1.641666666667938,
+      1.6416666666684148
+    ],
+    [
+      1.6466666666598317,
+      1.6466666666603087
+    ],
+    [
+      1.6499999999899864,
+      1.6499999999904633
+    ],
+    [
+      1.6533333333339688,
+      1.6533333333344455
+    ],
+    [
+      1.6599999999971387,
+      1.6599999999976156
+    ],
+    [
+      1.6604149790000913,
+      1.6604149790005682
+    ]
+  ],
+  "root_isolation": {
+    "grid_n": 2000000,
+    "grid_spacing": 2e-06,
+    "lost_float_bracket_count": 0,
+    "mesh_max_value": 1.0218812893681406,
+    "mesh_min_value": -1.0359127152778904,
+    "root_count": 300,
+    "root_width_max": 4.769518113789672e-13,
+    "sample_root_midpoints": [
+      -1.66041497900033,
+      -1.6599999999973774,
+      -1.6533333333342075,
+      -1.6499999999902248,
+      -1.6466666666600704,
+      -1.6416666666681767,
+      1.6416666666681765,
+      1.6466666666600702,
+      1.6499999999902248,
+      1.6533333333342073,
+      1.6599999999973771,
+      1.6604149790003297
+    ],
+    "unsafe_same_sign_cell_count": 567772,
+    "unsafe_same_sign_run_count": 362,
+    "unsafe_same_sign_run_preview": [
+      {
+        "g_hi": -7.0784574868199e-09,
+        "g_lo": -2.7633531025139657e-05,
+        "hi": -1.6604160000000001,
+        "lo": -1.661354
+      },
+      {
+        "g_hi": 1.6819878823071122e-14,
+        "g_lo": 6.750456749138323e-09,
+        "hi": -1.6600000000000001,
+        "lo": -1.660414
+      },
+      {
+        "g_hi": -2.765617263850162e-05,
+        "g_lo": -1.2141456895431446e-08,
+        "hi": -1.6582379999999999,
+        "lo": -1.659998
+      },
+      {
+        "g_hi": -5.788521995064855e-09,
+        "g_lo": -2.7643435968338625e-05,
+        "hi": -1.653334,
+        "lo": -1.6555
+      },
+      {
+        "g_hi": 3.913536161803677e-14,
+        "g_lo": 1.156874163132926e-08,
+        "hi": -1.65,
+        "lo": -1.653332
+      },
+      {
+        "g_hi": -4.770425054978489e-09,
+        "g_lo": -8.048077593247882e-09,
+        "hi": -1.646668,
+        "lo": -1.649998
+      },
+      {
+        "g_hi": 4.055928259916186e-09,
+        "g_lo": 2.3855534214689555e-09,
+        "hi": -1.6416680000000001,
+        "lo": -1.646666
+      },
+      {
+        "g_hi": -2.076056104804991e-09,
+        "g_lo": -2.027416845518104e-09,
+        "hi": -1.638334,
+        "lo": -1.641666
+      },
+      {
+        "g_hi": 2.2553788836532362e-09,
+        "g_lo": 4.153412336282969e-09,
+        "hi": -1.631668,
+        "lo": -1.6383320000000001
+      },
+      {
+        "g_hi": -1.8669941148630187e-09,
+        "g_lo": -1.1267277111315366e-09,
+        "hi": -1.62942,
+        "lo": -1.631666
+      },
+      {
+        "g_hi": 4.688729127177993e-09,
+        "g_lo": 9.104302867157799e-10,
+        "hi": -1.625002,
+        "lo": -1.629418
+      },
+      {
+        "g_hi": -3.709099083426537e-09,
+        "g_lo": -5.995204332975845e-15,
+        "hi": -1.620002,
+        "lo": -1.625
+      }
+    ]
+  },
+  "schema": "public soc exact positive-part budget audit v1",
+  "verifier_reproduction": {
+    "base_global": 0.38030401970520017,
+    "base_reproduction_error": 0.0,
+    "gram_lambda_min_lower": 1.847590943838011e-07,
+    "improved_global": 0.38032854254945764,
+    "improved_reproduction_error": 0.0
+  }
+}
