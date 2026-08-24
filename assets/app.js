@@ -11,10 +11,9 @@
   const mobileToggle = document.getElementById('mobile-menu-toggle');
   const backdrop = document.getElementById('mobile-menu-backdrop');
   const githubRoot = 'https://github.com/dualverse-ai/station_data_v2';
-  const nbviewerRoot = 'https://nbviewer.org/github/dualverse-ai/station_data_v2/blob/main';
   const rawRoot = document.querySelector('meta[name="station-archive-root"]')?.content || '';
   const archiveRoot = location.hostname.endsWith('.github.io') ? rawRoot : '';
-  const state = { catalog: null, request: 0, controller: null, graphCleanup: null, cache: new Map() };
+  const state = { catalog: null, request: 0, controller: null, graphCleanup: null, notebookCleanup: null, cache: new Map() };
   const capsuleLabels = {
     archive: 'Archive Paper', public: 'Public Memory Capsule', private: 'Private Memory Capsule',
     mail: 'Mail', question: 'Questions'
@@ -28,8 +27,10 @@
   function archiveUrl(path) { return `${archiveRoot}${String(path).replace(/^\/+/, '')}`; }
   function encodePath(path) { return String(path).split('/').map(encodeURIComponent).join('/'); }
   function stationUrl(id, page = 'agents') { return `#/${encodeURIComponent(id)}/${page}`; }
+  function notebookUrl(id, path, section = '') { return `#/notebooks/${encodeURIComponent(id)}/${encodeURIComponent(path)}${section ? `/${encodeURIComponent(section)}` : ''}`; }
   function githubTree(path) { return `${githubRoot}/tree/main/${encodePath(path)}`; }
-  function nbviewerFile(path) { return `${nbviewerRoot}/${encodePath(path)}`; }
+  function githubFile(path) { return `${githubRoot}/blob/main/${encodePath(path)}`; }
+  function bundleFile(id) { return `${archiveRoot ? '' : '_site/'}bundles/${encodeURIComponent(id)}.zip`; }
   function current(request) {
     if (request !== state.request) throw new DOMException('Stale route', 'AbortError');
   }
@@ -317,10 +318,11 @@
 
   function renderDashboard() {
     showNavbar(null);
+    const stations = [...state.catalog.stations].sort((left, right) => naturalOrder.compare(left.title, right.title));
     app.innerHTML = `<section class="dashboard">
       <img class="dashboard-logo" src="images/logo.png" alt="Station">
       <h1>Select a station to explore</h1>
-      <div class="station-grid">${state.catalog.stations.map(station => `<a class="station-card" href="${stationUrl(station.id)}"><h2>${escapeHtml(station.title)}</h2><p>End Tick: ${escapeHtml(station.tick ?? '—')}</p></a>`).join('')}</div>
+      <div class="station-grid">${stations.map(station => `<a class="station-card" href="${stationUrl(station.id)}"><h2>${escapeHtml(station.title)}</h2><p>End Tick: ${escapeHtml(station.tick ?? '—')}</p></a>`).join('')}</div>
       <p class="dashboard-links"><a href="#/notebooks">Verification notebooks</a><span aria-hidden="true">·</span><a href="https://dualverse-ai.github.io/station_data/" target="_blank" rel="noopener noreferrer">Station Viewer v1</a></p>
     </section>`;
   }
@@ -509,8 +511,26 @@
 
   function renderNotebooks() {
     showNavbar(null);
-    const packages = state.catalog.artifacts.filter(artifact => !artifact.hidden);
-    app.innerHTML = `<div class="notebook-list">${pageHeader('Verification notebooks', '', '<a class="back-link" href="#/">Back to Stations</a>')}${packages.map(artifact => `<section class="notebook-group"><h2>${escapeHtml(artifact.title)}</h2><ul>${artifact.notebooks.map(path => `<li><a href="${nbviewerFile(`artifacts/${artifact.id}/${path}`)}" target="_blank" rel="noopener noreferrer">${escapeHtml(path)}</a></li>`).join('')}</ul><p><a href="${githubTree(`artifacts/${artifact.id}`)}" target="_blank" rel="noopener noreferrer">Supporting files</a></p></section>`).join('')}</div>`;
+    const packages = state.catalog.artifacts
+      .filter(artifact => !artifact.hidden)
+      .sort((left, right) => naturalOrder.compare(left.title, right.title));
+    app.innerHTML = `<div class="notebook-list">${pageHeader('Verification notebooks', '', '<a class="back-link" href="#/">Back to station viewer</a>')}${packages.map(artifact => `<section class="notebook-group"><h2>${escapeHtml(artifact.title)}</h2><ul>${artifact.notebooks.map(path => `<li><a href="${notebookUrl(artifact.id, path)}">${escapeHtml(path)}</a></li>`).join('')}</ul><p><a href="${githubTree(`artifacts/${artifact.id}`)}" target="_blank" rel="noopener noreferrer">Supporting files</a> · <a href="${bundleFile(artifact.id)}" download>Download verification bundle</a></p></section>`).join('')}</div>`;
+  }
+
+  async function renderNotebook(artifactId, path, section, signal, request) {
+    showNavbar(null);
+    const artifact = state.catalog.artifacts.find(item => item.id === artifactId && !item.hidden);
+    if (!artifact || !artifact.notebooks.includes(path)) throw new Error('Verification notebook not found');
+    if (!window.StationNotebookRenderer) throw new Error('Notebook renderer is unavailable');
+    const notebook = await fetchJSON(`artifacts/${artifact.id}/${path}`, signal); current(request);
+    const actions = `<div class="button-row notebook-actions"><a class="back-link" href="#/">Back to station viewer</a><a class="button" href="${githubFile(`artifacts/${artifact.id}/${path}`)}" target="_blank" rel="noopener noreferrer">View source on GitHub</a><a class="button" href="${bundleFile(artifact.id)}" download>Download verification bundle</a></div>`;
+    app.innerHTML = `<article class="notebook-page">${pageHeader(artifact.title, path, actions)}<div id="notebook-host" class="notebook-host" aria-label="${escapeHtml(artifact.title)} verification notebook"></div></article>`;
+    const mounted = await window.StationNotebookRenderer.render(document.getElementById('notebook-host'), notebook); current(request);
+    state.notebookCleanup = () => mounted.dispose();
+    if (section) {
+      const found = await mounted.scrollTo(section); current(request);
+      if (!found) throw new Error(`Notebook section not found: ${section}`);
+    }
   }
 
   function showError(error) {
@@ -521,13 +541,14 @@
     return value ? value.split('/').filter(Boolean).map(part => decodeURIComponent(part)) : [];
   }
   async function route() {
-    state.controller?.abort(); state.graphCleanup?.(); state.graphCleanup = null; document.body.classList.remove('archive-graph-active');
+    state.controller?.abort(); state.graphCleanup?.(); state.graphCleanup = null; state.notebookCleanup?.(); state.notebookCleanup = null; document.body.classList.remove('archive-graph-active');
     const controller = new AbortController(); state.controller = controller; const request = ++state.request;
     closeMenu(); app.innerHTML = '<div class="loading-state">Loading…</div>'; window.scrollTo(0, 0);
     try {
       const parts = routeParts();
       if (!parts.length) { renderDashboard(); return; }
-      if (parts[0] === 'notebooks') { renderNotebooks(); return; }
+      if (parts[0] === 'notebooks' && parts.length === 1) { renderNotebooks(); return; }
+      if (parts[0] === 'notebooks') { await renderNotebook(parts[1], parts[2], parts[3] || '', controller.signal, request); return; }
       const station = stationById(parts[0]); if (!station) throw new Error('Station not found');
       const page = parts[1] || 'agents'; const active = page === 'memory' ? parts[2] : page === 'capsule' ? parts[2] : page === 'agent' ? 'agents' : page === 'evaluation' ? 'evaluations' : page === 'archive-graph' ? 'archive' : page;
       showNavbar(station, active);

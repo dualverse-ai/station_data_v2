@@ -1,0 +1,18 @@
+{
+  "name": "station-data-v2-viewer",
+  "private": true,
+  "scripts": {
+    "build:notebook-renderer": "esbuild frontend/notebook-renderer.js --bundle --minify --alias:~mathjax-full=mathjax-full --loader:.svg=text --loader:.woff2=dataurl --loader:.woff=dataurl --loader:.ttf=dataurl --outfile=assets/generated/notebook-renderer.js",
+    "build": "npm run build:notebook-renderer"
+  },
+  "dependencies": {
+    "@jupyterlab/codemirror": "4.6.3",
+    "@jupyterlab/mathjax-extension": "4.6.3",
+    "@jupyterlab/notebook": "4.6.3",
+    "@jupyterlab/rendermime": "4.6.3",
+    "@jupyterlab/markedparser-extension": "4.6.3"
+  },
+  "devDependencies": {
+    "esbuild": "0.25.9"
+  }
+}

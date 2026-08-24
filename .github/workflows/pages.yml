@@ -23,7 +23,12 @@ jobs:
         with:
           sparse-checkout: |
             assets
+            frontend
             images
+            artifacts
+            catalog.json
+            package.json
+            package-lock.json
             scripts/build_pages.py
             index.html
             README.md
@@ -34,6 +39,13 @@ jobs:
           sparse-checkout-cone-mode: false
       - name: Configure Pages
         uses: actions/configure-pages@v5
+      - name: Configure Node
+        uses: actions/setup-node@v6
+        with:
+          node-version: 24
+          cache: npm
+      - name: Build notebook renderer
+        run: npm ci --ignore-scripts --no-audit --no-fund && npm run build
       - name: Build lightweight viewer
         run: python3 scripts/build_pages.py
       - name: Upload Pages artifact

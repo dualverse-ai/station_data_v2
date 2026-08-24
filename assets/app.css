@@ -169,6 +169,70 @@ html[data-theme="dark"] .review-score { color: #78d7a8; }
 .notebook-group h2 { margin: 0 0 10px; font-size: 17px; }
 .notebook-group ul { margin: 0; padding-left: 20px; }
 .notebook-group li + li { margin-top: 6px; }
+.notebook-group p { margin: 12px 0 0; color: var(--muted); font-size: 13px; }
+.notebook-page { width: min(1060px, 100%); margin: 0 auto; }
+.notebook-page .page-header { align-items: flex-start; }
+.notebook-page .page-header > div:first-child { padding-top: 5px; }
+.notebook-actions { justify-content: flex-end; }
+.notebook-host { width: 100%; min-height: 280px; padding: 20px 26px 34px; border: 1px solid var(--border); border-radius: 6px; background: var(--panel); }
+.notebook-host .jp-Notebook { overflow: visible; padding: 0; background: transparent; outline: 0; }
+.notebook-host .jp-Notebook .jp-Cell { margin: 0 0 18px; padding: 0; }
+.notebook-host .jp-Notebook .jp-MarkdownCell { margin-bottom: 8px; }
+.notebook-host .jp-CellHeader, .notebook-host .jp-CellFooter, .notebook-host .jp-Collapser { display: none; }
+.notebook-host .jp-Cell-inputWrapper, .notebook-host .jp-Cell-outputWrapper { margin: 0; }
+.notebook-host .jp-InputArea, .notebook-host .jp-OutputArea-child { display: grid; grid-template-columns: 52px minmax(0, 1fr); }
+.notebook-host .jp-InputPrompt, .notebook-host .jp-OutputPrompt { width: auto; padding: 7px 8px 0 0; color: var(--muted); font: 11px/1.4 var(--mono); text-align: right; }
+.notebook-host .jp-InputArea-editor { border: 1px solid var(--code-border); border-radius: 4px; background: var(--code); }
+.notebook-host .jp-Editor { background: var(--code); }
+.notebook-host .cm-editor { color: var(--code-text); font-family: var(--mono); font-size: 12px; }
+.notebook-host .cm-gutters { background: var(--code); color: var(--muted); }
+.notebook-host .jp-OutputArea-output { min-width: 0; color: var(--text); }
+.notebook-host .jp-RenderedText pre, .notebook-host .jp-OutputArea-output pre { color: var(--text); font: 12px/1.5 var(--mono); white-space: pre-wrap; }
+.notebook-host .jp-CodeCell:has(.jp-OutputArea-output) > .jp-Cell-outputWrapper { margin: 5px 0 0 52px; padding: 9px 11px 11px; overflow: hidden; border: 1px solid var(--code-border); border-radius: 4px; background: var(--code); }
+.notebook-host .jp-CodeCell:has(.jp-OutputArea-output) > .jp-Cell-outputWrapper::before { display: block; margin-bottom: 6px; color: var(--muted); content: "Output"; font: 600 10px/1.3 var(--sans); letter-spacing: .04em; text-transform: uppercase; }
+.notebook-host .jp-CodeCell:has(.jp-OutputArea-output) .jp-OutputArea-child { display: block; }
+.notebook-host .jp-CodeCell:has(.jp-OutputArea-output) .jp-OutputPrompt { display: none; }
+.notebook-host .jp-CodeCell:has(.jp-OutputArea-output) .jp-OutputArea-output { overflow-x: auto; }
+.notebook-host .jp-RenderedHTMLCommon { color: var(--text); font-family: var(--sans); font-size: 15px; line-height: 1.65; }
+.notebook-host .jp-RenderedHTMLCommon h1, .notebook-host .jp-RenderedHTMLCommon h2, .notebook-host .jp-RenderedHTMLCommon h3 { color: var(--text); font-family: var(--sans); font-weight: 600; line-height: 1.25; }
+.notebook-host .jp-RenderedHTMLCommon h1 { margin: 1.2em 0 .55em; font-size: 1.65em; }
+.notebook-host .jp-RenderedHTMLCommon h2 { margin: 1.2em 0 .55em; padding-bottom: .25em; border-bottom: 1px solid var(--border); font-size: 1.35em; }
+.notebook-host .jp-RenderedHTMLCommon h3 { margin: 1.15em 0 .5em; font-size: 1.15em; }
+.notebook-host .jp-RenderedHTMLCommon a { color: var(--blue); }
+.notebook-host .jp-RenderedHTMLCommon blockquote { border-left-color: var(--blue); background: var(--soft); color: var(--muted); }
+.notebook-host .jp-RenderedHTMLCommon table { color: var(--text); }
+.notebook-host .jp-RenderedHTMLCommon th, .notebook-host .jp-RenderedHTMLCommon td { border-color: var(--border); }
+.notebook-host .jp-RenderedHTMLCommon th { background: var(--soft); }
+.notebook-host .jp-RenderedHTMLCommon tr:nth-child(even) { background: color-mix(in srgb, var(--soft) 55%, transparent); }
+.notebook-host .jp-RenderedHTMLCommon img, .notebook-host .jp-RenderedImage img { max-width: 100%; height: auto; }
+.notebook-host .jp-RenderedHTMLCommon pre { border: 1px solid var(--code-border); border-radius: 4px; background: var(--code); color: var(--code-text); }
+.notebook-host .jp-RenderedHTMLCommon code { font-family: var(--mono); }
+.notebook-host .jp-RenderedHTMLCommon :not(pre) > code { padding: .15em .35em; border-radius: 3px; background: var(--code); color: var(--code-text); font-size: .9em; }
+.notebook-host .notebook-code-toggle { margin: 0 0 6px 52px; padding: 2px 7px; border: 1px solid var(--border); border-radius: 3px; background: var(--soft); color: var(--muted); font-size: 11px; }
+.notebook-host .notebook-code-toggle:hover { border-color: var(--blue); color: var(--blue); }
+.notebook-host .notebook-code-collapsed > .jp-Cell-inputWrapper { display: none; }
+.notebook-host .notebook-code-collapsed > .notebook-code-toggle { margin-bottom: 2px; }
+
+/* JupyterLab variables are mapped to the viewer palette; the notebook keeps Jupyter's layout. */
+.notebook-host {
+  --jp-border-width: 1px; --jp-border-radius: 4px;
+  --jp-border-color0: var(--border); --jp-border-color1: var(--border); --jp-border-color2: var(--border);
+  --jp-brand-color0: var(--blue); --jp-brand-color1: var(--blue); --jp-brand-color2: var(--blue-soft);
+  --jp-layout-color0: var(--panel); --jp-layout-color1: var(--panel); --jp-layout-color2: var(--soft); --jp-layout-color3: var(--border);
+  --jp-content-font-color0: var(--text); --jp-content-font-color1: var(--text); --jp-content-font-color3: var(--muted);
+  --jp-content-font-family: var(--sans); --jp-content-font-size0: 12px; --jp-content-font-size1: 14px; --jp-content-font-size2: 17px; --jp-content-font-size3: 21px; --jp-content-font-size4: 25px; --jp-content-font-size5: 30px;
+  --jp-content-line-height: 1.65; --jp-content-link-color: var(--blue); --jp-content-link-hover-color: var(--blue); --jp-content-link-visited-color: var(--blue);
+  --jp-ui-font-color0: var(--text); --jp-ui-font-color1: var(--muted); --jp-ui-font-color2: var(--muted); --jp-ui-font-family: var(--sans); --jp-ui-font-size0: 11px; --jp-ui-font-size1: 13px;
+  --jp-code-font-family: var(--mono); --jp-code-font-size: 12px; --jp-code-line-height: 1.5; --jp-code-padding: 5px;
+  --jp-mirror-editor-meta-color: #a020f0; --jp-mirror-editor-header-color: #000080; --jp-mirror-editor-keyword-color: #008000; --jp-mirror-editor-atom-color: #880000; --jp-mirror-editor-number-color: #080; --jp-mirror-editor-def-color: #00f; --jp-mirror-editor-builtin-color: #008000; --jp-mirror-editor-variable-2-color: #005a8d; --jp-mirror-editor-punctuation-color: #555; --jp-mirror-editor-property-color: #005a8d; --jp-mirror-editor-operator-color: #a020f0; --jp-mirror-editor-comment-color: #58747f; --jp-mirror-editor-string-color: #a31515; --jp-mirror-editor-string-2-color: #a31515; --jp-mirror-editor-bracket-color: #775; --jp-mirror-editor-tag-color: #008000; --jp-mirror-editor-attribute-color: #795e26; --jp-mirror-editor-quote-color: #58747f; --jp-mirror-editor-link-color: #00f;
+  --jp-cell-editor-background: var(--code); --jp-cell-editor-background-color: var(--code); --jp-cell-editor-border-color: var(--code-border); --jp-cell-editor-active-background: var(--code); --jp-cell-editor-active-border-color: var(--blue);
+  --jp-cell-inprompt-font-color: var(--muted); --jp-cell-outprompt-font-color: var(--muted); --jp-cell-prompt-not-active-font-color: var(--muted); --jp-cell-prompt-width: 52px; --jp-cell-padding: 5px;
+  --jp-rendermime-table-row-background: var(--panel); --jp-rendermime-table-row-hover-background: var(--soft); --jp-rendermime-error-background: color-mix(in srgb, #c94b4b 9%, var(--panel));
+  --jp-input-border-color: var(--border); --jp-input-active-border-color: var(--blue); --jp-input-active-background: var(--panel); --jp-focus-outline-color: var(--blue); --jp-editor-cursor-color: var(--text);
+  --jp-error-color0: #c94b4b; --jp-error-color2: #c94b4b; --jp-error-color3: #c94b4b; --jp-info-color0: var(--blue); --jp-success-color0: #26935c; --jp-warn-color0: #c48622;
+  --jp-notebook-padding: 0; --jp-notebook-scroll-padding: 0; --jp-elevation-z2: none;
+}
+html[data-theme="dark"] .notebook-host { --jp-mirror-editor-meta-color: #c586c0; --jp-mirror-editor-header-color: #9cdcfe; --jp-mirror-editor-keyword-color: #c586c0; --jp-mirror-editor-atom-color: #dcdcaa; --jp-mirror-editor-number-color: #b5cea8; --jp-mirror-editor-def-color: #dcdcaa; --jp-mirror-editor-builtin-color: #4ec9b0; --jp-mirror-editor-variable-2-color: #9cdcfe; --jp-mirror-editor-punctuation-color: #d4d4d4; --jp-mirror-editor-property-color: #9cdcfe; --jp-mirror-editor-operator-color: #d4d4d4; --jp-mirror-editor-comment-color: #6a9955; --jp-mirror-editor-string-color: #ce9178; --jp-mirror-editor-string-2-color: #ce9178; --jp-mirror-editor-bracket-color: #ffd700; --jp-mirror-editor-tag-color: #569cd6; --jp-mirror-editor-attribute-color: #9cdcfe; --jp-mirror-editor-quote-color: #6a9955; --jp-mirror-editor-link-color: #4fc1ff; }
 
 .archive-graph-page { width: 100%; min-width: 0; }
 .archive-graph-intro { max-width: 720px; }
@@ -302,6 +366,11 @@ html[data-theme="light"] .markdown-content-host .hljs-section { color: #6f42c1; 
   .station-grid { grid-template-columns: 1fr; }
   .dashboard-links { flex-wrap: wrap; font-size: 16px; }
   .page-header { align-items: flex-start; flex-direction: column; }
+  .notebook-actions { justify-content: flex-start; }
+  .notebook-host { padding: 14px 10px 24px; }
+  .notebook-host .jp-InputArea, .notebook-host .jp-OutputArea-child { grid-template-columns: 36px minmax(0, 1fr); }
+  .notebook-host .notebook-code-toggle { margin-left: 36px; }
+  .notebook-host .jp-CodeCell:has(.jp-OutputArea-output) > .jp-Cell-outputWrapper { margin-left: 36px; }
   .record-paper { padding: 20px 15px; }
   .capsule-thread { padding: 10px; }
   .capsule-message { padding: 14px 13px; }

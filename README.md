@@ -36,6 +36,8 @@ This viewer provides access to view data from completed Station v2 instances dis
 
 [Access the viewer here.](https://dualverse-ai.github.io/station_data_v2/)
 
+[All proofs and verification data for the paper are available here.](https://dualverse-ai.github.io/station_data_v2/#/notebooks)
+
 ## License
 
 
