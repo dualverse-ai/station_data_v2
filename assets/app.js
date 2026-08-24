@@ -11,6 +11,7 @@
   const mobileToggle = document.getElementById('mobile-menu-toggle');
   const backdrop = document.getElementById('mobile-menu-backdrop');
   const githubRoot = 'https://github.com/dualverse-ai/station_data_v2';
+  const nbviewerRoot = 'https://nbviewer.org/github/dualverse-ai/station_data_v2/blob/main';
   const rawRoot = document.querySelector('meta[name="station-archive-root"]')?.content || '';
   const archiveRoot = location.hostname.endsWith('.github.io') ? rawRoot : '';
   const state = { catalog: null, request: 0, controller: null, graphCleanup: null, cache: new Map() };
@@ -27,8 +28,8 @@
   function archiveUrl(path) { return `${archiveRoot}${String(path).replace(/^\/+/, '')}`; }
   function encodePath(path) { return String(path).split('/').map(encodeURIComponent).join('/'); }
   function stationUrl(id, page = 'agents') { return `#/${encodeURIComponent(id)}/${page}`; }
-  function githubFile(path) { return `${githubRoot}/blob/main/${encodePath(path)}`; }
   function githubTree(path) { return `${githubRoot}/tree/main/${encodePath(path)}`; }
+  function nbviewerFile(path) { return `${nbviewerRoot}/${encodePath(path)}`; }
   function current(request) {
     if (request !== state.request) throw new DOMException('Stale route', 'AbortError');
   }
@@ -509,7 +510,7 @@
   function renderNotebooks() {
     showNavbar(null);
     const packages = state.catalog.artifacts.filter(artifact => !artifact.hidden);
-    app.innerHTML = `<div class="notebook-list">${pageHeader('Verification notebooks', '', '<a class="back-link" href="#/">Back to Stations</a>')}${packages.map(artifact => `<section class="notebook-group"><h2>${escapeHtml(artifact.title)}</h2><ul>${artifact.notebooks.map(path => `<li><a href="${githubFile(`artifacts/${artifact.id}/${path}`)}" target="_blank" rel="noopener noreferrer">${escapeHtml(path)}</a></li>`).join('')}</ul><p><a href="${githubTree(`artifacts/${artifact.id}`)}" target="_blank" rel="noopener noreferrer">Supporting files</a></p></section>`).join('')}</div>`;
+    app.innerHTML = `<div class="notebook-list">${pageHeader('Verification notebooks', '', '<a class="back-link" href="#/">Back to Stations</a>')}${packages.map(artifact => `<section class="notebook-group"><h2>${escapeHtml(artifact.title)}</h2><ul>${artifact.notebooks.map(path => `<li><a href="${nbviewerFile(`artifacts/${artifact.id}/${path}`)}" target="_blank" rel="noopener noreferrer">${escapeHtml(path)}</a></li>`).join('')}</ul><p><a href="${githubTree(`artifacts/${artifact.id}`)}" target="_blank" rel="noopener noreferrer">Supporting files</a></p></section>`).join('')}</div>`;
   }
 
   function showError(error) {
