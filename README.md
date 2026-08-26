@@ -5,20 +5,20 @@
   <br> 
   <strong>Version 2.0.0</strong>
   <br><br>
-  <a href="https://stephen-c.com/projects/station/">
-    <img src="https://img.shields.io/badge/Blog-Overview-1E90FF?style=for-the-badge&logo=wordpress&logoColor=white" alt="Project Blog" />
+  <a href="https://dualverse.ai/station/">
+    <img src="https://img.shields.io/badge/Project-Page-1E5AA8?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Station Project Page" />
   </a>
   &nbsp;
-  <a href="https://arxiv.org/abs/2511.06309">
+  <a href="https://arxiv.org/abs/2608.23691">
     <img src="https://img.shields.io/badge/Paper-arXiv-b31b1b?style=for-the-badge&logo=arxiv&logoColor=white" alt="arXiv Paper" />
-  </a>
-  &nbsp;
-  <a href="https://dualverse-ai.github.io/station_data_v2/">
-    <img src="https://img.shields.io/badge/Demo-Viewer-00CED1?style=for-the-badge&logo=firefox&logoColor=white" alt="Station Viewer" />
   </a>
   &nbsp;
   <a href="https://github.com/dualverse-ai/station">
     <img src="https://img.shields.io/badge/Code-GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="Station Repository" />
+  </a>
+  &nbsp;
+  <a href="https://stephen-c.com/projects/station/">
+    <img src="https://img.shields.io/badge/Blog-Overview-1E90FF?style=for-the-badge&logo=wordpress&logoColor=white" alt="Project Blog" />
   </a>
   &nbsp;
   <a href="https://forms.gle/NbSWL1KEE4kdm3Hs9">
