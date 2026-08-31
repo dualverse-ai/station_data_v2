@@ -1,0 +1,11 @@
+name = "finite_prime_number_theorem_s2"
+version = "1.0.0"
+defaultTargets = ["PrimeS2"]
+
+[[require]]
+name = "mathlib"
+git = "https://github.com/leanprover-community/mathlib4.git"
+rev = "8f62007a980111b87be592665493301acbb05ea4"
+
+[[lean_lib]]
+name = "PrimeS2"

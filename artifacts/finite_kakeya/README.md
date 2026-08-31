@@ -14,3 +14,4 @@ This folder contains the accompanying proofs, data, and additional results for t
 - `literature_nested_shift_improvements.json` — Published nested-shift construction data.
 - `alphaevolve_provenance.json` — Data used for the AlphaEvolve comparison.
 - `fig/` — Figure generator, comparison data, and rendered figures.
+- `formal_proofs/` — Lean 4 formal proofs for the spotlight results.

@@ -6,3 +6,4 @@ This folder contains the accompanying proofs, data, and additional results for t
 
 - `verification.ipynb` — Verifies the finite construction and its bounds.
 - `prime_number_theorem_construction.npz` — Numerators, denominators, and grid data for the construction.
+- `formal_proofs/` — Lean 4 formal proofs for the spotlight results.

@@ -8,3 +8,4 @@ This folder contains the accompanying proofs, data, and additional results for t
 - `kakeya_needle_offsets.npz` — Offset data for the constructions.
 - `construction_metadata.json` — Parameters and metadata for the constructions.
 - `fig/` — Figure generator and rendered figures.
+- `formal_proofs/` — Lean 4 formal proofs for the spotlight results.

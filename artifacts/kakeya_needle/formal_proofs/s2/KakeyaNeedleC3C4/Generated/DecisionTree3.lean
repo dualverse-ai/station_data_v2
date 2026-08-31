@@ -1,0 +1,157 @@
+import KakeyaNeedleC3C4.Generated.CertificateData3Chunk001
+import KakeyaNeedleC3C4.Generated.CertificateData3Chunk002
+
+namespace KakeyaNeedleC3C4.Generated
+
+def tree3 : LeafCertificate.Tree3 WallCount3 ConstraintCount3 :=
+  .branch 3
+    (.branch 9
+      (.branch 2
+        (.branch 0
+          (.branch 6
+            (.branch 1
+              (.branch 8
+                (.leaf leaf3_71)
+                (.leaf leaf3_70))
+              (.leaf leaf3_49))
+            (.branch 7
+              (.branch 11
+                (.leaf leaf3_48)
+                (.leaf leaf3_47))
+              (.leaf leaf3_46)))
+          (.branch 7
+            (.branch 6
+              (.leaf leaf3_31)
+              (.branch 11
+                (.leaf leaf3_30)
+                (.leaf leaf3_29)))
+            (.branch 12
+              (.leaf leaf3_28)
+              (.leaf leaf3_27))))
+        (.branch 5
+          (.branch 11
+            (.branch 6
+              (.leaf leaf3_16)
+              (.leaf leaf3_15))
+            (.branch 7
+              (.branch 12
+                (.leaf leaf3_14)
+                (.leaf leaf3_13))
+              (.leaf leaf3_12)))
+          (.branch 7
+            (.branch 13
+              (.leaf leaf3_11)
+              (.leaf leaf3_10))
+            (.branch 13
+              (.leaf leaf3_9)
+              (.leaf leaf3_8)))))
+      (.branch 14
+        (.branch 2
+          (.branch 0
+            (.branch 12
+              (.leaf leaf3_45)
+              (.leaf leaf3_43))
+            (.branch 5
+              (.leaf leaf3_26)
+              (.leaf leaf3_24)))
+          (.branch 4
+            (.branch 13
+              (.leaf leaf3_7)
+              (.leaf leaf3_6))
+            (.branch 10
+              (.leaf leaf3_5)
+              (.leaf leaf3_3))))
+        (.branch 4
+          (.branch 0
+            (.branch 12
+              (.leaf leaf3_44)
+              (.leaf leaf3_42))
+            (.branch 5
+              (.leaf leaf3_25)
+              (.leaf leaf3_23)))
+          (.branch 2
+            (.branch 13
+              (.leaf leaf3_22)
+              (.leaf leaf3_21))
+            (.branch 10
+              (.leaf leaf3_4)
+              (.leaf leaf3_2))))))
+    (.branch 1
+      (.branch 10
+        (.branch 4
+          (.branch 7
+            (.branch 9
+              (.branch 14
+                (.leaf leaf3_69)
+                (.leaf leaf3_68))
+              (.leaf leaf3_67))
+            (.branch 6
+              (.branch 11
+                (.leaf leaf3_66)
+                (.leaf leaf3_65))
+              (.leaf leaf3_64)))
+          (.branch 6
+            (.branch 7
+              (.leaf leaf3_63)
+              (.branch 11
+                (.leaf leaf3_61)
+                (.leaf leaf3_60)))
+            (.branch 12
+              (.leaf leaf3_56)
+              (.leaf leaf3_55))))
+        (.branch 5
+          (.branch 11
+            (.branch 7
+              (.leaf leaf3_62)
+              (.leaf leaf3_59))
+            (.branch 6
+              (.branch 12
+                (.leaf leaf3_58)
+                (.leaf leaf3_57))
+              (.leaf leaf3_54)))
+          (.branch 6
+            (.branch 13
+              (.leaf leaf3_53)
+              (.leaf leaf3_52))
+            (.branch 13
+              (.leaf leaf3_51)
+              (.leaf leaf3_50)))))
+      (.branch 8
+        (.branch 0
+          (.branch 4
+            (.branch 12
+              (.leaf leaf3_41)
+              (.leaf leaf3_40))
+            (.branch 5
+              (.leaf leaf3_37)
+              (.leaf leaf3_35)))
+          (.branch 10
+            (.branch 13
+              (.leaf leaf3_20)
+              (.leaf leaf3_19))
+            (.branch 2
+              (.leaf leaf3_18)
+              (.leaf leaf3_1))))
+        (.branch 10
+          (.branch 4
+            (.branch 12
+              (.leaf leaf3_39)
+              (.leaf leaf3_38))
+            (.branch 5
+              (.leaf leaf3_36)
+              (.leaf leaf3_34)))
+          (.branch 0
+            (.branch 13
+              (.leaf leaf3_33)
+              (.leaf leaf3_32))
+            (.branch 2
+              (.leaf leaf3_17)
+              (.leaf leaf3_0))))))
+
+def treeCheck3 : Bool :=
+  LeafCertificate.checkTree3 Depth3 polyForPath3 target3 tree3
+
+theorem tree3_verified : treeCheck3 = true := by
+  native_decide
+
+end KakeyaNeedleC3C4.Generated

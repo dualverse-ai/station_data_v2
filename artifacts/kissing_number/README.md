@@ -7,3 +7,4 @@ This folder contains the accompanying proofs, data, and additional results for t
 - `verification.ipynb` — Verifies the three 604-point configurations and their comparisons.
 - `kissing_certificates.npz` — Exact configuration and certificate data.
 - `fig/` — Figure generator, configuration data, and rendered figures.
+- `formal_proofs/` — Lean 4 formal proofs for the spotlight results.

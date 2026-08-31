@@ -333,8 +333,8 @@
       "files": [
         {
           "path": "README.md",
-          "bytes": 577,
-          "sha256": "771f78a1f91a9016ecc2dea7f3d43b262758ee203e3f6dd6339ea565ac4158b7",
+          "bytes": 648,
+          "sha256": "5d06e7b3766a540ad00ad5ff527a0b4bd11962150e56ce0afd8aa2a46acb7432",
           "kind": "file"
         },
         {
@@ -398,9 +398,261 @@
           "kind": "file"
         },
         {
+          "path": "formal_proofs/README.md",
+          "bytes": 248,
+          "sha256": "6b9aff13e13e6ae7bff7d6c85ad82265ef66e40c41908c834aadcc055db72e43",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s1/.gitignore",
+          "bytes": 8,
+          "sha256": "5375c2c5e323f40c0031aa8c82f66bb9197214001039e6a8c9ff2a5eb3aa24a9",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s1/BookS1/ConferenceLift.lean",
+          "bytes": 10919,
+          "sha256": "184e9a880786659c3d4495427be6b3338d2a2995748402f18c9c86bad0bece94",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s1/BookS1/ConferenceSource.lean",
+          "bytes": 2310,
+          "sha256": "defa80cd97e92573987de5fbe4a1a0078048337dce3ae3c710eb74d39fb384f4",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s1/BookS1/Definitions.lean",
+          "bytes": 2060,
+          "sha256": "91c4b92c08b33130f9a100b7bb964f9d8ce774dd71c73d4612ae38113a206ac9",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s1/BookS1/Main.lean",
+          "bytes": 4836,
+          "sha256": "2ebaa9e9407913c3c99ef3cb38f09020f528a1d648109419e224b57d00bf2bb8",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s1/BookS1/SRGBridge.lean",
+          "bytes": 4690,
+          "sha256": "341755a0055a9a710da97ca6b29c920d730ce8a9ee2d5c78ea833ff9a91435f5",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s1/BookS1/SeidelCertificate.lean",
+          "bytes": 7437,
+          "sha256": "304e21aa227475a9dd5fe221ce8b9955aa32f8af8dff4b38c10f4c4c84979da9",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s1/BookS1.lean",
+          "bytes": 19,
+          "sha256": "e374a60b5b496da0716a111c334cf11f76bf05711b37f48119f17b7b540e2029",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s1/README.md",
+          "bytes": 985,
+          "sha256": "4c97dd2c744dc355a8504111d84db8c8e518ca30bb77a648048a6889bcc22f75",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s1/lake-manifest.json",
+          "bytes": 3139,
+          "sha256": "4da1d51bae65a01261d01f5ba8954ab49ea6586071281f400e94c4f9dc6db552",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s1/lakefile.toml",
+          "bytes": 240,
+          "sha256": "4b6b6c3300f680a0cc27690a0e9db5dfbb37a9cc01a6627898dab1d025de2204",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s1/lean-toolchain",
+          "bytes": 29,
+          "sha256": "12b3414dafc4575fab9eb37bb265165c5a637af839af2d300f7e931b78765706",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/.gitignore",
+          "bytes": 8,
+          "sha256": "5375c2c5e323f40c0031aa8c82f66bb9197214001039e6a8c9ff2a5eb3aa24a9",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/BookS2/Audit.lean",
+          "bytes": 115,
+          "sha256": "6c542cd3b0e048102ac045fbe0c9b88af74ad0a3432942977e4c88981e556689",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/BookS2/DoubledLegendre.lean",
+          "bytes": 4400,
+          "sha256": "f261c838bd77743f1155e3b62675d72a08f4870295bbdad43c27d0cf38443c95",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/BookS2/LegendreSource.lean",
+          "bytes": 22480,
+          "sha256": "e6b699e419c72a20045f7ea8217dd12f10ad10733ad2cf37bb7da2b3af3832e3",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/BookS2/PeriodicSource.lean",
+          "bytes": 871,
+          "sha256": "1c182eadd214611a37b1d8987955dcb7e418f189dcc5356493b074a1d28ac014",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/BookS2/Seidel.lean",
+          "bytes": 10157,
+          "sha256": "c390d8bfe0ab615cbe98e2ce6165704299bd49790b032570847b4c1d0864fabb",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/BookS2/TwoEndpointLift.lean",
+          "bytes": 27680,
+          "sha256": "0ebf8967ef0ed6cdb04cf60fa185e296c0494d85ad1a5dffa77c7d27ea8acd9d",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/BookS2.lean",
+          "bytes": 30,
+          "sha256": "0feeb5b98a30105d704fd7032f34e5f893bfdab7906b54e7be2deb57f099d391",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/README.md",
+          "bytes": 978,
+          "sha256": "5a44afa780f067642118df1e30e30186f58c9a6680944538a0597e7b6ee9ca1e",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/lake-manifest.json",
+          "bytes": 3139,
+          "sha256": "2925eb29db890e49e9d7c227826f8800809b28aa7ccefc5dfb5f7adb0836ab08",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/lakefile.toml",
+          "bytes": 240,
+          "sha256": "c36fe6fc31e3f886d88049ee041a5e8d1cf7d4b6319ba607d70c0a02448e109b",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/lean-toolchain",
+          "bytes": 29,
+          "sha256": "12b3414dafc4575fab9eb37bb265165c5a637af839af2d300f7e931b78765706",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s3/.gitignore",
+          "bytes": 8,
+          "sha256": "5375c2c5e323f40c0031aa8c82f66bb9197214001039e6a8c9ff2a5eb3aa24a9",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s3/BookS3/AffineCorrelation.lean",
+          "bytes": 7078,
+          "sha256": "e6ae9fa994d38c45f005e84065d81003814cb3f5c89b31d8800436435b9e5282",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s3/BookS3/CodegreeArithmetic.lean",
+          "bytes": 5692,
+          "sha256": "eefc5941b346401c9f312673ce88b9f88930bd9b09adf6e4e72b2cc1047a4211",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s3/BookS3/CrossCorrelation.lean",
+          "bytes": 9889,
+          "sha256": "e4d35f401fb2252e0a79dec0d5f2aa931d1296e447922d461d19fd17cd625313",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s3/BookS3/DifferenceLift.lean",
+          "bytes": 14088,
+          "sha256": "14d59ff4c7ffd2a348a63946b605acce377077aeb039effabc5c0d9b12279f48",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s3/BookS3/Main.lean",
+          "bytes": 6054,
+          "sha256": "3b629d217dba605d081d6b28950714b0e43ef0975a236953398f3f56e636f240",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s3/BookS3/MixedCorrelation.lean",
+          "bytes": 25037,
+          "sha256": "3d0d147ae1fef4eac46b6090df3a65fcec62f8e3152fa7adcdb3f4baa82875d3",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s3/BookS3/Ramsey.lean",
+          "bytes": 10876,
+          "sha256": "19f1f5f46fbed12e58cfa46055760c293e192001b1cfa7de984fe1d61c941bcf",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s3/BookS3/SourceIdentity.lean",
+          "bytes": 38650,
+          "sha256": "4c0f737fb9080628ccad74a2d6855bcd48152efb5710b085a0e708815d4b7b44",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s3/BookS3/WithinCorrelation.lean",
+          "bytes": 49062,
+          "sha256": "424f86d9370aa8a25c9879a6bee564de646669bc4802b315f6cf4a969b1c710b",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s3/BookS3/YamadaPottConstruction.lean",
+          "bytes": 18266,
+          "sha256": "337ef67fe91e799485cecfb67ca2e6ead4ca281671020f835705e169e6486cec",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s3/BookS3/YamadaPottProfile.lean",
+          "bytes": 21083,
+          "sha256": "b74fe2b3b45e07273334ec263bd7989a6b933710844b1bd5e89a6be894cbea2a",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s3/BookS3.lean",
+          "bytes": 326,
+          "sha256": "dabd361461d953ab3334a4a3b2deac74084c2205b5c9c58fbedbe40317521f0e",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s3/README.md",
+          "bytes": 1159,
+          "sha256": "7a2889f1ea9328256b218efd86218a7e5d7d91193c1f5727d2d4f82aeaa16dd6",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s3/lake-manifest.json",
+          "bytes": 3139,
+          "sha256": "0ed88b72690126460c40d8197816f8527af50cc77fe1a6cbb29547261a36f21f",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s3/lakefile.toml",
+          "bytes": 240,
+          "sha256": "08574b5a1d1649ca5cb7b633d52616566159338f1bdf12a739d9572c9de9fdbd",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s3/lean-toolchain",
+          "bytes": 29,
+          "sha256": "12b3414dafc4575fab9eb37bb265165c5a637af839af2d300f7e931b78765706",
+          "kind": "file"
+        },
+        {
           "path": "verification.ipynb",
-          "bytes": 84040,
-          "sha256": "4e53dff86489a8fa0994b248908dea7fd46019518a01a138a4a47059d26ccf1e",
+          "bytes": 84841,
+          "sha256": "548eb45bf28d4652f6d6ec0d26df50342bc74d817a2c7f7cc9878b48cda4ddcb",
           "kind": "notebook"
         }
       ]
@@ -990,8 +1242,8 @@
       "files": [
         {
           "path": "README.md",
-          "bytes": 1048,
-          "sha256": "a2a5c05dd08e31a7f12d0da3e36ea98529677e4a3435627520e2cdf4b5027806",
+          "bytes": 1119,
+          "sha256": "e1044b859893b92f7b29b5358ca68e17d1198a3092b2b3ee22cda2ec0864f399",
           "kind": "file"
         },
         {
@@ -1037,6 +1289,156 @@
           "kind": "file"
         },
         {
+          "path": "formal_proofs/README.md",
+          "bytes": 161,
+          "sha256": "ebfd6c21f0771a97697ab1e910c5cdf2d3c4f5326c3832c7619aa66f037a06f4",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s1/.gitignore",
+          "bytes": 8,
+          "sha256": "5375c2c5e323f40c0031aa8c82f66bb9197214001039e6a8c9ff2a5eb3aa24a9",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s1/FiniteKakeyaInf/Counting.lean",
+          "bytes": 45251,
+          "sha256": "245b1255b92ebbdbad1241e08127403a712f510a75c0eab236f616a299460ed9",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s1/FiniteKakeyaInf/Coverage.lean",
+          "bytes": 2829,
+          "sha256": "8fdeaeaca0dbb1979be6856f7d0840b1729eee0b189821a337834306e9d47ccc",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s1/FiniteKakeyaInf/Definitions.lean",
+          "bytes": 2248,
+          "sha256": "356dcda65ef11c58c8633eccc591033fe58d43414d9adb9c1c7da08d0cea0492",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s1/FiniteKakeyaInf/Main.lean",
+          "bytes": 2306,
+          "sha256": "9ddb3de3a00d4e0904b1cf34a6a40fe9d5b28c233b67ecf151aa3f940e4c305a",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s1/FiniteKakeyaInf.lean",
+          "bytes": 28,
+          "sha256": "0001d526c2e80b032eb81f6c767a10124fd1a28f57028e98076c36d344894e43",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s1/README.md",
+          "bytes": 881,
+          "sha256": "39e4f683d7c02a37f1bc9530fc57a8326a5eb7082a6e505d2e001c81c8b28f2f",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s1/lake-manifest.json",
+          "bytes": 3149,
+          "sha256": "d99b22e4c6a1e0fdedcc4043a3b568326d0f05c2168d5499579516f7f874b26a",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s1/lakefile.toml",
+          "bytes": 260,
+          "sha256": "79b72e563e261908f0c0fe28826afbc8933e214bd10b44cd93433cba8d4c78ae",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s1/lean-toolchain",
+          "bytes": 29,
+          "sha256": "12b3414dafc4575fab9eb37bb265165c5a637af839af2d300f7e931b78765706",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s3/.gitignore",
+          "bytes": 8,
+          "sha256": "5375c2c5e323f40c0031aa8c82f66bb9197214001039e6a8c9ff2a5eb3aa24a9",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s3/FiniteKakeyaS3/Character.lean",
+          "bytes": 8780,
+          "sha256": "602b70b55999c4459c7d199baf7f5bcb78e1c896fedf3d194378c10ddbe3e83b",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s3/FiniteKakeyaS3/Definitions.lean",
+          "bytes": 3921,
+          "sha256": "7fb46b9ebffad0bc31d5ae71ee44ba5d2388fd1c171a0b9c15ee7c8d72b3b530",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s3/FiniteKakeyaS3/Geometry.lean",
+          "bytes": 4206,
+          "sha256": "12d0327441de4b7d5a5d92d46dedcf905276a029ab98af42596d6c8aa94f73ad",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s3/FiniteKakeyaS3/Main.lean",
+          "bytes": 4650,
+          "sha256": "3b1ddaa804b5ef9ee3461012a1111d497088e97fd334cbac558f9ae4210c6366",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s3/FiniteKakeyaS3/MixedSums.lean",
+          "bytes": 22853,
+          "sha256": "001ca15c5cb6c8e436de1b9c8f84ff745ac3390514a77377df436f9e047132e9",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s3/FiniteKakeyaS3/Overlap.lean",
+          "bytes": 16980,
+          "sha256": "34a3b22538be4b12e66959ea31c89ac73f8464ee4b2f66ba402303206729c24e",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s3/FiniteKakeyaS3/Penalty.lean",
+          "bytes": 3158,
+          "sha256": "7823c4c9da2fa4a03e66cad0ef59d09078615e9190c904a06be1a4850eba6f13",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s3/FiniteKakeyaS3/Selector.lean",
+          "bytes": 11108,
+          "sha256": "6092d89e5d22fceebc09ec7f51f03dac34d864ee6c62b4749977a299074c937a",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s3/FiniteKakeyaS3.lean",
+          "bytes": 27,
+          "sha256": "227d051b9c2c2ffb9704e0b14259f633489e25fd9344a7da062c50020a6b3f31",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s3/README.md",
+          "bytes": 1016,
+          "sha256": "151ff9ad8eee9448a6612fcf70b00df66708b09cb22e2c1395875874884760b9",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s3/lake-manifest.json",
+          "bytes": 3149,
+          "sha256": "d99b22e4c6a1e0fdedcc4043a3b568326d0f05c2168d5499579516f7f874b26a",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s3/lakefile.toml",
+          "bytes": 258,
+          "sha256": "139e205469c733e2fae0ea70b8c10b5a96c0bc9d52c41da2955c01c1138eb2e4",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s3/lean-toolchain",
+          "bytes": 29,
+          "sha256": "12b3414dafc4575fab9eb37bb265165c5a637af839af2d300f7e931b78765706",
+          "kind": "file"
+        },
+        {
           "path": "kakeya_F3_d3_13.npy",
           "bytes": 167,
           "sha256": "8b1cac563e00cc53ecb5c0d38e23078fbbde36e6b6796f6c375769fbfa393737",
@@ -1074,8 +1476,8 @@
         },
         {
           "path": "verification.ipynb",
-          "bytes": 133898,
-          "sha256": "009b314d31e11aa0366e0c5c555dcb0b98c5f9e28350595a768ee354dd442320",
+          "bytes": 134440,
+          "sha256": "b1d1013fe25ab210555725f0bfcb52c5ab89885c3035ca24bab65d47bc847c07",
           "kind": "notebook"
         }
       ]
@@ -1093,8 +1495,80 @@
       "files": [
         {
           "path": "README.md",
-          "bytes": 404,
-          "sha256": "59453dc115fad58179383e71b8e5d174b273dbeab4c4269a537fe673eabe192a",
+          "bytes": 475,
+          "sha256": "1106cf922d2db7d50c7d310bbdef6424b17c782ce5f7b450db23bb1472f70b86",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/README.md",
+          "bytes": 71,
+          "sha256": "7f9b2792a6050709689aff241a9ab0a03d88ac2c9b10c086105197d07e08b4de",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/PrimeS2/Analytic.lean",
+          "bytes": 7317,
+          "sha256": "118ba241781c5bb37a1603dc3da9c85358ff8f793627376a2ceb8a99013665e4",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/PrimeS2/Definitions.lean",
+          "bytes": 1413,
+          "sha256": "c5e8bd035a15bf21c751b450896be7d1648485d6a8bfd855fb10f39e4dc2830c",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/PrimeS2/FloorSum.lean",
+          "bytes": 5911,
+          "sha256": "300ad8d1e36248f2f4df57cb365c33e761fd050d6efd7715ade5ff24941b1de5",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/PrimeS2/Main.lean",
+          "bytes": 5458,
+          "sha256": "ef111d9ab488428f19fdc1137099f0a5aaa4174c4d25e4bfb41bb88051c1293b",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/PrimeS2/PrimeBand.lean",
+          "bytes": 11916,
+          "sha256": "6e6d7635cb6f9f1515b7314c04d930fdcc8c5daedb02686b54b79c6f58d58e5c",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/PrimeS2/Reflection.lean",
+          "bytes": 3672,
+          "sha256": "1087633129c6a595f5c1f94da613cd56e4c87fdc02cb425edf1056bce81e7d5d",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/PrimeS2.lean",
+          "bytes": 24,
+          "sha256": "2da07bf97ead78b06248f5908a96f411e3f99a898c9ff4c05802cccf9d8db999",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/README.md",
+          "bytes": 1050,
+          "sha256": "8993754b483bfd4878fad537252b8c2b2c2ab230aab868a282137cf284dc3d37",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/lake-manifest.json",
+          "bytes": 3139,
+          "sha256": "4da1d51bae65a01261d01f5ba8954ab49ea6586071281f400e94c4f9dc6db552",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/lakefile.toml",
+          "bytes": 258,
+          "sha256": "3fdf61eba1ffe84d5adbc877e6f0e6dfec826ca8a7efba3a0585a5826d71c092",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/lean-toolchain",
+          "bytes": 29,
+          "sha256": "12b3414dafc4575fab9eb37bb265165c5a637af839af2d300f7e931b78765706",
           "kind": "file"
         },
         {
@@ -1105,8 +1579,8 @@
         },
         {
           "path": "verification.ipynb",
-          "bytes": 44420,
-          "sha256": "6cf4ced6a67a3ee7049da85a18636ba25015775ede78f0e525de34aaa8cc7a34",
+          "bytes": 44719,
+          "sha256": "e6861a71473f1f4ae38fb74e25e689895d198ae8ef1a5b86e92777538638490c",
           "kind": "notebook"
         }
       ]
@@ -1155,14 +1629,86 @@
       "files": [
         {
           "path": "README.md",
-          "bytes": 476,
-          "sha256": "caef487a9e2ca0d9641dca7bcffae27c53eefe7bacc2221715f65de4f381356b",
+          "bytes": 547,
+          "sha256": "c4e92ca91b02347d93774051510a49814189c146acf13fe36d671126dafcad1a",
           "kind": "file"
         },
         {
           "path": "construction_metadata.json",
           "bytes": 773,
           "sha256": "2efc01c1e134d94744f6241ec6f8a338591edabf548be90fbbed2c233d0a0156",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/README.md",
+          "bytes": 89,
+          "sha256": "86263de05feb98d15690c67e3facfbf02336d9fbea8c64502aefd15d4b3d12a8",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s1/.gitignore",
+          "bytes": 8,
+          "sha256": "5375c2c5e323f40c0031aa8c82f66bb9197214001039e6a8c9ff2a5eb3aa24a9",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s1/HardyLittlewoodS1/Definitions.lean",
+          "bytes": 1834,
+          "sha256": "5ee7c67d1afe961c2db9c892e3e477708bce8788d2ea9327ae2146394a7564f6",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s1/HardyLittlewoodS1/IntervalCover.lean",
+          "bytes": 7107,
+          "sha256": "f6799bf903f8e0a7bbe0c5bd38e47377c8d3d7e3fb03bf2092f9b61aa3bb103b",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s1/HardyLittlewoodS1/LowerBound.lean",
+          "bytes": 23478,
+          "sha256": "b7a87cba6a1c948d96ff55a650ee966977971726bd436c1712e5ae597946db80",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s1/HardyLittlewoodS1/Main.lean",
+          "bytes": 703,
+          "sha256": "20436b6a8dbc19179a1989847ae372e6871beb96619cefd079da8cb73250634f",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s1/HardyLittlewoodS1/UpperBound.lean",
+          "bytes": 11347,
+          "sha256": "2329b1eb96a3a386b9fb8aceb05c83b783aad4d89567c96f2a19527acaf2d4ac",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s1/HardyLittlewoodS1.lean",
+          "bytes": 30,
+          "sha256": "d6c6ab615d1ac98c192877b9d462f54757c8c3b6dad7749de12f6b528207dc89",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s1/README.md",
+          "bytes": 1023,
+          "sha256": "3df6bda5b88d9e4e7f4d55f86cd62c23eaad2d4a2c738ee6893417dee247b457",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s1/lake-manifest.json",
+          "bytes": 3151,
+          "sha256": "064adb1c6d5d77e0d6b6d2ea027b2a50af8e582fe4cb0e99cc0b39a2e69a2824",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s1/lakefile.toml",
+          "bytes": 267,
+          "sha256": "3081f3c6af333f96ff04b282130c2f23d6d11ff73f2d11574c5dd9c8b8bb467f",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s1/lean-toolchain",
+          "bytes": 29,
+          "sha256": "12b3414dafc4575fab9eb37bb265165c5a637af839af2d300f7e931b78765706",
           "kind": "file"
         },
         {
@@ -1173,8 +1719,8 @@
         },
         {
           "path": "verification.ipynb",
-          "bytes": 26765,
-          "sha256": "d69261e016d16349661eeb22619a565b37e276ffad7dc4f50050574cdc424adf",
+          "bytes": 27042,
+          "sha256": "f59b2812ae333bf5ee0fd13707e4fe383eec10c3f5a44610b1364751308b77b6",
           "kind": "notebook"
         }
       ]
@@ -1223,8 +1769,8 @@
       "files": [
         {
           "path": "README.md",
-          "bytes": 495,
-          "sha256": "5d6ecb8d5645a94b3f3970ed4a65594009abef0d545ab2dd83362d7ece4e2309",
+          "bytes": 566,
+          "sha256": "cdaa56f1b7713c1c67a556bec7543e05d8bb5682dfb02bb790c72e809f74a5e1",
           "kind": "file"
         },
         {
@@ -1258,6 +1804,1002 @@
           "kind": "file"
         },
         {
+          "path": "formal_proofs/README.md",
+          "bytes": 85,
+          "sha256": "c3ec345d2a490722512f6a6caee1f89d70710376d2378b51b5b6ae7950346578",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/.gitignore",
+          "bytes": 7,
+          "sha256": "b3ad09fc93f83fdbd0bee771258dd4a58d3798fd7e6048611dde5a804bb43f1e",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/KakeyaNeedleC3C4/CertificateAssembly.lean",
+          "bytes": 6699,
+          "sha256": "0999c15abef62dcb6caab33311ebb1877b5413a42719996fdb9812bd737378f1",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/KakeyaNeedleC3C4/CertificateDecoder.lean",
+          "bytes": 18549,
+          "sha256": "c364b917fb05428815ec06c527d4610179f112f88c7b5222ea81c99cd4082bee",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/KakeyaNeedleC3C4/CompactReduction.lean",
+          "bytes": 6520,
+          "sha256": "fa248f900e3fc069a8897aa67bd83b7f1dfac99fb74fcac1f260927c90cd88df",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/KakeyaNeedleC3C4/Definitions.lean",
+          "bytes": 2106,
+          "sha256": "d22c040f3447075863d0b3aeed888e29d6498279ca2795621379a5a874a3c249",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/KakeyaNeedleC3C4/FarkasChecker.lean",
+          "bytes": 22659,
+          "sha256": "2730f923b0419f84040eb90ec6416e5cb54202ded5277f035669567ee003a5c5",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/KakeyaNeedleC3C4/Generated/CertificateBase3.lean",
+          "bytes": 2826,
+          "sha256": "a9ef9cbaf3703bc0aea7723e94480af6197b6d983ed527153cdf674d82c4e66c",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/KakeyaNeedleC3C4/Generated/CertificateBase4.lean",
+          "bytes": 7122,
+          "sha256": "b0bc020e5d8fd8fc6aa232e7aab25536d3f50970367e8b146a601d38dd4790d3",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/KakeyaNeedleC3C4/Generated/CertificateData3Chunk000.lean",
+          "bytes": 33675,
+          "sha256": "749619a0e444fd0de5c3212596c540721ee574473827cadd9981889576b47689",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/KakeyaNeedleC3C4/Generated/CertificateData3Chunk001.lean",
+          "bytes": 66603,
+          "sha256": "ccb8b5ebb3890a848bfd0cadc2966f9f7e7484d78184271587223c03f9d2ac74",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/KakeyaNeedleC3C4/Generated/CertificateData3Chunk002.lean",
+          "bytes": 38662,
+          "sha256": "107fdee310aef871346ada2dbc37afb79af5f30e2a0c35ab4b840516483b3353",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/KakeyaNeedleC3C4/Generated/DecisionTree3.lean",
+          "bytes": 4296,
+          "sha256": "6f02f4d05eb879122e371b9fc3f2a969e03fbdb92ebff806fd0fe095738664e9",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/KakeyaNeedleC3C4/Generated/DecisionTree4.lean",
+          "bytes": 12796,
+          "sha256": "c0822aa101e7c4d988a1c8a43c927806d04d404d499c204d130ff7366f0b1ce1",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/KakeyaNeedleC3C4/Generated/DecisionTree4Group0.lean",
+          "bytes": 995,
+          "sha256": "a4367fd0d89572fcaa5b442183e993637a2646d8ecd261811a9b1510cadea04a",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/KakeyaNeedleC3C4/Generated/DecisionTree4Group1.lean",
+          "bytes": 996,
+          "sha256": "93237e7704bbf430bdeb62328250d642564252e819e2b564153c1227f804b38e",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/KakeyaNeedleC3C4/Generated/DecisionTree4Group10.lean",
+          "bytes": 1014,
+          "sha256": "84928909d6bd3cb5f7c02f5eaf1df602002d8895a27d0a49116abcfb642fb3f2",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/KakeyaNeedleC3C4/Generated/DecisionTree4Group11.lean",
+          "bytes": 1015,
+          "sha256": "a9c889f33b899a1be321812eef37622b204d5400bc04a92960ee72bb3b9699ab",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/KakeyaNeedleC3C4/Generated/DecisionTree4Group12.lean",
+          "bytes": 1015,
+          "sha256": "1c2ebcaf93630d858a16160ca3cd8ea46c6d54d58f2693052ded09394e035cda",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/KakeyaNeedleC3C4/Generated/DecisionTree4Group13.lean",
+          "bytes": 1016,
+          "sha256": "ebb2487b18ebffc113eabf9ff5b15bf037ea9c6dbd9335b012a9afbc8976e43a",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/KakeyaNeedleC3C4/Generated/DecisionTree4Group14.lean",
+          "bytes": 1017,
+          "sha256": "5a7f8efdd97eb7d73ac0bf755f8511a1573243147bfbff40c73984c4dc03aea3",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/KakeyaNeedleC3C4/Generated/DecisionTree4Group15.lean",
+          "bytes": 1018,
+          "sha256": "237f70358395f9d14784fa63590eef3e79de5dea9339ef11afdf24d41c96d6eb",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/KakeyaNeedleC3C4/Generated/DecisionTree4Group16.lean",
+          "bytes": 1015,
+          "sha256": "6a5bd47e125d7a44f320f72151dce66b094f1d0990e1db1afc5711cb17667da6",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/KakeyaNeedleC3C4/Generated/DecisionTree4Group17.lean",
+          "bytes": 1016,
+          "sha256": "ec0e8c88ea28307d1f882325b406aef43fe1757fac5b77f0643448b4aec2d8ae",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/KakeyaNeedleC3C4/Generated/DecisionTree4Group18.lean",
+          "bytes": 1015,
+          "sha256": "faced27ae3e60d8d2f1f124b76cfc9a9a2cef2c74a0d93472743a5aa4674727b",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/KakeyaNeedleC3C4/Generated/DecisionTree4Group19.lean",
+          "bytes": 1016,
+          "sha256": "6ea47f0389e2cdea093b733685e1a1afbe02a0e43dc6a091faebc76d85fb5712",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/KakeyaNeedleC3C4/Generated/DecisionTree4Group2.lean",
+          "bytes": 997,
+          "sha256": "f7dab57272ebcc362e226cf6ed0c6a2bc145544fa1a4382d8ba34f72d0486fb4",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/KakeyaNeedleC3C4/Generated/DecisionTree4Group20.lean",
+          "bytes": 1016,
+          "sha256": "ee5440009253742758ce8d6f9d3b91bccddda8c8b260d265213952edd3fc8464",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/KakeyaNeedleC3C4/Generated/DecisionTree4Group21.lean",
+          "bytes": 1017,
+          "sha256": "1d048917036c8328562c325bbad161a30feccc11ded731d6b24d61b63b2574af",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/KakeyaNeedleC3C4/Generated/DecisionTree4Group22.lean",
+          "bytes": 1017,
+          "sha256": "ab691a092cfc7a8591add8f04e5c09958a51a8794ba378df9eda6e1e22bb9149",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/KakeyaNeedleC3C4/Generated/DecisionTree4Group23.lean",
+          "bytes": 1018,
+          "sha256": "5609b783cca46ee392df8d914bee9e31acb70911d31d5de25951b68f246f26cf",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/KakeyaNeedleC3C4/Generated/DecisionTree4Group24.lean",
+          "bytes": 1016,
+          "sha256": "33c858ba7fc2849d66dc23ff001dce42ac5d7c78c79522ea1c7503ab55b83c50",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/KakeyaNeedleC3C4/Generated/DecisionTree4Group25.lean",
+          "bytes": 1017,
+          "sha256": "5e465068624abb0efbae08d97eca2be1a5b5374124fefb1e5d3620897c39a46a",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/KakeyaNeedleC3C4/Generated/DecisionTree4Group26.lean",
+          "bytes": 1016,
+          "sha256": "4689d2f75df60aa726c04beeb2cedf2477268b913d246eee127341efdec0b649",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/KakeyaNeedleC3C4/Generated/DecisionTree4Group27.lean",
+          "bytes": 1017,
+          "sha256": "23ed4ddcfe70e1d926b310a0808d63bbe7f5052aa3010c9d262cb8648402317c",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/KakeyaNeedleC3C4/Generated/DecisionTree4Group28.lean",
+          "bytes": 1017,
+          "sha256": "b32390c8dccc388f58f0ec7fb6dbd2b350e94d2eab8847c50d55495329276bb8",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/KakeyaNeedleC3C4/Generated/DecisionTree4Group29.lean",
+          "bytes": 1018,
+          "sha256": "e35c4d4e38135be89dc5ea7a93359dd65e8200dabe7d30f20521fc33771ee9e7",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/KakeyaNeedleC3C4/Generated/DecisionTree4Group3.lean",
+          "bytes": 998,
+          "sha256": "b705d6f4e907d3f9662e6b99f2af46618f76627ec7a5a28f98bccca21df6afe0",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/KakeyaNeedleC3C4/Generated/DecisionTree4Group30.lean",
+          "bytes": 1018,
+          "sha256": "10a4b0a8204844f804aa2df4999241fb4572f57563ce5f85b5bcf37d49d72d17",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/KakeyaNeedleC3C4/Generated/DecisionTree4Group31.lean",
+          "bytes": 1019,
+          "sha256": "62210643561247ce3cf010152119bd8f625b3e3fcbfc00e8420dff9ec533876d",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/KakeyaNeedleC3C4/Generated/DecisionTree4Group32.lean",
+          "bytes": 1015,
+          "sha256": "7fd303015484742f52183998f218daf99fe7a08ab765b5814d816a285fffb9ff",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/KakeyaNeedleC3C4/Generated/DecisionTree4Group33.lean",
+          "bytes": 1016,
+          "sha256": "10ca7f6e127c74de67018fc58974d4698c3693017d6bb471d60d97792d231229",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/KakeyaNeedleC3C4/Generated/DecisionTree4Group34.lean",
+          "bytes": 1016,
+          "sha256": "f8b031909a5992e96004956cfc59529f7d82c030771f9c291dead0b37f82b6d4",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/KakeyaNeedleC3C4/Generated/DecisionTree4Group35.lean",
+          "bytes": 1017,
+          "sha256": "1930f4a215a3720224806ca6b5f9f23098199e0285523c8ea0a7e00564d9ce01",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/KakeyaNeedleC3C4/Generated/DecisionTree4Group36.lean",
+          "bytes": 1016,
+          "sha256": "d53535dbc80d7f30fa94427369c8a960dd3bbd7a8bcfc55dc5be3925192f7e52",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/KakeyaNeedleC3C4/Generated/DecisionTree4Group37.lean",
+          "bytes": 1017,
+          "sha256": "0a7e4cff6b34a62659f2f4bacd430d3ca23d547746b5e7697d7d96b1d2933316",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/KakeyaNeedleC3C4/Generated/DecisionTree4Group38.lean",
+          "bytes": 1017,
+          "sha256": "a458c37894b2106847f74c6994f95e4f4e7a2f16a3b0655007716383365df709",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/KakeyaNeedleC3C4/Generated/DecisionTree4Group39.lean",
+          "bytes": 1018,
+          "sha256": "a81ffad7941bb432ee62a90b9e7da097e727b1de5662a3518a28a13f2ddda883",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/KakeyaNeedleC3C4/Generated/DecisionTree4Group4.lean",
+          "bytes": 999,
+          "sha256": "ef13443f78f2a261c43856f8b13e9c5113c715e41a94015b262bb5aad8481500",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/KakeyaNeedleC3C4/Generated/DecisionTree4Group40.lean",
+          "bytes": 1016,
+          "sha256": "7bbece737b5f20149eea8665152722875a39973c55ea0c1a07731f2bd825fd0e",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/KakeyaNeedleC3C4/Generated/DecisionTree4Group41.lean",
+          "bytes": 1017,
+          "sha256": "5d9c56cbecce87f71c441e75edae1d038bc716370a53df50109a46ba1abc4474",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/KakeyaNeedleC3C4/Generated/DecisionTree4Group42.lean",
+          "bytes": 1017,
+          "sha256": "6019345e345c3164e67db478ef0eac5085b95893ef0f12049cdae7e854784637",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/KakeyaNeedleC3C4/Generated/DecisionTree4Group43.lean",
+          "bytes": 1018,
+          "sha256": "24b1cdbfff935d71a9e168b246c5d547a365d8fe68521930bab134fcf26a9f80",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/KakeyaNeedleC3C4/Generated/DecisionTree4Group44.lean",
+          "bytes": 1016,
+          "sha256": "45d3f28d2ecfbde5facb300bcb7206aef414b1f3033177a4cbefba6ef0e9e608",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/KakeyaNeedleC3C4/Generated/DecisionTree4Group45.lean",
+          "bytes": 1017,
+          "sha256": "de217512218a899116a73c98b8245c28dbab7717220c525542b3e2f30938c890",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/KakeyaNeedleC3C4/Generated/DecisionTree4Group46.lean",
+          "bytes": 1018,
+          "sha256": "5f4c4da43748f9b62cf4666202ba7886ad3e97e1ac0f252092f09704668ee0bc",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/KakeyaNeedleC3C4/Generated/DecisionTree4Group47.lean",
+          "bytes": 1019,
+          "sha256": "7da4dd7372abb6f8c28f58061a73e31031766938286e4b433ab2e4f7366bda28",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/KakeyaNeedleC3C4/Generated/DecisionTree4Group48.lean",
+          "bytes": 1016,
+          "sha256": "5a0def35e84e24022310ef6979cc7478ccdf104ad2cfa87ea1ff08e9e024cba4",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/KakeyaNeedleC3C4/Generated/DecisionTree4Group49.lean",
+          "bytes": 1017,
+          "sha256": "27b79fe0f168a8559aa8a19d2ba3581649fa94cce8adc86dc7e22167f4dff4bb",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/KakeyaNeedleC3C4/Generated/DecisionTree4Group5.lean",
+          "bytes": 1000,
+          "sha256": "b1bab58041a483bbce7a150293136b24d2e8df20e158dd5328f597a849703986",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/KakeyaNeedleC3C4/Generated/DecisionTree4Group50.lean",
+          "bytes": 1017,
+          "sha256": "7ea941edb20e79f84e6d8a8065dfeac549b1a71c530fa446b127f1fe24502b2d",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/KakeyaNeedleC3C4/Generated/DecisionTree4Group51.lean",
+          "bytes": 1018,
+          "sha256": "c586213c413f014545829c195c1fd33e32bac36ca979eb3fa58cf148964c6521",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/KakeyaNeedleC3C4/Generated/DecisionTree4Group52.lean",
+          "bytes": 1017,
+          "sha256": "7167562d522b4516de2222a4effae3ce6d36d5289f5197b84d895dfcad595c2f",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/KakeyaNeedleC3C4/Generated/DecisionTree4Group53.lean",
+          "bytes": 1018,
+          "sha256": "31cfc6e020ff9a7931831b182fe946574846f5860d783a68419b226f7c0b118d",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/KakeyaNeedleC3C4/Generated/DecisionTree4Group54.lean",
+          "bytes": 1018,
+          "sha256": "011328f76d6797976769dbe7da0c19ab55d103a3f52fa8df1468e76ea64bc9a6",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/KakeyaNeedleC3C4/Generated/DecisionTree4Group55.lean",
+          "bytes": 1019,
+          "sha256": "6dc04e5a27ed0f0c082efc509023bf7bf5ce806d31cedce60b5eb92475dc693a",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/KakeyaNeedleC3C4/Generated/DecisionTree4Group56.lean",
+          "bytes": 1017,
+          "sha256": "a2832859daef35dcff98802e618affc631e6c483db3344d3a4a885b92a4cb30d",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/KakeyaNeedleC3C4/Generated/DecisionTree4Group57.lean",
+          "bytes": 1018,
+          "sha256": "3a4d5fb146e0f3ad781dc663dd3218f6b3969f807ac3a4aae5af2f77b4a1ddd8",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/KakeyaNeedleC3C4/Generated/DecisionTree4Group58.lean",
+          "bytes": 1018,
+          "sha256": "39077a375ab9d0eb0805060cb841fe9bb4b87c11da63da89040faedf18e0c479",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/KakeyaNeedleC3C4/Generated/DecisionTree4Group59.lean",
+          "bytes": 1019,
+          "sha256": "5c4433cfc7b4cfbfcfaa62e47cb7cb5cf72eb94805811339321f3fa857785f6c",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/KakeyaNeedleC3C4/Generated/DecisionTree4Group6.lean",
+          "bytes": 1001,
+          "sha256": "8aea233a0a9e65c41bd88d7193cbfec9107b5dd50e5d584e275cc769a8e29563",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/KakeyaNeedleC3C4/Generated/DecisionTree4Group60.lean",
+          "bytes": 1016,
+          "sha256": "7cf69d1064e17242bcd93423a1ed676285e2ee15ca08234c10ee9a77404b96f4",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/KakeyaNeedleC3C4/Generated/DecisionTree4Group61.lean",
+          "bytes": 1017,
+          "sha256": "c35bf58204c9e9b68cde8b40ff5df5e7eab5f878440c012df96c7eb67cd834cb",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/KakeyaNeedleC3C4/Generated/DecisionTree4Group62.lean",
+          "bytes": 1018,
+          "sha256": "666a379350c1a86113e8ae36ffe9cb40e820fb3a3c4f3892f800842f7ba61711",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/KakeyaNeedleC3C4/Generated/DecisionTree4Group63.lean",
+          "bytes": 1019,
+          "sha256": "4f0475b121701e8522a11b0566478997c5bf243469592507ca8e1b433beca838",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/KakeyaNeedleC3C4/Generated/DecisionTree4Group7.lean",
+          "bytes": 1002,
+          "sha256": "bcc99ae3ac8befda8cc31b535ce827046c756eb69b3030514771c3ec6b1d37d3",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/KakeyaNeedleC3C4/Generated/DecisionTree4Group8.lean",
+          "bytes": 1001,
+          "sha256": "fda18b356c88cb46a8c71e10f3f81e7ba6d520413f37f4fe4754d48282ecee4b",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/KakeyaNeedleC3C4/Generated/DecisionTree4Group9.lean",
+          "bytes": 1002,
+          "sha256": "11bd4486625adf54e48324c50efdfb405b195a61bb2a0c50b590637be996960a",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/KakeyaNeedleC3C4/Generated/certificate4_sub00.b64",
+          "bytes": 138912,
+          "sha256": "a196117722dbf09bbe749a79f69d1991f88fc8def985b7e0d8eae6e650c15f0e",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/KakeyaNeedleC3C4/Generated/certificate4_sub01.b64",
+          "bytes": 66377,
+          "sha256": "9aa982721acf4864bfe9fae04da1b27ddd0a7e9df0d707d6625918115b81b37c",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/KakeyaNeedleC3C4/Generated/certificate4_sub02.b64",
+          "bytes": 55288,
+          "sha256": "be4e2b91269a40f704b9ba66ca0134d5dfcc865389c9117cbcac5ebb2161851f",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/KakeyaNeedleC3C4/Generated/certificate4_sub03.b64",
+          "bytes": 30434,
+          "sha256": "370b5149ba4397d17eaf844364976b8973f4224c0903add9fa93cdbedc7ac53f",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/KakeyaNeedleC3C4/Generated/certificate4_sub04.b64",
+          "bytes": 82829,
+          "sha256": "cf6b016a60f7ce101c52e442c35dfc61835e1dc4df452496d8f000c76a2ac6da",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/KakeyaNeedleC3C4/Generated/certificate4_sub05.b64",
+          "bytes": 44385,
+          "sha256": "f34028aa5ef8ec854c795824d667160190dcfe5ef53cd9b9f07f1db0e4c92374",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/KakeyaNeedleC3C4/Generated/certificate4_sub06.b64",
+          "bytes": 114698,
+          "sha256": "22ec5086cc7767928326d92e2346889135cc06aab34b0b8a0d571cb4c04a2e2d",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/KakeyaNeedleC3C4/Generated/certificate4_sub07.b64",
+          "bytes": 46572,
+          "sha256": "b93bfc8f7fabaa813aa3dfd582c3abdf232f998e19f6f61f6726a0abd98f29cb",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/KakeyaNeedleC3C4/Generated/certificate4_sub08.b64",
+          "bytes": 80185,
+          "sha256": "de24b373073d86543dc3475555d1bd773e864b7b2ba37a4ee61d5310cc695cef",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/KakeyaNeedleC3C4/Generated/certificate4_sub09.b64",
+          "bytes": 29439,
+          "sha256": "2b8c38b7108b629fe3dddf7203a924b4af9c130705371f86430da0c83d3ce80e",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/KakeyaNeedleC3C4/Generated/certificate4_sub10.b64",
+          "bytes": 102197,
+          "sha256": "05efbb44ca7d79f918d0bf42fb395556ee6b8aef49bfa41688445c9eacb9ee23",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/KakeyaNeedleC3C4/Generated/certificate4_sub11.b64",
+          "bytes": 56886,
+          "sha256": "9bebea5835e485b9a0e8ef8850b56ceee81ee0f75bade6a4e86a34b949eb83b5",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/KakeyaNeedleC3C4/Generated/certificate4_sub12.b64",
+          "bytes": 56433,
+          "sha256": "9119759e332a482a33fd472d836012f2c54eee7d381b9791afe9a13d050f5abb",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/KakeyaNeedleC3C4/Generated/certificate4_sub13.b64",
+          "bytes": 57822,
+          "sha256": "4f1e31e19938932b613e5eec6506644a68f48651523f3386c2ad34465b229a58",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/KakeyaNeedleC3C4/Generated/certificate4_sub14.b64",
+          "bytes": 132043,
+          "sha256": "fe5083e0f84cb903109c3e1d8963dcd03c5a26c6fdf6ac3a7296d226446f97d8",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/KakeyaNeedleC3C4/Generated/certificate4_sub15.b64",
+          "bytes": 40305,
+          "sha256": "5086446c5719b6f8f5fe5a2df3065fe141dd58c4cf03bf03a7871b638fc42641",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/KakeyaNeedleC3C4/Generated/certificate4_sub16.b64",
+          "bytes": 141671,
+          "sha256": "2449d1441f7665fb5139e6df1d43869845b475051e34a51a80e01b32a168c5e7",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/KakeyaNeedleC3C4/Generated/certificate4_sub17.b64",
+          "bytes": 144003,
+          "sha256": "130e42b32b6536a754f46cb4ad541693f34b152869700ec189b759a784ddd1a7",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/KakeyaNeedleC3C4/Generated/certificate4_sub18.b64",
+          "bytes": 140288,
+          "sha256": "9b7dea05ba6e472acefd7cdb450b5ad25998d37ad80fb8bfaadebede22291f4c",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/KakeyaNeedleC3C4/Generated/certificate4_sub19.b64",
+          "bytes": 82853,
+          "sha256": "5f552c90792f7ede746ffe9de97685a48aabbb89c9c521059c5b2bc7fa013ec7",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/KakeyaNeedleC3C4/Generated/certificate4_sub20.b64",
+          "bytes": 183799,
+          "sha256": "99c431b8cf8f3e1361b61c31718fe7dc7598cc2252ae9826c295b79c276160eb",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/KakeyaNeedleC3C4/Generated/certificate4_sub21.b64",
+          "bytes": 206973,
+          "sha256": "118f42845becc8922bee3b06b0d9088273bf666a286d71f6f7517206d334dfcb",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/KakeyaNeedleC3C4/Generated/certificate4_sub22.b64",
+          "bytes": 155171,
+          "sha256": "8e1b31442cac73b49654d4cd86497a991a99bcba65c98bf335b52b3247b818ef",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/KakeyaNeedleC3C4/Generated/certificate4_sub23.b64",
+          "bytes": 190501,
+          "sha256": "2e24785f68928b23df3ec64ffa067ff8abf2429273ae52ace0f215fb02161a7f",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/KakeyaNeedleC3C4/Generated/certificate4_sub24.b64",
+          "bytes": 73948,
+          "sha256": "a6097af0afbdd8a0f65616661bdd1f3a1ebdff68b0b3992a0416be14ca67c61a",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/KakeyaNeedleC3C4/Generated/certificate4_sub25.b64",
+          "bytes": 57249,
+          "sha256": "85935c19f598909edc38c3c3e8544f2a833ae05b6ec2057bde8518a0d6220656",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/KakeyaNeedleC3C4/Generated/certificate4_sub26.b64",
+          "bytes": 110117,
+          "sha256": "6fb8e29529ca99878e108fe506c7be7c2af007f09c6d62125f6fd3a4e0d1c871",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/KakeyaNeedleC3C4/Generated/certificate4_sub27.b64",
+          "bytes": 54384,
+          "sha256": "154fad440f838b2b42aac784865640f6c7871acfebae61daa6d8f7e1accb853e",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/KakeyaNeedleC3C4/Generated/certificate4_sub28.b64",
+          "bytes": 71548,
+          "sha256": "4c3d6d490f0663a33a6bd89fd7c4cf2b3a9314ed0395214b204539a579c62737",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/KakeyaNeedleC3C4/Generated/certificate4_sub29.b64",
+          "bytes": 31952,
+          "sha256": "bcb80f86d97256bfda7b2585006ac5a0b4b6ba1e8c9ac272b181cb11347f88d8",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/KakeyaNeedleC3C4/Generated/certificate4_sub30.b64",
+          "bytes": 87546,
+          "sha256": "3d9f01b9c61f877d8614ca3c00ddd1d600c01c54a2083626062b8406c55db5dd",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/KakeyaNeedleC3C4/Generated/certificate4_sub31.b64",
+          "bytes": 97724,
+          "sha256": "ca5586a28ee9c2372c99551c50dab1ff1c7677bd8708d1fad6a0d77c240904be",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/KakeyaNeedleC3C4/Generated/certificate4_sub32.b64",
+          "bytes": 139049,
+          "sha256": "a3bca2bcef5f2781d0ee8da632b22609d9485fc82cf217995e645522d8d1be3a",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/KakeyaNeedleC3C4/Generated/certificate4_sub33.b64",
+          "bytes": 79100,
+          "sha256": "2fd7bfe01ea638f62f127aad216d1933564a7fdfacca9530f95790be8554957d",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/KakeyaNeedleC3C4/Generated/certificate4_sub34.b64",
+          "bytes": 142138,
+          "sha256": "88e47b1c7828dfc4e68aed88509d1cc061c6e8acd40788fb35c4210581e341d1",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/KakeyaNeedleC3C4/Generated/certificate4_sub35.b64",
+          "bytes": 141844,
+          "sha256": "1c12de8320e5cc1b9849bbbe60afb82f6473bf059ae2c2c8f79b1537b18a8be6",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/KakeyaNeedleC3C4/Generated/certificate4_sub36.b64",
+          "bytes": 183645,
+          "sha256": "a5042521cce772186edc8d1f7aadda8239dc287df7f22aaab1d5beade6e652ec",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/KakeyaNeedleC3C4/Generated/certificate4_sub37.b64",
+          "bytes": 208110,
+          "sha256": "2bd285c47ca19368a8141a77731a616a8250bc36cb8366bd536b8b9a9f2dd9b7",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/KakeyaNeedleC3C4/Generated/certificate4_sub38.b64",
+          "bytes": 155116,
+          "sha256": "db8ef8c3ae4ae989c0900f0f3a3b1e8585cab045d1bae9fc0d6e07a734db2ab5",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/KakeyaNeedleC3C4/Generated/certificate4_sub39.b64",
+          "bytes": 191709,
+          "sha256": "ea6c58210f48420eae6b91aaa5e609d88f53f37e1625be31c1a23f535481522a",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/KakeyaNeedleC3C4/Generated/certificate4_sub40.b64",
+          "bytes": 70356,
+          "sha256": "49c443a0f150b256eaf4ffa560de5d061aef52f7143dd734951c2f19bd64b030",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/KakeyaNeedleC3C4/Generated/certificate4_sub41.b64",
+          "bytes": 34973,
+          "sha256": "13745209af42240cc69321f99ea88f7b0992e8bc2612e086008aaf8651bd8319",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/KakeyaNeedleC3C4/Generated/certificate4_sub42.b64",
+          "bytes": 87917,
+          "sha256": "a76bf62e93d20b51715de94dc478e8256aee9fa0d1c653351b417d193709af9c",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/KakeyaNeedleC3C4/Generated/certificate4_sub43.b64",
+          "bytes": 97578,
+          "sha256": "fdde86adcf5ee56a37695ca12171b04b8b0eb0abeaad639644a9b2b7d8c1c195",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/KakeyaNeedleC3C4/Generated/certificate4_sub44.b64",
+          "bytes": 109366,
+          "sha256": "996abc62a8a096e039d28ebe603b7cf366f9041e80f5619b162ff97b9afdfd82",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/KakeyaNeedleC3C4/Generated/certificate4_sub45.b64",
+          "bytes": 53478,
+          "sha256": "14735f9b9b1d348c11422a511871285aae25a70e071cf882e0f5760904ae3034",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/KakeyaNeedleC3C4/Generated/certificate4_sub46.b64",
+          "bytes": 57744,
+          "sha256": "f1570c505cc1128da7814d56d5e6dfa0261f5f9035f52d31463c83d39c5cd6d0",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/KakeyaNeedleC3C4/Generated/certificate4_sub47.b64",
+          "bytes": 73031,
+          "sha256": "9661e19d4090f952352b5a9938681ed66c38adc53ceaa6e8e3152712fabf86da",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/KakeyaNeedleC3C4/Generated/certificate4_sub48.b64",
+          "bytes": 30041,
+          "sha256": "48e1f2572b8253b16cdf1e0c6edb4d6e633e7b3985411f60e7436f000fd4ac90",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/KakeyaNeedleC3C4/Generated/certificate4_sub49.b64",
+          "bytes": 54547,
+          "sha256": "49e8ed0e18de13dedae6414350a354c80c5a6d51b8cc3c559768cc72b087a5ea",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/KakeyaNeedleC3C4/Generated/certificate4_sub50.b64",
+          "bytes": 67125,
+          "sha256": "9da9e7859e476463a98b6e02db55586298a75a2ef69bb237751414afe87a91c1",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/KakeyaNeedleC3C4/Generated/certificate4_sub51.b64",
+          "bytes": 138828,
+          "sha256": "df75c7f2e8532857a3d79691ba24e9c8766159cf40b72414d03ef070a45461fc",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/KakeyaNeedleC3C4/Generated/certificate4_sub52.b64",
+          "bytes": 81795,
+          "sha256": "4232a5d8132d778da9ba8d8cadef6b8894c5b89e763335ecadf02715e327bc3c",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/KakeyaNeedleC3C4/Generated/certificate4_sub53.b64",
+          "bytes": 44975,
+          "sha256": "5354150981d0d8f9a8d3aab224f9242905a270dc93730c71e5315b38ec98bd8c",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/KakeyaNeedleC3C4/Generated/certificate4_sub54.b64",
+          "bytes": 118963,
+          "sha256": "1064d0ccfef0380e48df8e054c0aaa05487ebca120c99421385aa252ddf3a431",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/KakeyaNeedleC3C4/Generated/certificate4_sub55.b64",
+          "bytes": 48981,
+          "sha256": "9da04248b8c7b520c82fa6edc50bd32a59a276170a28810a8e52dfb2c1bcfe8a",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/KakeyaNeedleC3C4/Generated/certificate4_sub56.b64",
+          "bytes": 101853,
+          "sha256": "361bc6e0efd01fa424996e8f61578d84fae1984178e147d08b86b0c334f01c2d",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/KakeyaNeedleC3C4/Generated/certificate4_sub57.b64",
+          "bytes": 54087,
+          "sha256": "443117745ff8f1b8ad859704fa5f4cefd7f36e3841f191e7fdb81d36f7262a2e",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/KakeyaNeedleC3C4/Generated/certificate4_sub58.b64",
+          "bytes": 30424,
+          "sha256": "ff6aca13cfbed6056cf674c3a406c0df30ce304969a0a660a1b975131e7a755d",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/KakeyaNeedleC3C4/Generated/certificate4_sub59.b64",
+          "bytes": 77213,
+          "sha256": "1f90dc229cdd8674dd13c830c62d0603a2177bf9944eeb2ce4aea31fa81ddf69",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/KakeyaNeedleC3C4/Generated/certificate4_sub60.b64",
+          "bytes": 51345,
+          "sha256": "d173c62944817682a51b635a724377f21ecd485693ddd1726928f94f320ad7b2",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/KakeyaNeedleC3C4/Generated/certificate4_sub61.b64",
+          "bytes": 64250,
+          "sha256": "1edddbd84585afe01fc100008f8aa8b7bf67e3e2be44a0e3e26dedaa86369f5a",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/KakeyaNeedleC3C4/Generated/certificate4_sub62.b64",
+          "bytes": 132894,
+          "sha256": "d8f6fed5ebe9a1648ca7284dc81593ef6952b4281355f7f57b64e92ba292057f",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/KakeyaNeedleC3C4/Generated/certificate4_sub63.b64",
+          "bytes": 41643,
+          "sha256": "915041cfe41d7bb589aa3d529ca7971f627abcf88d11ba06c24b5f5ecb694522",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/KakeyaNeedleC3C4/Generated/manifest3.json",
+          "bytes": 366,
+          "sha256": "d4aa127957702afcbe4eb32219cb8115e109f0962009dce3734b4b369637edd3",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/KakeyaNeedleC3C4/Generated/manifest4.json",
+          "bytes": 475,
+          "sha256": "9a17af52fa53ecee0d6033c81fa28d6b5709084e109f0d4414aa2840dbcee526",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/KakeyaNeedleC3C4/HandelmanChecker.lean",
+          "bytes": 19289,
+          "sha256": "eb8572fe2baa71f48c580464e4ea8ecc0ab2d7160d5c123d5eaf4b78bce19228",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/KakeyaNeedleC3C4/Infimum.lean",
+          "bytes": 776,
+          "sha256": "e8113c35e11171dd99f7d87752ed330dc3b1080ac5a272411711da6168e495dd",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/KakeyaNeedleC3C4/LeafCertificate.lean",
+          "bytes": 19729,
+          "sha256": "66f3064cdb4b15429aea8334b96a440e59ae541090c130334bccd5cd0a9a86c9",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/KakeyaNeedleC3C4/Main.lean",
+          "bytes": 693,
+          "sha256": "4a8ffd64aaafd83c27ecb26a95d3dab29052d3702b9d644fc28b09b8e2a81d57",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/KakeyaNeedleC3C4/PaperTriangle.lean",
+          "bytes": 3608,
+          "sha256": "4fca833de0b2e44f1e35ced7cfd164c43fea12a63534b6f74f801bfd42213762",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/KakeyaNeedleC3C4/PolyhedralCertificate.lean",
+          "bytes": 11312,
+          "sha256": "9fac04c656c563360f9002951227d840d0b596dd0c2305ec5082e1d3c0c59c1f",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/KakeyaNeedleC3C4/RationalCertificateChecker.lean",
+          "bytes": 16408,
+          "sha256": "bd2335a0f53bd2f7d66855682d90eefcf7d18b34d205092a4b94c2bb8d481301",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/KakeyaNeedleC3C4/Slices.lean",
+          "bytes": 4332,
+          "sha256": "30418c7e6a7e25c65c15793b6c3c0d0db047a2a60ddf71bda98473f26a9d7d56",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/KakeyaNeedleC3C4/SortedIntervals.lean",
+          "bytes": 8141,
+          "sha256": "63955b72d450db305a0b21d6bfa42d5fb2d5f6124d309b095728bdd0cf1a4ea2",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/KakeyaNeedleC3C4/SweepCertificate.lean",
+          "bytes": 36799,
+          "sha256": "6ee478c2fb10ae15c7cc9fd9912b1bfdca343bebcde0e899122d78a7075a3ae9",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/KakeyaNeedleC3C4/SweepIntegration.lean",
+          "bytes": 2299,
+          "sha256": "1f9b40b1fc23673312231077d268bb417b909af7c723ff3d9a721d7300bd3279",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/KakeyaNeedleC3C4/TranslationGauge.lean",
+          "bytes": 1529,
+          "sha256": "4f0b82ef6fb037e4e36d82eaff144cde377b796a4ce17210d01ef076cc37b8df",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/KakeyaNeedleC3C4/TriangleArea.lean",
+          "bytes": 5136,
+          "sha256": "87d950239fb8e3a54ba22aa7dc25ed1e24d22ed61502437af5689768adbd25ff",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/KakeyaNeedleC3C4/Witnesses.lean",
+          "bytes": 15077,
+          "sha256": "1b77b92d4a6b8001163adc248e88fc05c7c17ea9c5363ff0cbfcecf91562d53b",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/KakeyaNeedleC3C4.lean",
+          "bytes": 29,
+          "sha256": "f1666015e71524a3b9f1ea73bd44706ebecf107837587d203ebf7050af7147ae",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/README.md",
+          "bytes": 1086,
+          "sha256": "e674b92d2656871b3287d9cb033695a5e529ac3cf6a1feba501bd60eae077029",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/lake-manifest.json",
+          "bytes": 3150,
+          "sha256": "06983c6fd3b98ec01795991dbc1956dbe83d86174299e68f7603d53055e39207",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/lakefile.toml",
+          "bytes": 262,
+          "sha256": "0f360fac18c686cec5ff2a885c2eb00e362ea215077156bf9ff1d664ff37ac18",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/lean-toolchain",
+          "bytes": 29,
+          "sha256": "12b3414dafc4575fab9eb37bb265165c5a637af839af2d300f7e931b78765706",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/scripts/generate_certificates.py",
+          "bytes": 42185,
+          "sha256": "0fa525b821220e1c00a50cec8d5d6ea4bbcb77fe778db5a3e92d15150897bcc7",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/scripts/reference_enumerator.py",
+          "bytes": 33589,
+          "sha256": "4f1fed1407923173720aa048a332d06beccd05b32a8e0996c59aa438e75625fb",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/scripts/requirements.txt",
+          "bytes": 27,
+          "sha256": "c66c2760ef764b5dd41b56b89c266603ef27ec1a4f6895247801b2afd35fb7f7",
+          "kind": "file"
+        },
+        {
           "path": "kakeya_needle_offsets.npz",
           "bytes": 6490,
           "sha256": "ba68158d6e077aa55d3b5e8132936d2d006cc291a9989b37c05b607a21b4cc8e",
@@ -1265,8 +2807,8 @@
         },
         {
           "path": "verification.ipynb",
-          "bytes": 125110,
-          "sha256": "971d8f1c455b6094d273365842cbc23c0e0ae9cae25d813b66a010b8e97c1dc7",
+          "bytes": 125381,
+          "sha256": "dbcf9ef2195b152b4bac1d92e2e0dba26c49bfcff3b43138955b73d13fd31f10",
           "kind": "notebook"
         }
       ]
@@ -1286,8 +2828,8 @@
       "files": [
         {
           "path": "README.md",
-          "bytes": 451,
-          "sha256": "641ace8436ac7fde9cbfa7ee6c4117487bc9c9803145a4e28351d7246be4e91c",
+          "bytes": 522,
+          "sha256": "e5a2a9c9d9f8b79cf5c31b99400a02d75c8311afd467d861ef2dc3b8d534df3d",
           "kind": "file"
         },
         {
@@ -1315,6 +2857,42 @@
           "kind": "file"
         },
         {
+          "path": "formal_proofs/README.md",
+          "bytes": 101,
+          "sha256": "22ca6b198cf2daaef9112802f234f53f9d13491bba30f470b17d074bc7b3f895",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s3/KissingS3.lean",
+          "bytes": 40136,
+          "sha256": "f4b6c3c28dea5cec8ee19e90f58ca60546a867b19be999c31cf32103f19c5de8",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s3/README.md",
+          "bytes": 886,
+          "sha256": "cae1d58f248d8e17f57fa57fc37a2ab19bcd7d908d04659263902871b5a13fb2",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s3/lake-manifest.json",
+          "bytes": 3142,
+          "sha256": "3d626534802f3a387d4a6f94abc8daa0bc8f0810128bcc7457c7452fc4340bf6",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s3/lakefile.toml",
+          "bytes": 249,
+          "sha256": "0ea9dc14cd42416cc1f4305f4ff09b7f76bab65bb6aaf23b4cbb372e72f82d0b",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s3/lean-toolchain",
+          "bytes": 29,
+          "sha256": "12b3414dafc4575fab9eb37bb265165c5a637af839af2d300f7e931b78765706",
+          "kind": "file"
+        },
+        {
           "path": "kissing_certificates.npz",
           "bytes": 9231,
           "sha256": "61b3a572ad194a3b97d8bcae8694d57ae676328a81ef0e4db95e57a2c9d44f37",
@@ -1322,8 +2900,8 @@
         },
         {
           "path": "verification.ipynb",
-          "bytes": 64327,
-          "sha256": "6ab601959168d859bb3eb3151b6eed1a8409dfd52561966f353f61c599c8f4bc",
+          "bytes": 64600,
+          "sha256": "d47d969f0c6f86f96346ddd89e7f1f6c53579d70e8a4aa95cf435105c813ce32",
           "kind": "notebook"
         }
       ]
@@ -1421,8 +2999,8 @@
       "files": [
         {
           "path": "README.md",
-          "bytes": 433,
-          "sha256": "6bb6b8597e603548e21eb92064a7937200c90a8148070087aef46d92fcfb897d",
+          "bytes": 504,
+          "sha256": "7e23379273ca39949fa1f27482664681101b44e0a241591f3b8ede8aa1492e5d",
           "kind": "file"
         },
         {
@@ -1468,6 +3046,216 @@
           "kind": "file"
         },
         {
+          "path": "formal_proofs/README.md",
+          "bytes": 148,
+          "sha256": "87d538a5571eb43ed58774b90307a7c0347604a25c4a348d40a753dca5a1aaee",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s1/.gitignore",
+          "bytes": 17,
+          "sha256": "aa959ace0b216c7ab3699a85e16c0f76bbd8739013d6e76c4db4e08e19c562e0",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s1/README.md",
+          "bytes": 1086,
+          "sha256": "0d3abeda9ae5ff46a174dcb576182ab68fa7b5b39d6f4c3cd74aa8b564aaf9f5",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s1/UncertaintyUpperBound/CertificateComputation.lean",
+          "bytes": 2578,
+          "sha256": "2294e335aeb0e95508c47dbe8ae71e12c511a239a77cec1da114763cc294bec2",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s1/UncertaintyUpperBound/CertificateData.lean",
+          "bytes": 99909,
+          "sha256": "63e9d7b776370bcc9c6bd7c88e9e3df02b2e92c88a46bfcc09a0b6f282ca9dcb",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s1/UncertaintyUpperBound/ExactCertificate.lean",
+          "bytes": 2092,
+          "sha256": "f20c71608c559f6d68c084cc6adfe171e59a6c9266088b060209d615ec0a46c9",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s1/UncertaintyUpperBound/FourierPolynomial.lean",
+          "bytes": 6764,
+          "sha256": "4ce7350db56433dd02d41434c3b1cb8cac947f857ea7a204b1be85fef5ee6598",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s1/UncertaintyUpperBound/Main.lean",
+          "bytes": 617,
+          "sha256": "93100cb48b08969a4152a8b3fd7ec2b0b21cff2d870d6b5675734404914e0016",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s1/UncertaintyUpperBound/PolynomialWitness.lean",
+          "bytes": 3134,
+          "sha256": "b296499a54b4f05b1793d56833e2fe46c222b801d3e34282b458d3296f8e05bc",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s1/UncertaintyUpperBound/RadialFourier.lean",
+          "bytes": 8694,
+          "sha256": "78c1b5a2ae1e603502d8f93f243705f2122796ee96481d610473aa8258fdc929",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s1/UncertaintyUpperBound/SelfFourierCertificate.lean",
+          "bytes": 7131,
+          "sha256": "5476944c3fd39249dad8b162cb77532185c228b713b049544a2b95e6ff1d105e",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s1/UncertaintyUpperBound/SignUncertainty.lean",
+          "bytes": 2669,
+          "sha256": "9b390f9c175198660fcd039d5cd05a25faa597d1142deb3e587b6aff747a3c59",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s1/UncertaintyUpperBound/TailCertificate.lean",
+          "bytes": 19477,
+          "sha256": "c29794eca08bbe1b1a03076d65319bd11f48a2549faded7b8e3fce6fcc4c5929",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s1/UncertaintyUpperBound/Witness.lean",
+          "bytes": 5911,
+          "sha256": "f18915f24eaa49aa0c71bc7ca21a8e7531a19e754fcd05902204009aaaa9f754",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s1/UncertaintyUpperBound.lean",
+          "bytes": 34,
+          "sha256": "3702e769baf80d250648affd5e555739320d5f07774fcfcfb53bee2fb388d678",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s1/lake-manifest.json",
+          "bytes": 3131,
+          "sha256": "52d073bce2c30363edd083fba782b14d5ffa62f9b542f340abaa3752e703569f",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s1/lakefile.toml",
+          "bytes": 242,
+          "sha256": "cb70a1e88c1a744db4a3fca8bc790cbec007b1532d0f753afb71a9e4dd757c3e",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s1/lean-toolchain",
+          "bytes": 25,
+          "sha256": "5317c8854953eedca0a84a65376b6d17b5e875e6fc51f3086b1631d86d29b29c",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s1/scripts/generate_certificate.py",
+          "bytes": 4230,
+          "sha256": "031175d23ccea1869b38dbcb2b311991e5dfccea4203c815fd0aba427d1b138b",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/.gitignore",
+          "bytes": 7,
+          "sha256": "b3ad09fc93f83fdbd0bee771258dd4a58d3798fd7e6048611dde5a804bb43f1e",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/README.md",
+          "bytes": 1075,
+          "sha256": "f8785a4c21ac12411e70f1e35c13057f780e39ea0fd42b3b33d13f06829dc49e",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/UncertaintyS2/CertificateData.lean",
+          "bytes": 1559917,
+          "sha256": "c2e558e022aea2983829211e10f2d5e6a0f77d7303d027c44214e950f176b571",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/UncertaintyS2/Definitions.lean",
+          "bytes": 2061,
+          "sha256": "909142ab7da970f26fdf91b0dc973e5093cb1f32769a456760a2b0ef967779ec",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/UncertaintyS2/LowerCertificate.lean",
+          "bytes": 8980,
+          "sha256": "8ecdb0ccbb2400ddb761eea5249926c7212cbb263d500a018c8f4d7837e4fe4d",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/UncertaintyS2/Main.lean",
+          "bytes": 1295,
+          "sha256": "3d519c71d3f331ddc9e22a772de000a3d2fae3b5ae5b079541e7f726ee9b9446",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/UncertaintyS2/Polynomial.lean",
+          "bytes": 2717,
+          "sha256": "ec6ab0a7406a0afcc8fbd2308b28fedd681219485a3a56000ed1bb3a3b6b204c",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/UncertaintyS2/UpperBound.lean",
+          "bytes": 1627,
+          "sha256": "fff4619554a825796f63a4d37e05224f21268ac9e084249ee3f9e754c4ccda11",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/UncertaintyS2/UpperComputation.lean",
+          "bytes": 3832,
+          "sha256": "e04134d0de1080218a98d24acdb5d1699f6d075279d78ab0f74b6c69f7f761e0",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/UncertaintyS2/UpperTail.lean",
+          "bytes": 26750,
+          "sha256": "6674213662c06f447bf213d042ea96cec187e13594d35201202781a2efc66c83",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/UncertaintyS2/UpperWitness.lean",
+          "bytes": 10751,
+          "sha256": "e163feac8f6df8840a0cda137ae4ec9de7b7ca94a20b7c0fdfa1e23dc355813b",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/UncertaintyS2.lean",
+          "bytes": 26,
+          "sha256": "a797a63b474ccd93dff5a65d47fd04b9064a131d663d2742e55909a2fb912cfd",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/lake-manifest.json",
+          "bytes": 3122,
+          "sha256": "b497803bb4ebedefb76a4a0fbe3783818385f1a7d35e8e7b7c24f539bbe24409",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/lakefile.toml",
+          "bytes": 226,
+          "sha256": "e642e392f69f0a5575be1191558460e92b34000a4e3e6d186ceeb3dee93b4c78",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/lean-toolchain",
+          "bytes": 25,
+          "sha256": "5317c8854953eedca0a84a65376b6d17b5e875e6fc51f3086b1631d86d29b29c",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/scripts/generate_certificate.py",
+          "bytes": 5930,
+          "sha256": "ae5a44d3921332bb81b0bce69770b05f0df2720e3810a1ab5baf9f465ccf6811",
+          "kind": "file"
+        },
+        {
           "path": "uncertainty_data.json.gz",
           "bytes": 14595505,
           "sha256": "04440bb9d0239a68ed38b7d780462380c2b698fdf54f0917c628ff7df35b9826",
@@ -1475,8 +3263,8 @@
         },
         {
           "path": "verification.ipynb",
-          "bytes": 41244,
-          "sha256": "88588b737e2d9c602a3a3f3d4da68d53691b7490d0405df81a45e053dd7003d7",
+          "bytes": 41798,
+          "sha256": "574071305fbc608162743d3e200d20d3af66753d7cb90ffab04095b3d0e48896",
           "kind": "notebook"
         }
       ]
