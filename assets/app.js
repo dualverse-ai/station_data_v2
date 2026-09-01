@@ -27,6 +27,17 @@
   function archiveUrl(path) { return `${archiveRoot}${String(path).replace(/^\/+/, '')}`; }
   function encodePath(path) { return String(path).split('/').map(encodeURIComponent).join('/'); }
   function stationUrl(id, page = 'agents') { return `#/${encodeURIComponent(id)}/${page}`; }
+  function dialogueTickUrl(stationId, agentKey, tick, thinkingOpen = false) {
+    const query = new URLSearchParams({ tick: String(tick) });
+    if (thinkingOpen) query.set('thinking', 'open');
+    return `#/${encodeURIComponent(stationId)}/agent/${encodeURIComponent(agentKey)}?${query}`;
+  }
+  function parseDialogueTarget(query) {
+    if (!query.has('tick')) return null;
+    const tick = query.get('tick')?.trim() || '';
+    if (!/^\d+$/.test(tick)) throw new Error('Dialogue tick must be a non-negative integer');
+    return { tick, thinkingOpen: query.get('thinking') === 'open' };
+  }
   function notebookUrl(id, path, section = '') { return `#/notebooks/${encodeURIComponent(id)}/${encodeURIComponent(path)}${section ? `/${encodeURIComponent(section)}` : ''}`; }
   function githubTree(path) { return `${githubRoot}/tree/main/${encodePath(path)}`; }
   function githubFile(path) { return `${githubRoot}/blob/main/${encodePath(path)}`; }
@@ -356,30 +367,75 @@
     window.jsyaml.loadAll(text, value => { if (value && typeof value === 'object') records.push(value); });
     return records;
   }
-  async function appendMessages(container, records, request) {
+  async function dialoguePageForTick(base, history, tick, signal) {
+    const value = Number(tick);
+    const hasRanges = history.pages.every(record => Number.isFinite(Number(record.first_tick)) && Number.isFinite(Number(record.last_tick)));
+    if (hasRanges) return history.pages.findIndex(record => value >= Number(record.first_tick) && value <= Number(record.last_tick));
+    let low = 0; let high = history.pages.length - 1;
+    while (low <= high) {
+      const middle = Math.floor((low + high) / 2); const record = history.pages[middle];
+      const records = await historyPage(`${base}/dialogue/${record.file}`, signal);
+      const ticks = records.map(entry => Number(entry.tick)).filter(Number.isFinite);
+      const first = Math.min(...ticks); const last = Math.max(...ticks);
+      if (ticks.some(entryTick => entryTick === value)) {
+        let found = middle;
+        while (found > 0) {
+          const previous = history.pages[found - 1];
+          const previousRecords = await historyPage(`${base}/dialogue/${previous.file}`, signal);
+          if (!previousRecords.some(entry => String(entry.tick) === tick)) break;
+          found -= 1;
+        }
+        return found;
+      }
+      if (!ticks.length || value < first) high = middle - 1;
+      else if (value > last) low = middle + 1;
+      else return -1;
+    }
+    return -1;
+  }
+  async function appendMessages(container, records, request, context) {
     for (let i = 0; i < records.length; i += 1) {
       current(request);
       const entry = records[i]; const stationRole = entry.role === 'user' || entry.role === 'system';
       const article = document.createElement('article'); article.className = `chat-bubble ${stationRole ? 'station' : 'agent'}`;
+      const entryNumber = i + 1;
+      article.dataset.dialoguePage = context.pageFile;
+      article.dataset.dialogueEntry = String(entryNumber);
+      article.dataset.dialogueTick = String(entry.tick ?? '');
+      article.tabIndex = -1;
       const thinking = entry.thinking_content || entry.thinking_text || '';
       const rawMessage = messageText(entry);
-      article.innerHTML = `<details class="dialogue-entry" open><summary class="chat-meta"><span>${stationRole ? 'Station' : 'Agent'}</span><span>Tick ${escapeHtml(entry.tick ?? '—')}</span><button class="copy-raw-dialogue" type="button">Copy raw</button><span class="collapse-label" aria-hidden="true"></span></summary><div class="chat-body">${thinking ? `<details class="thinking"><summary>Thinking</summary><pre>${escapeHtml(String(thinking))}</pre></details>` : ''}${markdown(rawMessage)}</div></details>`;
+      article.innerHTML = `<details class="dialogue-entry" open><summary class="chat-meta"><span>${stationRole ? 'Station' : 'Agent'}</span><span>Tick ${escapeHtml(entry.tick ?? '—')}</span><span class="dialogue-actions"><button class="copy-raw-dialogue" type="button">Copy raw</button><button class="copy-dialogue-link" type="button">Copy link</button></span><span class="collapse-label" aria-hidden="true"></span></summary><div class="chat-body">${thinking ? `<details class="thinking"${context.target?.thinkingOpen ? ' open' : ''}><summary>Thinking</summary><pre>${escapeHtml(String(thinking))}</pre></details>` : ''}${markdown(rawMessage)}</div></details>`;
       container.appendChild(article); enhance(article);
       article.querySelector('.copy-raw-dialogue').addEventListener('click', async event => {
         event.preventDefault(); event.stopPropagation(); const button = event.currentTarget;
         await copyText(rawMessage); button.textContent = 'Copied'; setTimeout(() => { button.textContent = 'Copy raw'; }, 1200);
       });
+      const thinkingDetails = article.querySelector('.thinking');
+      const linkButton = article.querySelector('.copy-dialogue-link');
+      const updateLinkTitle = () => {
+        linkButton.title = context.target?.thinkingOpen || thinkingDetails?.open ? 'Copy tick link with Thinking expanded' : 'Copy link to this tick';
+      };
+      thinkingDetails?.addEventListener('toggle', updateLinkTitle); updateLinkTitle();
+      linkButton.addEventListener('click', async event => {
+        event.preventDefault(); event.stopPropagation(); const button = event.currentTarget;
+        const linkedTick = context.target?.tick ?? entry.tick;
+        const hash = dialogueTickUrl(context.stationId, context.agentKey, linkedTick, context.target ? context.target.thinkingOpen : Boolean(thinkingDetails?.open));
+        await copyText(`${location.href.split('#')[0]}${hash}`); button.textContent = 'Copied'; setTimeout(() => { button.textContent = 'Copy link'; }, 1200);
+      });
       if (i && i % 8 === 0) await new Promise(resolve => requestAnimationFrame(resolve));
     }
   }
-  async function renderAgent(station, key, signal, request) {
+  async function renderAgent(station, key, target, signal, request) {
     const data = await fetchJSON(`data/${station.id}/agents/index.json`, signal); current(request);
     const agent = (data.agents || []).find(item => item.key === key); if (!agent) throw new Error('Agent not found');
     const base = `data/${station.id}/agents/${agent.key}`;
     const history = await fetchJSON(`${base}/dialogue/index.json`, signal); current(request);
+    const targetPage = target ? await dialoguePageForTick(base, history, target.tick, signal) : 0;
+    if (target && targetPage < 0) throw new Error(`Dialogue tick not found: ${target.tick}`);
     app.innerHTML = `${pageHeader(agent.display_name, '', `<a class="back-link" href="${stationUrl(station.id)}">Back to Agent Dialogue</a>`)}${meta([['Model', agent.model], ['Lineage', agent.lineage], ['Birth Tick', agent.tick_birth], ['Exit Tick', agent.tick_exit]])}<section class="dialogue-window" aria-labelledby="dialogue-title"><h2 id="dialogue-title" class="dialogue-window-title">Dialogue</h2><div id="transcript" class="transcript"></div></section><div class="pager"><button id="load-more" class="button" type="button">Load more</button></div>`;
     const transcript = document.getElementById('transcript'); const button = document.getElementById('load-more');
-    let page = 0; let loading = false; let observer = null;
+    let page = targetPage; let loading = false; let observer = null;
     const handleLoadError = error => {
       if (error.name === 'AbortError' || request !== state.request) return;
       button.disabled = false; button.hidden = false; button.textContent = 'Retry load more';
@@ -391,7 +447,7 @@
       try {
         const record = history.pages[page];
         const revision = record.sha256 ? `?v=${encodeURIComponent(record.sha256.slice(0, 16))}` : '';
-        await appendMessages(transcript, await historyPage(`${base}/dialogue/${record.file}${revision}`, signal), request);
+        await appendMessages(transcript, await historyPage(`${base}/dialogue/${record.file}${revision}`, signal), request, { stationId: station.id, agentKey: agent.key, pageFile: record.file, target });
         page += 1;
       } finally {
         loading = false;
@@ -405,12 +461,24 @@
     };
     button.addEventListener('click', () => load().catch(handleLoadError));
     await load();
+    let focusedTarget = false;
+    if (target) {
+      current(request);
+      const targetArticle = [...transcript.querySelectorAll('.chat-bubble')].find(article => article.dataset.dialogueTick === target.tick);
+      if (!targetArticle) throw new Error(`Dialogue tick not found: ${target.tick}`);
+      targetArticle.querySelector('.dialogue-entry').open = true;
+      targetArticle.classList.add('dialogue-target');
+      targetArticle.scrollIntoView({ block: 'start' });
+      targetArticle.focus({ preventScroll: true });
+      focusedTarget = true;
+    }
     if (page < history.pages.length && 'IntersectionObserver' in window) {
       observer = new IntersectionObserver(entries => {
         if (entries.some(entry => entry.isIntersecting)) load().catch(handleLoadError);
       }, { rootMargin: '600px 0px' });
       observer.observe(button);
     }
+    return focusedTarget;
   }
 
   async function capsuleIndex(station, signal) { return fetchJSON(`data/${station.id}/capsules/index.json`, signal); }
@@ -536,16 +604,20 @@
   function showError(error) {
     console.error(error); app.innerHTML = `<div class="error-state"><h1>Could not load this page</h1><p>${escapeHtml(error?.message || error)}</p><p><a href="#/">Back to Stations</a></p></div>`;
   }
-  function routeParts() {
+  function routeState() {
     const value = location.hash.replace(/^#\/?/, '');
-    return value ? value.split('/').filter(Boolean).map(part => decodeURIComponent(part)) : [];
+    const marker = value.indexOf('?');
+    const path = marker < 0 ? value : value.slice(0, marker);
+    const query = new URLSearchParams(marker < 0 ? '' : value.slice(marker + 1));
+    return { parts: path ? path.split('/').filter(Boolean).map(part => decodeURIComponent(part)) : [], query };
   }
   async function route() {
     state.controller?.abort(); state.graphCleanup?.(); state.graphCleanup = null; state.notebookCleanup?.(); state.notebookCleanup = null; document.body.classList.remove('archive-graph-active');
     const controller = new AbortController(); state.controller = controller; const request = ++state.request;
     closeMenu(); app.innerHTML = '<div class="loading-state">Loading…</div>'; window.scrollTo(0, 0);
     try {
-      const parts = routeParts();
+      let focusedTarget = false;
+      const { parts, query } = routeState();
       if (!parts.length) { renderDashboard(); return; }
       if (parts[0] === 'notebooks' && parts.length === 1) { renderNotebooks(); return; }
       if (parts[0] === 'notebooks') { await renderNotebook(parts[1], parts[2], parts[3] || '', controller.signal, request); return; }
@@ -553,7 +625,7 @@
       const page = parts[1] || 'agents'; const active = page === 'memory' ? parts[2] : page === 'capsule' ? parts[2] : page === 'agent' ? 'agents' : page === 'evaluation' ? 'evaluations' : page === 'archive-graph' ? 'archive' : page;
       showNavbar(station, active);
       if (page === 'agents') await renderAgents(station, controller.signal, request);
-      else if (page === 'agent') await renderAgent(station, parts[2], controller.signal, request);
+      else if (page === 'agent' && parts.length === 3) focusedTarget = await renderAgent(station, parts[2], parseDialogueTarget(query), controller.signal, request);
       else if (page === 'memory') await renderCapsules(station, parts[2], controller.signal, request);
       else if (['archive', 'mail', 'question'].includes(page)) await renderCapsules(station, page, controller.signal, request);
       else if (page === 'archive-graph') await renderArchiveGraph(station, controller.signal, request);
@@ -561,7 +633,7 @@
       else if (page === 'evaluations') await renderEvaluations(station, controller.signal, request);
       else if (page === 'evaluation') await renderEvaluation(station, parts[2], controller.signal, request);
       else throw new Error('Page not found');
-      current(request); app.focus({ preventScroll: true });
+      current(request); if (!focusedTarget) app.focus({ preventScroll: true });
     } catch (error) { if (error.name !== 'AbortError' && request === state.request) showError(error); }
   }
   async function init() {

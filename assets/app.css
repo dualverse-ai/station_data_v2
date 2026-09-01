@@ -130,11 +130,13 @@ button, select { cursor: pointer; }
 .chat-meta::-webkit-details-marker { display: none; }
 .chat-meta > :nth-child(2) { justify-self: end; }
 .dialogue-entry[open] > .chat-meta { margin-bottom: 10px; padding-bottom: 10px; border-bottom: 1px solid var(--border); }
+.dialogue-actions { display: inline-flex; gap: 5px; }
 .collapse-label { min-width: 45px; color: var(--blue); text-align: right; }
 .collapse-label::before { content: "Collapse"; }
 .dialogue-entry:not([open]) .collapse-label::before { content: "Expand"; }
-.copy-raw-dialogue { padding: 2px 7px; border: 1px solid var(--border); border-radius: 4px; background: var(--soft); color: var(--muted); font-size: 11px; line-height: 1.45; }
-.copy-raw-dialogue:hover { border-color: var(--blue); color: var(--blue); }
+.copy-raw-dialogue, .copy-dialogue-link { padding: 2px 7px; border: 1px solid var(--border); border-radius: 4px; background: var(--soft); color: var(--muted); font-size: 11px; line-height: 1.45; }
+.copy-raw-dialogue:hover, .copy-dialogue-link:hover { border-color: var(--blue); color: var(--blue); }
+.chat-bubble.dialogue-target { border-color: var(--blue); box-shadow: 0 0 0 3px color-mix(in srgb, var(--blue) 22%, transparent), var(--shadow); scroll-margin: 90px 0; }
 .thinking { margin: 0 0 12px; border: 1px solid var(--border); border-radius: 4px; background: var(--soft); }
 .thinking summary { padding: 7px 10px; cursor: pointer; color: var(--muted); }
 .thinking pre { margin: 0; padding: 0 10px 10px; overflow-x: auto; white-space: pre-wrap; font: 12px/1.5 var(--mono); }
@@ -378,6 +380,8 @@ html[data-theme="light"] .markdown-content-host .hljs-section { color: #6f42c1; 
   .station-yaml-copy-button { align-self: flex-start; }
   .dialogue-window { padding: 10px; }
   .chat-bubble { width: 100%; max-width: 100%; }
+  .chat-meta { grid-template-columns: auto minmax(0, 1fr) auto; }
+  .dialogue-actions { grid-column: 1 / -1; grid-row: 2; justify-self: end; }
   .archive-graph-toolbar { align-items: stretch; flex-wrap: wrap; }
   .archive-graph-search-wrap { flex-basis: 100%; }
   .archive-graph-controls { flex: 1; }
