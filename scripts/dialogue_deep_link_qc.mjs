@@ -6,6 +6,7 @@ import assert from 'node:assert/strict';
 const [baseArg = 'http://127.0.0.1:8765/', cdpRoot = 'http://127.0.0.1:9222'] = process.argv.slice(2);
 const baseUrl = new URL(baseArg);
 const ordinaryHash = '#/uncertainty/agent/Nova-II-732a9eba9a';
+const earlyHash = `${ordinaryHash}?tick=794`;
 const collapsedHash = `${ordinaryHash}?tick=838`;
 const thinkingHash = `${collapsedHash}&thinking=open`;
 const missingHash = `${ordinaryHash}?tick=999999999`;
@@ -122,6 +123,16 @@ try {
   await send('Page.navigate', { url: urlFor(ordinaryHash) });
   await waitForOrdinary();
   assert.equal(await evaluate("document.querySelectorAll('.copy-dialogue-link').length > 0"), true, 'copy-link control should render');
+  assert.equal(await evaluate("Boolean(document.getElementById('load-previous-pager'))"), false, 'ordinary page-one route should not retain exhausted previous-page UI');
+
+  await evaluate(`location.hash = ${JSON.stringify(earlyHash)}`);
+  await waitFor(`location.hash === ${JSON.stringify(earlyHash)}
+    && document.querySelector('.transcript .chat-bubble')?.dataset.dialoguePage === 'page-0002.yamll.gz'
+    && document.querySelector('.dialogue-target')?.dataset.dialogueTick === '794'
+    && Boolean(document.getElementById('load-previous-pager'))`, 'early compact tick route');
+  await evaluate('window.scrollBy(0, -1)');
+  await waitFor(`Boolean(document.querySelector('[data-dialogue-page="page-0001.yamll.gz"]'))
+    && !document.getElementById('load-previous-pager')`, 'exhausted previous-page UI removal');
 
   const collapsedMs = await elapsedTransition(collapsedHash, () => waitForTick(collapsedHash, false));
   await copyTargetLink(collapsedHash);
@@ -180,7 +191,7 @@ try {
   }))()`);
   console.log(JSON.stringify({
     ok: true,
-    checks: ['ordinary-page-one', 'compact-tick-direct-load', 'first-entry-at-tick', 'collapsed-default', 'global-thinking-expanded', 'no-eager-previous-load', 'automatic-previous-page', 'viewport-anchor-preserved', 'previous-page-thinking-expanded', 'future-page-thinking-expanded', 'per-entry-copy-link', 'refresh', 'back-forward', 'visible-missing-tick'],
+    checks: ['ordinary-page-one', 'zero-remaining-previous-ui-absent', 'exhausted-previous-ui-removed', 'compact-tick-direct-load', 'first-entry-at-tick', 'collapsed-default', 'global-thinking-expanded', 'no-eager-previous-load', 'automatic-previous-page', 'viewport-anchor-preserved', 'previous-page-thinking-expanded', 'future-page-thinking-expanded', 'per-entry-copy-link', 'refresh', 'back-forward', 'visible-missing-tick'],
     timingsMs: { collapsed: collapsedMs, thinking: thinkingMs, missing: missingMs },
     initialThinkingCount,
     copiedPreviousTick,

@@ -455,10 +455,14 @@
     };
     const updatePreviousButton = () => {
       const complete = previousPage < 0;
-      previousPager.hidden = complete;
+      if (complete) {
+        previousObserver?.disconnect();
+        previousPager.remove();
+        return;
+      }
+      previousPager.hidden = false;
       previousButton.disabled = false;
       previousButton.textContent = `Load previous (${previousPage + 1} pages remaining)`;
-      if (complete) previousObserver?.disconnect();
     };
     const loadPrevious = async () => {
       if (loadingPrevious || previousPage < 0) return;
