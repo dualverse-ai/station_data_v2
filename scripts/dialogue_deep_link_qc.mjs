@@ -5,8 +5,8 @@ import assert from 'node:assert/strict';
 
 const [baseArg = 'http://127.0.0.1:8765/', cdpRoot = 'http://127.0.0.1:9222'] = process.argv.slice(2);
 const baseUrl = new URL(baseArg);
-const ordinaryHash = '#/book_s1/agent/Axiom-III-4d06827f39';
-const collapsedHash = `${ordinaryHash}?tick=4479`;
+const ordinaryHash = '#/uncertainty/agent/Nova-II-732a9eba9a';
+const collapsedHash = `${ordinaryHash}?tick=838`;
 const thinkingHash = `${collapsedHash}&thinking=open`;
 const missingHash = `${ordinaryHash}?tick=999999999`;
 const urlFor = hash => { const url = new URL(baseUrl); url.hash = hash; return url.href; };
@@ -47,7 +47,21 @@ const waitFor = async (expression, label, timeoutMs = 30000) => {
     if (await evaluate(expression)) return;
     await new Promise(resolve => setTimeout(resolve, 100));
   }
-  throw new Error(`Timed out waiting for ${label}`);
+  const diagnostic = await evaluate(`(() => {
+    const target = document.querySelector('.dialogue-target');
+    return {
+      hash: location.hash,
+      error: document.querySelector('.error-state')?.textContent,
+      pages: [...new Set([...document.querySelectorAll('.chat-bubble')].map(node => node.dataset.dialoguePage))],
+      targetTick: target?.dataset.dialogueTick,
+      targetEntry: target?.dataset.dialogueEntry,
+      targetTop: target?.getBoundingClientRect().top,
+      targetFocused: document.activeElement === target,
+      thinkingCount: document.querySelectorAll('.thinking').length,
+      openThinkingCount: document.querySelectorAll('.thinking[open]').length
+    };
+  })()`);
+  throw new Error(`Timed out waiting for ${label}: ${JSON.stringify(diagnostic)}`);
 };
 const waitForOrdinary = () => waitFor(
   `location.hash === ${JSON.stringify(ordinaryHash)}
@@ -60,13 +74,13 @@ const tickReadyExpression = (hash, thinkingOpen) => `(() => {
   const target = document.querySelector('.dialogue-target');
   const thinking = [...document.querySelectorAll('.thinking')];
   return location.hash === ${JSON.stringify(hash)}
-    && document.querySelector('.transcript .chat-bubble')?.dataset.dialoguePage === 'page-0014.yamll.gz'
-    && target?.dataset.dialogueEntry === '11'
-    && target?.dataset.dialogueTick === '4479'
+    && document.querySelector('.transcript .chat-bubble')?.dataset.dialoguePage === 'page-0009.yamll.gz'
+    && target?.dataset.dialogueEntry === '1'
+    && target?.dataset.dialogueTick === '838'
     && document.activeElement === target
-    && target.getBoundingClientRect().top >= 0
-    && target.getBoundingClientRect().top < innerHeight / 2
-    && thinking.length > 1
+    && target.getBoundingClientRect().top >= 60
+    && target.getBoundingClientRect().top < 180
+    && !document.querySelector('[data-dialogue-page="page-0008.yamll.gz"]')
     && thinking.every(details => details.open === ${thinkingOpen});
 })()`;
 const waitForTick = (hash, thinkingOpen) => waitFor(tickReadyExpression(hash, thinkingOpen), thinkingOpen ? 'global Thinking tick route' : 'collapsed tick route');
@@ -80,6 +94,17 @@ const copyTargetLink = async expectedHash => {
     document.querySelector('.dialogue-target .copy-dialogue-link').click();
   })()`);
   await waitFor(`window.__copiedDialogueLink === ${JSON.stringify(urlFor(expectedHash))}`, 'compact copied link');
+};
+const copyLoadedEntryLink = async (selector, thinkingOpen) => {
+  const tick = await evaluate(`(() => {
+    const entry = document.querySelector(${JSON.stringify(selector)});
+    window.__copiedDialogueLink = '';
+    entry.querySelector('.copy-dialogue-link').click();
+    return entry.dataset.dialogueTick;
+  })()`);
+  const expectedHash = `${ordinaryHash}?tick=${encodeURIComponent(tick)}${thinkingOpen ? '&thinking=open' : ''}`;
+  await waitFor(`window.__copiedDialogueLink === ${JSON.stringify(urlFor(expectedHash))}`, 'loaded entry copied link');
+  return tick;
 };
 const elapsedTransition = async (hash, ready) => {
   const started = performance.now();
@@ -105,9 +130,27 @@ try {
   await copyTargetLink(thinkingHash);
   const initialThinkingCount = await evaluate("document.querySelectorAll('.thinking').length");
 
+  await new Promise(resolve => setTimeout(resolve, 300));
+  assert.equal(await evaluate("Boolean(document.querySelector('[data-dialogue-page=\"page-0008.yamll.gz\"]'))"), false, 'previous page should not load before upward scrolling');
+  await evaluate(`(() => {
+    const target = document.querySelector('.dialogue-target');
+    window.scrollBy(0, -1);
+    window.__dialogueAnchorTop = target.getBoundingClientRect().top;
+  })()`);
+  await waitFor(`Boolean(document.querySelector('[data-dialogue-page="page-0008.yamll.gz"]'))`, 'automatic previous-page load');
+  assert.equal(await evaluate(`Math.abs(document.querySelector('.dialogue-target').getBoundingClientRect().top - window.__dialogueAnchorTop) < 2`), true, 'prepending should preserve the viewport anchor');
+  assert.equal(await evaluate(`(() => {
+    const previous = [...document.querySelectorAll('[data-dialogue-page="page-0008.yamll.gz"] .thinking')];
+    return previous.length > 0 && previous.every(details => details.open);
+  })()`), true, 'previous-page Thinking panels should be expanded');
+  const copiedPreviousTick = await copyLoadedEntryLink('[data-dialogue-page="page-0008.yamll.gz"]', true);
+  assert.notEqual(copiedPreviousTick, '838', 'a previous entry should copy its own tick');
+
+  await evaluate("document.getElementById('load-more').click()");
+  await waitFor(`Boolean(document.querySelector('[data-dialogue-page="page-0010.yamll.gz"]'))`, 'first future dialogue page');
   await evaluate("document.getElementById('load-more').click()");
   await waitFor(`(() => {
-    const later = [...document.querySelectorAll('[data-dialogue-page="page-0015.yamll.gz"] .thinking')];
+    const later = [...document.querySelectorAll('[data-dialogue-page="page-0011.yamll.gz"] .thinking')];
     return later.length > 0 && [...document.querySelectorAll('.thinking')].every(details => details.open);
   })()`, 'future page Thinking expansion');
 
@@ -137,9 +180,10 @@ try {
   }))()`);
   console.log(JSON.stringify({
     ok: true,
-    checks: ['ordinary-page-one', 'compact-tick-direct-load', 'first-entry-at-tick', 'collapsed-default', 'global-thinking-expanded', 'future-page-thinking-expanded', 'copy-link', 'refresh', 'back-forward', 'visible-missing-tick'],
+    checks: ['ordinary-page-one', 'compact-tick-direct-load', 'first-entry-at-tick', 'collapsed-default', 'global-thinking-expanded', 'no-eager-previous-load', 'automatic-previous-page', 'viewport-anchor-preserved', 'previous-page-thinking-expanded', 'future-page-thinking-expanded', 'per-entry-copy-link', 'refresh', 'back-forward', 'visible-missing-tick'],
     timingsMs: { collapsed: collapsedMs, thinking: thinkingMs, missing: missingMs },
     initialThinkingCount,
+    copiedPreviousTick,
     state
   }, null, 2));
 } finally {

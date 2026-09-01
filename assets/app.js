@@ -394,6 +394,7 @@
     return -1;
   }
   async function appendMessages(container, records, request, context) {
+    const fragment = document.createDocumentFragment();
     for (let i = 0; i < records.length; i += 1) {
       current(request);
       const entry = records[i]; const stationRole = entry.role === 'user' || entry.role === 'system';
@@ -406,7 +407,7 @@
       const thinking = entry.thinking_content || entry.thinking_text || '';
       const rawMessage = messageText(entry);
       article.innerHTML = `<details class="dialogue-entry" open><summary class="chat-meta"><span>${stationRole ? 'Station' : 'Agent'}</span><span>Tick ${escapeHtml(entry.tick ?? '—')}</span><span class="dialogue-actions"><button class="copy-raw-dialogue" type="button">Copy raw</button><button class="copy-dialogue-link" type="button">Copy link</button></span><span class="collapse-label" aria-hidden="true"></span></summary><div class="chat-body">${thinking ? `<details class="thinking"${context.target?.thinkingOpen ? ' open' : ''}><summary>Thinking</summary><pre>${escapeHtml(String(thinking))}</pre></details>` : ''}${markdown(rawMessage)}</div></details>`;
-      container.appendChild(article); enhance(article);
+      fragment.appendChild(article); enhance(article);
       article.querySelector('.copy-raw-dialogue').addEventListener('click', async event => {
         event.preventDefault(); event.stopPropagation(); const button = event.currentTarget;
         await copyText(rawMessage); button.textContent = 'Copied'; setTimeout(() => { button.textContent = 'Copy raw'; }, 1200);
@@ -419,12 +420,13 @@
       thinkingDetails?.addEventListener('toggle', updateLinkTitle); updateLinkTitle();
       linkButton.addEventListener('click', async event => {
         event.preventDefault(); event.stopPropagation(); const button = event.currentTarget;
-        const linkedTick = context.target?.tick ?? entry.tick;
-        const hash = dialogueTickUrl(context.stationId, context.agentKey, linkedTick, context.target ? context.target.thinkingOpen : Boolean(thinkingDetails?.open));
+        const hash = dialogueTickUrl(context.stationId, context.agentKey, entry.tick, context.target?.thinkingOpen || Boolean(thinkingDetails?.open));
         await copyText(`${location.href.split('#')[0]}${hash}`); button.textContent = 'Copied'; setTimeout(() => { button.textContent = 'Copy link'; }, 1200);
       });
       if (i && i % 8 === 0) await new Promise(resolve => requestAnimationFrame(resolve));
     }
+    if (context.prepend) container.prepend(fragment);
+    else container.append(fragment);
   }
   async function renderAgent(station, key, target, signal, request) {
     const data = await fetchJSON(`data/${station.id}/agents/index.json`, signal); current(request);
@@ -433,34 +435,68 @@
     const history = await fetchJSON(`${base}/dialogue/index.json`, signal); current(request);
     const targetPage = target ? await dialoguePageForTick(base, history, target.tick, signal) : 0;
     if (target && targetPage < 0) throw new Error(`Dialogue tick not found: ${target.tick}`);
-    app.innerHTML = `${pageHeader(agent.display_name, '', `<a class="back-link" href="${stationUrl(station.id)}">Back to Agent Dialogue</a>`)}${meta([['Model', agent.model], ['Lineage', agent.lineage], ['Birth Tick', agent.tick_birth], ['Exit Tick', agent.tick_exit]])}<section class="dialogue-window" aria-labelledby="dialogue-title"><h2 id="dialogue-title" class="dialogue-window-title">Dialogue</h2><div id="transcript" class="transcript"></div></section><div class="pager"><button id="load-more" class="button" type="button">Load more</button></div>`;
-    const transcript = document.getElementById('transcript'); const button = document.getElementById('load-more');
-    let page = targetPage; let loading = false; let observer = null;
-    const handleLoadError = error => {
-      if (error.name === 'AbortError' || request !== state.request) return;
-      button.disabled = false; button.hidden = false; button.textContent = 'Retry load more';
-      button.title = error.message || 'The next dialogue page could not be loaded.';
+    app.innerHTML = `${pageHeader(agent.display_name, '', `<a class="back-link" href="${stationUrl(station.id)}">Back to Agent Dialogue</a>`)}${meta([['Model', agent.model], ['Lineage', agent.lineage], ['Birth Tick', agent.tick_birth], ['Exit Tick', agent.tick_exit]])}<section class="dialogue-window" aria-labelledby="dialogue-title"><h2 id="dialogue-title" class="dialogue-window-title">Dialogue</h2><div id="load-previous-pager" class="pager dialogue-previous-pager" hidden><button id="load-previous" class="button" type="button">Load previous</button></div><div id="transcript" class="transcript"></div></section><div class="pager"><button id="load-more" class="button" type="button">Load more</button></div>`;
+    const transcript = document.getElementById('transcript');
+    const previousPager = document.getElementById('load-previous-pager');
+    const previousButton = document.getElementById('load-previous');
+    const nextButton = document.getElementById('load-more');
+    let previousPage = target ? targetPage - 1 : -1;
+    let nextPage = targetPage;
+    let loadingPrevious = false; let loadingNext = false;
+    let previousObserver = null; let nextObserver = null;
+    const pageUrl = record => {
+      const revision = record.sha256 ? `?v=${encodeURIComponent(record.sha256.slice(0, 16))}` : '';
+      return `${base}/dialogue/${record.file}${revision}`;
     };
-    const load = async () => {
-      if (loading || page >= history.pages.length) return;
-      loading = true; button.disabled = true; button.textContent = 'Loading…'; button.removeAttribute('title');
+    const handleLoadError = (error, button, retryLabel) => {
+      if (error.name === 'AbortError' || request !== state.request) return;
+      button.disabled = false; button.hidden = false; button.textContent = retryLabel;
+      button.title = error.message || 'The dialogue page could not be loaded.';
+    };
+    const updatePreviousButton = () => {
+      const complete = previousPage < 0;
+      previousPager.hidden = complete;
+      previousButton.disabled = false;
+      previousButton.textContent = `Load previous (${previousPage + 1} pages remaining)`;
+      if (complete) previousObserver?.disconnect();
+    };
+    const loadPrevious = async () => {
+      if (loadingPrevious || previousPage < 0) return;
+      loadingPrevious = true; previousButton.disabled = true; previousButton.textContent = 'Loading…'; previousButton.removeAttribute('title');
       try {
-        const record = history.pages[page];
-        const revision = record.sha256 ? `?v=${encodeURIComponent(record.sha256.slice(0, 16))}` : '';
-        await appendMessages(transcript, await historyPage(`${base}/dialogue/${record.file}${revision}`, signal), request, { stationId: station.id, agentKey: agent.key, pageFile: record.file, target });
-        page += 1;
+        const record = history.pages[previousPage];
+        const records = await historyPage(pageUrl(record), signal);
+        const anchor = transcript.firstElementChild;
+        const anchorTop = anchor?.getBoundingClientRect().top;
+        await appendMessages(transcript, records, request, { stationId: station.id, agentKey: agent.key, pageFile: record.file, target, prepend: true });
+        previousPage -= 1;
+        if (anchor && Number.isFinite(anchorTop)) window.scrollBy(0, anchor.getBoundingClientRect().top - anchorTop);
       } finally {
-        loading = false;
+        loadingPrevious = false;
+        if (request === state.request) updatePreviousButton();
+      }
+    };
+    const loadNext = async () => {
+      if (loadingNext || nextPage >= history.pages.length) return;
+      loadingNext = true; nextButton.disabled = true; nextButton.textContent = 'Loading…'; nextButton.removeAttribute('title');
+      try {
+        const record = history.pages[nextPage];
+        await appendMessages(transcript, await historyPage(pageUrl(record), signal), request, { stationId: station.id, agentKey: agent.key, pageFile: record.file, target });
+        nextPage += 1;
+      } finally {
+        loadingNext = false;
         if (request === state.request) {
-          const complete = page >= history.pages.length;
-          button.disabled = false; button.hidden = complete;
-          button.textContent = `Load more (${history.pages.length - page} pages remaining)`;
-          if (complete) observer?.disconnect();
+          const complete = nextPage >= history.pages.length;
+          nextButton.disabled = false; nextButton.hidden = complete;
+          nextButton.textContent = `Load more (${history.pages.length - nextPage} pages remaining)`;
+          if (complete) nextObserver?.disconnect();
         }
       }
     };
-    button.addEventListener('click', () => load().catch(handleLoadError));
-    await load();
+    previousButton.addEventListener('click', () => loadPrevious().catch(error => handleLoadError(error, previousButton, 'Retry load previous')));
+    nextButton.addEventListener('click', () => loadNext().catch(error => handleLoadError(error, nextButton, 'Retry load more')));
+    updatePreviousButton();
+    await loadNext();
     let focusedTarget = false;
     if (target) {
       current(request);
@@ -472,11 +508,37 @@
       targetArticle.focus({ preventScroll: true });
       focusedTarget = true;
     }
-    if (page < history.pages.length && 'IntersectionObserver' in window) {
-      observer = new IntersectionObserver(entries => {
-        if (entries.some(entry => entry.isIntersecting)) load().catch(handleLoadError);
+    if (nextPage < history.pages.length && 'IntersectionObserver' in window) {
+      nextObserver = new IntersectionObserver(entries => {
+        if (entries.some(entry => entry.isIntersecting)) loadNext().catch(error => handleLoadError(error, nextButton, 'Retry load more'));
       }, { rootMargin: '600px 0px' });
-      observer.observe(button);
+      nextObserver.observe(nextButton);
+    }
+    if (previousPage >= 0 && 'IntersectionObserver' in window) {
+      let previousArmed = false;
+      let lastScrollY = window.scrollY;
+      const previousIsNear = () => {
+        const bounds = previousPager.getBoundingClientRect();
+        return bounds.bottom >= -200 && bounds.top <= innerHeight + 200;
+      };
+      const maybeLoadPrevious = () => {
+        if (previousArmed && previousIsNear()) loadPrevious().catch(error => handleLoadError(error, previousButton, 'Retry load previous'));
+      };
+      const handleScroll = () => {
+        const scrollY = window.scrollY;
+        if (scrollY < lastScrollY) previousArmed = true;
+        lastScrollY = scrollY;
+        maybeLoadPrevious();
+      };
+      previousObserver = new IntersectionObserver(entries => {
+        if (entries.some(entry => entry.isIntersecting)) maybeLoadPrevious();
+      }, { rootMargin: '200px 0px' });
+      previousObserver.observe(previousPager);
+      window.addEventListener('scroll', handleScroll, { passive: true });
+      signal.addEventListener('abort', () => {
+        window.removeEventListener('scroll', handleScroll);
+        previousObserver?.disconnect(); nextObserver?.disconnect();
+      }, { once: true });
     }
     return focusedTarget;
   }

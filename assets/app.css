@@ -122,6 +122,8 @@ button, select { cursor: pointer; }
 
 .dialogue-window { width: 100%; min-width: 0; padding: 16px; border: 1px solid var(--border); border-radius: 7px; background: var(--soft); }
 .dialogue-window-title { margin: 0 0 14px; padding-bottom: 10px; border-bottom: 1px solid var(--border); color: var(--muted); font-size: 13px; font-weight: 600; text-transform: uppercase; }
+.dialogue-previous-pager { margin: 0 0 14px; }
+.dialogue-previous-pager[hidden] { display: none; }
 .transcript { display: grid; grid-template-columns: minmax(0, 1fr); width: 100%; min-width: 0; max-width: 100%; gap: 13px; }
 .chat-bubble { width: 94%; min-width: 0; max-width: 930px; padding: 16px 18px; border: 1px solid var(--border); border-radius: 7px; background: var(--panel); box-shadow: var(--shadow); }
 .chat-bubble.agent { justify-self: end; background: color-mix(in srgb, var(--blue-soft) 45%, var(--panel)); }
