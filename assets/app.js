@@ -707,6 +707,7 @@
     setTheme(localStorage.getItem('station-viewer-theme') || 'light');
     themeToggle.addEventListener('click', () => setTheme(document.documentElement.dataset.theme === 'light' ? 'dark' : 'light'));
     mobileToggle.addEventListener('click', () => { const open = !navLinks.classList.contains('open'); navLinks.classList.toggle('open', open); backdrop.classList.toggle('open', open); mobileToggle.setAttribute('aria-expanded', String(open)); mobileToggle.setAttribute('aria-label', open ? 'Close navigation menu' : 'Open navigation menu'); });
+    navLinks.addEventListener('click', event => { if (event.target.closest('a')) closeMenu(); });
     backdrop.addEventListener('click', closeMenu); document.addEventListener('keydown', event => { if (event.key === 'Escape') closeMenu(); });
     state.catalog = await fetchJSON('catalog.json');
     stationSelector.innerHTML = state.catalog.stations.map(station => `<option value="${escapeHtml(station.id)}">${escapeHtml(station.title)}</option>`).join('');
