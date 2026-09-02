@@ -95,6 +95,18 @@ def sum : List (RationalQuadratic n) → RationalQuadratic n
   | [] => zero
   | q :: qs => add q (sum qs)
 
+/-- Executable evaluation entirely in the rationals.  Generated point
+certificates use this to avoid asking the simplifier to normalize a large
+real-valued sweep expression. -/
+def evalRat (q : RationalQuadratic n) (x : Fin n → ℚ) : ℚ :=
+  q.constant + ∑ i, q.linear i * x i +
+    ∑ i, ∑ j, q.quadratic i j * x i * x j
+
+theorem eval_cast (q : RationalQuadratic n) (x : Fin n → ℚ) :
+    q.eval (fun i ↦ (x i : ℝ)) = (q.evalRat x : ℝ) := by
+  simp only [RationalQuadratic.eval, evalRat, Rat.cast_add, Rat.cast_sum,
+    Rat.cast_mul]
+
 /-- The affine polynomial representing the directional derivative of `q` in
 the rational direction `d`. -/
 def stationaryEquation (q : RationalQuadratic n) (d : Fin n → ℚ) :

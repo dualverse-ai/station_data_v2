@@ -6,3 +6,4 @@ This folder contains the accompanying proofs, data, and additional results for t
 
 - `verification.ipynb` — Verifies the construction and collision certificates.
 - `construction.json` — Sparse rational coefficients and collision witnesses.
+- `formal_proofs/` — Lean 4 formal proofs for the spotlight results.

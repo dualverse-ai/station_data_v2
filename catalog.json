@@ -713,8 +713,8 @@
       "files": [
         {
           "path": "README.md",
-          "bytes": 738,
-          "sha256": "8d7fdfba699515f3d909285967c8a35bb8964b5547872619b606fb566bdec05a",
+          "bytes": 809,
+          "sha256": "fd3627772851823bcb99b2becf9844da192bc94ce8fcbcdb4825782650456bfd",
           "kind": "file"
         },
         {
@@ -760,6 +760,480 @@
           "kind": "file"
         },
         {
+          "path": "formal_proofs/README.md",
+          "bytes": 71,
+          "sha256": "127be0ae6964aa7a3fec4430425c3e265d060ca314108ca8bbc4e087f7ae5aa8",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s1/.gitignore",
+          "bytes": 37,
+          "sha256": "deb441eb12c497085b557df0fee2d354516e59cbc1c4e5db4a7aae32e7fab4b9",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s1/ErdosBudgetReplay.lean",
+          "bytes": 8053,
+          "sha256": "441d6bc4ab0c1727a5cf8f21f5d35a1eb79c7bd2e19e9cb4c8184d4db08c97ef",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s1/ErdosMinimum.lean",
+          "bytes": 1139,
+          "sha256": "32e6218f75249ec2cea30fb939cbfa2894aef501d04ada795f28bb610acd5169",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s1/ErdosMinimum/AdaptiveBudget.lean",
+          "bytes": 7555,
+          "sha256": "cdb94485a799b222638835ca85f0470ba542ad988440cdcb92209fad858c461e",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s1/ErdosMinimum/AdaptiveCertificateRow0.lean",
+          "bytes": 686011,
+          "sha256": "9c5269c4c5cce8fea4031f7d8473006571464afa70124e56814ef296e51083db",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s1/ErdosMinimum/AdaptiveCertificateRow1.lean",
+          "bytes": 711785,
+          "sha256": "d502e15c3b92af4a559ec9b00e8b434ba8384afc7fd97b8e096b4d0a2815e73e",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s1/ErdosMinimum/AdaptiveCertificateRow2.lean",
+          "bytes": 206454,
+          "sha256": "a340374fef5e15311a10ce683a7742975d2e06dcaf72aabc34b6ce08608973a5",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s1/ErdosMinimum/AdaptiveCertificateRow3.lean",
+          "bytes": 125141,
+          "sha256": "5a8460df55f706fbf11fbb716778f2dab2d15273d10aca0029bd616a5423d9bc",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s1/ErdosMinimum/AdaptiveHalfBudget.lean",
+          "bytes": 2883,
+          "sha256": "22af0c91d214676ab73bad5a5f5d9698bfa1fd0f91e47195ec6a4185064945c1",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s1/ErdosMinimum/AnalyticBridge.lean",
+          "bytes": 11887,
+          "sha256": "27b8cb9cfaeb72ae9c998a0bae19110c2f5d9e38f37cb862bf767e82c6e2fa1d",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s1/ErdosMinimum/AnalyticCertificate.lean",
+          "bytes": 3522,
+          "sha256": "bfa699f63d60dc6418240530fe92e5f86b8579523246d06fd3eecb05fe202e0b",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s1/ErdosMinimum/BudgetComputation.lean",
+          "bytes": 34695,
+          "sha256": "6c6a7614a71a7a58985f564a4b9ff82c183fa1bcfa28884c5117ee68fcd56504",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s1/ErdosMinimum/CertificateCover.lean",
+          "bytes": 7383,
+          "sha256": "a56656b80e2dd9cd54484efd0b81909fab86adc469e3ecf071695920caf9f64e",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s1/ErdosMinimum/CertificateData.lean",
+          "bytes": 193913,
+          "sha256": "a83da53b88979cac5fedbc212cb8fd6511d894c1965199f0e1eb8c2b6a56fe60",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s1/ErdosMinimum/CertificateReplay.lean",
+          "bytes": 1881,
+          "sha256": "536b4ac01f29f39dade5cff2a0aa6f769dd4ac5a2b822d9899ebd10f55e95e46",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s1/ErdosMinimum/CompressedInterval.lean",
+          "bytes": 7521,
+          "sha256": "29d3400d22bdbfc3ec4aaa300e9c2223050fce7979f2863c78731fe6d09af14c",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s1/ErdosMinimum/DoubleAngle.lean",
+          "bytes": 3682,
+          "sha256": "a70f5038818768c2b935d804a43b90fa07e315c97146cb6c9cb136b868c8559c",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s1/ErdosMinimum/DualCertificate.lean",
+          "bytes": 9901,
+          "sha256": "7fbfa3fea8daf06779286f1850b631953464b9e794d7907cb9d6932d58f35181",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s1/ErdosMinimum/DualRow.lean",
+          "bytes": 814,
+          "sha256": "331521568da4dfb535bcb843a36864d58712ec1ab0543eb7060b31700c1c2361",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s1/ErdosMinimum/FastTrig.lean",
+          "bytes": 12526,
+          "sha256": "34eb5f9ba3c8c09a95fbf0ad6b592240dc4ec561e823b0014507348bd49f7f72",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s1/ErdosMinimum/FirstMomentIdentity.lean",
+          "bytes": 7897,
+          "sha256": "c4a7d803a3471f11e03a5caa059bacbd3adc63953e5c114bf2f0560ae78c6676",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s1/ErdosMinimum/FixedDyadic.lean",
+          "bytes": 25190,
+          "sha256": "c061f273af48f55b2f95ffc6ff7fcfea958103f3e33de9f8bca0f39fe43ccd7c",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s1/ErdosMinimum/FixedSupport.lean",
+          "bytes": 6295,
+          "sha256": "5c3a93bc329c0fae8fa5b0dc3d883fe05943ab8bb4adb0845982a4ea83ed2361",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s1/ErdosMinimum/FourierCorrelation.lean",
+          "bytes": 14896,
+          "sha256": "24ca34dee25d6179d7ff2ef9c65cff46eeafc289851454e17161f6056ec9596b",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s1/ErdosMinimum/IntervalPartition.lean",
+          "bytes": 7214,
+          "sha256": "e9b798354cefac7cd7b99d5febabd857ca0a7a3da0987e07f59308ec06cd966c",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s1/ErdosMinimum/MainTheorem.lean",
+          "bytes": 3291,
+          "sha256": "10dc03f7d80f9e5b47add5dbea799e367c804e3b269936d4b4df81bffd761c9f",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s1/ErdosMinimum/NumericRow.lean",
+          "bytes": 10925,
+          "sha256": "55df22edd070e6a947fb5bc7a7f4c9df510734cd2ea5a10d84d453cdc88a468b",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s1/ErdosMinimum/NumericSupport.lean",
+          "bytes": 5213,
+          "sha256": "2a9973bc31188b466ba2f20c56e317fb16f715778d72306c9ebc1f74600325d1",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s1/ErdosMinimum/OverlapBounds.lean",
+          "bytes": 5737,
+          "sha256": "0d8da34c93011f4a0857a98631588db6dea13c6cd68ec0489db0c9c0ba3344d5",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s1/ErdosMinimum/OverlapContinuity.lean",
+          "bytes": 6233,
+          "sha256": "154f35f2edd8595a70bf05addbc3712859d9eeeb290dbc928e0d9ae209f211c8",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s1/ErdosMinimum/PaperProblem.lean",
+          "bytes": 5756,
+          "sha256": "5c63fead2bed1c86391964bcc6c8c4e797fcd510fb50e7bbff181f1e698b52ab",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s1/ErdosMinimum/PhaseSupport.lean",
+          "bytes": 1641,
+          "sha256": "72eed8b7c594ae1e931968b14fa11ba07bba0bc35296c72f894f4c9d570abf9c",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s1/ErdosMinimum/PiRangeReduction.lean",
+          "bytes": 2155,
+          "sha256": "03ddb0e6d9f9a455602e94d5100e5e6d0e18649c79af608d0113c45a0c89a74b",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s1/ErdosMinimum/PositivePart.lean",
+          "bytes": 1530,
+          "sha256": "22b7fbb837c6eb2f8b81ce2a6cbd450e95ecf5964b55d69c64f67615f3307de4",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s1/ErdosMinimum/PreparedCertificateData.lean",
+          "bytes": 354,
+          "sha256": "cb8ef42772ca431b311982e93334b47c8cb65bce4f0dd6d4d01f8dd06944a069",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s1/ErdosMinimum/PreparedCertificateRow0.lean",
+          "bytes": 262500,
+          "sha256": "55d6ff447e97177732c1a0c12e50cc545aec1f00a3d02aba483bc66051fc91ce",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s1/ErdosMinimum/PreparedCertificateRow1.lean",
+          "bytes": 359123,
+          "sha256": "03333b2ae3070692522708f0258ac41a657e953f9b9ba4a5840728b9325f05f2",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s1/ErdosMinimum/PreparedCertificateRow2.lean",
+          "bytes": 141186,
+          "sha256": "43806ce4493f651c772f24bfbaff45c15fc5c9d82c919b2952337ab9031306cf",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s1/ErdosMinimum/PreparedCertificateRow3.lean",
+          "bytes": 142066,
+          "sha256": "0446f08e820e71d1d226fb93aba5dfff3f9f5cd1db2ee85417431ad1a349bde6",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s1/ErdosMinimum/Problem.lean",
+          "bytes": 3875,
+          "sha256": "7c3331960ff10db3e662187d3dfe89094e9dc3a2c21c951785c9406204abf560",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s1/ErdosMinimum/RationalInterval.lean",
+          "bytes": 11013,
+          "sha256": "63c17a34ede225dc3ae5ff2ce07433b98e5e63be33855e6ecf4ce294452261b4",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s1/ErdosMinimum/RationalTrig.lean",
+          "bytes": 9043,
+          "sha256": "c36a2d473ba5229c9400ba4485c0733794152378e0684868be1aa955cd960ea9",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s1/ErdosMinimum/RowCurvature.lean",
+          "bytes": 15070,
+          "sha256": "4750628cbaee65c4d8d947108900eadf42641aee18cd5f2faf1c4c6124a003b0",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s1/ErdosMinimum/SecondMoment.lean",
+          "bytes": 17527,
+          "sha256": "b02a34c9c0d3b7499635a18b8c27401a099800f0a3c6614a6c92626c9e7a7358",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s1/ErdosMinimum/SecondOrderRange.lean",
+          "bytes": 3806,
+          "sha256": "5e7dedda00b64f1ba0c1994057e379dbd565033b0118f4530b171e787caf3865",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s1/ErdosMinimum/SequentialTrig.lean",
+          "bytes": 16399,
+          "sha256": "d065d2593343b6c6d626f75181d50b7096b4a95c7e6f1d8fcbe26b36a05051a4",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s1/ErdosMinimum/UniformHalfBudget.lean",
+          "bytes": 8113,
+          "sha256": "412ba53f35488ff203fecba3b3fcf1763c6df640e4fb49788ccd1567eb59674a",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s1/ErdosMinimum/VerifiedCertificate.lean",
+          "bytes": 12877,
+          "sha256": "defb222605c3570fad49e8e2105fa5ac692a36a138be382374ba9fd1dcee9af2",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s1/README.md",
+          "bytes": 1649,
+          "sha256": "af0429e0d6dfa299868761e975b5612ba3e5bb66a6a1fb35c2b68d5054ef7bf4",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s1/certificate/SHA256SUMS",
+          "bytes": 937,
+          "sha256": "2c3804f8df6adaa8ee0c9482e1014efdd5e157cef979fdf13765c4c49393d1dd",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s1/certificate/ZENODO_SHA256SUMS",
+          "bytes": 2968,
+          "sha256": "43e22be1fe6f76838f2785db040ccd99a6193e1b09c7ec364f1c74bd161c964d",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s1/certificate/adaptive_row0_split_values.tsv",
+          "bytes": 2370015,
+          "sha256": "8057739b1d60916d7d965aea969ea5703609fe80075acc8a4248ca82f7332dd0",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s1/certificate/adaptive_row0s_max3.tsv",
+          "bytes": 347479,
+          "sha256": "d050478cb81784193f458e2161e1a481866fca06f6f604be1c476a91794d5282",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s1/certificate/adaptive_row1_depth1_vd.tsv",
+          "bytes": 2131688,
+          "sha256": "00a92d065792b33ed0d52914a8d5ba5f5d9e1f1188174586422329ba57d130ec",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s1/certificate/adaptive_row1_max3.tsv",
+          "bytes": 376220,
+          "sha256": "27a0f5f0d85a7569bbb70b3294a4a5f9d4a32a32705a76cf9cf6ec6f419e8e2a",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s1/certificate/adaptive_row2_max3.tsv",
+          "bytes": 104958,
+          "sha256": "2273a8800d5b1b30c16300579fdf189d106b2eb7e9f7e470b5c940629b9a47b4",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s1/certificate/adaptive_row3_max3.tsv",
+          "bytes": 64472,
+          "sha256": "0ac64d21e09fdb0459c3bdab3702c5b849007b9a2f642671d3a1ee2672f3b198",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s1/certificate/build_adaptive_split_queue.py",
+          "bytes": 16302,
+          "sha256": "cf8d6320e96f71cd8745fa4bb9f1a4f9c4ec4ae162236973bbad34e157c210d2",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s1/certificate/build_cell_queue.py",
+          "bytes": 11082,
+          "sha256": "2d0dbf7244030a69a3171448c85cbaa4512acea5f868499a5cd3289cc1501d82",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s1/certificate/build_split_cell_queue.py",
+          "bytes": 16298,
+          "sha256": "e31b5da53d1d95bc419b9c9c4ed6cbce673c6f583d08a96e3ba31a9883615319",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s1/certificate/export_adaptive_row0_values.lean",
+          "bytes": 3914,
+          "sha256": "a1eb75d13763b831557f51d74c67e0c5fd011e1636989217be5ea973f53ad1e5",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s1/certificate/export_adaptive_row1_vd.lean",
+          "bytes": 1783,
+          "sha256": "b94ad0d1e9b3a1d278d9ed483b1b3ad240cea60e67525af0bca58fb2eee81516",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s1/certificate/generate_adaptive_budget_lean.py",
+          "bytes": 28535,
+          "sha256": "fe2f489ef27bb44d972ee348f33656c855f172ece1d0d7e582d793fa065f9793",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s1/certificate/generate_lean_data.py",
+          "bytes": 7118,
+          "sha256": "b2c4ab813b6681f05fd12fbd3bf9323b7c50ac7cea309f715061ef68ce7e3e59",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s1/certificate/generate_prepared_rows_lean.py",
+          "bytes": 3451,
+          "sha256": "5b2c4a5a26c1157edbca1ee504de01440507c1649cd316cde91f64b7d9ad87d4",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s1/certificate/generate_row0_split_lean.py",
+          "bytes": 22980,
+          "sha256": "4ccc7066a86443c51394fa553424d224e4e825b1411dbde3db51eb0a75a02966",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s1/certificate/generate_uniform_budget_lean.py",
+          "bytes": 8653,
+          "sha256": "af62c49d2aec35bb1d7621a151d9ce6b64e26a15b9697303cbf9572539c2b577",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s1/certificate/mpfi_positive_budget.c",
+          "bytes": 17571,
+          "sha256": "a967d8dfd18456a80c79984c69eb28b88a7548bf001c505455f97808a704274d",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s1/certificate/replay_from_source.sh",
+          "bytes": 1104,
+          "sha256": "7e58f49250db901186f230d2d5d376ef05197a80478da0a91bcd563a91bc20e8",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s1/certificate/row0.tsv",
+          "bytes": 57132,
+          "sha256": "214a16dad78ed1903748634b1981b5a706c39a9cdfe2c761ba22ea3e421811f3",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s1/certificate/row1.tsv",
+          "bytes": 57594,
+          "sha256": "498bc70020abbcb314e2d33db3568e59c40bbe889f827f3e53f101b7b5ed56a8",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s1/certificate/row2.tsv",
+          "bytes": 20330,
+          "sha256": "d28cec137151a7ab16f91382c5e7c25cab4a3e3dc6cc5b4885e1d98e4f8462e8",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s1/certificate/row3.tsv",
+          "bytes": 20373,
+          "sha256": "9077fdba3821e09f667cd1ddf1389654b6a5aae477df775bcf0c899de2f282fe",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s1/certificate/use_zenodo_artifacts.sh",
+          "bytes": 3115,
+          "sha256": "70ddf583239a4648a48886ee3c7c34fceea08f5828c8ef1de5787075dbba74f2",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s1/computed_sources.zip",
+          "bytes": 30228566,
+          "sha256": "320aa5e282cf762ccc95b6e323671b821f8d6d89f2c497257c10b800fccde263",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s1/lake-manifest.json",
+          "bytes": 3145,
+          "sha256": "b0699e610a7198e339a66f86119328e0f6975fe7a350a43540df4bf91374ba9b",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s1/lakefile.toml",
+          "bytes": 321,
+          "sha256": "294ccb1d21a3c4e1a27ae5178d88a390c73605f04c2a22f0fa1bef8b1b7e60fa",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s1/lean-toolchain",
+          "bytes": 29,
+          "sha256": "12b3414dafc4575fab9eb37bb265165c5a637af839af2d300f7e931b78765706",
+          "kind": "file"
+        },
+        {
           "path": "mpfi_positive_budget.c",
           "bytes": 17571,
           "sha256": "a967d8dfd18456a80c79984c69eb28b88a7548bf001c505455f97808a704274d",
@@ -767,8 +1241,8 @@
         },
         {
           "path": "verification.ipynb",
-          "bytes": 45269,
-          "sha256": "a6307e7ea28cc0f597313356931d5be01b8123526559fe4912727fa634697d68",
+          "bytes": 45556,
+          "sha256": "1e82ec80b131a49cb5cba9f3b0f471dccd6f41a676f208ed3c6aa9383fed7cac",
           "kind": "notebook"
         },
         {
@@ -1598,8 +2072,8 @@
       "files": [
         {
           "path": "README.md",
-          "bytes": 391,
-          "sha256": "52dc2e1dcd63407128d5fe4a00c98d706565d002705d4beb42a84efdfb14044e",
+          "bytes": 462,
+          "sha256": "76535a98cb5f9717afb513399ca3259a24500618d062afc497ee974b1b3bc4f0",
           "kind": "file"
         },
         {
@@ -1609,9 +2083,195 @@
           "kind": "file"
         },
         {
+          "path": "formal_proofs/README.md",
+          "bytes": 89,
+          "sha256": "7f9e4b487d451caaa8f9a2dbd4d2a0143c69d7680360683f98504848960b2ac1",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s1/.gitignore",
+          "bytes": 32,
+          "sha256": "85395f4dffc09025f5895438396b57fe80a1285f20b7df28252b90f86ae02c7c",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s1/Audit.lean",
+          "bytes": 338,
+          "sha256": "b26b53acc6d531ec0f26210172882af7627f146ce8407677abe02d0bb1908333",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s1/FlatAutoconvolutionS1.lean",
+          "bytes": 34,
+          "sha256": "e2175bbe6bf8b232dfe62a24437af34fbd2e2c4aa6cdc7ba7aaa5255073ad468",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s1/FlatAutoconvolutionS1/AdmissibleBounds.lean",
+          "bytes": 1429,
+          "sha256": "82298d1b43fb463ed24965b2824e830f807fe7d20427d31edbd59c6021068b63",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s1/FlatAutoconvolutionS1/AffineScore.lean",
+          "bytes": 7703,
+          "sha256": "28056502a1c5bb3bdf47dedcba96000d113ef25d3117d2381a34d81190360c5a",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s1/FlatAutoconvolutionS1/BinaryApproximation.lean",
+          "bytes": 20728,
+          "sha256": "e39cc51f165aaf79e67a9cb3a10adf17805db03bc93f3e674de2b7ed9d763f5c",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s1/FlatAutoconvolutionS1/BinaryRefinement.lean",
+          "bytes": 23762,
+          "sha256": "1139f8b674bc35043af3c3655e7ae8b99f61a667eb7cb3b1c006b2a4f06d28a3",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s1/FlatAutoconvolutionS1/BinaryStepDensity.lean",
+          "bytes": 2349,
+          "sha256": "cbd7ed4a54c1e0a1ebb559c077a2c1889d81a16e510767abbfa2656b22c46546",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s1/FlatAutoconvolutionS1/CoefficientBridge.lean",
+          "bytes": 3607,
+          "sha256": "ef4cc642db17aca4e2bab01f4522da61204b84b97a05eed69af82d67bcebc688",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s1/FlatAutoconvolutionS1/ConvolutionL1.lean",
+          "bytes": 7165,
+          "sha256": "3670bddfdb48aaa1bf5ba40c18426240b113830ce6de5df067b8629b3c232cc1",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s1/FlatAutoconvolutionS1/ConvolutionL2.lean",
+          "bytes": 16655,
+          "sha256": "5af244b4da84c663f2bdf0a08241204c126c3aa6a4d7109c9ce4417b01a33c0b",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s1/FlatAutoconvolutionS1/ConvolutionMass.lean",
+          "bytes": 2003,
+          "sha256": "7b3ee04e9ab8fdce6f61c37b67ef60ee4adb432b8ce143b8ed86fae81553f950",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s1/FlatAutoconvolutionS1/Definitions.lean",
+          "bytes": 3490,
+          "sha256": "bdad63c08b2c90e83447e5430a45ddd8f0d7ba91991402740c259dc569797290",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s1/FlatAutoconvolutionS1/FiniteProfile.lean",
+          "bytes": 5807,
+          "sha256": "6bf76473a7058bda0e46199c585ab5cec7f44913eca54b9cc22c3dc7e5d09a08",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s1/FlatAutoconvolutionS1/GridBridge.lean",
+          "bytes": 25897,
+          "sha256": "59ba764636df0dac2c3a908ce62fd7917ecc560ffe12163be0a57fabb0f8f38b",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s1/FlatAutoconvolutionS1/GroupedIndependence.lean",
+          "bytes": 5291,
+          "sha256": "18812cf07671b1379a8ba6e203cbe62d23d11e4902f74d94c27e2f401f31db90",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s1/FlatAutoconvolutionS1/Main.lean",
+          "bytes": 2141,
+          "sha256": "f1972ae102fe038b169c0fd88649c69b83abfd60b50bc8bbc51e40dc03c1637e",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s1/FlatAutoconvolutionS1/OutputContinuity.lean",
+          "bytes": 7617,
+          "sha256": "b0ffb8fa467fe6c5d4fa8c30e3ba4fd58f583ac2233fde542fdb200e75ea284d",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s1/FlatAutoconvolutionS1/ScoreLimit.lean",
+          "bytes": 1658,
+          "sha256": "c3bad61e357bf04b334fe32dfc302592438fb7f2c46be76148c8b3460e025bbe",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s1/FlatAutoconvolutionS1/StepAdmissible.lean",
+          "bytes": 3855,
+          "sha256": "65c0a848f029e1cf51990a9884ba5cb9f13adb08b5b733e5d703bcd408353cd3",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s1/FlatAutoconvolutionS1/StepBasic.lean",
+          "bytes": 1395,
+          "sha256": "b31ca16da602ef5c63b36ea8cd495d8e43b3c58dea09168b0a246d9c6c48aed0",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s1/FlatAutoconvolutionS1/StepDensity.lean",
+          "bytes": 28784,
+          "sha256": "ec749c849517818ca4d8211f1f2d51ec1b506f2633a0017cf3f5b2693d2775b6",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s1/FlatAutoconvolutionS1/StepProfileBridge.lean",
+          "bytes": 6201,
+          "sha256": "57774fcd6b39c95b1deff799d5c28873571e9d7bf29f5337a0dba87a77c4efa4",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s1/FlatAutoconvolutionS1/StepScoreDensity.lean",
+          "bytes": 2679,
+          "sha256": "f43be253fa3e39ee0a9f59030a9767fc11e8695029d047f08ffbc75324c0420e",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s1/FlatAutoconvolutionS1/StepSupremum.lean",
+          "bytes": 596,
+          "sha256": "4f845746082f5d3a1b6243590f1a1c8d4f34bf93ec4ac51a43e8429d3156cd97",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s1/FlatAutoconvolutionS1/Supremum.lean",
+          "bytes": 2677,
+          "sha256": "68092dabf8bfaeb368e52f13c5cbf47f032d0cd7863aa8588b9a4c0199b83fa8",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s1/README.md",
+          "bytes": 1127,
+          "sha256": "bac7942bbc06a2ab5e0dbd5b792927f3a1854786c11b9484fd5dfcae03202b2b",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s1/lake-manifest.json",
+          "bytes": 3139,
+          "sha256": "4da1d51bae65a01261d01f5ba8954ab49ea6586071281f400e94c4f9dc6db552",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s1/lakefile.toml",
+          "bytes": 279,
+          "sha256": "f7d4af1c255af3aec89468701c6fdf44adb991002959dc8080948f0d4f29b64f",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s1/lean-toolchain",
+          "bytes": 29,
+          "sha256": "12b3414dafc4575fab9eb37bb265165c5a637af839af2d300f7e931b78765706",
+          "kind": "file"
+        },
+        {
           "path": "verification.ipynb",
-          "bytes": 35422,
-          "sha256": "bcf68f84222e5ca73b24bbb0a38c1c82195e375d954076ec71bf3955b171e488",
+          "bytes": 35707,
+          "sha256": "344a5fcd549189f37cac610b194f57de0766d8a6ad1e9daf8fa381426b4c7b7e",
           "kind": "notebook"
         }
       ]
@@ -1738,8 +2398,8 @@
       "files": [
         {
           "path": "README.md",
-          "bytes": 361,
-          "sha256": "80d8590e70ed464a514d2a3e58a615e19554626d352e45d06bc40391c53cf843",
+          "bytes": 432,
+          "sha256": "99eee37df2f02ef91570a27ac1fe837fa81702d2698017133720d88932dfac1b",
           "kind": "file"
         },
         {
@@ -1749,9 +2409,87 @@
           "kind": "file"
         },
         {
+          "path": "formal_proofs/README.md",
+          "bytes": 88,
+          "sha256": "6891c5ed0a136f8a157bb395a12f616acd6f44d404426df48ff91c5206e03ee2",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/.gitignore",
+          "bytes": 13,
+          "sha256": "f3c3d8f9f9e87019b670e992391fa466a992dd6aa18713d6ceabcb5f855d49e9",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/JacobianS2.lean",
+          "bytes": 23,
+          "sha256": "525618a7e0a66db489b28326bbb3d13a686037ba11915f6d567e5e27c45c4df3",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/JacobianS2/Certificate.lean",
+          "bytes": 1755,
+          "sha256": "8af3d9fc1b06441624ba8b5e86b76d17c1a9f8f862bf83516227912b5bc1e765",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/JacobianS2/Definitions.lean",
+          "bytes": 2414,
+          "sha256": "261ac99b32ec90c2fa11ff21b39e65f6b4eaae317020a06c69b663ce556d59f2",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/JacobianS2/DenseFiber.lean",
+          "bytes": 8453,
+          "sha256": "af010c370f5a0250a83748e9cd875346c032441ecd975ca5de334b543823d58c",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/JacobianS2/GenericFiber.lean",
+          "bytes": 3816,
+          "sha256": "61d8b68750d132943563f8236253ee3fd9b44fecdcc9c3f29257a57480307fd9",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/JacobianS2/Jacobian.lean",
+          "bytes": 2069,
+          "sha256": "9ef0f348d561676084f8e62cb533c20046af170065090ca649f70fba3732badc",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/JacobianS2/Main.lean",
+          "bytes": 287,
+          "sha256": "ad85de72a799c48edf9b2b11f7d5b45068fb56dc822915defea4803f1533c9a9",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/README.md",
+          "bytes": 1341,
+          "sha256": "caf744caed436b839eb344f8f75b4879cd6364daf7102525d0f3635c0e2735c5",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/lake-manifest.json",
+          "bytes": 3010,
+          "sha256": "23f0c7b23cb9e8deaa26067ff4e9fd8513bc00578377c9b6062b4c63f07512cb",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/lakefile.toml",
+          "bytes": 245,
+          "sha256": "beaf48a2ccbde194c7d31aa6e59b45125c5310e81ea0236f5526a5c0cc187ac5",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/lean-toolchain",
+          "bytes": 29,
+          "sha256": "12b3414dafc4575fab9eb37bb265165c5a637af839af2d300f7e931b78765706",
+          "kind": "file"
+        },
+        {
           "path": "verification.ipynb",
-          "bytes": 46129,
-          "sha256": "9673b8e9d00b517baaf4f2dcb57dc2359d7f3ccc46f2b83c19935823e24f5e07",
+          "bytes": 46422,
+          "sha256": "ce4bb3534935459778ea875d34910c9ff66b5db72cd18759dffb1e0fb56a7539",
           "kind": "notebook"
         }
       ]
@@ -1805,14 +2543,20 @@
         },
         {
           "path": "formal_proofs/README.md",
-          "bytes": 85,
-          "sha256": "c3ec345d2a490722512f6a6caee1f89d70710376d2378b51b5b6ae7950346578",
+          "bytes": 98,
+          "sha256": "0e6a1b26b211f127c7d85f7b33dbd084f86869567349f3dfd2f89dbb077af0ef",
           "kind": "file"
         },
         {
           "path": "formal_proofs/s2/.gitignore",
           "bytes": 7,
           "sha256": "b3ad09fc93f83fdbd0bee771258dd4a58d3798fd7e6048611dde5a804bb43f1e",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/KakeyaNeedleC3C4.lean",
+          "bytes": 29,
+          "sha256": "f1666015e71524a3b9f1ea73bd44706ebecf107837587d203ebf7050af7147ae",
           "kind": "file"
         },
         {
@@ -1823,8 +2567,8 @@
         },
         {
           "path": "formal_proofs/s2/KakeyaNeedleC3C4/CertificateDecoder.lean",
-          "bytes": 18549,
-          "sha256": "c364b917fb05428815ec06c527d4610179f112f88c7b5222ea81c99cd4082bee",
+          "bytes": 22851,
+          "sha256": "fcb5ec2118ec0dfed0afe8092578aa7f69e85773b87eef5bd52dff33df1bd352",
           "kind": "file"
         },
         {
@@ -1855,6 +2599,12 @@
           "path": "formal_proofs/s2/KakeyaNeedleC3C4/Generated/CertificateBase4.lean",
           "bytes": 7122,
           "sha256": "b0bc020e5d8fd8fc6aa232e7aab25536d3f50970367e8b146a601d38dd4790d3",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/KakeyaNeedleC3C4/Generated/CertificateBase5.lean",
+          "bytes": 5398,
+          "sha256": "413314fdafbfe74b4c4d879e76e882cbf98fb06175993135455197ff7e5932e4",
           "kind": "file"
         },
         {
@@ -2272,6 +3022,18 @@
           "kind": "file"
         },
         {
+          "path": "formal_proofs/s2/KakeyaNeedleC3C4/Generated/DecisionTree5.lean",
+          "bytes": 822,
+          "sha256": "1c583bba818cf2fb30fb99d8d832e92c4eb525476ae2fef680a083ed6b77112f",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/KakeyaNeedleC3C4/Generated/WitnessCertificates5.lean",
+          "bytes": 49602,
+          "sha256": "0ddc1aff014b9743e86f7195a4cbb5f7695722b6b40874f6d8af1cc1ddb35e4d",
+          "kind": "file"
+        },
+        {
           "path": "formal_proofs/s2/KakeyaNeedleC3C4/Generated/certificate4_sub00.b64",
           "bytes": 138912,
           "sha256": "a196117722dbf09bbe749a79f69d1991f88fc8def985b7e0d8eae6e650c15f0e",
@@ -2656,6 +3418,12 @@
           "kind": "file"
         },
         {
+          "path": "formal_proofs/s2/KakeyaNeedleC3C4/Generated/certificate5.b64",
+          "bytes": 692983,
+          "sha256": "56bb777481a7639a0ee2efd1c36f4d914e47b23dd6ce4f12e7388b8c5b4fd008",
+          "kind": "file"
+        },
+        {
           "path": "formal_proofs/s2/KakeyaNeedleC3C4/Generated/manifest3.json",
           "bytes": 366,
           "sha256": "d4aa127957702afcbe4eb32219cb8115e109f0962009dce3734b4b369637edd3",
@@ -2665,6 +3433,12 @@
           "path": "formal_proofs/s2/KakeyaNeedleC3C4/Generated/manifest4.json",
           "bytes": 475,
           "sha256": "9a17af52fa53ecee0d6033c81fa28d6b5709084e109f0d4414aa2840dbcee526",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/KakeyaNeedleC3C4/Generated/manifest5.json",
+          "bytes": 716,
+          "sha256": "fd9a44cb420686e7b4da3231ed40ceb84a9321324b8ac11bd699e18748e5efd9",
           "kind": "file"
         },
         {
@@ -2686,9 +3460,15 @@
           "kind": "file"
         },
         {
+          "path": "formal_proofs/s2/KakeyaNeedleC3C4/LeafCertificate5.lean",
+          "bytes": 5890,
+          "sha256": "87456cf4211d1d4d279d2fed6cff04d5090875b3b57b24973082e3f761758915",
+          "kind": "file"
+        },
+        {
           "path": "formal_proofs/s2/KakeyaNeedleC3C4/Main.lean",
-          "bytes": 693,
-          "sha256": "4a8ffd64aaafd83c27ecb26a95d3dab29052d3702b9d644fc28b09b8e2a81d57",
+          "bytes": 732,
+          "sha256": "f37a1ddb62d7c04fb3d3ad477e4aebf80b67c82204bd310c55493dc033d42e4d",
           "kind": "file"
         },
         {
@@ -2705,8 +3485,14 @@
         },
         {
           "path": "formal_proofs/s2/KakeyaNeedleC3C4/RationalCertificateChecker.lean",
-          "bytes": 16408,
-          "sha256": "bd2335a0f53bd2f7d66855682d90eefcf7d18b34d205092a4b94c2bb8d481301",
+          "bytes": 16962,
+          "sha256": "bb43f4b53efb4e0146caef10e6d36d9a9544727e42417edf702a8620ea3eea28",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/KakeyaNeedleC3C4/ReflectionFive.lean",
+          "bytes": 6208,
+          "sha256": "e0c7efda94d8ee96f71b89950c40ed0c44432890563aa6f3e2558144a6c802a8",
           "kind": "file"
         },
         {
@@ -2717,14 +3503,20 @@
         },
         {
           "path": "formal_proofs/s2/KakeyaNeedleC3C4/SortedIntervals.lean",
-          "bytes": 8141,
-          "sha256": "63955b72d450db305a0b21d6bfa42d5fb2d5f6124d309b095728bdd0cf1a4ea2",
+          "bytes": 12112,
+          "sha256": "77a8089936d21ebef368a068f95e99da39b7645b7b5750e7df15a873891f518f",
           "kind": "file"
         },
         {
           "path": "formal_proofs/s2/KakeyaNeedleC3C4/SweepCertificate.lean",
           "bytes": 36799,
           "sha256": "6ee478c2fb10ae15c7cc9fd9912b1bfdca343bebcde0e899122d78a7075a3ae9",
+          "kind": "file"
+        },
+        {
+          "path": "formal_proofs/s2/KakeyaNeedleC3C4/SweepCertificate5.lean",
+          "bytes": 15144,
+          "sha256": "53361eb2c0b55c385647fde5576f3212c49cb7c649c3a2a98b2ef5bdb277590c",
           "kind": "file"
         },
         {
@@ -2752,15 +3544,9 @@
           "kind": "file"
         },
         {
-          "path": "formal_proofs/s2/KakeyaNeedleC3C4.lean",
-          "bytes": 29,
-          "sha256": "f1666015e71524a3b9f1ea73bd44706ebecf107837587d203ebf7050af7147ae",
-          "kind": "file"
-        },
-        {
           "path": "formal_proofs/s2/README.md",
-          "bytes": 1086,
-          "sha256": "e674b92d2656871b3287d9cb033695a5e529ac3cf6a1feba501bd60eae077029",
+          "bytes": 1794,
+          "sha256": "79ee86158f938056322408bb41dc12e2a92ca496a0aec7b513a1841ea7294fcb",
           "kind": "file"
         },
         {
@@ -2783,8 +3569,8 @@
         },
         {
           "path": "formal_proofs/s2/scripts/generate_certificates.py",
-          "bytes": 42185,
-          "sha256": "0fa525b821220e1c00a50cec8d5d6ea4bbcb77fe778db5a3e92d15150897bcc7",
+          "bytes": 59788,
+          "sha256": "60d2176b73c7ead72bf451b02c79676506479b4cfbbeb8d1fa66cc6f7028de8d",
           "kind": "file"
         },
         {
@@ -2807,8 +3593,8 @@
         },
         {
           "path": "verification.ipynb",
-          "bytes": 125381,
-          "sha256": "dbcf9ef2195b152b4bac1d92e2e0dba26c49bfcff3b43138955b73d13fd31f10",
+          "bytes": 125535,
+          "sha256": "319f32aa15cf87154f8ed6c0d747c232605b7ab03b1c25a48216b164c1b230fa",
           "kind": "notebook"
         }
       ]

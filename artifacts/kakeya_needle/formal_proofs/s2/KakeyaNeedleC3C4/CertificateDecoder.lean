@@ -1,4 +1,4 @@
-import KakeyaNeedleC3C4.LeafCertificate
+import KakeyaNeedleC3C4.LeafCertificate5
 
 /-!
 # Compact binary certificate decoder
@@ -149,6 +149,12 @@ private def defaultSlab4 (m : Nat) : SweepCertificate.Slab4 m where
   orderCertificate := fun _ => emptySparse m
   overlapCertificate := fun _ => emptySparse m
 
+private def defaultSlab5 (m : Nat) : SweepCertificate.Slab5 m where
+  order := fun _ => 0
+  overlap := fun _ => false
+  orderCertificate := fun _ => emptySparse m
+  overlapCertificate := fun _ => emptySparse m
+
 def readSlab3 (m : Nat) : Decoder (SweepCertificate.Slab3 m) := do
   let order := (← readFixed 3 (readFin 3)).toArray
   let overlap := (← readFixed 2 readBool).toArray
@@ -170,6 +176,20 @@ def readSlab4 (m : Nat) : Decoder (SweepCertificate.Slab4 m) := do
     (← readFixed 3 (readSparseFarkasCertificate m)).toArray
   let overlapCertificate :=
     (← readFixed 3 (readSparseFarkasCertificate m)).toArray
+  pure {
+    order := fun i => arrayAtD 0 order i.1
+    overlap := fun i => arrayAtD false overlap i.1
+    orderCertificate := fun i => arrayAtD (emptySparse m) orderCertificate i.1
+    overlapCertificate := fun i => arrayAtD (emptySparse m) overlapCertificate i.1
+  }
+
+def readSlab5 (m : Nat) : Decoder (SweepCertificate.Slab5 m) := do
+  let order := (← readFixed 5 (readFin 5)).toArray
+  let overlap := (← readFixed 4 readBool).toArray
+  let orderCertificate :=
+    (← readFixed 4 (readSparseFarkasCertificate m)).toArray
+  let overlapCertificate :=
+    (← readFixed 4 (readSparseFarkasCertificate m)).toArray
   pure {
     order := fun i => arrayAtD 0 order i.1
     overlap := fun i => arrayAtD false overlap i.1
@@ -211,6 +231,23 @@ def readSweepCertificate4 (m : Nat) :
     slab := fun i => arrayAtD (defaultSlab4 m) slab i.1
   }
 
+def readSweepCertificate5 (m : Nat) :
+    Decoder (SweepCertificate.Certificate5 m) := do
+  let slabCount ← readVarNat
+  let breakpoint :=
+    (← readFixed (slabCount + 1) (readRationalAffine 5)).toArray
+  let breakpointOrderCertificate :=
+    (← readFixed slabCount (readSparseFarkasCertificate m)).toArray
+  let slab := (← readFixed slabCount (readSlab5 m)).toArray
+  pure {
+    slabCount := slabCount
+    breakpoint := fun i =>
+      arrayAtD (SweepCertificate.affineZero 5) breakpoint i.1
+    breakpointOrderCertificate := fun i =>
+      arrayAtD (emptySparse m) breakpointOrderCertificate i.1
+    slab := fun i => arrayAtD (defaultSlab5 m) slab i.1
+  }
+
 /-- Leaf tags: `0 = empty`, `1 = live`, `2 = liveSOS`. -/
 def readLeaf3 (m : Nat) : Decoder (Leaf3 m) := do
   match (← readByte).toNat with
@@ -228,6 +265,15 @@ def readLeaf4 (m : Nat) : Decoder (Leaf4 m) := do
       readHandelmanCertificate m
   | 2 => Leaf4.liveSOS <$> readSweepCertificate4 m <*>
       readSOSHandelmanCertificate 4 m
+  | _ => failure
+
+def readLeaf5 (m : Nat) : Decoder (Leaf5 m) := do
+  match (← readByte).toNat with
+  | 0 => Leaf5.empty <$> readSparseFarkasCertificate m
+  | 1 => Leaf5.live <$> readSweepCertificate5 m <*>
+      readHandelmanCertificate m
+  | 2 => Leaf5.liveSOS <$> readSweepCertificate5 m <*>
+      readSOSHandelmanCertificate 5 m
   | _ => failure
 
 /-- Tree tags: `0 = leaf`, `1 = branch`.  Fuel bounds malformed deeply nested
@@ -256,6 +302,9 @@ def readTree3 (H m : Nat) : Decoder (Tree3 H m) :=
 def readTree4 (H m : Nat) : Decoder (Tree4 H m) :=
   readPayloadTree H (readLeaf4 m)
 
+def readTree5 (H m : Nat) : Decoder (Tree5 H m) :=
+  readPayloadTree H (readLeaf5 m)
+
 /-- Run a decoder and reject trailing bytes. -/
 def decodeAll (decoder : Decoder α) (bytes : ByteArray) : Option α := do
   let (value, finalCursor) ← decoder { bytes := bytes }
@@ -266,6 +315,9 @@ def decodeTree3 (H m : Nat) (bytes : ByteArray) : Option (Tree3 H m) :=
 
 def decodeTree4 (H m : Nat) (bytes : ByteArray) : Option (Tree4 H m) :=
   decodeAll (readTree4 H m) bytes
+
+def decodeTree5 (H m : Nat) (bytes : ByteArray) : Option (Tree5 H m) :=
+  decodeAll (readTree5 H m) bytes
 
 /-! ## Text embedding
 
@@ -383,6 +435,20 @@ def checkEncodedTree4 {H m : Nat} (maxDepth : Nat)
   | none => false
   | some tree => checkTree4 maxDepth polyForPath target tree
 
+def treeLeafCount {H : Nat} {α : Type} : PayloadTree H α → Nat
+  | .leaf _ => 1
+  | .branch _ pos neg => treeLeafCount pos + treeLeafCount neg
+
+/-- Decode and check an n=5 tree while also checking that the same proof
+payload has the notebook's declared number of arrangement cells. -/
+def checkEncodedTree5 {H m : Nat} (maxDepth expectedCells : Nat)
+    (polyForPath : List (SignedIndex H) → RationalPolyhedron 5 m)
+    (target : ℚ) (encoded : String) : Bool :=
+  match decodeBase64 encoded >>= decodeTree5 H m with
+  | none => false
+  | some tree => checkTree5 maxDepth polyForPath target tree &&
+      decide (treeLeafCount tree = expectedCells)
+
 theorem checkEncodedTree3_sound {H m : Nat} {maxDepth : Nat}
     {walls : Fin H → RationalAffine 3}
     {polyForPath : List (SignedIndex H) → RationalPolyhedron 3 m}
@@ -414,6 +480,40 @@ theorem checkEncodedTree4_sound {H m : Nat} {maxDepth : Nat}
   | some tree =>
       apply LeafCertificate.checkTree4_sound hcarrier
       simpa [checkEncodedTree4, hdecode] using hcheck
+
+theorem checkEncodedTree5_sound {H m : Nat} {maxDepth expectedCells : Nat}
+    {walls : Fin H → RationalAffine 5}
+    {polyForPath : List (SignedIndex H) → RationalPolyhedron 5 m}
+    {target : ℚ} {encoded : String} {Base : (Fin 5 → ℝ) → Prop}
+    (hcarrier : ∀ p path, path.length ≤ maxDepth →
+      PathNonnegative walls p path → Base p →
+      p ∈ (polyForPath path).carrier)
+    (hcheck : checkEncodedTree5 maxDepth expectedCells polyForPath target
+      encoded = true) :
+    ∀ p, Base p → (target : ℝ) ≤ unionArea 5 p := by
+  generalize hdecode : (decodeBase64 encoded >>= decodeTree5 H m) = decoded
+  cases decoded with
+  | none => simp [checkEncodedTree5, hdecode] at hcheck
+  | some tree =>
+      simp only [checkEncodedTree5, hdecode, Bool.and_eq_true,
+        decide_eq_true_eq] at hcheck
+      apply LeafCertificate.checkTree5_sound hcarrier
+      exact hcheck.1
+
+theorem checkEncodedTree5_cellCount {H m : Nat} {maxDepth expectedCells : Nat}
+    {polyForPath : List (SignedIndex H) → RationalPolyhedron 5 m}
+    {target : ℚ} {encoded : String}
+    (hcheck : checkEncodedTree5 maxDepth expectedCells polyForPath target
+      encoded = true) :
+    ∃ tree, decodeBase64 encoded >>= decodeTree5 H m = some tree ∧
+      treeLeafCount tree = expectedCells := by
+  generalize hdecode : (decodeBase64 encoded >>= decodeTree5 H m) = decoded
+  cases decoded with
+  | none => simp [checkEncodedTree5, hdecode] at hcheck
+  | some tree =>
+      simp only [checkEncodedTree5, hdecode, Bool.and_eq_true,
+        decide_eq_true_eq] at hcheck
+      exact ⟨tree, rfl, hcheck.2⟩
 
 /-! ## Compact subtree wrappers
 

@@ -107,6 +107,47 @@ theorem volume_real_union4_equalIntervals {a b c d w : ℝ}
     volume_real_equalInterval hw, volume_real_equalInterval_inter hcd] at h
   linarith
 
+theorem volume_real_union5_equalIntervals {a b c d e w : ℝ}
+    (hw : 0 ≤ w) (hab : a ≤ b) (hbc : b ≤ c) (hcd : c ≤ d)
+    (hde : d ≤ e) :
+    volume.real (equalInterval a w ∪ equalInterval b w ∪
+      equalInterval c w ∪ equalInterval d w ∪ equalInterval e w) =
+      5*w - max 0 (w-(b-a)) - max 0 (w-(c-b)) -
+        max 0 (w-(d-c)) - max 0 (w-(e-d)) := by
+  have hinter :
+      (equalInterval a w ∪ equalInterval b w ∪ equalInterval c w ∪
+        equalInterval d w) ∩ equalInterval e w =
+        equalInterval d w ∩ equalInterval e w := by
+    ext z
+    simp only [mem_inter_iff, mem_union, equalInterval, mem_Icc]
+    constructor
+    · rintro ⟨(((ha | hb) | hc) | hd), he⟩
+      · exact ⟨⟨hde.trans he.1, by linarith⟩, he⟩
+      · exact ⟨⟨hde.trans he.1, by linarith⟩, he⟩
+      · exact ⟨⟨hde.trans he.1, by linarith⟩, he⟩
+      · exact ⟨hd, he⟩
+    · rintro ⟨hd, he⟩
+      exact ⟨Or.inr hd, he⟩
+  have hfinite (z : ℝ) : volume (equalInterval z w) ≠ ∞ := by
+    rw [equalInterval, Real.volume_Icc]
+    exact ENNReal.ofReal_ne_top
+  have habfinite : volume (equalInterval a w ∪ equalInterval b w) ≠ ∞ :=
+    (measure_union_lt_top (hfinite a).lt_top (hfinite b).lt_top).ne
+  have habcfinite :
+      volume (equalInterval a w ∪ equalInterval b w ∪ equalInterval c w) ≠ ∞ :=
+    (measure_union_lt_top habfinite.lt_top (hfinite c).lt_top).ne
+  have habcdfinite :
+      volume (equalInterval a w ∪ equalInterval b w ∪ equalInterval c w ∪
+        equalInterval d w) ≠ ∞ :=
+    (measure_union_lt_top habcfinite.lt_top (hfinite d).lt_top).ne
+  have h := measureReal_union_add_inter
+    (s := equalInterval a w ∪ equalInterval b w ∪ equalInterval c w ∪
+      equalInterval d w) (t := equalInterval e w) (μ := volume)
+    measurableSet_Icc habcdfinite (hfinite e)
+  rw [hinter, volume_real_union4_equalIntervals hw hab hbc hcd,
+    volume_real_equalInterval hw, volume_real_equalInterval_inter hde] at h
+  linarith
+
 theorem sliceInterval_eq_equalInterval (n : ℕ) (hn : 0 < n)
     (x : Fin n → ℝ) (j : Fin n) (y : ℝ) :
     Icc (leftEndpoint n x j y) (rightEndpoint n x j y) =
@@ -159,6 +200,32 @@ private theorem iUnion_fin4_perm (A : Fin 4 → Set ℝ) (σ : Equiv.Perm (Fin 4
     · exact ⟨σ 2, h⟩
     · exact ⟨σ 3, h⟩
 
+private theorem iUnion_fin5_perm (A : Fin 5 → Set ℝ) (σ : Equiv.Perm (Fin 5)) :
+    (⋃ j, A j) = A (σ 0) ∪ A (σ 1) ∪ A (σ 2) ∪ A (σ 3) ∪ A (σ 4) := by
+  ext z
+  simp only [mem_iUnion, mem_union]
+  constructor
+  · rintro ⟨j, hj⟩
+    have hk : σ.symm j = 0 ∨ σ.symm j = 1 ∨ σ.symm j = 2 ∨
+        σ.symm j = 3 ∨ σ.symm j = 4 := by omega
+    rcases hk with hk | hk | hk | hk | hk
+    · left; left; left; left
+      simpa [← hk] using hj
+    · left; left; left; right
+      simpa [← hk] using hj
+    · left; left; right
+      simpa [← hk] using hj
+    · left; right
+      simpa [← hk] using hj
+    · right
+      simpa [← hk] using hj
+  · rintro ((((h | h) | h) | h) | h)
+    · exact ⟨σ 0, h⟩
+    · exact ⟨σ 1, h⟩
+    · exact ⟨σ 2, h⟩
+    · exact ⟨σ 3, h⟩
+    · exact ⟨σ 4, h⟩
+
 /-- Exact slice length once the three left endpoints are given in sorted
 order.  All three intervals have the common width `(1-y)/3`. -/
 theorem sliceLength_three_of_order (x : Fin 3 → ℝ) (y : ℝ)
@@ -192,6 +259,25 @@ theorem sliceLength_four_of_order (x : Fin 4 → ℝ) (y : ℝ)
   simp_rw [sliceInterval_eq_equalInterval 4 (by norm_num) x]
   exact volume_real_union4_equalIntervals
     (div_nonneg (sub_nonneg.mpr hy.2) (by norm_num)) h01 h12 h23
+
+/-- Exact slice length once the five left endpoints are given in sorted order. -/
+theorem sliceLength_five_of_order (x : Fin 5 → ℝ) (y : ℝ)
+    (hy : y ∈ Icc (0 : ℝ) 1) (σ : Equiv.Perm (Fin 5))
+    (h01 : leftEndpoint 5 x (σ 0) y ≤ leftEndpoint 5 x (σ 1) y)
+    (h12 : leftEndpoint 5 x (σ 1) y ≤ leftEndpoint 5 x (σ 2) y)
+    (h23 : leftEndpoint 5 x (σ 2) y ≤ leftEndpoint 5 x (σ 3) y)
+    (h34 : leftEndpoint 5 x (σ 3) y ≤ leftEndpoint 5 x (σ 4) y) :
+    sliceLength 5 x y =
+      5*((1-y)/5) -
+        max 0 ((1-y)/5 - (leftEndpoint 5 x (σ 1) y - leftEndpoint 5 x (σ 0) y)) -
+        max 0 ((1-y)/5 - (leftEndpoint 5 x (σ 2) y - leftEndpoint 5 x (σ 1) y)) -
+        max 0 ((1-y)/5 - (leftEndpoint 5 x (σ 3) y - leftEndpoint 5 x (σ 2) y)) -
+        max 0 ((1-y)/5 - (leftEndpoint 5 x (σ 4) y - leftEndpoint 5 x (σ 3) y)) := by
+  unfold sliceLength sliceUnion
+  rw [iUnion_fin5_perm]
+  simp_rw [sliceInterval_eq_equalInterval 5 (by norm_num) x]
+  exact volume_real_union5_equalIntervals
+    (div_nonneg (sub_nonneg.mpr hy.2) (by norm_num)) h01 h12 h23 h34
 
 end
 end KakeyaNeedleC3C4

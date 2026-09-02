@@ -1,0 +1,6 @@
+import FlatAutoconvolutionS1.Main
+
+#print axioms FlatAutoconvolutionS1.flat_autoconvolution_spotlight_one
+#print axioms FlatAutoconvolutionS1.flat_autoconvolution_spotlight_one_full
+#print axioms FlatAutoconvolutionS1.Admissible.exists_binaryStep_score_approx
+#print axioms FlatAutoconvolutionS1.BinaryRefinement.binaryRefinementProperty

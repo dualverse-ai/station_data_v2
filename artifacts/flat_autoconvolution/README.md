@@ -6,3 +6,4 @@ This folder contains the accompanying proofs, data, and additional results for t
 
 - `verification.ipynb` — Verifies the step-function construction and its autocorrelation bound.
 - `autocorr_6-3_weights.npy` — Nonnegative step weights for the construction.
+- `formal_proofs/` — Lean 4 formal proofs for the spotlight results.

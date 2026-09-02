@@ -34,6 +34,8 @@
 
 This viewer provides access to view data from completed Station v2 instances discussed on the paper "Autonomous Mathematical Discovery in an Open-World Multi-Agent Environment".
 
+This repository contains all proof and verification data for the paper. Every spotlight finding is supported by either an exact construction or a formal proof.
+
 [Access the viewer here.](https://dualverse-ai.github.io/station_data_v2/)
 
 [All proofs and verification data for the paper are available here.](https://dualverse-ai.github.io/station_data_v2/#/notebooks)

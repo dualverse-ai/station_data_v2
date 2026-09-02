@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate the exact finite certificate payload for C_T(3) and C_T(4).
+"""Generate exact finite certificate payloads for the Kakeya needle results.
 
 This program is intentionally only a witness finder.  Every affine implication,
 empty-polyhedron assertion, sweep schedule, and quadratic lower bound emitted by
@@ -77,6 +77,147 @@ class LeafData:
     sweep: Optional[SweepData]
     handelman: Optional[List[Tuple[int, int, Q]]]
     squares: Optional[List[Tuple[Q, Affine]]] = None
+
+
+def sigma5_offsets(params: Sequence[Q]) -> List[Q]:
+    """Notebook Theorem 3.5 gauge: (a,b,a/2,a-b,0)."""
+    if len(params) != 2:
+        raise ValueError("the reflection-fixed n=5 family has two parameters")
+    a, b = map(Q, params)
+    return [a, b, a / 2, a - b, Q(0)]
+
+
+def sigma5_endpoint_affines() -> List[Tuple[List[Q], Q, Q]]:
+    rows: List[Tuple[List[Q], Q, Q]] = []
+    for j in range(1, 6):
+        values = []
+        for k in range(2):
+            unit = [Q(0), Q(0)]
+            unit[k] = Q(1)
+            values.append(sigma5_offsets(unit)[j - 1])
+        rows.append((values[:], Q(0), Q(j, 5)))
+        rows.append((values[:], Q(1, 5), Q(j - 1, 5)))
+    return rows
+
+
+def sigma5_event_affines() -> List[Tuple[List[Q], Q]]:
+    lines = sigma5_endpoint_affines()
+    out: List[Tuple[List[Q], Q]] = []
+    for i, (ai, bi, si) in enumerate(lines):
+        for aj, bj, sj in lines[i + 1:]:
+            if si == sj:
+                continue
+            den = si - sj
+            out.append(([(aj[k] - ai[k]) / den for k in range(2)],
+                        (bj - bi) / den))
+    return out
+
+
+def sigma5_arrangement() -> List[Affine]:
+    events = sigma5_event_affines()
+    raw: List[Affine] = []
+    for a, c in events:
+        raw.extend([tuple(a + [c]), tuple(a + [c - 1])])
+    for i, (ai, ci) in enumerate(events):
+        for aj, cj in events[i + 1:]:
+            raw.append((ai[0] - aj[0], ai[1] - aj[1], ci - cj))
+    result = {ref.canonical_hyper(row) for row in raw}
+    return sorted(row for row in result if row is not None)
+
+
+def poly_affine(coefficients: Sequence[Q], constant: Q) -> Poly:
+    d = len(coefficients)
+    out: Poly = {}
+    if constant:
+        out[(0,) * d] = constant
+    for i, coefficient in enumerate(coefficients):
+        if coefficient:
+            exponent = [0] * d
+            exponent[i] = 1
+            out[tuple(exponent)] = coefficient
+    return out
+
+
+def poly_add(a: Poly, b: Poly, scale: Q = Q(1)) -> Poly:
+    out = dict(a)
+    for exponent, coefficient in b.items():
+        out[exponent] = out.get(exponent, Q(0)) + scale * coefficient
+        if out[exponent] == 0:
+            del out[exponent]
+    return out
+
+
+def poly_mul(a: Poly, b: Poly) -> Poly:
+    out: Poly = {}
+    for ea, ca in a.items():
+        for eb, cb in b.items():
+            exponent = tuple(ea[i] + eb[i] for i in range(len(ea)))
+            out[exponent] = out.get(exponent, Q(0)) + ca * cb
+    return {e: c for e, c in out.items() if c != 0}
+
+
+def poly_eval(poly: Poly, point: Sequence[Q]) -> Q:
+    total = Q(0)
+    for exponent, coefficient in poly.items():
+        term = coefficient
+        for i, power in enumerate(exponent):
+            term *= point[i] ** power
+        total += term
+    return total
+
+
+def sigma5_schedule_quadratic(sample: Sequence[Q]) -> Poly:
+    """Exact area quadratic on one cell in the notebook's (a,b)-plane."""
+    lines = sigma5_endpoint_affines()
+    events = sigma5_event_affines()
+    vals = [(sum(a[i] * sample[i] for i in range(2)) + c, a, c)
+            for a, c in events]
+    active = sorted((row for row in vals if 0 < row[0] < 1), key=lambda r: r[0])
+    breaks = [(Q(0), [Q(0), Q(0)], Q(0))] + active + [
+        (Q(1), [Q(0), Q(0)], Q(1))]
+    poly: Poly = {}
+    for left, right in zip(breaks, breaks[1:]):
+        v0, a0, c0 = left
+        v1, a1, c1 = right
+        if v0 == v1:
+            continue
+        ymid = (v0 + v1) / 2
+        intervals = []
+        for j in range(5):
+            li, ri = 2 * j, 2 * j + 1
+            def value(index: int) -> Q:
+                aa, cc, slope = lines[index]
+                return sum(aa[k] * sample[k] for k in range(2)) + cc + slope * ymid
+            intervals.append((value(li), value(ri), li, ri))
+        intervals.sort()
+        clusters: List[Tuple[int, int]] = []
+        cur_l = cur_r = None
+        cur_rv = None
+        for lv, rv, li, ri in intervals:
+            if cur_l is None:
+                cur_l, cur_r, cur_rv = li, ri, rv
+            elif lv <= cur_rv:
+                if rv > cur_rv:
+                    cur_r, cur_rv = ri, rv
+            else:
+                clusters.append((cur_l, cur_r))
+                cur_l, cur_r, cur_rv = li, ri, rv
+        if cur_l is not None:
+            clusters.append((cur_l, cur_r))
+        ua = [Q(0), Q(0)]
+        ub = uy = Q(0)
+        for li, ri in clusters:
+            ar, br, sr = lines[ri]
+            al, bl, sl = lines[li]
+            ua = [ua[k] + ar[k] - al[k] for k in range(2)]
+            ub += br - bl
+            uy += sr - sl
+        h0, h1 = poly_affine(a0, c0), poly_affine(a1, c1)
+        dh = poly_add(h1, h0, scale=-1)
+        poly = poly_add(poly, poly_mul(poly_affine(ua, ub), dh))
+        squares = poly_add(poly_mul(h1, h1), poly_mul(h0, h0), scale=-1)
+        poly = poly_add(poly, {e: uy * v / 2 for e, v in squares.items()})
+    return poly
 
 
 def qstr(x: Q) -> str:
@@ -502,6 +643,95 @@ def generate_leaf(n: int, index: int, signs: Tuple[int, ...], sample: Sequence[Q
     return LeafData(list(path), None, sweep, lower, squares)
 
 
+def symmetry_gauge_constraints5() -> List[Affine]:
+    """Equalities defining the reflection-fixed locus and x_5=0.
+
+    Each equality is represented by both signs, as required by the existing
+    nonnegative-polyhedron checker.
+    """
+    equations = [
+        (Q(1), Q(0), Q(-2), Q(0), Q(1), Q(0)),
+        (Q(1), Q(-1), Q(0), Q(-1), Q(1), Q(0)),
+        (Q(0), Q(0), Q(0), Q(0), Q(1), Q(0)),
+    ]
+    return [row for equation in equations for row in
+            (equation, affine_scale(Q(-1), equation))]
+
+
+def padded_constraints5(walls: Sequence[Affine], path: Sequence[Tuple[int, int]],
+                        depth: int) -> List[Affine]:
+    constraints = [affine_scale(Q(sign), walls[wall]) for wall, sign in path]
+    constraints.extend([constant_affine(5, Q(1))] * (depth - len(path)))
+    constraints.extend(symmetry_gauge_constraints5())
+    return constraints
+
+
+def subtract_weighted_squares(poly: Poly, target: Q,
+                              squares: Sequence[Tuple[Q, Affine]], d: int) -> Poly:
+    out = dict(poly)
+    zero = (0,) * d
+    out[zero] = out.get(zero, Q(0)) - target
+    mons = monomials(d)
+    for weight, affine in squares:
+        column = product_vector(affine, affine, d, mons)
+        for monomial, value in zip(mons, column):
+            out[monomial] = out.get(monomial, Q(0)) - weight * value
+    return {e: c for e, c in out.items() if c != 0}
+
+
+def integrated_sweep_poly5(sweep: SweepData) -> Poly:
+    """Mirror `SweepCertificate.integratedQuadratic5` exactly."""
+    total: Poly = {}
+    for index, slab in enumerate(sweep.slabs):
+        intercept = constant_affine(5, Q(1))
+        slope = Q(-1)
+        for r, overlaps in enumerate(slab.overlap):
+            if not overlaps:
+                continue
+            a, b = slab.order[r], slab.order[r + 1]
+            overlap_intercept = list(constant_affine(5, Q(1, 5)))
+            overlap_intercept[a] += 1
+            overlap_intercept[b] -= 1
+            overlap_slope = Q(-1 - b + a, 5)
+            intercept = affine_sub(intercept, tuple(overlap_intercept))
+            slope -= overlap_slope
+        lo, hi = sweep.breakpoints[index], sweep.breakpoints[index + 1]
+        delta = affine_sub(hi, lo)
+        total = poly_add(total,
+            poly_mul(poly_affine(intercept[:-1], intercept[-1]),
+                     poly_affine(delta[:-1], delta[-1])))
+        square_delta = poly_add(
+            poly_mul(poly_affine(hi[:-1], hi[-1]),
+                     poly_affine(hi[:-1], hi[-1])),
+            poly_mul(poly_affine(lo[:-1], lo[-1]),
+                     poly_affine(lo[:-1], lo[-1])), scale=-1)
+        total = poly_add(total, {e: slope * c / 2 for e, c in square_delta.items()})
+    return total
+
+
+def generate_leaf5(index: int, sample: Sequence[Q],
+                   path: Sequence[Tuple[int, int]], walls: Sequence[Affine],
+                   depth: int) -> LeafData:
+    constraints = padded_constraints5(walls, path, depth)
+    offsets = sigma5_offsets(sample)
+    sweep = sweep_targets(5, offsets[:-1], constraints)
+    full_poly = integrated_sweep_poly5(sweep)
+    target = Q(7, 30)
+    lower = handelman_certificate(full_poly, target, constraints)
+    squares5: List[Tuple[Q, Affine]] = []
+    if lower is None:
+        squares2 = global_sos_certificate(sigma5_schedule_quadratic(sample), target, 2)
+        if squares2 is None:
+            raise RuntimeError(f"n=5 leaf {index}: missing exact SOS certificate")
+        squares5 = [(weight, (affine[0], affine[1], Q(0), Q(0), Q(0), affine[2]))
+                    for weight, affine in squares2]
+        remainder = subtract_weighted_squares(full_poly, target, squares5, 5)
+        lower = handelman_certificate(remainder, Q(0), constraints, tries=40)
+        if lower is None:
+            raise RuntimeError(f"n=5 leaf {index}: missing equality remainder certificate")
+    return LeafData(list(path), None, sweep, lower, squares5)
+
+
 def emit_affine(a: Affine) -> str:
     return "{ constant := " + qstr(a[-1]) + ", linear := ![" + ", ".join(qstr(v) for v in a[:-1]) + "] }"
 
@@ -809,6 +1039,156 @@ end KakeyaNeedleC3C4.Generated
     return total_binary_bytes
 
 
+def emit_base5(out_dir: Path, walls: Sequence[Affine], depth: int,
+               cell_count: int) -> None:
+    wall_rows = ",\n  ".join(emit_affine(w) for w in walls)
+    symmetry_rows = ",\n  ".join(emit_affine(a) for a in symmetry_gauge_constraints5())
+    content = f"""import KakeyaNeedleC3C4.LeafCertificate5
+
+namespace KakeyaNeedleC3C4.Generated
+
+abbrev WallCount5 := {len(walls)}
+abbrev Depth5 := {depth}
+abbrev ConstraintCount5 := {depth + 6}
+abbrev CellCount5 := {cell_count}
+
+def walls5Array : Array (RationalAffine 5) := #[
+  {wall_rows}
+]
+
+theorem walls5Array_size : walls5Array.size = WallCount5 := by native_decide
+
+def walls5 (i : Fin WallCount5) : RationalAffine 5 :=
+  walls5Array[i.1]'(by rw [walls5Array_size]; exact i.2)
+
+def signedWall5 (positive : Bool) (w : Fin WallCount5) : RationalAffine 5 :=
+  if positive then walls5 w else SweepCertificate.affineNeg (walls5 w)
+
+def pathConstraint5 (path : List (LeafCertificate.SignedIndex WallCount5))
+    (i : Fin Depth5) : RationalAffine 5 :=
+  match path[i.1]? with
+  | none => SweepCertificate.affineConst 5 1
+  | some (w, positive) => signedWall5 positive w
+
+def symmetryGaugeConstraints5 : Fin 6 → RationalAffine 5 := ![
+  {symmetry_rows}
+]
+
+def polyForPath5 (path : List (LeafCertificate.SignedIndex WallCount5)) :
+    RationalPolyhedron 5 ConstraintCount5 where
+  constraint := Fin.append (pathConstraint5 path) symmetryGaugeConstraints5
+
+def target5 : ℚ := ((7 : ℚ) / 30)
+
+end KakeyaNeedleC3C4.Generated
+"""
+    (out_dir / "CertificateBase5.lean").write_text(content, encoding="utf-8")
+
+
+def emit_compact_tree5(out_dir: Path, nodes: Sequence[TreeNode],
+                       leaf_encodings: Dict[int, bytes]) -> int:
+    data = encode_tree(nodes, leaf_encodings)
+    write_unpadded_base64(out_dir / "certificate5.b64", data)
+    content = """import KakeyaNeedleC3C4.CertificateDecoder
+import KakeyaNeedleC3C4.Generated.CertificateBase5
+
+namespace KakeyaNeedleC3C4.Generated
+
+set_option maxRecDepth 1000000
+set_option maxHeartbeats 4000000
+
+def encodedTree5 : String := include_str "certificate5.b64"
+
+def encodedTree5Check : Bool :=
+  CertificateDecoder.checkEncodedTree5 Depth5 CellCount5 polyForPath5 target5
+    encodedTree5
+
+theorem encodedTree5_verified : encodedTree5Check = true := by
+  native_decide
+
+theorem encodedTree5_has_368_cells :
+    ∃ tree, CertificateDecoder.decodeBase64 encodedTree5 >>=
+        CertificateDecoder.decodeTree5 WallCount5 ConstraintCount5 = some tree ∧
+      CertificateDecoder.treeLeafCount tree = CellCount5 := by
+  exact CertificateDecoder.checkEncodedTree5_cellCount encodedTree5_verified
+
+end KakeyaNeedleC3C4.Generated
+"""
+    (out_dir / "DecisionTree5.lean").write_text(content, encoding="utf-8")
+    return len(data)
+
+
+def point_constraints5(offsets: Sequence[Q]) -> List[Affine]:
+    rows: List[Affine] = [constant_affine(5, Q(1))]
+    for i, value in enumerate(offsets):
+        row = [Q(0)] * 5
+        row[i] = Q(1)
+        affine = tuple(row + [-value])
+        rows.extend([affine, affine_scale(Q(-1), affine)])
+    return rows
+
+
+def emit_witness_certificates5(out_dir: Path) -> None:
+    witnesses = {
+        "Sym": [Q(4, 15), Q(1, 5), Q(2, 15), Q(1, 15), Q(0)],
+        "Asym": [Q(79, 305), Q(47, 305), Q(10, 61), Q(12, 305), Q(0)],
+    }
+    blocks: List[str] = []
+    for name, offsets in witnesses.items():
+        constraints = point_constraints5(offsets)
+        sweep = sweep_targets(5, offsets[:-1], constraints)
+        rows = ",\n  ".join(emit_affine(a) for a in constraints)
+        vector = ", ".join(qstr(v) for v in offsets)
+        area = "((7 : ℝ) / 30)" if name == "Sym" else "((14 : ℝ) / 61)"
+        area_q = "((7 : ℚ) / 30)" if name == "Sym" else "((14 : ℚ) / 61)"
+        blocks.append(f"""
+def witness{name}5Q : Fin 5 → ℚ := ![{vector}]
+
+def witness{name}5 : Fin 5 → ℝ := fun i ↦ (witness{name}5Q i : ℝ)
+
+def witness{name}Poly5 : RationalPolyhedron 5 11 where
+  constraint := ![
+  {rows}
+  ]
+
+def witness{name}Sweep5 : SweepCertificate.Certificate5 11 :=
+  {emit_sweep(5, sweep)}
+
+theorem witness{name}Sweep5_verified :
+    SweepCertificate.check5 witness{name}Sweep5 witness{name}Poly5 = true := by
+  native_decide
+
+theorem witness{name}5_mem : witness{name}5 ∈ witness{name}Poly5.carrier := by
+  intro i
+  fin_cases i <;>
+    norm_num [witness{name}5, witness{name}5Q, witness{name}Poly5, RationalAffine.eval,
+      Fin.sum_univ_succ]
+
+theorem witness{name}5_value :
+    (SweepCertificate.integratedQuadratic5 witness{name}Sweep5).evalRat
+      witness{name}5Q = {area_q} := by
+  native_decide
+
+theorem unionArea_witness{name}5 : unionArea 5 witness{name}5 = {area} := by
+  rw [unionArea_eq_sliceArea]
+  rw [SweepCertificate.sliceArea_eq_integratedQuadratic_five
+    witness{name}Sweep5_verified witness{name}5_mem]
+  rw [show witness{name}5 = (fun i ↦ (witness{name}5Q i : ℝ)) by rfl]
+  rw [RationalQuadratic.eval_cast, witness{name}5_value]
+  norm_num
+""")
+    content = """import KakeyaNeedleC3C4.SweepCertificate5
+
+namespace KakeyaNeedleC3C4.Generated
+
+noncomputable section
+
+set_option maxHeartbeats 4000000
+
+""" + "\n".join(blocks) + "\nend\nend KakeyaNeedleC3C4.Generated\n"
+    (out_dir / "WitnessCertificates5.lean").write_text(content, encoding="utf-8")
+
+
 def emit_base(out_dir: Path, n: int, walls: Sequence[Affine], depth: int, cell_count: int) -> None:
     d = n - 1
     constraint_count = depth + 2 * d + 2
@@ -1031,6 +1411,77 @@ def generate_n(n: int, out_dir: Path, chunk_size: int, limit: Optional[int]) -> 
     return manifest
 
 
+def generate_n5(out_dir: Path, limit: Optional[int]) -> Dict[str, object]:
+    start = time.time()
+    walls2 = sigma5_arrangement()
+    cells = ref.enumerate_cells_2d(walls2)
+    items = sorted(cells.items())
+    if len(walls2) != 37 or len(items) != 368:
+        raise RuntimeError(
+            f"n=5 certificate expected 37 walls/368 cells, got {len(walls2)}/{len(items)}")
+    signs = [s for s, _ in items]
+    samples = [p for _, p in items]
+    nodes, paths, depth = build_balanced_tree(signs)
+    if depth != 10:
+        raise RuntimeError(f"n=5 expected balanced depth 10, got {depth}")
+    walls5 = [(w[0], w[1], Q(0), Q(0), Q(0), w[2]) for w in walls2]
+    emit_base5(out_dir, walls5, depth, len(items))
+
+    leaf_encodings: Dict[int, bytes] = {}
+    handelman_terms = sos_square_terms = sweep_farkas_terms = 0
+    chosen = items if limit is None else items[:limit]
+    for i, (_sv, sample) in enumerate(chosen):
+        offsets = sigma5_offsets(sample)
+        sigma_poly = sigma5_schedule_quadratic(sample)
+        direct_poly = ref.schedule_quadratic_exact(5, tuple(offsets[:-1]))
+        if poly_eval(sigma_poly, sample) != ref.exact_area_offsets(5, offsets):
+            raise RuntimeError(f"n=5 cell {i}: notebook sweep/formula mismatch")
+        if poly_eval(direct_poly, tuple(offsets[:-1])) != poly_eval(sigma_poly, sample):
+            raise RuntimeError(f"n=5 cell {i}: full/symmetric quadratic mismatch")
+        leaf = generate_leaf5(i, sample, paths[i], walls5, depth)
+        assert leaf.sweep is not None and leaf.handelman is not None
+        leaf_encodings[i] = encode_leaf(5, leaf)
+        handelman_terms += len(leaf.handelman)
+        sos_square_terms += len(leaf.squares or [])
+        sweep_farkas_terms += sum(len(c) for c in leaf.sweep.breakpoint_certificates)
+        for slab in leaf.sweep.slabs:
+            sweep_farkas_terms += sum(map(len, slab.order_certificates))
+            sweep_farkas_terms += sum(map(len, slab.overlap_certificates))
+        if (i + 1) % 50 == 0:
+            print(f"n=5: leaves {i+1}/{len(chosen)}, elapsed={time.time()-start:.1f}s",
+                  flush=True)
+
+    compact_bytes = 0
+    if limit is None:
+        compact_bytes = emit_compact_tree5(out_dir, nodes, leaf_encodings)
+        emit_witness_certificates5(out_dir)
+    manifest = {
+        "n": 5,
+        "scope": "reflection_fixed_full_unbounded_parameter_arrangement",
+        "wall_count": len(walls2),
+        "cell_count": len(items),
+        "generated_leaf_count": len(chosen),
+        "tree_node_count": len(nodes),
+        "balanced_depth": depth,
+        "constraint_count": depth + 6,
+        "lower_leaf_count": len(chosen),
+        "sweep_farkas_term_count": sweep_farkas_terms,
+        "handelman_term_count": handelman_terms,
+        "sos_square_term_count": sos_square_terms,
+        "target": "7/30",
+        "symmetric_witness": ["4/15", "1/5", "2/15", "1/15", "0"],
+        "asymmetric_witness": ["79/305", "47/305", "10/61", "12/305", "0"],
+        "asymmetric_witness_area": "14/61",
+        "payload_layout": "compact_base64_single_tree",
+        "compact_binary_bytes": compact_bytes,
+        "elapsed_seconds": time.time() - start,
+    }
+    (out_dir / "manifest5.json").write_text(
+        json.dumps(manifest, indent=2) + "\n", encoding="utf-8")
+    print(json.dumps(manifest, indent=2), flush=True)
+    return manifest
+
+
 def generate_tree_only(n: int, out_dir: Path, chunk_size: int) -> None:
     """Regenerate aggregate tree modules from already-emitted payload chunks."""
     if n == 4:
@@ -1048,7 +1499,7 @@ def generate_tree_only(n: int, out_dir: Path, chunk_size: int) -> None:
 
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--n", choices=("3", "4", "all"), default="all")
+    parser.add_argument("--n", choices=("3", "4", "5", "all"), default="all")
     parser.add_argument("--output", type=Path,
                         default=SCRIPT_DIR.parent / "KakeyaNeedleC3C4" / "Generated")
     parser.add_argument("--chunk-size", type=int, default=128)
@@ -1062,8 +1513,13 @@ def main() -> None:
     if args.clean and args.output.exists():
         shutil.rmtree(args.output)
     args.output.mkdir(parents=True, exist_ok=True)
-    selected = (3, 4) if args.n == "all" else (int(args.n),)
+    selected = (3, 4, 5) if args.n == "all" else (int(args.n),)
     for n in selected:
+        if n == 5:
+            if args.tree_only:
+                parser.error("--tree-only is not supported for n=5")
+            generate_n5(args.output, args.limit)
+            continue
         if args.tree_only:
             if args.limit is not None:
                 parser.error("--tree-only and --limit cannot be combined")

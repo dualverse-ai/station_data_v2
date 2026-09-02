@@ -9,3 +9,4 @@ This folder contains the accompanying proofs, data, and additional results for t
 - `mpfi_positive_budget.c` — Directed-interval checker for the positive-part bounds.
 - `fig/` — Figure generator, historical comparison data, layout data, and rendered figures.
 - `witness_generation/` — Supporting search source, inputs, and retained witness data; see its [README](witness_generation/README.md).
+- `formal_proofs/` — Lean 4 formal proofs for the spotlight results.

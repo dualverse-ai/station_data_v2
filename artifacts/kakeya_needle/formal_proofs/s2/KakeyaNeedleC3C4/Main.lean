@@ -2,6 +2,7 @@ import KakeyaNeedleC3C4.CertificateAssembly
 import KakeyaNeedleC3C4.Infimum
 import KakeyaNeedleC3C4.PaperTriangle
 import KakeyaNeedleC3C4.Witnesses
+import KakeyaNeedleC3C4.ReflectionFive
 
 namespace KakeyaNeedleC3C4
 
