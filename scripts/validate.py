@@ -36,7 +36,7 @@ SECRET_PATTERNS = {
     ),
 }
 ENVIRONMENT_THINKING_REFERENCE = re.compile(
-    rb"(?i)\b(?:openai\s+codex|claude\s+code|anthropic|codex_home|"
+    rb"(?i)\b(?:openai\s+codex|claude\s+code|(?-i:Anthropic)|codex_home|"
     rb"codex\s+(?:cli|shell|coding\s+agent|tool|tools|tool\s+calls))\b|\.codex(?:/|\\)"
 )
 

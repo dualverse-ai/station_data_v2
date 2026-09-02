@@ -42,7 +42,7 @@ ARCHIVE_REFERENCE_GROUP = re.compile(
 ARCHIVE_SLUG_REFERENCE = re.compile(r"(?i)\barchive_(\d+)\b")
 ARCHIVE_RANGE = re.compile(r"(?i)(\d+)\s*(?:-|–|—|\bto\b|\bthrough\b)\s*#?(\d+)")
 ENVIRONMENT_THINKING_REFERENCE = re.compile(
-    rb"(?i)\b(?:openai\s+codex|claude\s+code|anthropic|codex_home|"
+    rb"(?i)\b(?:openai\s+codex|claude\s+code|(?-i:Anthropic)|codex_home|"
     rb"codex\s+(?:cli|shell|coding\s+agent|tool|tools|tool\s+calls))\b|\.codex(?:/|\\)"
 )
 
