@@ -14,10 +14,6 @@ fiber and no-critical-point claims.
 - `JacobianS2.paper_target_exactly_three` verifies the paper's three rational
   preimages.
 
-The theorem makes no claim about fibers outside the stated generic locus.
-The separate function-field formulation and `X = 0` classification are not
-formalized here.
-
 ## Source layout
 
 - `JacobianS2/Jacobian.lean` — determinant and critical-point results.
